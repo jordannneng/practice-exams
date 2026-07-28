@@ -58,6 +58,13 @@
   }
   .exam-title { font-weight: 500; font-size: 15px; }
   .exam-meta { font-size: 13px; color: var(--text-muted); margin-top: 2px; }
+  .category-card {
+    display: block; width: 100%; text-align: left;
+    padding: 20px; border-radius: var(--radius); margin-bottom: 10px;
+  }
+  .category-card:hover { background: var(--accent-light); border-color: var(--accent); }
+  .category-title { font-weight: 600; font-size: 17px; }
+  .category-meta { font-size: 13px; color: var(--text-muted); margin-top: 4px; }
   .empty-state { text-align: center; padding: 40px 20px; color: var(--text-secondary); }
   .progress-bar { height: 6px; background: var(--border); border-radius: 3px; overflow: hidden; margin-bottom: 20px; }
   .progress-fill { height: 100%; background: var(--accent); transition: width 0.2s; }
@@ -215,13 +222,10 @@ function renderHome() {
   TYPE_ORDER.forEach(type => {
     const count = Object.values(exams).filter(e => e.type === type).length;
     html += `
-      <div class="exam-list-item">
-        <div>
-          <div class="exam-title">${TYPE_LABELS[type]}</div>
-          <div class="exam-meta">${count} exam${count !== 1 ? 's' : ''}</div>
-        </div>
-        <button class="primary" data-action="open-category" data-type="${type}">View exams</button>
-      </div>
+      <button type="button" class="category-card" data-action="open-category" data-type="${type}">
+        <div class="category-title">${TYPE_LABELS[type]}</div>
+        <div class="category-meta">${count} exam${count !== 1 ? 's' : ''}</div>
+      </button>
     `;
   });
   return html;
