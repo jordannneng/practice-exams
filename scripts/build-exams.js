@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 // Converts exams-csv/*.csv into exams.json.
-// Each CSV: row 1 = "title,<Exam Title>", row 2 = column header, remaining rows = data.
+// Each CSV: row 1 = "title,<Exam Title>,<type>", row 2 = column header, remaining rows = data.
+// <type> must be one of KNOWN_TYPES below — add a new category there before using it in a CSV.
 // Header must include "question", "correct", and two or more "option_*" columns
 // (e.g. question,option_a,option_b,option_c,option_d,option_e,correct) — a single
 // header can mix row lengths, so true/false rows just leave the unused option
@@ -52,6 +53,8 @@ function parseCsv(text) {
   return rows.filter(r => r.some(f => f.trim() !== ''));
 }
 
+const KNOWN_TYPES = ['gda', 'testing'];
+
 const LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
 function letterToIndex(letter, optionCount, filePath, rowNum) {
@@ -66,9 +69,13 @@ function csvFileToExam(filePath) {
   const rows = parseCsv(fs.readFileSync(filePath, 'utf8'));
   const [titleRow, headerRow, ...dataRows] = rows;
   if (!titleRow || titleRow[0].trim().toLowerCase() !== 'title') {
-    throw new Error(`${filePath}: first row must be "title,<Exam Title>"`);
+    throw new Error(`${filePath}: first row must be "title,<Exam Title>,<type>"`);
   }
   const title = titleRow[1];
+  const type = (titleRow[2] || '').trim().toLowerCase();
+  if (!KNOWN_TYPES.includes(type)) {
+    throw new Error(`${filePath}: type "${type}" must be one of ${KNOWN_TYPES.join(', ')}`);
+  }
   if (!headerRow) throw new Error(`${filePath}: missing header row`);
   const header = headerRow.map(h => h.trim().toLowerCase());
   const questionCol = header.indexOf('question');
@@ -90,7 +97,7 @@ function csvFileToExam(filePath) {
       ...(image ? { image } : {}),
     };
   });
-  return { title, questions };
+  return { title, type, questions };
 }
 
 function formatExamsJson(exams) {
@@ -107,6 +114,7 @@ function formatExamsJson(exams) {
     }).join(',\n');
     return `  ${JSON.stringify(id)}: {
     "title": ${JSON.stringify(e.title)},
+    "type": ${JSON.stringify(e.type)},
     "questions": [
 ${questionEntries}
     ]
