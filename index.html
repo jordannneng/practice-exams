@@ -166,6 +166,12 @@ function loadScores() {
   try {
     const raw = localStorage.getItem(SCORES_KEY);
     scores = raw ? JSON.parse(raw) : {};
+    // migrate old format (a plain percentage number) to {best, last}
+    Object.keys(scores).forEach(id => {
+      if (typeof scores[id] === 'number') {
+        scores[id] = { best: scores[id], last: scores[id] };
+      }
+    });
   } catch (e) {
     scores = {};
   }
@@ -245,12 +251,13 @@ function renderList() {
     ids.forEach(id => {
       const e = exams[id];
       const qCount = (e.questions || []).length;
-      const lastScore = scores[id] != null ? `Last score: ${scores[id]}%` : 'Not attempted yet';
+      const s = scores[id];
+      const scoreText = s ? `Best: ${s.best}% · Last: ${s.last}%` : 'Not attempted yet';
       html += `
         <div class="exam-list-item">
           <div>
             <div class="exam-title">${escapeHtml(e.title)}</div>
-            <div class="exam-meta">${qCount} question${qCount !== 1 ? 's' : ''} · ${lastScore}</div>
+            <div class="exam-meta">${qCount} question${qCount !== 1 ? 's' : ''} · ${scoreText}</div>
           </div>
           <button class="primary" data-action="take" data-id="${id}" ${qCount === 0 ? 'disabled' : ''}>Take exam</button>
         </div>
@@ -509,7 +516,9 @@ function attachHandlers() {
       const e = exams[quizState.examId];
       let correctCount = 0;
       e.questions.forEach((q, i) => { if (quizState.answers[i] === q.correct) correctCount++; });
-      scores[quizState.examId] = Math.round((correctCount / e.questions.length) * 100);
+      const pct = Math.round((correctCount / e.questions.length) * 100);
+      const prevBest = scores[quizState.examId] ? scores[quizState.examId].best : pct;
+      scores[quizState.examId] = { best: Math.max(prevBest, pct), last: pct };
       saveScores();
       quizState.current = 0;
       view = { screen: 'results' };
