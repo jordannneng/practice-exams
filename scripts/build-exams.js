@@ -1,7 +1,9 @@
 #!/usr/bin/env node
 // Converts exams-csv/*.csv into exams.json.
-// Each CSV: row 1 = "title,<Exam Title>,<type>", row 2 = column header, remaining rows = data.
+// Each CSV: row 1 = "title,<Exam Title>,<type>,<subtype>", row 2 = column header, remaining rows = data.
 // <type> must be one of KNOWN_TYPES below — add a new category there before using it in a CSV.
+// <subtype> is required only for types listed in KNOWN_SUBTYPES (e.g. gda exams must be
+// midterm, final, or quiz) and must be blank for types with no subtypes configured.
 // Header must include "question", "correct", and two or more "option_*" columns
 // (e.g. question,option_a,option_b,option_c,option_d,option_e,correct) — a single
 // header can mix row lengths, so true/false rows just leave the unused option
@@ -54,6 +56,7 @@ function parseCsv(text) {
 }
 
 const KNOWN_TYPES = ['gda', 'testing'];
+const KNOWN_SUBTYPES = { gda: ['midterm', 'final', 'quiz'] };
 
 const LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
@@ -76,6 +79,14 @@ function csvFileToExam(filePath) {
   if (!KNOWN_TYPES.includes(type)) {
     throw new Error(`${filePath}: type "${type}" must be one of ${KNOWN_TYPES.join(', ')}`);
   }
+  const subtype = (titleRow[3] || '').trim().toLowerCase();
+  const validSubtypes = KNOWN_SUBTYPES[type];
+  if (validSubtypes && !validSubtypes.includes(subtype)) {
+    throw new Error(`${filePath}: subtype "${subtype}" must be one of ${validSubtypes.join(', ')} for type "${type}"`);
+  }
+  if (!validSubtypes && subtype) {
+    throw new Error(`${filePath}: type "${type}" does not support a subtype, but got "${subtype}"`);
+  }
   if (!headerRow) throw new Error(`${filePath}: missing header row`);
   const header = headerRow.map(h => h.trim().toLowerCase());
   const questionCol = header.indexOf('question');
@@ -97,7 +108,7 @@ function csvFileToExam(filePath) {
       ...(image ? { image } : {}),
     };
   });
-  return { title, type, questions };
+  return { title, type, subtype, questions };
 }
 
 function formatExamsJson(exams) {
@@ -112,9 +123,10 @@ function formatExamsJson(exams) {
         "correct": ${q.correct}${imageLine}
       }`;
     }).join(',\n');
+    const subtypeLine = e.subtype ? `,\n    "subtype": ${JSON.stringify(e.subtype)}` : '';
     return `  ${JSON.stringify(id)}: {
     "title": ${JSON.stringify(e.title)},
-    "type": ${JSON.stringify(e.type)},
+    "type": ${JSON.stringify(e.type)}${subtypeLine},
     "questions": [
 ${questionEntries}
     ]
