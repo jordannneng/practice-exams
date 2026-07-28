@@ -18,5 +18,30 @@
         "correct": 1
       }
     ]
+  },
+  "test-exam": {
+    "title": "Test exam",
+    "questions": [
+      {
+        "text": "Which ocean is the largest by surface area?",
+        "options": ["Atlantic", "Indian", "Arctic", "Pacific"],
+        "correct": 3
+      },
+      {
+        "text": "How many continents are there?",
+        "options": ["5", "6", "7", "8"],
+        "correct": 2
+      },
+      {
+        "text": "What is the boiling point of water at sea level (Celsius)?",
+        "options": ["90", "100", "110", "120"],
+        "correct": 1
+      },
+      {
+        "text": "Which gas do plants primarily absorb for photosynthesis?",
+        "options": ["Oxygen", "Nitrogen", "Carbon dioxide", "Hydrogen"],
+        "correct": 2
+      }
+    ]
   }
 }
