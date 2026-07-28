@@ -251,7 +251,7 @@ function renderQuiz() {
       else if (oi === selectedOi) feedbackClass = 'incorrect-answer';
     }
     optsHtml += `
-      <label class="quiz-option ${selected} ${feedbackClass} ${crossed ? 'crossed-out' : ''} ${answered ? 'locked' : ''}" data-oi="${oi}">
+      <label class="quiz-option ${selected} ${feedbackClass} ${crossed ? 'crossed-out' : ''} ${showFeedback ? 'locked' : ''}" data-oi="${oi}">
         <span class="option-main">
           <input type="radio" name="quiz-answer" ${selected ? 'checked' : ''} data-oi="${oi}">
           ${escapeHtml(opt)}
@@ -436,7 +436,7 @@ function attachHandlers() {
     };
     app.querySelectorAll('.quiz-option').forEach(opt => {
       opt.onclick = (e) => {
-        if (quizState.answers[quizState.current] !== undefined) { e.preventDefault(); return; }
+        if (settings.immediateGrading && quizState.answers[quizState.current] !== undefined) { e.preventDefault(); return; }
         const oi = parseInt(opt.dataset.oi);
         const crossedForQ = quizState.crossed[quizState.current] || {};
         if (crossedForQ[oi]) { e.preventDefault(); return; }
