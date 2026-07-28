@@ -2,6 +2,7 @@
   "gda-midterm-spring-2019": {
     "title": "GDA Midterm Exam (Spring 2019)",
     "type": "gda",
+    "subtype": "midterm",
     "questions": [
       {
         "text": "Which of the following statements is true regarding gametogenesis?",
@@ -347,6 +348,7 @@
   "gda-midterm-summer-2016": {
     "title": "GDA Midterm Exam (Summer 2016)",
     "type": "gda",
+    "subtype": "midterm",
     "questions": [
       {
         "text": "Approximately how many cells are included in the morula?",
@@ -578,6 +580,7 @@
   "gda-midterm-summer-2017": {
     "title": "GDA Midterm Exam (Summer 2017)",
     "type": "gda",
+    "subtype": "midterm",
     "questions": [
       {
         "text": "Which of the following statements is NOT true regarding gametogenesis?",
@@ -901,6 +904,7 @@
   "gda-midterm-summer-2019": {
     "title": "GDA Midterm Exam (Summer 2019)",
     "type": "gda",
+    "subtype": "midterm",
     "questions": [
       {
         "text": "Oogenesis is the process that creates female gametes. Which of the following describes the DNA content of the female’s gametes, or ovum?",
@@ -1236,6 +1240,7 @@
   "gda-midterm-summer-2020": {
     "title": "GDA Midterm Exam (Summer 2020)",
     "type": "gda",
+    "subtype": "midterm",
     "questions": [
       {
         "text": "Which of the following statements is NOT true regarding gametogenesis?",
@@ -1595,6 +1600,7 @@
   "gda-midterm-summer-2021": {
     "title": "GDA Midterm Exam (Summer 2021)",
     "type": "gda",
+    "subtype": "midterm",
     "questions": [
       {
         "text": "Which of the following statements is NOT true regarding gametogenesis?",
@@ -1935,6 +1941,7 @@
   "gda-midterm-summer-2022": {
     "title": "GDA Midterm Exam (Summer 2022)",
     "type": "gda",
+    "subtype": "midterm",
     "questions": [
       {
         "text": "Which of the following is not a common symptom of COVID-19 in young children?",
@@ -2294,6 +2301,7 @@
   "gda-midterm-summer-2023": {
     "title": "GDA Midterm Exam (Summer 2023)",
     "type": "gda",
+    "subtype": "midterm",
     "questions": [
       {
         "text": "Which of the following is not a biological mechanism of growth?",

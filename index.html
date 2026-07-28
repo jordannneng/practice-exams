@@ -210,10 +210,24 @@ async function loadExams() {
 
 const TYPE_LABELS = { gda: 'GDA', testing: 'Testing' };
 const TYPE_ORDER = ['gda', 'testing'];
+const SUBTYPES_BY_TYPE = {
+  gda: [
+    { id: 'midterm', label: 'Midterms' },
+    { id: 'final', label: 'Final Exams' },
+    { id: 'quiz', label: 'Quizzes' },
+  ],
+};
+const SUBTYPE_LABELS = SUBTYPES_BY_TYPE.gda.reduce((acc, s) => (acc[s.id] = s.label, acc), {});
+
+function listViewForExam(examId) {
+  const e = exams[examId];
+  return { screen: 'list', type: e.type, subtype: e.subtype || undefined };
+}
 
 function render() {
   const app = document.getElementById('app');
   if (view.screen === 'home') app.innerHTML = renderHome();
+  else if (view.screen === 'subcategory') app.innerHTML = renderSubcategory();
   else if (view.screen === 'list') app.innerHTML = renderList();
   else if (view.screen === 'quiz') app.innerHTML = renderQuiz();
   else if (view.screen === 'results') app.innerHTML = renderResults();
@@ -237,6 +251,26 @@ function renderHome() {
   return html;
 }
 
+function renderSubcategory() {
+  const type = view.type;
+  const subtypes = SUBTYPES_BY_TYPE[type] || [];
+  let html = `
+    <div class="top-row"><button id="back-to-home-btn">← Back to categories</button></div>
+    <h1>${TYPE_LABELS[type] || type}</h1>
+    <p class="subtitle">Choose a section to get started.</p>
+  `;
+  subtypes.forEach(st => {
+    const count = Object.values(exams).filter(e => e.type === type && e.subtype === st.id).length;
+    html += `
+      <button type="button" class="category-card" data-action="open-subcategory" data-type="${type}" data-subtype="${st.id}">
+        <div class="category-title">${st.label}</div>
+        <div class="category-meta">${count} exam${count !== 1 ? 's' : ''}</div>
+      </button>
+    `;
+  });
+  return html;
+}
+
 const SEASON_RANK = { winter: 0, spring: 1, summer: 2, fall: 3 };
 
 function examSortKey(title) {
@@ -247,7 +281,8 @@ function examSortKey(title) {
 
 function renderList() {
   const type = view.type;
-  const ids = Object.keys(exams).filter(id => exams[id].type === type);
+  const subtype = view.subtype;
+  const ids = Object.keys(exams).filter(id => exams[id].type === type && (!subtype || exams[id].subtype === subtype));
   ids.sort((a, b) => {
     const ka = examSortKey(exams[a].title);
     const kb = examSortKey(exams[b].title);
@@ -256,9 +291,11 @@ function renderList() {
     if (kb != null) return 1;
     return 0;
   });
+  const backLabel = subtype ? `← Back to ${TYPE_LABELS[type] || type}` : '← Back to categories';
+  const heading = subtype ? `${TYPE_LABELS[type] || type} ${SUBTYPE_LABELS[subtype] || subtype}` : `${TYPE_LABELS[type] || type} exams`;
   let html = `
-    <div class="top-row"><button id="back-to-home-btn">← Back to categories</button></div>
-    <h1>${TYPE_LABELS[type] || type} exams</h1>
+    <div class="top-row"><button id="list-back-btn">${backLabel}</button></div>
+    <h1>${heading}</h1>
     <p class="subtitle">Pick an exam below to start practicing.</p>
   `;
   if (ids.length === 0) {
@@ -448,14 +485,28 @@ function attachHandlers() {
   if (view.screen === 'home') {
     app.querySelectorAll('[data-action="open-category"]').forEach(btn => {
       btn.onclick = () => {
-        view = { screen: 'list', type: btn.dataset.type };
+        const type = btn.dataset.type;
+        view = SUBTYPES_BY_TYPE[type] ? { screen: 'subcategory', type } : { screen: 'list', type };
+        render();
+      };
+    });
+  }
+
+  if (view.screen === 'subcategory') {
+    document.getElementById('back-to-home-btn').onclick = () => { view = { screen: 'home' }; render(); };
+    app.querySelectorAll('[data-action="open-subcategory"]').forEach(btn => {
+      btn.onclick = () => {
+        view = { screen: 'list', type: btn.dataset.type, subtype: btn.dataset.subtype };
         render();
       };
     });
   }
 
   if (view.screen === 'list') {
-    document.getElementById('back-to-home-btn').onclick = () => { view = { screen: 'home' }; render(); };
+    document.getElementById('list-back-btn').onclick = () => {
+      view = view.subtype ? { screen: 'subcategory', type: view.type } : { screen: 'home' };
+      render();
+    };
     app.querySelectorAll('[data-action="take"]').forEach(btn => {
       btn.onclick = () => {
         const id = btn.dataset.id;
@@ -491,8 +542,7 @@ function attachHandlers() {
     };
     const menuExitBtn = document.getElementById('menu-exit-btn');
     if (menuExitBtn) menuExitBtn.onclick = () => {
-      const type = exams[quizState.examId].type;
-      view = { screen: 'list', type }; quizState = null; optionsMenuOpen = false; render();
+      view = listViewForExam(quizState.examId); quizState = null; optionsMenuOpen = false; render();
     };
     document.getElementById('flag-btn').onclick = () => {
       quizState.flags[quizState.current] = !quizState.flags[quizState.current];
@@ -544,8 +594,7 @@ function attachHandlers() {
 
   if (view.screen === 'results') {
     document.getElementById('back-to-list-btn').onclick = () => {
-      const type = exams[quizState.examId].type;
-      view = { screen: 'list', type }; quizState = null; render();
+      view = listViewForExam(quizState.examId); quizState = null; render();
     };
     document.getElementById('retake-btn').onclick = () => {
       quizState = { examId: quizState.examId, current: 0, answers: {}, flags: {}, crossed: {} };
