@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Practice Exams</title>
+<style>
+  :root {
+    --bg: #faf9f7;
+    --card: #ffffff;
+    --border: #e4e1da;
+    --border-strong: #d3cfc4;
+    --text: #2c2a26;
+    --text-secondary: #6b675f;
+    --text-muted: #9a958a;
+    --accent: #b45f34;
+    --accent-light: #f5e6dc;
+    --success: #3b6d11;
+    --success-light: #eaf3de;
+    --danger: #a32d2d;
+    --danger-light: #fcebeb;
+    --radius: 10px;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    padding: 24px;
+    line-height: 1.5;
+  }
+  .app { max-width: 760px; margin: 0 auto; }
+  h1 { font-size: 22px; font-weight: 600; margin: 0 0 4px; }
+  .subtitle { color: var(--text-secondary); font-size: 14px; margin: 0 0 24px; }
+  .card {
+    background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);
+    padding: 20px; margin-bottom: 16px;
+  }
+  button {
+    font-family: inherit; font-size: 14px; font-weight: 500; padding: 8px 14px;
+    border-radius: 8px; border: 1px solid var(--border-strong); background: var(--card);
+    color: var(--text); cursor: pointer;
+  }
+  button:hover { background: var(--bg); }
+  button.primary { background: var(--accent); color: white; border-color: var(--accent); }
+  button.primary:hover { opacity: 0.9; }
+  button.small { padding: 5px 10px; font-size: 13px; }
+  button:disabled { opacity: 0.5; cursor: default; }
+  .exam-list-item {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 14px 16px; border: 1px solid var(--border); border-radius: var(--radius); margin-bottom: 10px;
+  }
+  .exam-title { font-weight: 500; font-size: 15px; }
+  .exam-meta { font-size: 13px; color: var(--text-muted); margin-top: 2px; }
+  .empty-state { text-align: center; padding: 40px 20px; color: var(--text-secondary); }
+  .progress-bar { height: 6px; background: var(--border); border-radius: 3px; overflow: hidden; margin-bottom: 20px; }
+  .progress-fill { height: 100%; background: var(--accent); transition: width 0.2s; }
+  .quiz-option {
+    display: block; padding: 12px 14px; border: 1px solid var(--border-strong); border-radius: 8px;
+    margin-bottom: 8px; cursor: pointer; font-size: 14px;
+  }
+  .quiz-option:hover { background: var(--accent-light); }
+  .quiz-option.selected { border-color: var(--accent); background: var(--accent-light); }
+  .quiz-option input { margin-right: 10px; }
+  .score-big { font-size: 40px; font-weight: 600; text-align: center; margin: 10px 0; }
+  .score-label { text-align: center; color: var(--text-secondary); font-size: 14px; margin-bottom: 20px; }
+  .review-item { border-bottom: 1px solid var(--border); padding: 14px 0; }
+  .review-item:last-child { border-bottom: none; }
+  .tag-correct { color: var(--success); font-weight: 500; font-size: 13px; }
+  .tag-incorrect { color: var(--danger); font-weight: 500; font-size: 13px; }
+  .top-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
+  .loading, .error-state { text-align: center; padding: 40px; color: var(--text-muted); }
+  .footer-row { display: flex; justify-content: space-between; margin-top: 20px; }
+</style>
+</head>
+<body>
+<div class="app" id="app">
+  <div class="loading">Loading exams…</div>
+</div>
+
+<script>
+const SCORES_KEY = 'exam_scores'; // local score history only — exam content itself comes from exams.json
+let exams = {};
+let scores = {};
+let view = { screen: 'list' };
+let quizState = null;
+
+function escapeHtml(str) {
+  const d = document.createElement('div');
+  d.innerText = str == null ? '' : str;
+  return d.innerHTML;
+}
+
+function loadScores() {
+  try {
+    const raw = localStorage.getItem(SCORES_KEY);
+    scores = raw ? JSON.parse(raw) : {};
+  } catch (e) {
+    scores = {};
+  }
+}
+
+function saveScores() {
+  try {
+    localStorage.setItem(SCORES_KEY, JSON.stringify(scores));
+  } catch (e) {
+    console.error('Could not save score history', e);
+  }
+}
+
+async function loadExams() {
+  const res = await fetch('exams.json', { cache: 'no-store' });
+  if (!res.ok) throw new Error('Could not load exams.json');
+  exams = await res.json();
+}
+
+function render() {
+  const app = document.getElementById('app');
+  if (view.screen === 'list') app.innerHTML = renderList();
+  else if (view.screen === 'quiz') app.innerHTML = renderQuiz();
+  else if (view.screen === 'results') app.innerHTML = renderResults();
+  attachHandlers();
+}
+
+function renderList() {
+  const ids = Object.keys(exams);
+  let html = `
+    <h1>Practice exams</h1>
+    <p class="subtitle">Pick an exam below to start practicing.</p>
+  `;
+  if (ids.length === 0) {
+    html += `<div class="card empty-state">No exams found. Add some to exams.json in the repo.</div>`;
+  } else {
+    ids.forEach(id => {
+      const e = exams[id];
+      const qCount = (e.questions || []).length;
+      const lastScore = scores[id] != null ? `Last score: ${scores[id]}%` : 'Not attempted yet';
+      html += `
+        <div class="exam-list-item">
+          <div>
+            <div class="exam-title">${escapeHtml(e.title)}</div>
+            <div class="exam-meta">${qCount} question${qCount !== 1 ? 's' : ''} · ${lastScore}</div>
+          </div>
+          <button class="primary" data-action="take" data-id="${id}" ${qCount === 0 ? 'disabled' : ''}>Take exam</button>
+        </div>
+      `;
+    });
+  }
+  return html;
+}
+
+function renderQuiz() {
+  const e = exams[quizState.examId];
+  const q = e.questions[quizState.current];
+  const total = e.questions.length;
+  const pct = Math.round((quizState.current / total) * 100);
+  let optsHtml = '';
+  q.options.forEach((opt, oi) => {
+    const selected = quizState.answers[quizState.current] === oi ? 'selected' : '';
+    optsHtml += `
+      <label class="quiz-option ${selected}" data-oi="${oi}">
+        <input type="radio" name="quiz-answer" ${selected ? 'checked' : ''} data-oi="${oi}">
+        ${escapeHtml(opt)}
+      </label>
+    `;
+  });
+  return `
+    <div class="top-row">
+      <button id="quit-quiz-btn">← Exit</button>
+      <span style="font-size:13px; color: var(--text-secondary);">Question ${quizState.current + 1} of ${total}</span>
+    </div>
+    <div class="progress-bar"><div class="progress-fill" style="width:${pct}%"></div></div>
+    <div class="card">
+      <p style="font-size:16px; font-weight:500; margin-top:0;">${escapeHtml(q.text)}</p>
+      ${optsHtml}
+    </div>
+    <div class="footer-row">
+      <button id="prev-q-btn" ${quizState.current === 0 ? 'disabled' : ''}>Previous</button>
+      ${quizState.current === total - 1
+        ? `<button class="primary" id="submit-quiz-btn">Submit exam</button>`
+        : `<button class="primary" id="next-q-btn">Next</button>`}
+    </div>
+  `;
+}
+
+function renderResults() {
+  const e = exams[quizState.examId];
+  const total = e.questions.length;
+  let correctCount = 0;
+  let reviewHtml = '';
+  e.questions.forEach((q, i) => {
+    const userAns = quizState.answers[i];
+    const isCorrect = userAns === q.correct;
+    if (isCorrect) correctCount++;
+    reviewHtml += `
+      <div class="review-item">
+        <div>${escapeHtml(q.text)}</div>
+        <div style="margin-top:6px;">
+          <span class="${isCorrect ? 'tag-correct' : 'tag-incorrect'}">${isCorrect ? 'Correct' : 'Incorrect'}</span>
+          ${!isCorrect ? ` · Your answer: ${escapeHtml(q.options[userAns] ?? '(none)')} · Correct: ${escapeHtml(q.options[q.correct])}` : ''}
+        </div>
+      </div>
+    `;
+  });
+  const pct = Math.round((correctCount / total) * 100);
+  return `
+    <div class="top-row"><button id="back-to-list-btn">← Back to exams</button></div>
+    <div class="card">
+      <div class="score-big">${pct}%</div>
+      <div class="score-label">${correctCount} of ${total} correct</div>
+      <div style="display:flex; gap:8px; justify-content:center;">
+        <button class="primary" id="retake-btn">Retake exam</button>
+      </div>
+    </div>
+    <div class="card">
+      <h3 style="margin-top:0;">Review</h3>
+      ${reviewHtml}
+    </div>
+  `;
+}
+
+function attachHandlers() {
+  const app = document.getElementById('app');
+
+  if (view.screen === 'list') {
+    app.querySelectorAll('[data-action="take"]').forEach(btn => {
+      btn.onclick = () => {
+        const id = btn.dataset.id;
+        quizState = { examId: id, current: 0, answers: {} };
+        view = { screen: 'quiz' };
+        render();
+      };
+    });
+  }
+
+  if (view.screen === 'quiz') {
+    document.getElementById('quit-quiz-btn').onclick = () => { view = { screen: 'list' }; quizState = null; render(); };
+    app.querySelectorAll('.quiz-option').forEach(opt => {
+      opt.onclick = () => {
+        quizState.answers[quizState.current] = parseInt(opt.dataset.oi);
+        render();
+      };
+    });
+    const prevBtn = document.getElementById('prev-q-btn');
+    if (prevBtn) prevBtn.onclick = () => { quizState.current--; render(); };
+    const nextBtn = document.getElementById('next-q-btn');
+    if (nextBtn) nextBtn.onclick = () => { quizState.current++; render(); };
+    const submitBtn = document.getElementById('submit-quiz-btn');
+    if (submitBtn) submitBtn.onclick = () => {
+      const e = exams[quizState.examId];
+      let correctCount = 0;
+      e.questions.forEach((q, i) => { if (quizState.answers[i] === q.correct) correctCount++; });
+      scores[quizState.examId] = Math.round((correctCount / e.questions.length) * 100);
+      saveScores();
+      view = { screen: 'results' };
+      render();
+    };
+  }
+
+  if (view.screen === 'results') {
+    document.getElementById('back-to-list-btn').onclick = () => { view = { screen: 'list' }; quizState = null; render(); };
+    document.getElementById('retake-btn').onclick = () => {
+      quizState = { examId: quizState.examId, current: 0, answers: {} };
+      view = { screen: 'quiz' };
+      render();
+    };
+  }
+}
+
+(async function init() {
+  loadScores();
+  try {
+    await loadExams();
+    render();
+  } catch (err) {
+    document.getElementById('app').innerHTML = `
+      <h1>Practice exams</h1>
+      <div class="card error-state">Could not load exams.json. Make sure it's in the same folder as this page.</div>
+    `;
+  }
+})();
+</script>
+</body>
+</html>

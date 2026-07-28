@@ -1,0 +1,22 @@
+{
+  "sample-exam": {
+    "title": "Sample exam (edit or delete me)",
+    "questions": [
+      {
+        "text": "What is the capital of France?",
+        "options": ["London", "Berlin", "Paris", "Madrid"],
+        "correct": 2
+      },
+      {
+        "text": "Which planet is known as the Red Planet?",
+        "options": ["Venus", "Mars", "Jupiter", "Saturn"],
+        "correct": 1
+      },
+      {
+        "text": "What is 12 x 8?",
+        "options": ["86", "96", "106", "108"],
+        "correct": 1
+      }
+    ]
+  }
+}
