@@ -19,6 +19,8 @@
     --success-light: #e6f3ea;
     --danger: #a3282d;
     --danger-light: #fbe9ea;
+    --flag: #b9791a;
+    --flag-light: #fbf0dc;
     --radius: 8px;
   }
   * { box-sizing: border-box; }
@@ -56,18 +58,41 @@
   .empty-state { text-align: center; padding: 40px 20px; color: var(--text-secondary); }
   .progress-bar { height: 6px; background: var(--border); border-radius: 3px; overflow: hidden; margin-bottom: 20px; }
   .progress-fill { height: 100%; background: var(--accent); transition: width 0.2s; }
+  .quiz-option-row { display: flex; align-items: stretch; gap: 8px; margin-bottom: 8px; }
   .quiz-option {
-    display: block; padding: 12px 14px; border: 1px solid var(--border-strong); border-radius: 8px;
-    margin-bottom: 8px; cursor: pointer; font-size: 14px;
+    display: block; flex: 1; padding: 12px 14px; border: 1px solid var(--border-strong); border-radius: 8px;
+    margin-bottom: 0; cursor: pointer; font-size: 14px;
   }
   .quiz-option:hover { background: var(--accent-light); }
   .quiz-option.selected { border-color: var(--accent); background: var(--accent-light); }
   .quiz-option input { margin-right: 10px; }
   .quiz-option.correct-answer { border-color: var(--success); background: var(--success-light); }
   .quiz-option.incorrect-answer { border-color: var(--danger); background: var(--danger-light); }
+  .quiz-option.crossed-out { text-decoration: line-through; color: var(--text-muted); opacity: 0.7; }
+  .cross-toggle {
+    flex-shrink: 0; width: 38px; padding: 0; font-size: 14px; color: var(--text-secondary);
+  }
+  .cross-toggle.active { background: var(--accent-light); border-color: var(--accent); color: var(--accent); }
   .answer-feedback { font-size: 13px; font-weight: 500; margin: 10px 0 0; }
   .answer-feedback.correct { color: var(--success); }
   .answer-feedback.incorrect { color: var(--danger); }
+  .flag-btn.active { background: var(--flag-light); border-color: var(--flag); color: var(--flag); }
+  .qnav-label { font-size: 13px; color: var(--text-secondary); margin: 0 0 10px; }
+  .qnav { display: grid; grid-template-columns: repeat(auto-fill, minmax(38px, 1fr)); gap: 8px; }
+  .qnav-btn {
+    position: relative; width: 100%; height: 38px; padding: 0; font-size: 13px;
+    border: 1px solid var(--border-strong); background: var(--card); color: var(--text);
+  }
+  .qnav-btn.current { border-color: var(--accent); box-shadow: inset 0 0 0 1px var(--accent); font-weight: 600; }
+  .qnav-btn.correct { background: var(--success-light); border-color: var(--success); color: var(--success); }
+  .qnav-btn.incorrect { background: var(--danger-light); border-color: var(--danger); color: var(--danger); }
+  .qnav-btn.flagged::after {
+    content: ''; position: absolute; top: -4px; right: -4px; width: 10px; height: 10px;
+    border-radius: 50%; background: var(--flag); border: 1px solid var(--card);
+  }
+  .qnav-legend { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 14px; font-size: 12px; color: var(--text-secondary); }
+  .qnav-legend-item { display: flex; align-items: center; gap: 6px; }
+  .qnav-swatch { width: 12px; height: 12px; border-radius: 3px; border: 1px solid var(--border-strong); display: inline-block; }
   .score-big { font-size: 40px; font-weight: 600; text-align: center; margin: 10px 0; }
   .score-label { text-align: center; color: var(--text-secondary); font-size: 14px; margin-bottom: 20px; }
   .review-item { border-bottom: 1px solid var(--border); padding: 14px 0; }
@@ -163,19 +188,25 @@ function renderQuiz() {
   const answered = quizState.answers[quizState.current] !== undefined;
   const selectedOi = quizState.answers[quizState.current];
   const isCorrect = answered && selectedOi === q.correct;
+  const flagged = !!quizState.flags[quizState.current];
+  const crossedForQ = quizState.crossed[quizState.current] || {};
   let optsHtml = '';
   q.options.forEach((opt, oi) => {
     const selected = selectedOi === oi ? 'selected' : '';
+    const crossed = !!crossedForQ[oi];
     let feedbackClass = '';
     if (answered) {
       if (oi === q.correct) feedbackClass = 'correct-answer';
       else if (oi === selectedOi) feedbackClass = 'incorrect-answer';
     }
     optsHtml += `
-      <label class="quiz-option ${selected} ${feedbackClass}" data-oi="${oi}">
-        <input type="radio" name="quiz-answer" ${selected ? 'checked' : ''} data-oi="${oi}">
-        ${escapeHtml(opt)}
-      </label>
+      <div class="quiz-option-row">
+        <label class="quiz-option ${selected} ${feedbackClass} ${crossed ? 'crossed-out' : ''}" data-oi="${oi}">
+          <input type="radio" name="quiz-answer" ${selected ? 'checked' : ''} data-oi="${oi}">
+          ${escapeHtml(opt)}
+        </label>
+        <button type="button" class="cross-toggle ${crossed ? 'active' : ''}" data-cross-oi="${oi}" title="${crossed ? 'Restore option' : 'Cross out option'}">${crossed ? '↺' : '✕'}</button>
+      </div>
     `;
   });
   const feedbackHtml = answered
@@ -183,8 +214,14 @@ function renderQuiz() {
     : '';
   return `
     <div class="top-row">
-      <button id="quit-quiz-btn">← Exit</button>
-      <span style="font-size:13px; color: var(--text-secondary);">Question ${quizState.current + 1} of ${total}</span>
+      <div style="display:flex; gap:8px;">
+        <button id="quit-quiz-btn">← Exit</button>
+        <button id="reset-quiz-btn">Reset exam</button>
+      </div>
+      <div style="display:flex; align-items:center; gap:12px;">
+        <button id="flag-btn" class="flag-btn ${flagged ? 'active' : ''}">${flagged ? '🚩 Flagged' : '⚑ Flag question'}</button>
+        <span style="font-size:13px; color: var(--text-secondary);">Question ${quizState.current + 1} of ${total}</span>
+      </div>
     </div>
     <div class="progress-bar"><div class="progress-fill" style="width:${pct}%"></div></div>
     <div class="card">
@@ -198,7 +235,34 @@ function renderQuiz() {
         ? `<button class="primary" id="submit-quiz-btn">Submit exam</button>`
         : `<button class="primary" id="next-q-btn">Next</button>`}
     </div>
+    <div class="card">
+      <p class="qnav-label">Jump to question</p>
+      ${renderQnav()}
+      <div class="qnav-legend">
+        <span class="qnav-legend-item"><span class="qnav-swatch" style="background:var(--card);"></span>Unanswered</span>
+        <span class="qnav-legend-item"><span class="qnav-swatch" style="background:var(--success-light); border-color:var(--success);"></span>Correct</span>
+        <span class="qnav-legend-item"><span class="qnav-swatch" style="background:var(--danger-light); border-color:var(--danger);"></span>Incorrect</span>
+        <span class="qnav-legend-item"><span class="qnav-swatch" style="background:var(--flag);"></span>Flagged</span>
+      </div>
+    </div>
   `;
+}
+
+function renderQnav() {
+  const e = exams[quizState.examId];
+  let html = '<div class="qnav">';
+  e.questions.forEach((q, i) => {
+    const answered = quizState.answers[i] !== undefined;
+    const correct = answered && quizState.answers[i] === q.correct;
+    const flagged = !!quizState.flags[i];
+    let cls = 'qnav-btn';
+    if (i === quizState.current) cls += ' current';
+    if (answered) cls += correct ? ' correct' : ' incorrect';
+    if (flagged) cls += ' flagged';
+    html += `<button type="button" class="${cls}" data-qnav="${i}">${i + 1}</button>`;
+  });
+  html += '</div>';
+  return html;
 }
 
 function renderResults() {
@@ -244,7 +308,7 @@ function attachHandlers() {
     app.querySelectorAll('[data-action="take"]').forEach(btn => {
       btn.onclick = () => {
         const id = btn.dataset.id;
-        quizState = { examId: id, current: 0, answers: {} };
+        quizState = { examId: id, current: 0, answers: {}, flags: {}, crossed: {} };
         view = { screen: 'quiz' };
         render();
       };
@@ -253,9 +317,33 @@ function attachHandlers() {
 
   if (view.screen === 'quiz') {
     document.getElementById('quit-quiz-btn').onclick = () => { view = { screen: 'list' }; quizState = null; render(); };
+    document.getElementById('reset-quiz-btn').onclick = () => {
+      if (confirm('Reset this exam? This clears all your answers and flags.')) {
+        quizState = { examId: quizState.examId, current: 0, answers: {}, flags: {}, crossed: {} };
+        render();
+      }
+    };
+    document.getElementById('flag-btn').onclick = () => {
+      quizState.flags[quizState.current] = !quizState.flags[quizState.current];
+      render();
+    };
     app.querySelectorAll('.quiz-option').forEach(opt => {
       opt.onclick = () => {
         quizState.answers[quizState.current] = parseInt(opt.dataset.oi);
+        render();
+      };
+    });
+    app.querySelectorAll('.cross-toggle').forEach(btn => {
+      btn.onclick = () => {
+        const oi = parseInt(btn.dataset.crossOi);
+        if (!quizState.crossed[quizState.current]) quizState.crossed[quizState.current] = {};
+        quizState.crossed[quizState.current][oi] = !quizState.crossed[quizState.current][oi];
+        render();
+      };
+    });
+    app.querySelectorAll('.qnav-btn').forEach(btn => {
+      btn.onclick = () => {
+        quizState.current = parseInt(btn.dataset.qnav);
         render();
       };
     });
@@ -278,7 +366,7 @@ function attachHandlers() {
   if (view.screen === 'results') {
     document.getElementById('back-to-list-btn').onclick = () => { view = { screen: 'list' }; quizState = null; render(); };
     document.getElementById('retake-btn').onclick = () => {
-      quizState = { examId: quizState.examId, current: 0, answers: {} };
+      quizState = { examId: quizState.examId, current: 0, answers: {}, flags: {}, crossed: {} };
       view = { screen: 'quiz' };
       render();
     };
