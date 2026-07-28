@@ -1,6 +1,7 @@
 {
   "gda-midterm-summer-2023": {
     "title": "GDA Midterm Exam (Summer 2023)",
+    "type": "gda",
     "questions": [
       {
         "text": "Which of the following is not a biological mechanism of growth?",
@@ -314,6 +315,7 @@
   },
   "sample-exam": {
     "title": "Sample exam (edit or delete me)",
+    "type": "testing",
     "questions": [
       {
         "text": "What is the capital of France?",
@@ -334,6 +336,7 @@
   },
   "space-exploration": {
     "title": "Space Exploration Trivia",
+    "type": "testing",
     "questions": [
       {
         "text": "Venus is the hottest planet in our solar system.",
@@ -389,6 +392,7 @@
   },
   "test-exam": {
     "title": "Test exam",
+    "type": "testing",
     "questions": [
       {
         "text": "Which ocean is the largest by surface area?",

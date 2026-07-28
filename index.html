@@ -141,7 +141,7 @@ const SETTINGS_KEY = 'exam_settings';
 let exams = {};
 let scores = {};
 let settings = { immediateGrading: true };
-let view = { screen: 'list' };
+let view = { screen: 'home' };
 let quizState = null;
 let optionsMenuOpen = false;
 
@@ -195,22 +195,48 @@ async function loadExams() {
   exams = await res.json();
 }
 
+const TYPE_LABELS = { gda: 'GDA', testing: 'Testing' };
+const TYPE_ORDER = ['gda', 'testing'];
+
 function render() {
   const app = document.getElementById('app');
-  if (view.screen === 'list') app.innerHTML = renderList();
+  if (view.screen === 'home') app.innerHTML = renderHome();
+  else if (view.screen === 'list') app.innerHTML = renderList();
   else if (view.screen === 'quiz') app.innerHTML = renderQuiz();
   else if (view.screen === 'results') app.innerHTML = renderResults();
   attachHandlers();
 }
 
-function renderList() {
-  const ids = Object.keys(exams);
+function renderHome() {
   let html = `
     <h1>Practice exams</h1>
+    <p class="subtitle">Choose a category to get started.</p>
+  `;
+  TYPE_ORDER.forEach(type => {
+    const count = Object.values(exams).filter(e => e.type === type).length;
+    html += `
+      <div class="exam-list-item">
+        <div>
+          <div class="exam-title">${TYPE_LABELS[type]}</div>
+          <div class="exam-meta">${count} exam${count !== 1 ? 's' : ''}</div>
+        </div>
+        <button class="primary" data-action="open-category" data-type="${type}">View exams</button>
+      </div>
+    `;
+  });
+  return html;
+}
+
+function renderList() {
+  const type = view.type;
+  const ids = Object.keys(exams).filter(id => exams[id].type === type);
+  let html = `
+    <div class="top-row"><button id="back-to-home-btn">← Back to categories</button></div>
+    <h1>${TYPE_LABELS[type] || type} exams</h1>
     <p class="subtitle">Pick an exam below to start practicing.</p>
   `;
   if (ids.length === 0) {
-    html += `<div class="card empty-state">No exams found. Add some to exams.json in the repo.</div>`;
+    html += `<div class="card empty-state">No exams in this category yet. Add some to exams.json in the repo.</div>`;
   } else {
     ids.forEach(id => {
       const e = exams[id];
@@ -392,7 +418,17 @@ function renderReviewQuestion() {
 function attachHandlers() {
   const app = document.getElementById('app');
 
+  if (view.screen === 'home') {
+    app.querySelectorAll('[data-action="open-category"]').forEach(btn => {
+      btn.onclick = () => {
+        view = { screen: 'list', type: btn.dataset.type };
+        render();
+      };
+    });
+  }
+
   if (view.screen === 'list') {
+    document.getElementById('back-to-home-btn').onclick = () => { view = { screen: 'home' }; render(); };
     app.querySelectorAll('[data-action="take"]').forEach(btn => {
       btn.onclick = () => {
         const id = btn.dataset.id;
@@ -428,7 +464,8 @@ function attachHandlers() {
     };
     const menuExitBtn = document.getElementById('menu-exit-btn');
     if (menuExitBtn) menuExitBtn.onclick = () => {
-      view = { screen: 'list' }; quizState = null; optionsMenuOpen = false; render();
+      const type = exams[quizState.examId].type;
+      view = { screen: 'list', type }; quizState = null; optionsMenuOpen = false; render();
     };
     document.getElementById('flag-btn').onclick = () => {
       quizState.flags[quizState.current] = !quizState.flags[quizState.current];
@@ -477,7 +514,10 @@ function attachHandlers() {
   }
 
   if (view.screen === 'results') {
-    document.getElementById('back-to-list-btn').onclick = () => { view = { screen: 'list' }; quizState = null; render(); };
+    document.getElementById('back-to-list-btn').onclick = () => {
+      const type = exams[quizState.examId].type;
+      view = { screen: 'list', type }; quizState = null; render();
+    };
     document.getElementById('retake-btn').onclick = () => {
       quizState = { examId: quizState.examId, current: 0, answers: {}, flags: {}, crossed: {} };
       optionsMenuOpen = false;
