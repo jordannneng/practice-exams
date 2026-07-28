@@ -1,7 +1,11 @@
 #!/usr/bin/env node
 // Converts exams-csv/*.csv into exams.json.
-// Each CSV: row 1 = "title,<Exam Title>", row 2 = column header,
-// remaining rows = question,option_a,option_b,option_c,option_d,correct(A-D).
+// Each CSV: row 1 = "title,<Exam Title>", row 2 = column header, remaining rows = data.
+// Header must include "question", "correct", and two or more "option_*" columns
+// (e.g. question,option_a,option_b,option_c,option_d,option_e,correct) — a single
+// header can mix row lengths, so true/false rows just leave the unused option
+// columns blank and five-way rows use all of them. "correct" is a letter (A, B, C, ...)
+// matching the answer's position among that row's non-blank options.
 // Run: node scripts/build-exams.js
 
 const fs = require('fs');
@@ -46,24 +50,41 @@ function parseCsv(text) {
   return rows.filter(r => r.some(f => f.trim() !== ''));
 }
 
-function letterToIndex(letter) {
-  const idx = 'ABCD'.indexOf(letter.trim().toUpperCase());
-  if (idx === -1) throw new Error(`Invalid "correct" value: "${letter}" (expected A, B, C, or D)`);
+const LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+
+function letterToIndex(letter, optionCount, filePath, rowNum) {
+  const idx = LETTERS.indexOf(letter.trim().toUpperCase());
+  if (idx === -1 || idx >= optionCount) {
+    throw new Error(`${filePath} row ${rowNum}: "correct" value "${letter}" is not valid for ${optionCount} option(s)`);
+  }
   return idx;
 }
 
 function csvFileToExam(filePath) {
   const rows = parseCsv(fs.readFileSync(filePath, 'utf8'));
-  const [titleRow, , ...dataRows] = rows;
+  const [titleRow, headerRow, ...dataRows] = rows;
   if (!titleRow || titleRow[0].trim().toLowerCase() !== 'title') {
     throw new Error(`${filePath}: first row must be "title,<Exam Title>"`);
   }
   const title = titleRow[1];
-  const questions = dataRows.map(r => ({
-    text: r[0],
-    options: [r[1], r[2], r[3], r[4]],
-    correct: letterToIndex(r[5]),
-  }));
+  if (!headerRow) throw new Error(`${filePath}: missing header row`);
+  const header = headerRow.map(h => h.trim().toLowerCase());
+  const questionCol = header.indexOf('question');
+  const correctCol = header.indexOf('correct');
+  const optionCols = header.reduce((cols, h, i) => (h.startsWith('option') ? [...cols, i] : cols), []);
+  if (questionCol === -1 || correctCol === -1 || optionCols.length < 2) {
+    throw new Error(`${filePath}: header row must include "question", two or more "option_*" columns, and "correct"`);
+  }
+  const questions = dataRows.map((r, i) => {
+    const rowNum = i + 3; // 1-indexed, after the title and header rows
+    const options = optionCols.map(c => (r[c] || '').trim()).filter(v => v !== '');
+    if (options.length < 2) throw new Error(`${filePath} row ${rowNum}: needs at least 2 non-blank options`);
+    return {
+      text: r[questionCol],
+      options,
+      correct: letterToIndex(r[correctCol] || '', options.length, filePath, rowNum),
+    };
+  });
   return { title, questions };
 }
 
