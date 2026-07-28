@@ -24,6 +24,7 @@
     --radius: 8px;
   }
   * { box-sizing: border-box; }
+  html { touch-action: manipulation; }
   body {
     margin: 0;
     font-family: Helvetica, Arial, "Segoe UI", -apple-system, BlinkMacSystemFont, sans-serif;
@@ -31,6 +32,7 @@
     color: var(--text);
     padding: 24px;
     line-height: 1.5;
+    -webkit-tap-highlight-color: transparent;
   }
   .app { max-width: 760px; margin: 0 auto; }
   h1 { font-size: 22px; font-weight: 600; margin: 0 0 4px; }
@@ -43,6 +45,7 @@
     font-family: inherit; font-size: 14px; font-weight: 500; padding: 8px 14px;
     border-radius: 8px; border: 1px solid var(--border-strong); background: var(--card);
     color: var(--text); cursor: pointer;
+    touch-action: manipulation; -webkit-user-select: none; user-select: none;
   }
   button:hover { background: var(--bg); }
   button.primary { background: var(--accent); color: white; border-color: var(--accent); }
@@ -62,6 +65,7 @@
     display: flex; align-items: center; justify-content: space-between; gap: 10px;
     padding: 12px 14px; border: 1px solid var(--border-strong); border-radius: 8px;
     margin-bottom: 8px; cursor: pointer; font-size: 14px;
+    touch-action: manipulation; -webkit-user-select: none; user-select: none; -webkit-touch-callout: none;
   }
   .quiz-option:not(.locked):hover { background: var(--accent-light); }
   .quiz-option.selected { border-color: var(--accent); background: var(--accent-light); }
@@ -106,6 +110,7 @@
   .options-menu-item {
     display: flex; align-items: center; justify-content: space-between; gap: 10px;
     padding: 9px 10px; border-radius: 6px; font-size: 14px; cursor: pointer;
+    touch-action: manipulation; -webkit-user-select: none; user-select: none;
   }
   .options-menu-item:hover { background: var(--bg); }
   .options-menu-divider { height: 1px; background: var(--border); margin: 6px 2px; }
