@@ -82,6 +82,7 @@
   }
   .eye-toggle:hover { background: var(--border); }
   .eye-toggle.active { color: var(--accent); }
+  .question-image { display: block; max-width: 100%; height: auto; border: 1px solid var(--border); border-radius: 8px; margin: 4px 0 16px; }
   .answer-feedback { font-size: 13px; font-weight: 500; margin: 10px 0 0; }
   .answer-feedback.correct { color: var(--success); }
   .answer-feedback.incorrect { color: var(--danger); }
@@ -287,6 +288,7 @@ function renderQuiz() {
     <div class="progress-bar"><div class="progress-fill" style="width:${pct}%"></div></div>
     <div class="card">
       <p style="font-size:16px; font-weight:500; margin-top:0;">${escapeHtml(q.text)}</p>
+      ${renderQuestionImage(q)}
       ${optsHtml}
       ${feedbackHtml}
     </div>
@@ -300,6 +302,11 @@ function renderQuiz() {
       ${renderQnav(false)}
     </div>
   `;
+}
+
+function renderQuestionImage(q) {
+  if (!q.image) return '';
+  return `<img class="question-image" src="${escapeHtml(q.image)}" alt="Figure for this question">`;
 }
 
 function renderQnav(forceGraded) {
@@ -368,6 +375,7 @@ function renderReviewQuestion() {
         ${flagged ? '<span style="font-size:13px; color:var(--flag);">⚑ Flagged</span>' : ''}
       </div>
       <p style="font-size:16px; font-weight:500; margin-top:0;">${escapeHtml(q.text)}</p>
+      ${renderQuestionImage(q)}
       ${optsHtml}
       <p class="answer-feedback ${isCorrect ? 'correct' : 'incorrect'}">${feedbackText}</p>
     </div>

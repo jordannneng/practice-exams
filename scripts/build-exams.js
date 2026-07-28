@@ -5,7 +5,9 @@
 // (e.g. question,option_a,option_b,option_c,option_d,option_e,correct) — a single
 // header can mix row lengths, so true/false rows just leave the unused option
 // columns blank and five-way rows use all of them. "correct" is a letter (A, B, C, ...)
-// matching the answer's position among that row's non-blank options.
+// matching the answer's position among that row's non-blank options. An optional
+// "image" column gives a path (relative to the site root, e.g. images/<exam>/fig1.jpg)
+// to a figure shown with that question; leave it blank for questions with no figure.
 // Run: node scripts/build-exams.js
 
 const fs = require('fs');
@@ -71,6 +73,7 @@ function csvFileToExam(filePath) {
   const header = headerRow.map(h => h.trim().toLowerCase());
   const questionCol = header.indexOf('question');
   const correctCol = header.indexOf('correct');
+  const imageCol = header.indexOf('image');
   const optionCols = header.reduce((cols, h, i) => (h.startsWith('option') ? [...cols, i] : cols), []);
   if (questionCol === -1 || correctCol === -1 || optionCols.length < 2) {
     throw new Error(`${filePath}: header row must include "question", two or more "option_*" columns, and "correct"`);
@@ -79,10 +82,12 @@ function csvFileToExam(filePath) {
     const rowNum = i + 3; // 1-indexed, after the title and header rows
     const options = optionCols.map(c => (r[c] || '').trim()).filter(v => v !== '');
     if (options.length < 2) throw new Error(`${filePath} row ${rowNum}: needs at least 2 non-blank options`);
+    const image = imageCol !== -1 ? (r[imageCol] || '').trim() : '';
     return {
       text: r[questionCol],
       options,
       correct: letterToIndex(r[correctCol] || '', options.length, filePath, rowNum),
+      ...(image ? { image } : {}),
     };
   });
   return { title, questions };
@@ -93,10 +98,11 @@ function formatExamsJson(exams) {
     const e = exams[id];
     const questionEntries = e.questions.map(q => {
       const optionsStr = q.options.map(o => JSON.stringify(o)).join(', ');
+      const imageLine = q.image ? `,\n        "image": ${JSON.stringify(q.image)}` : '';
       return `      {
         "text": ${JSON.stringify(q.text)},
         "options": [${optionsStr}],
-        "correct": ${q.correct}
+        "correct": ${q.correct}${imageLine}
       }`;
     }).join(',\n');
     return `  ${JSON.stringify(id)}: {
