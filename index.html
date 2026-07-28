@@ -6,25 +6,25 @@
 <title>Practice Exams</title>
 <style>
   :root {
-    --bg: #faf9f7;
+    --bg: #f4f6f9;
     --card: #ffffff;
-    --border: #e4e1da;
-    --border-strong: #d3cfc4;
-    --text: #2c2a26;
-    --text-secondary: #6b675f;
-    --text-muted: #9a958a;
-    --accent: #b45f34;
-    --accent-light: #f5e6dc;
-    --success: #3b6d11;
-    --success-light: #eaf3de;
-    --danger: #a32d2d;
-    --danger-light: #fcebeb;
-    --radius: 10px;
+    --border: #dde3ea;
+    --border-strong: #c1cad6;
+    --text: #1c2530;
+    --text-secondary: #57657a;
+    --text-muted: #8a95a6;
+    --accent: #133a63;
+    --accent-light: #e2eaf4;
+    --success: #1e6b3e;
+    --success-light: #e6f3ea;
+    --danger: #a3282d;
+    --danger-light: #fbe9ea;
+    --radius: 8px;
   }
   * { box-sizing: border-box; }
   body {
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-family: Helvetica, Arial, "Segoe UI", -apple-system, BlinkMacSystemFont, sans-serif;
     background: var(--bg);
     color: var(--text);
     padding: 24px;
@@ -63,6 +63,11 @@
   .quiz-option:hover { background: var(--accent-light); }
   .quiz-option.selected { border-color: var(--accent); background: var(--accent-light); }
   .quiz-option input { margin-right: 10px; }
+  .quiz-option.correct-answer { border-color: var(--success); background: var(--success-light); }
+  .quiz-option.incorrect-answer { border-color: var(--danger); background: var(--danger-light); }
+  .answer-feedback { font-size: 13px; font-weight: 500; margin: 10px 0 0; }
+  .answer-feedback.correct { color: var(--success); }
+  .answer-feedback.incorrect { color: var(--danger); }
   .score-big { font-size: 40px; font-weight: 600; text-align: center; margin: 10px 0; }
   .score-label { text-align: center; color: var(--text-secondary); font-size: 14px; margin-bottom: 20px; }
   .review-item { border-bottom: 1px solid var(--border); padding: 14px 0; }
@@ -155,16 +160,27 @@ function renderQuiz() {
   const q = e.questions[quizState.current];
   const total = e.questions.length;
   const pct = Math.round((quizState.current / total) * 100);
+  const answered = quizState.answers[quizState.current] !== undefined;
+  const selectedOi = quizState.answers[quizState.current];
+  const isCorrect = answered && selectedOi === q.correct;
   let optsHtml = '';
   q.options.forEach((opt, oi) => {
-    const selected = quizState.answers[quizState.current] === oi ? 'selected' : '';
+    const selected = selectedOi === oi ? 'selected' : '';
+    let feedbackClass = '';
+    if (answered) {
+      if (oi === q.correct) feedbackClass = 'correct-answer';
+      else if (oi === selectedOi) feedbackClass = 'incorrect-answer';
+    }
     optsHtml += `
-      <label class="quiz-option ${selected}" data-oi="${oi}">
+      <label class="quiz-option ${selected} ${feedbackClass}" data-oi="${oi}">
         <input type="radio" name="quiz-answer" ${selected ? 'checked' : ''} data-oi="${oi}">
         ${escapeHtml(opt)}
       </label>
     `;
   });
+  const feedbackHtml = answered
+    ? `<p class="answer-feedback ${isCorrect ? 'correct' : 'incorrect'}">${isCorrect ? 'Correct!' : 'Incorrect — correct answer highlighted above.'}</p>`
+    : '';
   return `
     <div class="top-row">
       <button id="quit-quiz-btn">← Exit</button>
@@ -174,6 +190,7 @@ function renderQuiz() {
     <div class="card">
       <p style="font-size:16px; font-weight:500; margin-top:0;">${escapeHtml(q.text)}</p>
       ${optsHtml}
+      ${feedbackHtml}
     </div>
     <div class="footer-row">
       <button id="prev-q-btn" ${quizState.current === 0 ? 'disabled' : ''}>Previous</button>
