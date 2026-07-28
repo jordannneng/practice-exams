@@ -58,26 +58,28 @@
   .empty-state { text-align: center; padding: 40px 20px; color: var(--text-secondary); }
   .progress-bar { height: 6px; background: var(--border); border-radius: 3px; overflow: hidden; margin-bottom: 20px; }
   .progress-fill { height: 100%; background: var(--accent); transition: width 0.2s; }
-  .quiz-option-row { display: flex; align-items: stretch; gap: 8px; margin-bottom: 8px; }
   .quiz-option {
-    display: block; flex: 1; padding: 12px 14px; border: 1px solid var(--border-strong); border-radius: 8px;
-    margin-bottom: 0; cursor: pointer; font-size: 14px;
+    display: flex; align-items: center; justify-content: space-between; gap: 10px;
+    padding: 12px 14px; border: 1px solid var(--border-strong); border-radius: 8px;
+    margin-bottom: 8px; cursor: pointer; font-size: 14px;
   }
   .quiz-option:hover { background: var(--accent-light); }
   .quiz-option.selected { border-color: var(--accent); background: var(--accent-light); }
-  .quiz-option input { margin-right: 10px; }
+  .option-main { display: flex; align-items: center; flex: 1; min-width: 0; }
+  .quiz-option input { margin-right: 10px; flex-shrink: 0; }
   .quiz-option.correct-answer { border-color: var(--success); background: var(--success-light); }
   .quiz-option.incorrect-answer { border-color: var(--danger); background: var(--danger-light); }
-  .quiz-option.crossed-out { text-decoration: line-through; color: var(--text-muted); opacity: 0.7; }
-  .cross-toggle {
-    flex-shrink: 0; width: 38px; padding: 0; font-size: 14px; color: var(--text-secondary);
+  .quiz-option.crossed-out .option-main { text-decoration: line-through; color: var(--text-muted); opacity: 0.7; }
+  .eye-toggle {
+    flex-shrink: 0; display: flex; align-items: center; justify-content: center;
+    width: 30px; height: 30px; padding: 0; border: none; background: transparent; color: var(--text-secondary);
   }
-  .cross-toggle.active { background: var(--accent-light); border-color: var(--accent); color: var(--accent); }
+  .eye-toggle:hover { background: var(--border); }
+  .eye-toggle.active { color: var(--accent); }
   .answer-feedback { font-size: 13px; font-weight: 500; margin: 10px 0 0; }
   .answer-feedback.correct { color: var(--success); }
   .answer-feedback.incorrect { color: var(--danger); }
   .flag-btn.active { background: var(--flag-light); border-color: var(--flag); color: var(--flag); }
-  .qnav-label { font-size: 13px; color: var(--text-secondary); margin: 0 0 10px; }
   .qnav { display: grid; grid-template-columns: repeat(auto-fill, minmax(38px, 1fr)); gap: 8px; }
   .qnav-btn {
     position: relative; width: 100%; height: 38px; padding: 0; font-size: 13px;
@@ -90,9 +92,6 @@
     content: ''; position: absolute; top: -4px; right: -4px; width: 10px; height: 10px;
     border-radius: 50%; background: var(--flag); border: 1px solid var(--card);
   }
-  .qnav-legend { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 14px; font-size: 12px; color: var(--text-secondary); }
-  .qnav-legend-item { display: flex; align-items: center; gap: 6px; }
-  .qnav-swatch { width: 12px; height: 12px; border-radius: 3px; border: 1px solid var(--border-strong); display: inline-block; }
   .score-big { font-size: 40px; font-weight: 600; text-align: center; margin: 10px 0; }
   .score-label { text-align: center; color: var(--text-secondary); font-size: 14px; margin-bottom: 20px; }
   .review-item { border-bottom: 1px solid var(--border); padding: 14px 0; }
@@ -121,6 +120,9 @@ function escapeHtml(str) {
   d.innerText = str == null ? '' : str;
   return d.innerHTML;
 }
+
+const EYE_OPEN_SVG = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8Z"/><circle cx="12" cy="12" r="3"/></svg>';
+const EYE_CLOSED_SVG = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.94 17.94A10.94 10.94 0 0 1 12 20c-7 0-11-8-11-8a21.86 21.86 0 0 1 5.06-6.06M9.9 4.24A10.94 10.94 0 0 1 12 4c7 0 11 8 11 8a21.86 21.86 0 0 1-3.22 4.55M14.12 14.12a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg>';
 
 function loadScores() {
   try {
@@ -200,13 +202,13 @@ function renderQuiz() {
       else if (oi === selectedOi) feedbackClass = 'incorrect-answer';
     }
     optsHtml += `
-      <div class="quiz-option-row">
-        <label class="quiz-option ${selected} ${feedbackClass} ${crossed ? 'crossed-out' : ''}" data-oi="${oi}">
+      <label class="quiz-option ${selected} ${feedbackClass} ${crossed ? 'crossed-out' : ''}" data-oi="${oi}">
+        <span class="option-main">
           <input type="radio" name="quiz-answer" ${selected ? 'checked' : ''} data-oi="${oi}">
           ${escapeHtml(opt)}
-        </label>
-        <button type="button" class="cross-toggle ${crossed ? 'active' : ''}" data-cross-oi="${oi}" title="${crossed ? 'Restore option' : 'Cross out option'}">${crossed ? '↺' : '✕'}</button>
-      </div>
+        </span>
+        <button type="button" class="eye-toggle ${crossed ? 'active' : ''}" data-cross-oi="${oi}" title="${crossed ? 'Show option' : 'Hide option'}">${crossed ? EYE_CLOSED_SVG : EYE_OPEN_SVG}</button>
+      </label>
     `;
   });
   const feedbackHtml = answered
@@ -236,14 +238,7 @@ function renderQuiz() {
         : `<button class="primary" id="next-q-btn">Next</button>`}
     </div>
     <div class="card">
-      <p class="qnav-label">Jump to question</p>
       ${renderQnav()}
-      <div class="qnav-legend">
-        <span class="qnav-legend-item"><span class="qnav-swatch" style="background:var(--card);"></span>Unanswered</span>
-        <span class="qnav-legend-item"><span class="qnav-swatch" style="background:var(--success-light); border-color:var(--success);"></span>Correct</span>
-        <span class="qnav-legend-item"><span class="qnav-swatch" style="background:var(--danger-light); border-color:var(--danger);"></span>Incorrect</span>
-        <span class="qnav-legend-item"><span class="qnav-swatch" style="background:var(--flag);"></span>Flagged</span>
-      </div>
     </div>
   `;
 }
@@ -333,8 +328,9 @@ function attachHandlers() {
         render();
       };
     });
-    app.querySelectorAll('.cross-toggle').forEach(btn => {
-      btn.onclick = () => {
+    app.querySelectorAll('.eye-toggle').forEach(btn => {
+      btn.onclick = (e) => {
+        e.stopPropagation();
         const oi = parseInt(btn.dataset.crossOi);
         if (!quizState.crossed[quizState.current]) quizState.crossed[quizState.current] = {};
         quizState.crossed[quizState.current][oi] = !quizState.crossed[quizState.current][oi];
