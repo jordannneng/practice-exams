@@ -1,4 +1,317 @@
 {
+  "gda-midterm-summer-2023": {
+    "title": "GDA Midterm Exam (Summer 2023)",
+    "questions": [
+      {
+        "text": "Which of the following is not a biological mechanism of growth?",
+        "options": ["Hypertrophy", "Accretion", "Hyperplasia", "Convergence", "All of the above are mechanisms of growth"],
+        "correct": 3
+      },
+      {
+        "text": "The peak velocity of growth in infancy happens at 4 months of age.",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "Which stage of childhood is defined by the eruption of permanent teeth and results in a mixed dentition?",
+        "options": ["Early childhood", "Middle childhood", "Late childhood"],
+        "correct": 1
+      },
+      {
+        "text": "Statement 1: According to the Rule of 5s a baby will have approximately 25cm of growth in the first year of life. Statement 2: Growth of approximately 10cm per year is expected from age 1 until puberty.",
+        "options": ["Statement 1 is true. Statement 2 is true.", "Statement 1 is true. Statement 2 is false.", "Statement 1 is false. Statement 2 is true.", "Statement 1 is false. Statement 2 is false."],
+        "correct": 1
+      },
+      {
+        "text": "At what age is the head circumference expected to reach its adult size?",
+        "options": ["10 years", "6 years", "21 years", "1 year"],
+        "correct": 1
+      },
+      {
+        "text": "Growth in weight is on average fastest in spring and growth in height fastest in autumn.",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "Where is human growth hormone or somatotropin secreted in the body?",
+        "options": ["Thyroid gland", "Pituitary gland", "Adrenal gland", "None of the above"],
+        "correct": 1
+      },
+      {
+        "text": "Which of the following nutrients is associated with protein synthesis and its deficiency can lead to loss of hair?",
+        "options": ["Iodine", "Zinc", "Vitamin A", "Vitamin C", "Magnesium"],
+        "correct": 1
+      },
+      {
+        "text": "What body part experiences the most growth in the first year after birth?",
+        "options": ["Head", "Heart", "Torso", "Arms", "Femur"],
+        "correct": 0
+      },
+      {
+        "text": "Which of the following statements is NOT true regarding gametogenesis?",
+        "options": ["In a meiotic division the chromosome number is reduced from diploid to haploid.", "During meiosis division occurs and chromosome number is reduced from 43 to 26.", "The only haploid cells in the body are the egg and the sperm and they each contain 23 chromosomes.", "Gametogenesis is important because it ensures the same number of chromosomes from one generation to the next."],
+        "correct": 1
+      },
+      {
+        "text": "In what part of the uterus does fertilization occur?",
+        "options": ["Infundibulum", "Ampulla", "Isthmus", "Mesosalpinx", "Ovarian ligament"],
+        "correct": 1
+      },
+      {
+        "text": "What structure is the earliest site of nutrient exchange in the developing fetus?",
+        "options": ["Lacunae", "Synchtiotrophoblast", "Cytotrophoblast", "Uterine lining", "Blastocyst"],
+        "correct": 0
+      },
+      {
+        "text": "Which germ layer is the primary contributor to the central and peripheral nervous systems?",
+        "options": ["Ectoderm", "Mesoderm", "Endoderm"],
+        "correct": 0
+      },
+      {
+        "text": "Statement 1: Spina Bifida Occulta is often found as an incidental finding when performing imaging because it does not present with any symptoms. Statement 2: Spina Bifida Cystica often results in paresthesia or anesthesia in the saddle area.",
+        "options": ["Statement 1 is true. Statement 2 is true.", "Statement 1 is true. Statement 2 is false.", "Statement 1 is false. Statement 2 is true.", "Statement 1 is false. Statement 2 is false."],
+        "correct": 0
+      },
+      {
+        "text": "Which of the following is an adult derivative of the midgut?",
+        "options": ["Appendix", "Stomach", "Gallbladder", "Liver", "Rectum"],
+        "correct": 0
+      },
+      {
+        "text": "Which stage in lung maturation is defined by a transition to autonomous gas exchange?",
+        "options": ["Terminal Sac Stage", "Glandular Stage", "Alveolar Stage", "Psuedoglandular Stage"],
+        "correct": 2
+      },
+      {
+        "text": "The most frequent site for an ectopic pregnancy to occur is which of the following?",
+        "options": ["Isthmus of the uterine tube", "Ampulla of the uterine tube", "Abdomen", "Ovary", "Cervix"],
+        "correct": 1
+      },
+      {
+        "text": "True or False: Meckel's Cartilage is a derivative of pharyngeal arch 1 and contributes to the formation of the mandible.",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "text": "Which of the following hormones is detected in a positive pregnancy test?",
+        "options": ["Somatotropin", "Human chorionic gonadotropin", "Testosterone", "Estrogen", "Androgens"],
+        "correct": 1
+      },
+      {
+        "text": "The sperm can live in the female genital tract for up to 48 hours thus why conception can occur even if ovulation is delayed.",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "text": "Which of the following statements is false?",
+        "options": ["Methamphetamines can cause decreased heart rate of both mother and baby.", "Marijuana use during pregnancy results in a limitation in oxygen supply to the fetus.", "Injectable narcotics users have a higher risk of passing HIV to he developing fetus.", "Cocaine enters the fetal circulation and takes much longer to metabolize by the fetus than by the mother."],
+        "correct": 0
+      },
+      {
+        "text": "Which FDA Drug Risk Classification includes medications that have no controlled studies on animals or human?",
+        "options": ["Category A", "Category B", "Category C", "Category D"],
+        "correct": 2
+      },
+      {
+        "text": "Statement 1: The alar plate brings sensory information away from the spinal cord. Statement 2: The basal plate brings motor information to the spinal cord.",
+        "options": ["Both statements are true.", "Both statements are false.", "Statment 1 is true. Statement 2 is false.", "Statement 1 is false. Statement 2 is true."],
+        "correct": 1
+      },
+      {
+        "text": "What is the adult analogue of the third aortic arch?",
+        "options": ["Maxillary artery", "Ductus Arteriosus", "Stapedial arteries", "Common Carotid artery"],
+        "correct": 3
+      },
+      {
+        "text": "The stomodeum is the primordial to which of the following structures?",
+        "options": ["Ear", "Eye", "Chin", "Mouth", "Tongue"],
+        "correct": 3
+      },
+      {
+        "text": "Which two pharyngeal arches produce adult derivatives in the hyoid?",
+        "options": ["Arch 1 and Arch 2", "Arch 2 and Arch 3", "Arch 3 and Arch 4", "Arch 4 and Arch 5", "Arch 5 and Arch 6"],
+        "correct": 1
+      },
+      {
+        "text": "What is the fate of pharyngeal arch 5?",
+        "options": ["Laryngeal and pharyngeal musculature", "Stylopharyngeus", "Hyoid cartilage", "Muscles of facial expression", "None of the above"],
+        "correct": 4
+      },
+      {
+        "text": "What is the fate of pharyngeal cleft 1?",
+        "options": ["External auditory meatus", "Malleus", "Tympanic Membrane", "Hyoid"],
+        "correct": 0
+      },
+      {
+        "text": "Match the correct Cranial Nerve and its function.",
+        "options": ["Optic Nerve; Sense of Smell", "Trochlear; Inward and Downward Eye Movement", "Abducens; Facial Expression", "Trigeminal; Extraocular Eye Movements", "Spinal Accessory; Swallowing"],
+        "correct": 1
+      },
+      {
+        "text": "Which if the following bones forms from the maxillary prominence?",
+        "options": ["Frontal", "Nasal", "Zygomatic", "Mandible"],
+        "correct": 2
+      },
+      {
+        "text": "True or False: The thyroid gland is formed out of the pharyngeal apparatus.",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "A patient with Down's Syndrome presents to your office for a comprehensive new patient examination. Which of the following intramural findings might you expect to see in regards to the tongue?",
+        "options": ["Microglossia", "Macroglossia", "Ankyloglossia"],
+        "correct": 1
+      },
+      {
+        "text": "Treacher Collins clinical presentation includes all of the following except:",
+        "options": ["Underdeveloped facial bones", "Hearing loss", "Deformed ears", "Normal intelligence", "Mandibular hypoplasia"],
+        "correct": 4
+      },
+      {
+        "text": "The nasolacrimal duct separates the nasal cavity and the oral cavity preventing communication and will rupture in week 7.",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "Which of the following cranial nerves is not associated with innervation of the tongue?",
+        "options": ["CN V", "CN VII", "X", "XI", "XII"],
+        "correct": 3
+      },
+      {
+        "text": "What is the most appropriate patient positioning for an individual with Pierre Robins syndrome?",
+        "options": ["Completely supine in the dental chair", "Upright so the airway is not compromised", "Semi-upright with head tilted back and head flat", "You are unlikely to see this patient in your office because they rarely survive into early childhood."],
+        "correct": 1
+      },
+      {
+        "text": "The Millard Advancement technique to repair clef lips aims to hide the surgical scar where?",
+        "options": ["The alae of the nose", "The vestibular mucosa", "The philtrum of the upper lip", "The nasolacrimal groove"],
+        "correct": 2
+      },
+      {
+        "text": "A patient presents to your practice 22 weeks pregnant and requires root canal. You plan to refer to her to your favorite endodontist. What is the appropriate medication for pain management of this patient until procedure can be completed?",
+        "options": ["Ibuprofen", "Codeine", "Aspirin", "Toradol", "Acetaminophen"],
+        "correct": 4
+      },
+      {
+        "text": "Which of the following is an example of a Class X medication?",
+        "options": ["Accutane", "Acetaminophen", "Lidocaine", "Amoxicillin", "Sudafed"],
+        "correct": 0
+      },
+      {
+        "text": "The green area shown in the figure can be identified as which facial prominence?",
+        "options": ["Frontonasal", "Maxillary", "Mandibular"],
+        "correct": 0,
+        "image": "images/gda-midterm-summer-2023/fig40.jpg"
+      },
+      {
+        "text": "What organ system is most targeted by maternal alcohol consumption in the developing fetus?",
+        "options": ["Cardiovascular (Heart and blood vessels)", "Pulmonary (lungs)", "Neural (Brain and spinal cord)", "Gastrointestinal (Stomach and intestines)"],
+        "correct": 2
+      },
+      {
+        "text": "The basal plate is located in the posterior and dorsal part of the spinal cord and contains motor neurons.",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "A 25 week pregnant patient presents to her obstetrician for examination. The obstetrician is concerned with increased stress levels due to traumatic life events and the over-secretion of which is the following hormones?",
+        "options": ["Cortisone", "Testosterone", "Growth hormone", "Secretin", "Estrogen"],
+        "correct": 0
+      },
+      {
+        "text": "Which of the following is true about diagnostic radiation in relation to pregnant patients?",
+        "options": ["The FDA states diagnostic radiation is never appropriate in pregnant patients.", "Use of a lead apron with a thyroid collar is indicated.", "The risk of birth defects from the radiation from one full mouth series (FMX) is 9 in 100.", "It is not necessary to communicate and educate expecting patients radiation exposure.", "All of the above statements were true."],
+        "correct": 1
+      },
+      {
+        "text": "Statement 1: The result of meiosis I in oogenesis is the separation of a homologous pair of replicated chromosomes. Statement 2: The result of meiosis II is the separation of sister chromatids into four haploid daughter cells.",
+        "options": ["Both statements are correct.", "Both statements are incorrect.", "Only Statement 1 is correct.", "Only Statement 2 is correct."],
+        "correct": 0
+      },
+      {
+        "text": "Deficiency of which of the following vitamins is related to the development of rickets, or defective mineralization and calcification of the bones that causes bowing and fracture?",
+        "options": ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin D", "Vitamin E"],
+        "correct": 3
+      },
+      {
+        "text": "Which is the following types of cells are the only haploid cells in the body?",
+        "options": ["Stem cells", "Neural crest cells", "Gametes", "Dermal cells", "Red blood cells"],
+        "correct": 2
+      },
+      {
+        "text": "Which pharyngeal arch gives rise to the muscles of mastication?",
+        "options": ["Arch 1", "Arch 2", "Arch 3", "Arch 4", "Arch 5"],
+        "correct": 0
+      },
+      {
+        "text": "What is the classification of the cleft lip shown in the photo?",
+        "options": ["Unilateral Complete", "Unilateral Incomplete", "Bilateral Complete", "Bilateral Incomplete"],
+        "correct": 0,
+        "image": "images/gda-midterm-summer-2023/fig49.jpg"
+      },
+      {
+        "text": "The capability of a cell to give rise to several different kinds of specialized cells is known as:",
+        "options": ["Induction", "Complexity", "Critical period", "Pluripotential", "Repercussion"],
+        "correct": 3
+      },
+      {
+        "text": "Which of the following is not a sign of supine hypotensive disorder in pregnant women?",
+        "options": ["Tachycardia", "Weakness", "Nausea", "Sweating", "Drop in blood pressure"],
+        "correct": 0
+      },
+      {
+        "text": "The effects of Fetal Alcohol Syndrome are only apparent in infants and toddlers and never continue to effect an individual into teenage and adult years.",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "What do aortic arch 5, pharyngeal arch 5 and pharyngeal pouch 5 have in common?",
+        "options": ["All are related to the common carotid artery", "All give rise to structures in the ear", "They have no derivatives", "They are all related to development of the tongue"],
+        "correct": 2
+      },
+      {
+        "text": "Which of the following is TRUE of marijuana exposure to the fetus during pregnancy?",
+        "options": ["Marijuana will not cross the placenta.", "There is increased risk of miscarriage with marijuana use.", "Babies are likely to have a higher than average birth weight.", "There are no developmental delays seen later in life."],
+        "correct": 1
+      },
+      {
+        "text": "It is unnecessary to use a lead apron with a thyroid collar when taking radiographs of a pregnant patient.",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "Meckel's cartilage provides the model for which of the following structures?",
+        "options": ["Maxilla", "Mandible", "Medial Pterygoid", "External auditory meatus", "Temporal bone"],
+        "correct": 1
+      },
+      {
+        "text": "Which of the following do patients with spend bifida have an increased risk of allergy to?",
+        "options": ["Penicillin", "Sulfa drugs", "Ragweed", "Latex", "Peanuts"],
+        "correct": 3
+      },
+      {
+        "text": "Approximately how many cells are included in the morula?",
+        "options": ["8", "16", "32", "4"],
+        "correct": 1
+      },
+      {
+        "text": "During what week has folding occurred forming a c-shaped structure for the developing embryo and establishing cranial and caudal ends?",
+        "options": ["Week 2", "Week 4", "Week 8", "Week 12"],
+        "correct": 1
+      },
+      {
+        "text": "Which teeth are included in the premaxillary segment?",
+        "options": ["Central incisors", "Canines", "Premolars", "First molars"],
+        "correct": 0
+      },
+      {
+        "text": "What structure can be identified by the green line on the provided figure?",
+        "options": ["Terminal sulcus", "Copula", "Hypopharyngeal eminence", "Tublerculum impar"],
+        "correct": 0,
+        "image": "images/gda-midterm-summer-2023/fig61.jpg"
+      }
+    ]
+  },
   "sample-exam": {
     "title": "Sample exam (edit or delete me)",
     "questions": [
