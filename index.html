@@ -221,16 +221,21 @@ async function loadExams() {
   exams = await res.json();
 }
 
-const TYPE_LABELS = { gda: 'GDA', testing: 'Testing' };
-const TYPE_ORDER = ['gda', 'testing'];
+const TYPE_LABELS = { gda: 'GDA', dao: 'DAO', testing: 'Testing' };
+const TYPE_ORDER = ['gda', 'dao', 'testing'];
 const SUBTYPES_BY_TYPE = {
   gda: [
     { id: 'midterm', label: 'Midterms' },
     { id: 'final', label: 'Final Exams' },
     { id: 'quiz', label: 'Quizzes' },
   ],
+  dao: [
+    { id: 'midterm', label: 'Midterms' },
+    { id: 'final', label: 'Final Exams' },
+    { id: 'quiz', label: 'Quizzes' },
+  ],
 };
-const SUBTYPE_LABELS = SUBTYPES_BY_TYPE.gda.reduce((acc, s) => (acc[s.id] = s.label, acc), {});
+const SUBTYPE_LABELS = Object.values(SUBTYPES_BY_TYPE).flat().reduce((acc, s) => (acc[s.id] = s.label, acc), {});
 
 function listViewForExam(examId) {
   const e = exams[examId];
