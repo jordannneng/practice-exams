@@ -58,7 +58,7 @@ function parseCsv(text) {
   return rows.filter(r => r.some(f => f.trim() !== ''));
 }
 
-const KNOWN_TYPES = ['gda', 'dao', 'testing'];
+const KNOWN_TYPES = ['gda', 'dao', 'ethics', 'testing'];
 const KNOWN_SUBTYPES = { gda: ['midterm', 'final', 'quiz'], dao: ['midterm', 'final', 'quiz'] };
 
 const LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';

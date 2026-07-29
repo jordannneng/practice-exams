@@ -77,6 +77,11 @@
   .category-card:hover { background: var(--accent-light); border-color: var(--accent); }
   .category-title { font-weight: 600; font-size: 17px; }
   .category-meta { font-size: 13px; color: var(--text-muted); margin-top: 4px; }
+  .semester-heading {
+    font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em;
+    color: var(--text-muted); margin: 28px 0 10px; padding-bottom: 6px; border-bottom: 1px solid var(--border);
+  }
+  .semester-heading:first-of-type { margin-top: 0; }
   .empty-state { text-align: center; padding: 40px 20px; color: var(--text-secondary); }
   .progress-bar { height: 6px; background: var(--border); border-radius: 3px; overflow: hidden; margin-bottom: 20px; }
   .progress-fill { height: 100%; background: var(--accent); transition: width 0.2s; }
@@ -221,8 +226,8 @@ async function loadExams() {
   exams = await res.json();
 }
 
-const TYPE_LABELS = { gda: 'GDA', dao: 'DAO', testing: 'Testing' };
-const TYPE_ORDER = ['gda', 'dao', 'testing'];
+const TYPE_LABELS = { gda: 'GDA', dao: 'DAO', ethics: 'Ethics', testing: 'Testing' };
+const TYPE_ORDER = ['gda', 'dao', 'ethics', 'testing'];
 const SUBTYPES_BY_TYPE = {
   gda: [
     { id: 'midterm', label: 'Midterms' },
@@ -236,6 +241,17 @@ const SUBTYPES_BY_TYPE = {
   ],
 };
 const SUBTYPE_LABELS = Object.values(SUBTYPES_BY_TYPE).flat().reduce((acc, s) => (acc[s.id] = s.label, acc), {});
+
+// Which school semester each category belongs under on the home page. Types
+// with no entry here (e.g. "testing", placeholder/demo content) are shown
+// in an unsectioned group at the end instead of under a semester heading.
+const SEMESTER_ORDER = [
+  'D1 Summer', 'D1 Fall', 'D1 Spring',
+  'D2 Summer', 'D2 Fall', 'D2 Spring',
+  'D3 Summer', 'D3 Fall', 'D3 Spring',
+  'D4 Summer', 'D4 Fall',
+];
+const TYPE_SEMESTER = { gda: 'D1 Summer', dao: 'D1 Summer', ethics: 'D1 Summer' };
 
 function listViewForExam(examId) {
   const e = exams[examId];
@@ -252,20 +268,35 @@ function render() {
   attachHandlers();
 }
 
+function categoryCardHtml(type) {
+  const count = Object.values(exams).filter(e => e.type === type).length;
+  return `
+    <button type="button" class="category-card" data-action="open-category" data-type="${type}">
+      <div class="category-title">${TYPE_LABELS[type]}</div>
+      <div class="category-meta">${count} exam${count !== 1 ? 's' : ''}</div>
+    </button>
+  `;
+}
+
 function renderHome() {
   let html = `
     <h1>Practice exams</h1>
     <p class="subtitle">Choose a category to get started.</p>
   `;
+  const bySemester = {};
+  const unsectioned = [];
   TYPE_ORDER.forEach(type => {
-    const count = Object.values(exams).filter(e => e.type === type).length;
-    html += `
-      <button type="button" class="category-card" data-action="open-category" data-type="${type}">
-        <div class="category-title">${TYPE_LABELS[type]}</div>
-        <div class="category-meta">${count} exam${count !== 1 ? 's' : ''}</div>
-      </button>
-    `;
+    const semester = TYPE_SEMESTER[type];
+    if (semester) (bySemester[semester] = bySemester[semester] || []).push(type);
+    else unsectioned.push(type);
   });
+  SEMESTER_ORDER.forEach(semester => {
+    const types = bySemester[semester];
+    if (!types || !types.length) return;
+    html += `<div class="semester-heading">${semester}</div>`;
+    types.forEach(type => { html += categoryCardHtml(type); });
+  });
+  unsectioned.forEach(type => { html += categoryCardHtml(type); });
   return html;
 }
 
