@@ -14,6 +14,12 @@
 // matching the answer's position among that row's non-blank options. An optional
 // "image" column gives a path (relative to the site root, e.g. images/<exam>/fig1.jpg)
 // to a figure shown with that question; leave it blank for questions with no figure.
+// A row can instead be a fill-in-the-blank question: set "correct" to the literal
+// value FILL, and each non-blank option_* column becomes one blank, in order, taking
+// the place of options entirely (option_a = 1st blank, option_b = 2nd blank, etc).
+// Each blank's cell holds one or more acceptable answers separated by "|", e.g.
+// "Pit and Fissure|Pit And Fissure" — matching is case-insensitive and whitespace-
+// trimmed. Leave later option_* columns blank for single-blank questions.
 // Run: node scripts/build-exams.js
 
 const fs = require('fs');
@@ -70,7 +76,8 @@ const KNOWN_SUBTYPES = {
 const LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
 function letterToIndex(letter, optionCount, filePath, rowNum) {
-  const idx = LETTERS.indexOf(letter.trim().toUpperCase());
+  const trimmed = letter.trim().toUpperCase();
+  const idx = trimmed === '' ? -1 : LETTERS.indexOf(trimmed);
   if (idx === -1 || idx >= optionCount) {
     throw new Error(`${filePath} row ${rowNum}: "correct" value "${letter}" is not valid for ${optionCount} option(s)`);
   }
@@ -108,13 +115,29 @@ function csvFileToExam(filePath) {
   }
   const questions = dataRows.map((r, i) => {
     const rowNum = i + 3; // 1-indexed, after the title and header rows
+    const correctRaw = (r[correctCol] || '').trim();
+    const image = imageCol !== -1 ? (r[imageCol] || '').trim() : '';
+    if (correctRaw.toUpperCase() === 'FILL') {
+      const blanks = optionCols
+        .map(c => (r[c] || '').trim())
+        .filter(v => v !== '')
+        .map(cell => cell.split('|').map(s => s.trim()).filter(Boolean));
+      if (blanks.length < 1 || blanks.some(alts => alts.length < 1)) {
+        throw new Error(`${filePath} row ${rowNum}: FILL question needs at least 1 non-blank answer per blank`);
+      }
+      return {
+        text: r[questionCol],
+        type: 'fill',
+        blanks,
+        ...(image ? { image } : {}),
+      };
+    }
     const options = optionCols.map(c => (r[c] || '').trim()).filter(v => v !== '');
     if (options.length < 1) throw new Error(`${filePath} row ${rowNum}: needs at least 1 non-blank option`);
-    const image = imageCol !== -1 ? (r[imageCol] || '').trim() : '';
     return {
       text: r[questionCol],
       options,
-      correct: letterToIndex(r[correctCol] || '', options.length, filePath, rowNum),
+      correct: letterToIndex(correctRaw, options.length, filePath, rowNum),
       ...(image ? { image } : {}),
     };
   });
@@ -125,8 +148,16 @@ function formatExamsJson(exams) {
   const examEntries = Object.keys(exams).map(id => {
     const e = exams[id];
     const questionEntries = e.questions.map(q => {
-      const optionsStr = q.options.map(o => JSON.stringify(o)).join(', ');
       const imageLine = q.image ? `,\n        "image": ${JSON.stringify(q.image)}` : '';
+      if (q.type === 'fill') {
+        const blanksStr = q.blanks.map(alts => `[${alts.map(a => JSON.stringify(a)).join(', ')}]`).join(', ');
+        return `      {
+        "text": ${JSON.stringify(q.text)},
+        "type": "fill",
+        "blanks": [${blanksStr}]${imageLine}
+      }`;
+      }
+      const optionsStr = q.options.map(o => JSON.stringify(o)).join(', ');
       return `      {
         "text": ${JSON.stringify(q.text)},
         "options": [${optionsStr}],

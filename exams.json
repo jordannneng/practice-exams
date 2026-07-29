@@ -377,7 +377,6 @@
     "title": "Cariology Final Exam (Spring 2020)",
     "type": "cario",
     "subtype": "final",
-    "issues": "7 questions (about carious lesion types/zones, an enzyme in saliva, and demineralization pH values) were fill-in-the-blank questions in the source, not multiple choice, so they were omitted from this practice exam.",
     "questions": [
       {
         "text": "Beta Tri-Calcium Phosphate remineralizing toothpaste is also commonly known as:",
@@ -498,6 +497,41 @@
         "text": "The primary mechanism of action of silver nanoparticles is:",
         "options": ["Adherence into silver ions", "Adherence and penetration into bacterial cells", "Adherence into periodontal defects"],
         "correct": 1
+      },
+      {
+        "text": "Displaying an inverted V-Shape and comprised predominantly of S. Sanguis bacteria are characteristics of what type of carious lesion?",
+        "type": "fill",
+        "blanks": [["Pit and Fissure", "Pit And Fissure", "Pit & Fissure"]]
+      },
+      {
+        "text": "List the zones of an enamel carious lesion, from outer surface towards the DEJ:",
+        "type": "fill",
+        "blanks": [["Surface Zone, Body Zone, Dark Zone, Translucent Zone"]]
+      },
+      {
+        "text": "When there is a limited supply of glucose/sucrose, Mutans Streptococcus produce which acid(s)?",
+        "type": "fill",
+        "blanks": [["Acetic and Formic Acid", "Acetic & Formic Acid"]]
+      },
+      {
+        "text": "The remineralization agent CPP-ACP should be avoided in patients allergic to:",
+        "type": "fill",
+        "blanks": [["Milk"]]
+      },
+      {
+        "text": "Fluorapatite demineralizes at a pH of ___. Enamel demineralizes at a pH of ___.",
+        "type": "fill",
+        "blanks": [["4.5"], ["6.5"]]
+      },
+      {
+        "text": "This enzyme called ___, is found in saliva and combines with Hydrogen Peroxide and ___ to produce a bacteriostatic antimicrobial agent.",
+        "type": "fill",
+        "blanks": [["Lactoperoxidase"], ["Thiocyanate"]]
+      },
+      {
+        "text": "Describe how dentin caries are seen radiographically:",
+        "type": "fill",
+        "blanks": [["V Shaped lesions with broad area by DEJ and apex towards the pulp"]]
       }
     ]
   },
