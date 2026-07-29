@@ -58,6 +58,18 @@
   }
   .exam-title { font-weight: 500; font-size: 15px; }
   .exam-meta { font-size: 13px; color: var(--text-muted); margin-top: 2px; }
+  .issue-wrap { position: relative; display: inline-flex; }
+  .issue-btn {
+    width: 30px; height: 30px; padding: 0; border-radius: 50%; font-weight: 700; font-size: 14px;
+    border-color: var(--danger); color: var(--danger); background: var(--danger-light);
+  }
+  .issue-btn:hover { background: var(--danger); color: #fff; }
+  .issue-popover {
+    position: absolute; top: calc(100% + 6px); right: 0; z-index: 30; width: 260px;
+    background: var(--card); border: 1px solid var(--danger); border-radius: var(--radius);
+    box-shadow: 0 8px 24px rgba(20, 30, 45, 0.15); padding: 12px;
+    font-size: 13px; line-height: 1.4; color: var(--text); text-align: left; font-weight: 400;
+  }
   .category-card {
     display: block; width: 100%; text-align: left;
     padding: 20px; border-radius: var(--radius); margin-bottom: 10px;
@@ -151,6 +163,7 @@ let settings = { immediateGrading: true };
 let view = { screen: 'home' };
 let quizState = null;
 let optionsMenuOpen = false;
+let openIssuePopoverId = null;
 
 function escapeHtml(str) {
   const d = document.createElement('div');
@@ -312,10 +325,19 @@ function renderList() {
             <div class="exam-title">${escapeHtml(e.title)}</div>
             <div class="exam-meta">${qCount} question${qCount !== 1 ? 's' : ''} · ${scoreText}</div>
           </div>
-          <button class="primary" data-action="take" data-id="${id}" ${qCount === 0 ? 'disabled' : ''}>Take exam</button>
+          <div style="display:flex; align-items:center; gap:10px;">
+            ${e.issues ? `
+              <div class="issue-wrap">
+                <button type="button" class="icon-btn issue-btn" data-action="toggle-issue" data-id="${id}" title="This exam has a known issue">!</button>
+                ${openIssuePopoverId === id ? `<div class="issue-popover">${escapeHtml(e.issues)}</div>` : ''}
+              </div>
+            ` : ''}
+            <button class="primary" data-action="take" data-id="${id}" ${qCount === 0 ? 'disabled' : ''}>Take exam</button>
+          </div>
         </div>
       `;
     });
+    if (openIssuePopoverId) html += '<div class="menu-overlay" id="issue-overlay"></div>';
   }
   return html;
 }
@@ -504,6 +526,7 @@ function attachHandlers() {
 
   if (view.screen === 'list') {
     document.getElementById('list-back-btn').onclick = () => {
+      openIssuePopoverId = null;
       view = view.subtype ? { screen: 'subcategory', type: view.type } : { screen: 'home' };
       render();
     };
@@ -512,10 +535,21 @@ function attachHandlers() {
         const id = btn.dataset.id;
         quizState = { examId: id, current: 0, answers: {}, flags: {}, crossed: {} };
         optionsMenuOpen = false;
+        openIssuePopoverId = null;
         view = { screen: 'quiz' };
         render();
       };
     });
+    app.querySelectorAll('[data-action="toggle-issue"]').forEach(btn => {
+      btn.onclick = (e) => {
+        e.stopPropagation();
+        const id = btn.dataset.id;
+        openIssuePopoverId = openIssuePopoverId === id ? null : id;
+        render();
+      };
+    });
+    const issueOverlay = document.getElementById('issue-overlay');
+    if (issueOverlay) issueOverlay.onclick = () => { openIssuePopoverId = null; render(); };
   }
 
   if (view.screen === 'quiz') {
