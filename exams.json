@@ -334,7 +334,6 @@
     "title": "GDA Final Exam (Summer 2016)",
     "type": "gda",
     "subtype": "final",
-    "issues": "The question about a plane of reference may have an incorrect marked answer in the original source: the same figure is used elsewhere in this question bank to represent the median/sagittal plane, but here the answer key marks the correct answer as coronal. Not yet confirmed with the instructor.",
     "questions": [
       {
         "text": "Which of the following statements is NOT TRUE about the development of the sinuses?",
@@ -4059,7 +4058,7 @@
     "title": "GDA Midterm Exam (Summer 2020)",
     "type": "gda",
     "subtype": "midterm",
-    "issues": "One question has an incomplete answer choice in the original source (\"I, II,\"), and another has a duplicate answer choice (two options both read \"Incomplete bilateral\").",
+    "issues": "One question has a duplicate answer choice in the original source (two options both read \"Incomplete bilateral\").",
     "questions": [
       {
         "text": "Which of the following statements is NOT true regarding gametogenesis?",
@@ -4420,7 +4419,7 @@
     "title": "GDA Midterm Exam (Summer 2021)",
     "type": "gda",
     "subtype": "midterm",
-    "issues": "One question has an incomplete answer choice in the original source (\"I, II,\"), and another has a duplicate answer choice (two options both read \"Incomplete bilateral\").",
+    "issues": "One question has a duplicate answer choice in the original source (two options both read \"Incomplete bilateral\").",
     "questions": [
       {
         "text": "Which of the following statements is NOT true regarding gametogenesis?",
@@ -4762,7 +4761,7 @@
     "title": "GDA Midterm Exam (Summer 2022)",
     "type": "gda",
     "subtype": "midterm",
-    "issues": "One question has a duplicate answer choice in the original source (two options both read \"Incomplete bilateral\"), and another has an incomplete answer choice (\"I, II,\").",
+    "issues": "One question has a duplicate answer choice in the original source (two options both read \"Incomplete bilateral\").",
     "questions": [
       {
         "text": "Which of the following is not a common symptom of COVID-19 in young children?",
