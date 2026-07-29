@@ -107,6 +107,16 @@
   .eye-toggle:hover { background: var(--border); }
   .eye-toggle.active { color: var(--accent); }
   .question-image { display: block; max-width: 100%; height: auto; border: 1px solid var(--border); border-radius: 8px; margin: 4px 0 16px; }
+  .fill-blank-row { margin-bottom: 12px; }
+  .fill-blank-label { font-size: 13px; color: var(--text-secondary); margin-bottom: 4px; display: block; }
+  .fill-blank-input {
+    width: 100%; padding: 10px 12px; border: 1px solid var(--border-strong); border-radius: 8px;
+    font-size: 14px; font-family: inherit; color: var(--text); background: var(--card);
+  }
+  .fill-blank-input:focus { outline: none; border-color: var(--accent); }
+  .fill-blank-input.correct-answer { border-color: var(--success); background: var(--success-light); }
+  .fill-blank-input.incorrect-answer { border-color: var(--danger); background: var(--danger-light); }
+  .fill-blank-accepted { font-size: 12px; color: var(--text-muted); margin-top: 4px; }
   .answer-feedback { font-size: 13px; font-weight: 500; margin: 10px 0 0; }
   .answer-feedback.correct { color: var(--success); }
   .answer-feedback.incorrect { color: var(--danger); }
@@ -179,6 +189,27 @@ function escapeHtml(str) {
 const EYE_OPEN_SVG = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8Z"/><circle cx="12" cy="12" r="3"/></svg>';
 const EYE_CLOSED_SVG = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.94 17.94A10.94 10.94 0 0 1 12 20c-7 0-11-8-11-8a21.86 21.86 0 0 1 5.06-6.06M9.9 4.24A10.94 10.94 0 0 1 12 4c7 0 11 8 11 8a21.86 21.86 0 0 1-3.22 4.55M14.12 14.12a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg>';
 const MENU_SVG = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>';
+
+function isBlankFilled(alts, value) {
+  const norm = (value || '').trim().toLowerCase();
+  if (!norm) return false;
+  return alts.some(a => a.trim().toLowerCase() === norm);
+}
+
+function isQuestionAnswered(q, ans) {
+  if (q.type === 'fill') {
+    return Array.isArray(ans) && q.blanks.every((_, bi) => (ans[bi] || '').trim() !== '');
+  }
+  return ans !== undefined;
+}
+
+function isQuestionCorrect(q, ans) {
+  if (q.type === 'fill') {
+    if (!Array.isArray(ans)) return false;
+    return q.blanks.every((alts, bi) => isBlankFilled(alts, ans[bi]));
+  }
+  return ans === q.correct;
+}
 
 function loadScores() {
   try {
@@ -391,18 +422,8 @@ function renderList() {
   return html;
 }
 
-function renderQuiz() {
-  const e = exams[quizState.examId];
-  const q = e.questions[quizState.current];
-  const total = e.questions.length;
-  const pct = Math.round((quizState.current / total) * 100);
-  const answered = quizState.answers[quizState.current] !== undefined;
-  const selectedOi = quizState.answers[quizState.current];
-  const showFeedback = answered && settings.immediateGrading;
-  const isCorrect = showFeedback && selectedOi === q.correct;
-  const flagged = !!quizState.flags[quizState.current];
-  const crossedForQ = quizState.crossed[quizState.current] || {};
-  let optsHtml = '';
+function renderMcOptions(q, selectedOi, { showFeedback = false, crossedForQ = {}, interactive = true } = {}) {
+  let html = '';
   q.options.forEach((opt, oi) => {
     const selected = selectedOi === oi ? 'selected' : '';
     const crossed = !!crossedForQ[oi];
@@ -411,18 +432,71 @@ function renderQuiz() {
       if (oi === q.correct) feedbackClass = 'correct-answer';
       else if (oi === selectedOi) feedbackClass = 'incorrect-answer';
     }
-    optsHtml += `
-      <label class="quiz-option ${selected} ${feedbackClass} ${crossed ? 'crossed-out' : ''} ${showFeedback ? 'locked' : ''}" data-oi="${oi}">
+    const locked = showFeedback || !interactive;
+    html += `
+      <label class="quiz-option ${selected} ${feedbackClass} ${crossed ? 'crossed-out' : ''} ${locked ? 'locked' : ''}" data-oi="${oi}">
         <span class="option-main">
-          <input type="radio" name="quiz-answer" ${selected ? 'checked' : ''} data-oi="${oi}">
+          <input type="radio" name="quiz-answer" ${interactive ? '' : 'disabled'} ${selected ? 'checked' : ''} data-oi="${oi}">
           ${escapeHtml(opt)}
         </span>
-        <button type="button" class="eye-toggle ${crossed ? 'active' : ''}" data-cross-oi="${oi}" title="${crossed ? 'Show option' : 'Hide option'}">${crossed ? EYE_CLOSED_SVG : EYE_OPEN_SVG}</button>
+        ${interactive ? `<button type="button" class="eye-toggle ${crossed ? 'active' : ''}" data-cross-oi="${oi}" title="${crossed ? 'Show option' : 'Hide option'}">${crossed ? EYE_CLOSED_SVG : EYE_OPEN_SVG}</button>` : ''}
       </label>
     `;
   });
+  return html;
+}
+
+function renderFillBlanks(q, userAns, showFeedback) {
+  const ans = Array.isArray(userAns) ? userAns : [];
+  let html = '';
+  q.blanks.forEach((alts, bi) => {
+    const val = ans[bi] || '';
+    const ok = showFeedback ? isBlankFilled(alts, val) : null;
+    const cls = showFeedback ? (ok ? ' correct-answer' : ' incorrect-answer') : '';
+    html += `
+      <div class="fill-blank-row">
+        <label class="fill-blank-label">${q.blanks.length > 1 ? `Answer ${bi + 1}` : 'Your answer'}</label>
+        <input type="text" class="fill-blank-input${cls}" data-blank-index="${bi}" value="${escapeHtml(val)}" autocomplete="off" spellcheck="false">
+        ${showFeedback && !ok ? `<div class="fill-blank-accepted">Accepted answer: ${escapeHtml(alts[0])}</div>` : ''}
+      </div>
+    `;
+  });
+  return html;
+}
+
+function renderFillBlanksReview(q, userAns) {
+  const ans = Array.isArray(userAns) ? userAns : [];
+  let html = '';
+  q.blanks.forEach((alts, bi) => {
+    const val = ans[bi] || '';
+    const ok = isBlankFilled(alts, val);
+    html += `
+      <div class="fill-blank-row">
+        <label class="fill-blank-label">${q.blanks.length > 1 ? `Answer ${bi + 1}` : 'Your answer'}</label>
+        <input type="text" class="fill-blank-input ${ok ? 'correct-answer' : 'incorrect-answer'}" value="${escapeHtml(val || '(no answer)')}" disabled>
+        ${!ok ? `<div class="fill-blank-accepted">Accepted answer: ${escapeHtml(alts[0])}</div>` : ''}
+      </div>
+    `;
+  });
+  return html;
+}
+
+function renderQuiz() {
+  const e = exams[quizState.examId];
+  const q = e.questions[quizState.current];
+  const total = e.questions.length;
+  const pct = Math.round((quizState.current / total) * 100);
+  const userAns = quizState.answers[quizState.current];
+  const answered = isQuestionAnswered(q, userAns);
+  const showFeedback = answered && settings.immediateGrading;
+  const isCorrect = showFeedback && isQuestionCorrect(q, userAns);
+  const flagged = !!quizState.flags[quizState.current];
+  const crossedForQ = quizState.crossed[quizState.current] || {};
+  const bodyHtml = q.type === 'fill'
+    ? renderFillBlanks(q, userAns, showFeedback)
+    : renderMcOptions(q, userAns, { showFeedback, crossedForQ });
   const feedbackHtml = showFeedback
-    ? `<p class="answer-feedback ${isCorrect ? 'correct' : 'incorrect'}">${isCorrect ? 'Correct!' : 'Incorrect — correct answer highlighted above.'}</p>`
+    ? `<p class="answer-feedback ${isCorrect ? 'correct' : 'incorrect'}">${isCorrect ? 'Correct!' : `Incorrect — correct answer${q.type === 'fill' && q.blanks.length > 1 ? 's' : ''} highlighted above.`}</p>`
     : '';
   return `
     <div class="top-row">
@@ -450,7 +524,7 @@ function renderQuiz() {
     <div class="card">
       <p style="font-size:16px; font-weight:500; margin-top:0;">${escapeHtml(q.text)}</p>
       ${renderQuestionImage(q)}
-      ${optsHtml}
+      ${bodyHtml}
       ${feedbackHtml}
     </div>
     <div class="footer-row">
@@ -474,8 +548,8 @@ function renderQnav(forceGraded) {
   const e = exams[quizState.examId];
   let html = '<div class="qnav">';
   e.questions.forEach((q, i) => {
-    const answered = quizState.answers[i] !== undefined;
-    const correct = answered && quizState.answers[i] === q.correct;
+    const answered = isQuestionAnswered(q, quizState.answers[i]);
+    const correct = answered && isQuestionCorrect(q, quizState.answers[i]);
     const flagged = !!quizState.flags[i];
     let cls = 'qnav-btn';
     if (i === quizState.current) cls += ' current';
@@ -491,7 +565,7 @@ function renderResults() {
   const e = exams[quizState.examId];
   const total = e.questions.length;
   let correctCount = 0;
-  e.questions.forEach((q, i) => { if (quizState.answers[i] === q.correct) correctCount++; });
+  e.questions.forEach((q, i) => { if (isQuestionCorrect(q, quizState.answers[i])) correctCount++; });
   const pct = Math.round((correctCount / total) * 100);
   return `
     <div class="top-row"><button id="back-to-list-btn">← Back to exams</button></div>
@@ -511,24 +585,14 @@ function renderReviewQuestion() {
   const q = e.questions[quizState.current];
   const total = e.questions.length;
   const userAns = quizState.answers[quizState.current];
-  const answered = userAns !== undefined;
-  const isCorrect = answered && userAns === q.correct;
+  const answered = isQuestionAnswered(q, userAns);
+  const isCorrect = answered && isQuestionCorrect(q, userAns);
   const flagged = !!quizState.flags[quizState.current];
-  let optsHtml = '';
-  q.options.forEach((opt, oi) => {
-    let feedbackClass = '';
-    if (oi === q.correct) feedbackClass = 'correct-answer';
-    else if (oi === userAns) feedbackClass = 'incorrect-answer';
-    optsHtml += `
-      <label class="quiz-option locked ${feedbackClass}">
-        <span class="option-main">
-          <input type="radio" disabled ${userAns === oi ? 'checked' : ''}>
-          ${escapeHtml(opt)}
-        </span>
-      </label>
-    `;
-  });
-  const feedbackText = isCorrect ? 'Correct!' : (answered ? 'Incorrect — correct answer highlighted above.' : 'Not answered — correct answer highlighted above.');
+  const bodyHtml = q.type === 'fill'
+    ? renderFillBlanksReview(q, userAns)
+    : renderMcOptions(q, userAns, { showFeedback: true, interactive: false });
+  const multi = q.type === 'fill' && q.blanks.length > 1;
+  const feedbackText = isCorrect ? 'Correct!' : (answered ? `Incorrect — correct answer${multi ? 's' : ''} highlighted above.` : `Not answered — correct answer${multi ? 's' : ''} highlighted above.`);
   return `
     <div class="card">
       <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:4px;">
@@ -537,7 +601,7 @@ function renderReviewQuestion() {
       </div>
       <p style="font-size:16px; font-weight:500; margin-top:0;">${escapeHtml(q.text)}</p>
       ${renderQuestionImage(q)}
-      ${optsHtml}
+      ${bodyHtml}
       <p class="answer-feedback ${isCorrect ? 'correct' : 'incorrect'}">${feedbackText}</p>
     </div>
     <div class="footer-row">
@@ -660,11 +724,23 @@ function attachHandlers() {
     if (prevBtn) prevBtn.onclick = () => { quizState.current--; render(); };
     const nextBtn = document.getElementById('next-q-btn');
     if (nextBtn) nextBtn.onclick = () => { quizState.current++; render(); };
+    app.querySelectorAll('.fill-blank-input').forEach(input => {
+      // Deliberately does NOT re-render on input/blur: a full-DOM-replace
+      // render() while focus is shifting between blank inputs (e.g. the
+      // blur fired by focusing the next blank) can drop the focus/keystroke
+      // that triggered it. Grading feedback appears once the user navigates
+      // away from the question (Next/Previous/qnav), which already re-renders.
+      input.oninput = (ev) => {
+        const bi = parseInt(input.dataset.blankIndex);
+        if (!Array.isArray(quizState.answers[quizState.current])) quizState.answers[quizState.current] = [];
+        quizState.answers[quizState.current][bi] = ev.target.value;
+      };
+    });
     const submitBtn = document.getElementById('submit-quiz-btn');
     if (submitBtn) submitBtn.onclick = () => {
       const e = exams[quizState.examId];
       let correctCount = 0;
-      e.questions.forEach((q, i) => { if (quizState.answers[i] === q.correct) correctCount++; });
+      e.questions.forEach((q, i) => { if (isQuestionCorrect(q, quizState.answers[i])) correctCount++; });
       const pct = Math.round((correctCount / e.questions.length) * 100);
       const prevBest = scores[quizState.examId] ? scores[quizState.examId].best : pct;
       scores[quizState.examId] = { best: Math.max(prevBest, pct), last: pct };
