@@ -5184,7 +5184,6 @@
   "ethics-final-summer-2017": {
     "title": "Ethics Final Exam (Summer 2017)",
     "type": "ethics",
-    "issues": "1 question (about the ADA Ethics Hotline) is an intentional single-choice question in the source — the instructor's note explains there is only one answer option and everyone gets credit for marking it. It was omitted since this app requires at least two choices per question.",
     "questions": [
       {
         "text": "All of the following play a role in the fiduciary relationship that exists between dentists and their patients, EXCEPT:",
@@ -5400,13 +5399,17 @@
         "text": "A dentist who is licensed in NYS must practice within the limits set forth in the Definition of the Practice of Dentistry as described by the state. Consistent with the current Definition, licensed dentists are allowed to do all of the following, EXCEPT:",
         "options": ["Diagnose, treat, operate, or prescribe for any disease, pain, injury, deformity or physical condition of the oral and maxillofacial area related to restoring and maintaining dental health.", "Prescribe and fabricate dental prostheses and appliances.", "Perform physical evaluations in conjunction with the provision of dental treatment.", "Own an office employing other healthcare professionals including physicians."],
         "correct": 3
+      },
+      {
+        "text": "The American Dental Association has an \"Ethics Hotline\". The hotline can be reached by calling (800) 621-8099. Consider the four following statements: • The purpose of this hotline is to assist ADA members in managing ethical challenges. • The identity of the caller and the issues discussed are all kept confidential. • This hotline is NOT a legal resource. • Callers are matched with members of the Council on Ethics, Bylaws, and Judicial Affairs.",
+        "options": ["All four of the above statements are TRUE. (There are no other choices for this question. But please make sure you mark the answer to this question - Choice “A” - so you get the credit for it. I hope you learned and enjoyed the course.)"],
+        "correct": 0
       }
     ]
   },
   "ethics-final-summer-2018": {
     "title": "Ethics Final Exam (Summer 2018)",
     "type": "ethics",
-    "issues": "1 question (about the ADA Ethics Hotline) has its answer choices cut off after the first option in the source file, so it was omitted from this practice exam.",
     "questions": [
       {
         "text": "A dentist must obtain informed consent from a patient before performing a procedure. The discussion should include the indications for the procedure, any alternative treatments, the risks and benefits of the procedure, as well as those for the alternative treatments, and the likelihood of success of any and all of the options. Providing the patient with all of this information gives them the opportunity to select the best of their treatment options. Which of the following ethical principles best applies to this statement?",
@@ -5622,13 +5625,17 @@
         "text": "We discussed a case which is described here. A patient presented to a medical practice with what a nurse thought was a false identification card. The nurse believed that the patient was an undocumented immigrant and wanted to “turn the patient in.” Throughout history healthcare providers have been asked to act as “agents of the state”. From an ethical standpoint… I. Providers are justified in refusing to take actions that are human rights violations II. Providers are justified in performing actions that clearly benefit their community such as mandatory reporting of patients with communicable diseases or the administration of vaccines to children.",
         "options": ["I and II are true", "I is true and II is false", "I is false and II is true", "I and II are false."],
         "correct": 0
+      },
+      {
+        "text": "The ADA Ethics Hotline - 800.621.8099 - is a service available to members of the ADA. This member service is designed to assist new dentists and other members in managing ethical challenges that may arise in day to day practice. The Ethics Hotline is not a legal resource but rather a service for helping to resolve ethical dilemmas much like an ethics consult service. Callers will be matched with a member of the Council on Ethics, Bylaws, and Judicial Affairs who will arrange to call the member at a mutually agreeable time to discuss the dilemma and offer resources that may assist in resolving the dilemma.",
+        "options": ["True"],
+        "correct": 0
       }
     ]
   },
   "ethics-final-summer-2019": {
     "title": "Ethics Final Exam (Summer 2019)",
     "type": "ethics",
-    "issues": "1 question (about the ADA Ethics Hotline and the school's SPEA chapter) has its answer choices cut off after the first option in the source file, so it was omitted from this practice exam.",
     "questions": [
       {
         "text": "A patient presents with deep caries in one of his teeth. His dentist explains that the best treatment is a crown. He asks the dentist if he could do a filling. The dentist explains that a filling can be done but is not his best option as she does not know how long it will hold up. The patient insists that the dentist does the filling. The dentist performs the filling as the patient wants. This is an example of which of the following ethical principles?",
@@ -5843,6 +5850,11 @@
       {
         "text": "When assessing a specific case, consideration of different ethical principles may result in conflicting decisions.",
         "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "text": "Consider the following two statements: I. A toll-free Ethics Hotline [(800)621-8099] is available through the American Dental Association to assist its members in managing ethical challenges. II. The Touro College of Dental Medicine SPEA (Student Professionalism and Ethics Association) Chapter is part of a national organization which promotes and support students' lifelong commitment to ethical behavior in order to benefit the patients they serve and to further the dental profession. Dr. Wachs encourages all students to join this organization.",
+        "options": ["Both of these statements are TRUE."],
         "correct": 0
       }
     ]
@@ -12588,109 +12600,6 @@
         "text": "What is the normal eruption time for the mandibular central incisors?",
         "options": ["3-4 months", "6-8 months", "10-12 months", "14-16 months"],
         "correct": 1
-      }
-    ]
-  },
-  "sample-exam": {
-    "title": "Sample exam (edit or delete me)",
-    "type": "testing",
-    "questions": [
-      {
-        "text": "What is the capital of France?",
-        "options": ["London", "Berlin", "Paris", "Madrid"],
-        "correct": 2
-      },
-      {
-        "text": "Which planet is known as the Red Planet?",
-        "options": ["Venus", "Mars", "Jupiter", "Saturn"],
-        "correct": 1
-      },
-      {
-        "text": "What is 12 x 8?",
-        "options": ["86", "96", "106", "108"],
-        "correct": 1
-      }
-    ]
-  },
-  "space-exploration": {
-    "title": "Space Exploration Trivia",
-    "type": "testing",
-    "questions": [
-      {
-        "text": "Venus is the hottest planet in our solar system.",
-        "options": ["True", "False"],
-        "correct": 0
-      },
-      {
-        "text": "Which space agency launched the first human into space?",
-        "options": ["NASA", "Soviet Union", "ESA", "China National Space Administration"],
-        "correct": 1
-      },
-      {
-        "text": "The International Space Station orbits at an altitude of about 400 km above Earth.",
-        "options": ["True", "False"],
-        "correct": 0
-      },
-      {
-        "text": "How many planets are in our solar system?",
-        "options": ["7", "8", "9", "10", "11"],
-        "correct": 1
-      },
-      {
-        "text": "Mars has two moons named Phobos and Deimos.",
-        "options": ["True", "False"],
-        "correct": 0
-      },
-      {
-        "text": "What is the name of the galaxy that contains our solar system?",
-        "options": ["Andromeda", "Milky Way", "Triangulum"],
-        "correct": 1
-      },
-      {
-        "text": "A light-year measures time, not distance.",
-        "options": ["True", "False"],
-        "correct": 1
-      },
-      {
-        "text": "Which spacecraft mission was the first to land humans on the Moon?",
-        "options": ["Apollo 11", "Apollo 13", "Voyager 1", "Sputnik 1"],
-        "correct": 0
-      },
-      {
-        "text": "Approximately how long does it take light from the Sun to reach Earth?",
-        "options": ["8 seconds", "8 minutes", "8 hours", "8 days", "8 milliseconds"],
-        "correct": 1
-      },
-      {
-        "text": "Saturn is the only planet in our solar system with rings.",
-        "options": ["True", "False"],
-        "correct": 1
-      }
-    ]
-  },
-  "test-exam": {
-    "title": "Test exam",
-    "type": "testing",
-    "questions": [
-      {
-        "text": "Which ocean is the largest by surface area?",
-        "options": ["Atlantic", "Indian", "Arctic", "Pacific"],
-        "correct": 3
-      },
-      {
-        "text": "How many continents are there?",
-        "options": ["5", "6", "7", "8"],
-        "correct": 2
-      },
-      {
-        "text": "What is the boiling point of water at sea level (Celsius)?",
-        "options": ["90", "100", "110", "120"],
-        "correct": 1
-      },
-      {
-        "text": "Which gas do plants primarily absorb for photosynthesis?",
-        "options": ["Oxygen", "Nitrogen", "Carbon dioxide", "Hydrogen"],
-        "correct": 2
       }
     ]
   }
