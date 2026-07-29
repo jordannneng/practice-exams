@@ -1,0 +1,52 @@
+title,Oral Radiology Midterm Exam (Fall 2020),oralrad,midterm
+question,option_a,option_b,option_c,option_d,correct,image
+An __________ is the subatomic particle with a negative charge.,Proton,Neutron,Positron,Electron,D,
+"X-rays are created inside the x-ray machine when electrons travel from the _______ to the _______, where the tungsten target is located.",Cathode; anode,Anode; cathode,Focusing cup; transformer,Current selector; power supply,A,
+The type of radiation we utilize in dentistry is:,Particulate radiation,Electromagnetic radiation,Infrared radiation,Alpha particle radiation,B,
+"During X-ray generation, approximately how much of the energy is released in the form of heat?",Less than 20%,Between 20% and 50%,Between 50% and 90%,Greater than 90%,D,
+Which of the following describes a type of interaction where an x-ray photon is absorbed and then re-released with the same energy at a new angle?,Coherent scatter,Photoelectric absorption,Compton scatter,Characteristic radiation,A,
+The high voltage transformer is used to create a buildup of _______ at the cathode. These are then shot at the anode to produce _______.,X-rays; radiographs,X-rays; electrons,Electrons; x-rays,Electrons; radiographs,C,
+Which of the following does NOT describe a type of interaction of electrons with the tungsten target?,Photoelectric absorption,Heat generation,Bremsstrahlung (breaking) radiation,Characteristic radiation,A,
+"If the exposure time of the patient to x-rays is doubled, the amount of radiation received by the patient is:",Increased by a factor of 4,Decreased by a factor of 4,Increased by a factor of 2,Decreased by a factor of 2,C,
+"As brightness increases, the bright shades of grey become ________ and the dark shades of grey become ________.",Brighter; darker,Darker; brighter,Brighter; brighter,Darker; darker,C,
+Contrast resolution is:,The brightness after adding color to the radiograph,Capacity to distinguish different densities in the image,Capacity to distinguish fine detail,The file size of a digital radiograph in megabytes,B,
+Filtration:,Removes x-rays from all energy levels equally,Preferentially removes high energy level x-rays,Enhances the number of x-rays emitted,Preferentially removes low energy level x-rays,D,
+"To maximize image sharpness and minimize the amount of magnification, the distance between the object and image receptor should be:",As large as possible,As small as possible,,,B,
+"If the x-ray source is aimed straight at the image receptor, and the object being imaged is at an angle (not parallel to the image receptor), you should expect:",Foreshortening,Elongation,Mirrored image,Upside-down image,A,
+"With film, as the exposure time increase, the resulting radiograph:",Becomes brighter,Becomes darker,Becomes more noisy,Becomes more quiet,B,
+"Which key component of film, sensitive to both x-rays and visible light, is responsible for storing the latent image?",Fixer solution,Lead foil,Silver halide,Developer solution,C,
+Which of the following statements is TRUE regarding digital images?,Most digital images are processed or enhanced in some way before you even see the image.,It requires more radiation to work with digital systems than with film-based systems.,Dentists are gradually moving away from digital systems to film-based systems,Digital image processing requires expensive chemicals.,A,
+Which of the following is an irreversible digital image enhancement?,Contrast adjustments,Sharpen,Pixelize,Colorize,B,
+Each pixel is isolated from its neighboring pixels and is directly connected to a transistor when the ______________ is used as a digital image receptor.,Charge-coupled device (CCD),Complementary metal oxide semiconductor (CMOS),Flat panel detector,Photostimulable phosphor (PSP),B,
+"The fewer x-rays hit a part of an image receptor, the _______ that part of the image is.",Brighter,Darker,More pixelated,More elongated,A,
+The photostimulable material used for radiographic imaging with the _________________ is “europiumdoped” barium fluorohalide.,Charge-coupled devices (CCD),Flat panel detectors,Complementary metal oxide semiconductors (CMOS),Photostimulable phosphor (PSP),D,
+Colorize:,Assigns different colors to different grey values.,Might help a dentist more easily distinguish between different grey values.,May or may not be clinically useful (questionable efficacy).,All of the answer choices are True,D,
+All of the following choices are measured in Sievert EXCEPT for one. Which of the following is the EXCEPTION?,Equivalent Dose,Effective Dose,Absorbed Dose,,C,
+Why are we typically NOT worried about deterministic effects in dental radiology?,Deterministic effects always have a probability to occur at any dose,They are the same as stochastic effects,It has already been determined whether or not they will occur,Dental doses are below any known deterministic threshold,D,
+Which of the following choices is the MOST radiosensitive?,Skin,Muscle,Bone Marrow,Enamel,C,
+Which of the following is NOT a guiding principle of radiation protection?,Justification,Optimization,Dose limitation,Free radical creation,D,
+Which of the following theories of stochastic effects do we assume is correct to ensure the protection of our patients? This theory states that every small bit of radiation has the potential to be harmful.,Linear no-threshold model,Parabolic model,Threshold model,Hormetic model,A,
+Direct effects of x-rays to biological molecules typically cause the formation of ___________.,Free radicals,Alpha particles,Stable enantiomers,Water molecules,A,
+The principle of ALARA means that we should:,Expose every patient to the same amount of radiation,Expose each patient to as little radiation as is reasonably achievable,Never expose a pregnant patient to x-rays,Never expose a child to x-rays,B,
+In which situation would it make the most sense to apply the SLOB rule?,To try and localize an objection in the buccal-lingual dimension,To try and localize an objection in the mesial-distal dimension,To try and localize an objection in the superior-inferior dimension,To try and localize an objection in the fourth dimension,A,
+"When taking intraoral radiographs, the sensor is always placed on which side of the teeth being imaged?",Buccal,Lingual,Occlusal,Distal,B,
+The x-ray tube head should be positioned to its approximate location before placing the image receptor in the patient’s mouth.,This statement is always true.,This statement is sometimes true.,This statement is never true,,A,
+The mesial-most structure captured in the premolar bitewing projection should be the _________ half of the __________.,Distal; canine,Mesial; canine,Distal; second premolar,Mesial; second premolar,A,
+"At Touro, we use the XCP instruments to hold the image receptor parallel to the tooth and directly facing the xray source. This technique is known as the _________ technique.",Bisecting angle,Paralleling,Occlusal,Panoramic,B,
+"A full-mouth series (FMS, FMX) of radiographs does not contain _________________ radiographs.",Anterior periapical,Posterior bitewing,Anterior bitewing,Posterior periapical,C,
+Which of the following intraoral projections should show the full crowns and roots of all three left mandibular molars?,Left mandibular molar periapical,Left mandibular premolar periapical,Left mandibular molar (horizontal) bitewing,Left mandibular root bitewing,A,
+Which of the following is the MAJOR error depicted in this radiograph?,Overexposure,Vertical misangulation,Double image,Cone cut,D,images/oralrad-midterm-fall-2020/fig36.jpeg
+Which of the following is the MAJOR error depicted in this radiograph?,Horizontal misangulation,Under-exposure,Double image,Cone cut,C,images/oralrad-midterm-fall-2020/fig37.jpeg
+Which of the following is the MAJOR error depicted in this radiograph?,Noise,Colorize,Backwards image receptor,Cone cut,C,images/oralrad-midterm-fall-2020/fig38.jpeg
+A patient with a high caries risk should have radiographs taken _____________ a patient with a low caries risk.,less often than,more often than,just as often as,not as often as,B,
+Bitewing radiographs should generally be taken at each 6-month recall visit.,True,False,,,B,
+"A 13-year-old male patient presents with his parents to your clinic for a 6 month recall examination. A full mouth series was taken at his initial visit a year ago. At his previous dental visit, he had one occlusal and one mesial-occlusal restoration placed. The patient always goes to sleep immediately after drinking a cup of apple juice. According to the ADA guidelines, what radiographs should you take at today’s dental appointment?",Bitewing radiographs only,[Full mouth series] or [panoramic + selected intraoral radiographs],No radiographs today,Selected periapical radiographs only,A,
+Dentin is radiographically indistinguishable from cementum.,True,False,,,A,
+The lingual foramen appears on intraoral periapical radiographs as a:,radiolucent circle in the anterior maxilla,radiolucent circle in the anterior mandible,radiopaque circle in the anterior mandible,radiopaque circle in the anterior maxilla,B,
+The diagonal line indicated by the white arrows refers to what structure?,Incisive foramen,Lateral fossa,Floor of the nose,Nasolabial fold,D,images/oralrad-midterm-fall-2020/fig44.jpeg
+The white arrows are pointing to which radiolucent structures?,Lamina dura,PDL space,Neurovascular bundles,Lingual canal,C,images/oralrad-midterm-fall-2020/fig45.jpeg
+Which of the following structures is indicated by the black arrow?,Anterior Nasal spine,Floor of nose / hard palate,Inferior Nasal concha,Incisive foramen,A,images/oralrad-midterm-fall-2020/fig46.jpeg
+Which of the following structures is indicated by the white arrows?,Mandibular canal,Mental Foramen,Mylohyoid ridge,Inferior mandibular cortex,B,images/oralrad-midterm-fall-2020/fig47.jpeg
+Which of the following structures is indicated by the white arrows?,Zygomatic process of the maxilla,Floor of the orbit,Floor of the maxillary sinus,Ala of the nose,A,images/oralrad-midterm-fall-2020/fig48.jpeg
+How do you feel about the remote lecture format for this course? Note: Full credit will be awarded for this question as long any answer is given.,It’s perfect the way it is!!!,I would rather it be in person!!!,There is definitely room for improvement!!!,These answer choices are all way too enthusiastic!!!,D,
+What type of radiograph is depicted in this meme?,Mandibular molar periapical,Mandibular premolar periapical,Molar bitewing,Occlusal,A,images/oralrad-midterm-fall-2020/fig50.jpeg
