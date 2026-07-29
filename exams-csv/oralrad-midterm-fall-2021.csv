@@ -1,0 +1,52 @@
+title,Oral Radiology Midterm Exam (Fall 2021),oralrad,midterm
+question,option_a,option_b,option_c,option_d,correct,image
+A(n) __________ is a subatomic particle with a neutral charge.,Proton,Neutron,Positron,Electron,B,
+"As the frequency of the radiation increases, the energy of the radiation _________.",Increases,Decreases,Remains the same,Has no relationship to frequency,A,
+The type of radiation we utilize in dentistry is best described as:,Microwave radiation,Ionizing radiation,MRI radiation,Alpha particle radiation,B,
+"During X-ray generation, approximately how much of the energy is released in the form of heat?",Less than 20%,Between 20% and 50%,Between 50% and 90%,Greater than 90%,D,
+Which of the following describes a type of interaction where an x-ray interacts with the patient?,Characteristic radiation,Photoelectric absorption,Breaking radiation,Annihilation reaction,B,
+Which of the following does NOT help manage heat generation in the x-ray generator?,Using tungsten as the target material,Using an angled anode,Using a rotating anode,Using liquid nitrogen around the generator,D,
+Which of the following does NOT describe a type of interaction of electrons with the tungsten target?,Compton scatter,Heat generation,Bremsstrahlung (breaking) radiation,Characteristic radiation,A,
+"All other things equal, as MORE x-rays hit the image receptor, the image becomes ________:",More digital,Brighter,Darker,More translucent,C,
+"As contrast decreases, the bright shades of grey become ________ and the dark shades of grey become ________.",Brighter; darker,Darker; brighter,Brighter; brighter,Darker; darker,B,
+"Penumbra, or unsharpness, can result from:",The object being imaged located close to the image receptor,The object being imaged located far from the image receptor,The object being imaged being rotated,The kVp is set too high,B,
+Filtration:,Removes x-rays from all energy levels equally,Preferentially removes high energy level x-rays,Enhances the number of x-rays emitted,Preferentially removes low energy level x-rays,D,
+"To maximize image sharpness and minimize the amount of magnification, the distance between the object and xray source should be:",As large as reasonably possible,As small as reasonably possible,Equal to the distance between the object and the sensor,,A,
+"If the x-ray source is aimed straight at the image receptor, and the object being imaged is at an angle (not parallel to the image receptor), you should expect:",Foreshortening,Elongation,Mirrored image,Upside-down image,A,
+"With film, as mA increases, the resulting radiograph:",Becomes brighter,Becomes darker,Becomes more noisy,Becomes more quiet,B,
+"Which type of image receptor can be connected directly to the computer, either by a wire or wirelessly?",Film,PSP (Photostimulable Storage Phosphor plate),Sensor (CCD/CMOS),,C,
+Which of the following statements is TRUE regarding digital images?,Chemicals are NOT necessary to develop digital images.,It requires more radiation to work with digital systems than with film-based systems.,Digital images typically take longer to develop than film.,All types of digital images require a darkroom to develop.,A,
+Which of the following is an irreversible digital image enhancement?,Brightness adjustments,Smooth,Contrast adjustments,Colorize,B,
+Each pixel is isolated from its neighboring pixels and is directly connected to a transistor when the ______________ is used as a digital image receptor.,Charge-coupled device (CCD),Complementary metal oxide semiconductor (CMOS),Flat panel detector,Photostimulable phosphor (PSP),B,
+"The fewer x-rays hit a part of an image receptor, the _______ that part of the image is.",Brighter,Darker,More pixelated,More elongated,A,
+The photostimulable material used for radiographic imaging with the _________________ is “europium-doped” barium fluorohalide.,CCD,Film,CMOS,PSP,D,
+Regarding contrast:,"The greater the contrast, the better the image quality.","The less contrast there is, the better the image quality.",Contrast does not affect your ability to interpret the radiograph.,The best contrast is not too high and not too low.,D,
+Which of the following is measured in Gray (Gy)?,Equivalent Dose,Effective Dose,Absorbed Dose,Exposure,C,
+Why are we concerned about the possibility of stochastic effects in dental radiology?,Stochastic effects have a probability to occur at any dose,Stochastic effects are guaranteed to occur over a lifetime of taking dental radiographs,Multiple dental radiographs might cause Hematopoietic Syndrome,Dental radiographs have been proven to cause cancer,A,
+Which of the following choices is the MOST radiosensitive?,Nerves,Muscle,Bone Marrow,Enamel,C,
+Which of the following is NOT a guiding principle of radiation protection?,Justification,Optimization,Dose limitation,Rule of 6,D,
+Which of the following theories of stochastic effects do we assume is correct to ensure the protection of our patients? This theory states that every small bit of radiation has the potential to be harmful.,Linear no-threshold model,Parabolic model,Threshold model,Hormetic model,A,
+"Which of the following is a possible effect, either direct or indirect, that x-rays may have on biological molecules?",Free radical production,Radiolysis of water,Hydrogen removal from organic molecules,All of the other answer choices are possible effects,D,
+The principle of ALARA means that we should:,Expose every patient to the same amount of radiation,Expose each patient to as little radiation as is reasonably achievable,Never expose a pregnant patient to x-rays,Never expose a child to x-rays,B,
+The SLOB rule is used to figure out if an object is located:,Buccal or lingual,Mesial or distal,Superior or inferior,Lateral or medial,A,
+"The object being imaged must be in-between the x-ray source and the sensor. Therefore, when taking intraoral radiographs, the sensor is always placed on the ______ side of the teeth.",Buccal,Lingual,Mesial,Distal,B,
+Which of the following should NOT be visualized in a bitewing radiograph?,Interproximal surfaces of teeth,Alveolar crest,Periapical region,Maxillary and mandibular crowns,C,
+The mesial-most structure captured in the premolar bitewing projection should be the _________ half of the __________.,Distal; canine,Mesial; canine,Distal; second premolar,Mesial; second premolar,A,
+Which of the following techniques can be used to inhibit the patient's gag reflex?,Keep eyes wide open,Anesthetic spray,Close mouth slowly,All of the answer choices can be used,D,
+"A full-mouth series (FMS, FMX) of radiographs does NOT contain _________________ radiographs.",Anterior periapical,Posterior bitewing,Anterior occlusal,Posterior periapical,C,
+Which of the following intraoral projections should show the full crowns and roots of both left mandibular premolars?,Left mandibular molar periapical,Left mandibular premolar periapical,Left mandibular molar (horizontal) bitewing,Left mandibular root bitewing,B,
+Which of the following is the MAJOR error depicted in this radiograph?,Overexposure,Vertical misangulation,Double image,Cone cut,D,images/oralrad-midterm-fall-2021/fig36.jpeg
+Which of the following is the MAJOR error depicted in this radiograph?,Horizontal misangulation,Under-exposure,Double image,Cone cut,C,images/oralrad-midterm-fall-2021/fig37.jpeg
+Which of the following is the MAJOR error depicted in this FILM radiograph?,Vertical misangulation,Double image,Underexposure,Overexposure,C,images/oralrad-midterm-fall-2021/fig38.jpeg
+A patient with a low caries risk should have radiographs taken _____________ a patient with a high caries risk.,less often than,more often than,just as often as,not as often as,D,
+Bitewing radiographs should generally be taken at each 6-month recall visit.,True,False,,,B,
+"A 25-year-old male patient presents to your clinic for a 6 month recall examination. A full mouth series was taken at his initial visit a year ago, revealing no large dental restorations - just a shallow occlusal composite on #19. At his previous dental visit, no new caries were detected. Today, there is no clinical evidence of dental caries. Review of the patient's chart suggests that he is at low risk for dental caries. According to the ADA guidelines, what radiographs should you take at today's dental appointment?",Bitewing radiographs only,[Full mouth series] or [panoramic + selected intraoral radiographs],No radiographs today,Selected periapical radiographs only,C,
+Enamel is radiographically indistinguishable from cementum.,True,False,,,B,
+The lamina dura appears on intraoral radiographs as a:,radiopaque circle around the crown,radiolucent circle around the crown,radiopaque line around the roots,radiolucent line around the roots,C,
+The white arrows are pointing to what radiolucent structure(s)?,Cementoenamel junction,Alveolar crest,Pulp space,PDL space,D,images/oralrad-midterm-fall-2021/fig44.jpeg
+The white arrows are pointing to which radiolucent structures?,Lamina dura,PDL space,Nutrient canals / neurovascular bundles,Lingual canal,C,images/oralrad-midterm-fall-2021/fig45.jpeg
+Which of the following radiolucent structures is indicated by the white arrows?,Anterior Nasal spine,Floor of nose / hard palate,Inferior Nasal concha,Incisive foramen,D,images/oralrad-midterm-fall-2021/fig46.jpeg
+Which of the following structures is indicated by the white arrows?,Floor of nose,Floor of maxillary sinus,Floor of orbit,Free gingival margin,B,images/oralrad-midterm-fall-2021/fig47.jpeg
+Which of the following structures is indicated by the white arrows?,Zygomatic process of the maxilla,Floor of the orbit,Floor of the maxillary sinus,Ala of the nose,A,images/oralrad-midterm-fall-2021/fig48.jpeg
+How do you feel about the hybrid lecture format?Note: Full credit will be awarded for this question as long any answer is given.,I would rather it be completely remote.,I would rather it be completely in-person.,Hybrid is a fair compromise.,I have no strong opinion either way.,D,
+What is the proper rationale behind the behavior depicted in this meme?,Dentists are concerned about stochastic effects because they take radiographs every day,Dentists are concerned about deterministic effects because they take radiographs every day,Dentists are concerned because x-rays are guaranteed to cancer,Dentists use doses that are much higher than medical CTs,A,images/oralrad-midterm-fall-2021/fig50.jpeg
