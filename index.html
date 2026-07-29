@@ -226,8 +226,8 @@ async function loadExams() {
   exams = await res.json();
 }
 
-const TYPE_LABELS = { gda: 'GDA', dao: 'DAO', ethics: 'Ethics' };
-const TYPE_ORDER = ['gda', 'dao', 'ethics'];
+const TYPE_LABELS = { gda: 'GDA', dao: 'DAO', ethics: 'Ethics', pcod1: 'PCOD I' };
+const TYPE_ORDER = ['gda', 'dao', 'ethics', 'pcod1'];
 const SUBTYPES_BY_TYPE = {
   gda: [
     { id: 'midterm', label: 'Midterms' },
@@ -239,19 +239,24 @@ const SUBTYPES_BY_TYPE = {
     { id: 'final', label: 'Final Exams' },
     { id: 'quiz', label: 'Quizzes' },
   ],
+  pcod1: [
+    { id: 'midterm', label: 'Midterms' },
+    { id: 'final', label: 'Final Exams' },
+    { id: 'quiz', label: 'Quizzes' },
+  ],
 };
 const SUBTYPE_LABELS = Object.values(SUBTYPES_BY_TYPE).flat().reduce((acc, s) => (acc[s.id] = s.label, acc), {});
 
 // Which school semester each category belongs under on the home page. Types
-// with no entry here (e.g. "testing", placeholder/demo content) are shown
-// in an unsectioned group at the end instead of under a semester heading.
+// with no entry here are shown in an unsectioned group at the end instead
+// of under a semester heading.
 const SEMESTER_ORDER = [
   'D1 Summer', 'D1 Fall', 'D1 Spring',
   'D2 Summer', 'D2 Fall', 'D2 Spring',
   'D3 Summer', 'D3 Fall', 'D3 Spring',
   'D4 Summer', 'D4 Fall',
 ];
-const TYPE_SEMESTER = { gda: 'D1 Summer', dao: 'D1 Summer', ethics: 'D1 Summer' };
+const TYPE_SEMESTER = { gda: 'D1 Summer', dao: 'D1 Summer', ethics: 'D1 Summer', pcod1: 'D1 Fall' };
 
 function listViewForExam(examId) {
   const e = exams[examId];
