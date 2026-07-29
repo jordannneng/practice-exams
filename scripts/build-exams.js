@@ -1,9 +1,12 @@
 #!/usr/bin/env node
 // Converts exams-csv/*.csv into exams.json.
-// Each CSV: row 1 = "title,<Exam Title>,<type>,<subtype>", row 2 = column header, remaining rows = data.
+// Each CSV: row 1 = "title,<Exam Title>,<type>,<subtype>,<issues>", row 2 = column header, remaining rows = data.
 // <type> must be one of KNOWN_TYPES below — add a new category there before using it in a CSV.
 // <subtype> is required only for types listed in KNOWN_SUBTYPES (e.g. gda exams must be
 // midterm, final, or quiz) and must be blank for types with no subtypes configured.
+// <issues> is optional free text describing known problems with this exam's source material
+// (e.g. a missing figure, a duplicate answer choice) — shown in the app as a warning icon
+// next to the exam. Leave blank for exams with no known issues.
 // Header must include "question", "correct", and two or more "option_*" columns
 // (e.g. question,option_a,option_b,option_c,option_d,option_e,correct) — a single
 // header can mix row lengths, so true/false rows just leave the unused option
@@ -87,6 +90,7 @@ function csvFileToExam(filePath) {
   if (!validSubtypes && subtype) {
     throw new Error(`${filePath}: type "${type}" does not support a subtype, but got "${subtype}"`);
   }
+  const issues = (titleRow[4] || '').trim();
   if (!headerRow) throw new Error(`${filePath}: missing header row`);
   const header = headerRow.map(h => h.trim().toLowerCase());
   const questionCol = header.indexOf('question');
@@ -108,7 +112,7 @@ function csvFileToExam(filePath) {
       ...(image ? { image } : {}),
     };
   });
-  return { title, type, subtype, questions };
+  return { title, type, subtype, issues, questions };
 }
 
 function formatExamsJson(exams) {
@@ -124,9 +128,10 @@ function formatExamsJson(exams) {
       }`;
     }).join(',\n');
     const subtypeLine = e.subtype ? `,\n    "subtype": ${JSON.stringify(e.subtype)}` : '';
+    const issuesLine = e.issues ? `,\n    "issues": ${JSON.stringify(e.issues)}` : '';
     return `  ${JSON.stringify(id)}: {
     "title": ${JSON.stringify(e.title)},
-    "type": ${JSON.stringify(e.type)}${subtypeLine},
+    "type": ${JSON.stringify(e.type)}${subtypeLine}${issuesLine},
     "questions": [
 ${questionEntries}
     ]

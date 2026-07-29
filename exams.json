@@ -334,6 +334,7 @@
     "title": "GDA Final Exam (Summer 2016)",
     "type": "gda",
     "subtype": "final",
+    "issues": "The question about a plane of reference may have an incorrect marked answer in the original source: the same figure is used elsewhere in this question bank to represent the median/sagittal plane, but here the answer key marks the correct answer as coronal. Not yet confirmed with the instructor.",
     "questions": [
       {
         "text": "Which of the following statements is NOT TRUE about the development of the sinuses?",
@@ -1740,6 +1741,7 @@
     "title": "GDA Final Exam (Summer 2021)",
     "type": "gda",
     "subtype": "final",
+    "issues": "No figures are available in this exam's source file, so 6 questions (cleft lip/palate classification, a suture, a plane of reference, and 2 clinical findings) reference a figure that is not shown.",
     "questions": [
       {
         "text": "Enamel is derived from ectoderm from the oral cavity. All other tissues are derived from mesoderm.",
@@ -2067,6 +2069,7 @@
     "title": "GDA Final Exam (Summer 2022)",
     "type": "gda",
     "subtype": "final",
+    "issues": "3 questions (cleft lip classification, cleft palate classification, and a cranial suture) reference a figure that was not available in the source file.",
     "questions": [
       {
         "text": "What defines the period of middle childhood?",
@@ -2171,7 +2174,7 @@
       {
         "text": "Identify the plane of reference shown in the figure.",
         "options": ["Coronal section", "Transverse section", "Median section", "Sagittal plane", "Caudal end"],
-        "correct": 1,
+        "correct": 0,
         "image": "images/gda-final-summer-2022/fig21.jpeg"
       },
       {
@@ -3719,6 +3722,7 @@
     "title": "GDA Midterm Exam (Summer 2019)",
     "type": "gda",
     "subtype": "midterm",
+    "issues": "One question has a duplicate answer choice in the original source (two options both read \"ovary\").",
     "questions": [
       {
         "text": "Oogenesis is the process that creates female gametes. Which of the following describes the DNA content of the female’s gametes, or ovum?",
@@ -4055,6 +4059,7 @@
     "title": "GDA Midterm Exam (Summer 2020)",
     "type": "gda",
     "subtype": "midterm",
+    "issues": "One question has an incomplete answer choice in the original source (\"I, II,\"), and another has a duplicate answer choice (two options both read \"Incomplete bilateral\").",
     "questions": [
       {
         "text": "Which of the following statements is NOT true regarding gametogenesis?",
@@ -4415,6 +4420,7 @@
     "title": "GDA Midterm Exam (Summer 2021)",
     "type": "gda",
     "subtype": "midterm",
+    "issues": "One question has an incomplete answer choice in the original source (\"I, II,\"), and another has a duplicate answer choice (two options both read \"Incomplete bilateral\").",
     "questions": [
       {
         "text": "Which of the following statements is NOT true regarding gametogenesis?",
@@ -4756,6 +4762,7 @@
     "title": "GDA Midterm Exam (Summer 2022)",
     "type": "gda",
     "subtype": "midterm",
+    "issues": "One question has a duplicate answer choice in the original source (two options both read \"Incomplete bilateral\"), and another has an incomplete answer choice (\"I, II,\").",
     "questions": [
       {
         "text": "Which of the following is not a common symptom of COVID-19 in young children?",
