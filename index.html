@@ -226,8 +226,8 @@ async function loadExams() {
   exams = await res.json();
 }
 
-const TYPE_LABELS = { gda: 'GDA', dao: 'DAO', ethics: 'Ethics', testing: 'Testing' };
-const TYPE_ORDER = ['gda', 'dao', 'ethics', 'testing'];
+const TYPE_LABELS = { gda: 'GDA', dao: 'DAO', ethics: 'Ethics' };
+const TYPE_ORDER = ['gda', 'dao', 'ethics'];
 const SUBTYPES_BY_TYPE = {
   gda: [
     { id: 'midterm', label: 'Midterms' },

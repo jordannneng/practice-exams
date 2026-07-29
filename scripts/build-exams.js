@@ -58,7 +58,7 @@ function parseCsv(text) {
   return rows.filter(r => r.some(f => f.trim() !== ''));
 }
 
-const KNOWN_TYPES = ['gda', 'dao', 'ethics', 'testing'];
+const KNOWN_TYPES = ['gda', 'dao', 'ethics'];
 const KNOWN_SUBTYPES = { gda: ['midterm', 'final', 'quiz'], dao: ['midterm', 'final', 'quiz'] };
 
 const LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
@@ -103,7 +103,7 @@ function csvFileToExam(filePath) {
   const questions = dataRows.map((r, i) => {
     const rowNum = i + 3; // 1-indexed, after the title and header rows
     const options = optionCols.map(c => (r[c] || '').trim()).filter(v => v !== '');
-    if (options.length < 2) throw new Error(`${filePath} row ${rowNum}: needs at least 2 non-blank options`);
+    if (options.length < 1) throw new Error(`${filePath} row ${rowNum}: needs at least 1 non-blank option`);
     const image = imageCol !== -1 ? (r[imageCol] || '').trim() : '';
     return {
       text: r[questionCol],
