@@ -257,8 +257,8 @@ async function loadExams() {
   exams = await res.json();
 }
 
-const TYPE_LABELS = { gda: 'GDA', dao: 'DAO', ethics: 'Ethics', pcod1: 'PCOD I', cario: 'Cariology', oralrad: 'Oral Radiology' };
-const TYPE_ORDER = ['gda', 'dao', 'ethics', 'pcod1', 'cario', 'oralrad'];
+const TYPE_LABELS = { gda: 'GDA', dao: 'DAO', ethics: 'Ethics', pcod1: 'PCOD I', cario: 'Cariology', oralrad: 'Oral Radiology', pcod2: 'PCOD II' };
+const TYPE_ORDER = ['gda', 'dao', 'ethics', 'pcod1', 'cario', 'oralrad', 'pcod2'];
 const SUBTYPES_BY_TYPE = {
   gda: [
     { id: 'midterm', label: 'Midterms' },
@@ -283,6 +283,11 @@ const SUBTYPES_BY_TYPE = {
     { id: 'midterm', label: 'Midterms' },
     { id: 'final', label: 'Final Exams' },
   ],
+  pcod2: [
+    { id: 'midterm', label: 'Midterms' },
+    { id: 'final', label: 'Final Exams' },
+    { id: 'quiz', label: 'Quizzes' },
+  ],
 };
 const SUBTYPE_LABELS = Object.values(SUBTYPES_BY_TYPE).flat().reduce((acc, s) => (acc[s.id] = s.label, acc), {});
 
@@ -295,7 +300,7 @@ const SEMESTER_ORDER = [
   'D3 Summer', 'D3 Fall', 'D3 Spring',
   'D4 Summer', 'D4 Fall',
 ];
-const TYPE_SEMESTER = { gda: 'D1 Summer', dao: 'D1 Summer', ethics: 'D1 Summer', pcod1: 'D1 Fall', cario: 'D1 Fall', oralrad: 'D1 Fall' };
+const TYPE_SEMESTER = { gda: 'D1 Summer', dao: 'D1 Summer', ethics: 'D1 Summer', pcod1: 'D1 Fall', cario: 'D1 Fall', oralrad: 'D1 Fall', pcod2: 'D1 Spring' };
 
 function listViewForExam(examId) {
   const e = exams[examId];

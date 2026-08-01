@@ -21307,5 +21307,2493 @@
         "correct": 3
       }
     ]
+  },
+  "pcod2-final-spring-2017": {
+    "title": "PCOD II Final Exam (Spring 2017)",
+    "type": "pcod2",
+    "subtype": "final",
+    "questions": [
+      {
+        "text": "Which of the following treatment possibilities is/are indications for porcelain veneers?",
+        "options": ["Modifying the shade of a tooth", "Altering the length or width of a tooth", "Closing anterior diastemas", "a and c only", "all of the above"],
+        "correct": 4
+      },
+      {
+        "text": "Reducing the incisal edge of a maxillary anterior tooth (that will be restored with aporcelain veneer) increases the incisal translucency of the restoration. In this case, how muchshould the incisal edge of a maxillary anterior tooth be reduced?",
+        "options": ["0.5 mm", "2.0 mm", "3.5 mm", "It doesn't really matter as long as the porcelain shade matches the tooth."],
+        "correct": 1
+      },
+      {
+        "text": "The lingual surface finish line on an anterior tooth that will be restored with a porcelain veneer is a:",
+        "options": ["chamfer", "bevel", "chamfer and a bevel", "reverse bevel", "none of the above"],
+        "correct": 4
+      },
+      {
+        "text": "When preparing an anterior tooth to be restored with a porcelain veneer, it is desirable to have the margin finish line on:",
+        "options": ["a pre-existing composite restoration.", "enamel only", "dentin and enamel only", "cementum and enamel only", "where the margin finish line ends is unimportant"],
+        "correct": 1
+      },
+      {
+        "text": "The placement of provisional or temporary restorations over porcelain veneer preparations is an important step in the predictable placement of the veneers because they:",
+        "options": ["decrease sensitivity.", "provide essential diagnostic information.", "improve interim esthetics.", "can be used to assess the esthetics of the final restoration.", "all of the above."],
+        "correct": 4
+      },
+      {
+        "text": "The shade of a cemented porcelain veneer is influenced by:",
+        "options": ["the porcelain shade itself", "the shade of the underlying resin cement", "the translucency of the porcelain", "the color of the underlying tooth strucutre", "all of the above"],
+        "correct": 4
+      },
+      {
+        "text": "Which of the following can be limitations or problems of porcelain veneer restorations:",
+        "options": ["marginal discoloration", "debonding of the restoration", "wear of any natural teeth when the veneers oppose natural teeth", "b and c only", "all the above"],
+        "correct": 4
+      },
+      {
+        "text": "When preparing a tooth for a porcelain veneer, if the tooth is lingually inclined (inlingual version) the facial reduction of the preparations should be",
+        "options": ["the same as normal", "less than normal", "greater than normal"],
+        "correct": 1
+      },
+      {
+        "text": "Which of the following are true of porcelain onlay preparations?",
+        "options": ["The cavosurface margins are always beveled", "Internal line angles should be sharp", "The occlusal reduction of the working cusp should be 2.0 mm", "The buccal and lingual walls of the proximal boxes should be parallel", "all of the above"],
+        "correct": 2
+      },
+      {
+        "text": "The principle crystalline component of feldspathic porcelain after it is baked is:",
+        "options": ["tin oxide", "leucite", "titanium oxide", "feldspar", "glass"],
+        "correct": 1
+      },
+      {
+        "text": "Fatigue failure of an all-ceramic restoration can be due to:",
+        "options": ["accidentally biting down on a hard olive pit", "exceeding the compressive strength of the ceramic when trying-in or cementing the restoration", "normal levels of stress in function (chewing) over several years of time", "all the above", "none of the above"],
+        "correct": 2
+      },
+      {
+        "text": "A slot preparation for a Class II composite restoration should be used when:",
+        "options": ["decay is present only on the proximal surface (as seen radiographically)", "there is no radiographic evidence or clinical evidence of occlusal decay", "there are no existing restorations on the occlusal surface touching the occlusal cavosurface margins of the slot preparation.", "a and c only", "all of the above"],
+        "correct": 4
+      },
+      {
+        "text": "The Class III facial approach preparation differs from the lingual approach in that:",
+        "options": ["the facial cavosurface margin is crescent shaped b the facial cavosurface margin is not beveled", "the lingual cavosurface margin always breaks contact", "all of the above", "none of the above"],
+        "correct": 0
+      },
+      {
+        "text": "Retention in a Class III facial approach is placed:",
+        "options": ["at the facial-lingual-axial point angle", "at the gingival-axial line angle", "at the buccal-axial line angle", "a and b", "all the above"],
+        "correct": 3
+      },
+      {
+        "text": "Calcium hydroxide liner (Dycal®) is used for which the following purposes?",
+        "options": ["Protects the pulp from chemical insult", "Stimulates the odontoblasts to produce dentin", "Used as an antibacterial agent", "a and c", "all of the above"],
+        "correct": 4
+      },
+      {
+        "text": "A glass ionomer base is used for which of the following purposes?",
+        "options": ["Thermal insulator under composite restorations", "Increases retention of composite restorations", "Stimulates reparative dentin", "Thermal insulator under metallic restorations", "all of the above"],
+        "correct": 3
+      },
+      {
+        "text": "While removing decay from a large carious lesion in tooth #31, it is determined that the floor of the preparation is within 0.5 mm of the mesial pulp horn. Prior to placing an amalgam restoration, which of the following procedures should be performed?",
+        "options": ["Place (Dycal®) over the entire pulpal floor of the preparation, then place the amalgam", "Place (Dycal®) over the mesial pulp horn area, then place the amalgam", "Place glass ionomer base over the entire pulpal floor of the preparation, then place the amalgam", "Place (Dycal®) over the mesial pulp horn area, place a thick layer of glass ionomer base to replace missing dentin, then place the amalgam", "Place a thick layer glass ionomer base to replace missing dentin, then place the amalgam"],
+        "correct": 3
+      },
+      {
+        "text": "Which of the following is/are reasons for placing a bevel on the facial margin of an anterior composite restoration?",
+        "options": ["Provides additional retention", "Decreases marginal leakage", "Makes the transition from restoration to tooth less visually obvious", "all of the above", "none of the above"],
+        "correct": 3
+      },
+      {
+        "text": "IRM® is used for which of the following purposes?",
+        "options": ["Temporary intracoronal restorations.", "Relieves tooth pain", "Helps to prevent further decay", "all of the above", "none of the above"],
+        "correct": 3
+      },
+      {
+        "text": "The ingredient of of IRM® is that is responsible for its anodyne property is:",
+        "options": ["methylmethacrylate (MMA)", "eugenol", "water", "zinc acetate", "none of the above"],
+        "correct": 1
+      },
+      {
+        "text": "The chemical reaction of the components of IRM is considered to be “autocatalytic” because:",
+        "options": ["water is a catalyst and also a product of the reaction", "zinc oxide is a catalyst and also a product of the reaction", "zinc eugenolate is a catalyst for the reaction", "a and c", "none of the above"],
+        "correct": 0
+      },
+      {
+        "text": "The difference in the bonding mechanism to tooth structure for a composite and a glass ionomer (GIC) is:",
+        "options": ["the bond of composite to dentin is chemical, and GIC to dentin is micromechanical", "the bond of composite to dentin is micromechanical, and GIC to dentin is chemical", "the bond of composite to enamel is chemical, and GIC to enamel is micromechanical", "there is no difference between the bond of composites and GIC to tooth structure", "none of the above"],
+        "correct": 1
+      },
+      {
+        "text": "For a lingual approach Class III composite preparation, the facial wall is beveled:",
+        "options": ["only when the facial wall extends into the facial embrasure", "whenever the facial wall breaks contact with the adjacent tooth", "whenever the lingual wall is beveled", "all of the above", "none of the above"],
+        "correct": 0
+      },
+      {
+        "text": "A facial approach Class III composite preparation is used only when:",
+        "options": ["a carious lesion is visually evident from the facial view", "the lingual wall is intact with no visual evidence of a carious lesion", "the proximal carious lesion is only evident on a radiograph and not visually evident", "a and b", "all of the above"],
+        "correct": 3
+      },
+      {
+        "text": "In a lingual approach Class III preparation, the gingival and incisal walls are parallel to each other in order to:",
+        "options": ["create retentive form", "create convenience form", "increase the bond strength of the restoration", "all of the above", "none of the above"],
+        "correct": 0
+      },
+      {
+        "text": "Which of the following are features of a three surface Class III preparation (e.g. FML)?",
+        "options": ["Facial cavosurface margin is crescent shaped", "Lingual cavosurface margin is rectangular in shape", "Facial cavosurface margin has a 1 mm bevel", "Retentive grooves are placed gingivally and incisally at the expense of the gingival and incisal walls", "all of the above"],
+        "correct": 4
+      },
+      {
+        "text": "The buccal and lingual walls of the proximal box of a Class II MOD composite preparation should be:",
+        "options": ["slightly divergent to form a dovetail", "parallel to form a dovetail", "slightly convergent to form a dovetail", "any of the above", "none of the above"],
+        "correct": 2
+      },
+      {
+        "text": "Marginal breakdown (loss of marginal seal) of an amalgam restoration may be due to:",
+        "options": ["solubility", "refraction", "corrosion", "aborption", "adsorption"],
+        "correct": 2
+      },
+      {
+        "text": "Which of the following restorative materials has a compressive strength approximately equal to the compressive strength of tooth enamel?",
+        "options": ["amalgam", "composite", "glass ionomer", "cast gold", "porcelain"],
+        "correct": 0
+      },
+      {
+        "text": "The elastic modulus is a measurement of:",
+        "options": ["the toughness of a restorative material", "the ductility of a restorative material", "the yield strength of a restorative material", "the stiffness of a restorative material", "plastic deformation of a restorative material"],
+        "correct": 3
+      },
+      {
+        "text": "The amount of force exerted on a restoration by an opposing tooth cusp depends on:",
+        "options": ["the occlusal contact area of the opposing cusp on the restoration", "the strength of the masseter muscle", "the size of the cusp", "the strength of the restoration", "the resiliency of the restoration"],
+        "correct": 1
+      },
+      {
+        "text": "Tensile strength measurements are useful when evaluating:",
+        "options": ["wear resistance of restorations against natural tooth structure", "elastic modulus of restorative materials in function", "bond strength of restorative materials to tooth structure", "resistance of restorative materials to occlusal crushing forces", "strength of the masseter muscle"],
+        "correct": 2
+      },
+      {
+        "text": "What clinical property does “compressive strength” relate to?",
+        "options": ["the burnishability of the margins of a gold crown", "the ability of a restorative material to resist crushing forces during mastication", "the flexure of a three-unit bridge in function", "the retention of a restorative material", "none of the above"],
+        "correct": 1
+      },
+      {
+        "text": "The clinical performance of a restorative material depends on:",
+        "options": ["its chemical and physical properties", "its composition and microstructure", "the manner in which it is placed by the dentist", "a and b only", "all of the above"],
+        "correct": 4
+      },
+      {
+        "text": "When a material is being considered for the restoration of a large occlusal area of a second molar, a major consideration should be its:",
+        "options": ["tensile strength", "shear strength", "compressive strength", "percent elongation", "flexural strength"],
+        "correct": 2
+      },
+      {
+        "text": "The tensile strength of the bond between a composite restoration and tooth enamel is:",
+        "options": ["equal to the tensile strength of the enamel", "about 3 times the tensile strength of the enamel", "about 1/3 of the tensile strength of the enamel", "about 1/10 of the tensile strength of the enamel", "about 10 times the tensile strength of the enamel"],
+        "correct": 2
+      },
+      {
+        "text": "Which of the following physical and chemical properties can affect the abrasive wear of a restoration in function?",
+        "options": ["hardness", "thermal expansion", "passivation", "compressive strength", "elastic modulus"],
+        "correct": 0
+      },
+      {
+        "text": "A composite hardens primarily by what mechanism?",
+        "options": ["acid-base reaction", "polymerization reaction", "gelation", "hydrogen bonding", "evaporation"],
+        "correct": 1
+      },
+      {
+        "text": "In which of the following clinical situations would a conventional glass ionomer be the material of choice as a restorative material?",
+        "options": ["Class IV restorations of permanent teeth.", "Restoration of deciduous teeth in a pediatric patient with rampant caries.", "Restoration of large occlusal caries in an adult.", "a and b", "all of the above"],
+        "correct": 1
+      },
+      {
+        "text": "Which of the following has the least amount of fluoride release?",
+        "options": ["resin modified glass ionomer", "glass ionomer", "compomer", "all are the same"],
+        "correct": 2
+      },
+      {
+        "text": "Which of the following statements is true?",
+        "options": ["An inlay replaces tooth structure within the cusp tips of the tooth", "An onlay replaces one or more cusps of the tooth", "A crown replaces the entire exterior surface of the tooth", "all of the above", "none of the above"],
+        "correct": 3
+      },
+      {
+        "text": "The advantage of using a cast gold onlay restoration vs. a ceramic onlay restoration is:",
+        "options": ["the cast gold onlay can be used in high stress areas", "the cast gold onlay cementation is not as technique sensitive", "the cast gold onlay is softer than the opposing natural enamel", "the cast gold onlay will not fatigue over a period of time", "all of the above"],
+        "correct": 4
+      },
+      {
+        "text": "In order to achieve a bond between a ceramic onlay and the natural tooth structure:",
+        "options": ["the onlay is etched with sulfuric acid and the tooth is etched with phosphoric acid", "the onlay is etched with phosphoric acid and the tooth is etched with hydrofluoric acid", "both the onlay and tooth are etched with phosphoric acid", "both the onlay and tooth are etched with sulfuric acid", "none of the above"],
+        "correct": 4
+      },
+      {
+        "text": "Contra-indications for cast gold onlays include:",
+        "options": ["high caries rate", "areas of the mouth where esthetics are important", "small restorations", "all of the above", "none of the above"],
+        "correct": 3
+      },
+      {
+        "text": "The major difference between a cast gold onlay preparation and a ceramic onlay preparation is:",
+        "options": ["the internal line angles of the cast gold onlay prep are round, and for the ceramic they are sharp", "the axio-pulpal line angle of the cast gold onlay prep is round, for the ceramic it is sharp", "the cavosurface margin of the cast gold onlay prep is beveled, and for the ceramic is a butt joint", "the internal walls of the cast gold onlay prep are divergent, for the ceramic they are convergent", "all the above"],
+        "correct": 2
+      },
+      {
+        "text": "The non-working side shelf is a characteristic of which type of preparation?",
+        "options": ["the ceramic inlay prep", "the ceramic onlay prep", "the cast gold inlay prep", "the ceramic inlay prep", "all of the above"],
+        "correct": 1
+      },
+      {
+        "text": "A provisional restoration is fabricated in order to:",
+        "options": ["provide for protection of the pulp", "prevent tooth movement", "maintain occlusion", "prevent food impaction", "all of the above"],
+        "correct": 4
+      },
+      {
+        "text": "Retention of a ceramic inlay or onlay restoration is derived from:",
+        "options": ["parallelism of the internal walls of the preparation", "convergence of the axial wall of the preparation", "slots and grooves in the pulpal and gingival floor of the preparation", "the cementation procedure", "all of the above"],
+        "correct": 3
+      },
+      {
+        "text": "A 200 pound male patient comes to your office with a small to medium area of decay on the mesial-occlusal and mesial-buccal interproximal surface of tooth #3 that is visible when he smiles. The patient also has a high caries rate (many untreated areas of decay). What would be the best restorative material for this situation?",
+        "options": ["composite", "glass ionomer", "amalgam", "gold onlay", "ceramic onlay"],
+        "correct": 0
+      },
+      {
+        "text": "A geriatric patient comes to your office with root surface decay in most of his anterior and posterior teeth, and complains that his mouth often feels very dry. You determine that this is due to psychotropic medications that he is taking that have a side effect of chronically severly reducing his saliva flow. The best material for restoring the carious lesions on the root surfaces is:",
+        "options": ["amalgam", "composite.", "glass ionomer", "hybrid ionomer", "compomer"],
+        "correct": 2
+      }
+    ]
+  },
+  "pcod2-final-spring-2018": {
+    "title": "PCOD II Final Exam (Spring 2018)",
+    "type": "pcod2",
+    "subtype": "final",
+    "questions": [
+      {
+        "text": "Which of the following are true of gold onlay preparations?",
+        "options": ["The cavosurface margins are always beveled", "Internal line angles should be sharp", "The occlusal reduction of the working cusp should be 2.0 mm", "The buccal and lingual walls of the proximal boxes should be divergent", "all of the above"],
+        "correct": 4
+      },
+      {
+        "text": "Fracture of an all-ceramic restoration due to fatigue can result from:",
+        "options": ["accidentally biting down on a hard olive pit", "exceeding the compressive strength of the ceramic when trying-in or cementing the restoration", "cyclic stress in function (chewing) over several years of time", "all the above", "none of the above"],
+        "correct": 2
+      },
+      {
+        "text": "A slot preparation for a Class II composite restoration should be used when:",
+        "options": ["decay is present only on the proximal surface (as seen radiographically)", "there is no radiographic evidence or clinical evidence of occlusal decay", "there are no existing restorations on the occlusal surface touching the occlusal cavosurface margins of the slot preparation.", "a and c only", "all of the above"],
+        "correct": 4
+      },
+      {
+        "text": "The Class III facial approach preparation differs from the lingual approach in that:",
+        "options": ["the facial cavosurface margin is rectangular shaped", "the facial cavosurface margin is not beveled", "the lingual cavosurface margin always breaks contact", "all of the above", "none of the above"],
+        "correct": 4
+      },
+      {
+        "text": "Retention in a Class III facial approach is placed:",
+        "options": ["at the facial-lingual-axial point angle", "at the gingival-axial line angle", "at the buccal-axial line angle", "a and b", "all the above"],
+        "correct": 3
+      },
+      {
+        "text": "Calcium hydroxide liner (Dycal®) is used for which the following purposes?",
+        "options": ["Protects the pulp from chemical insult", "Used for thermal protection of the pulp", "Used as an antibacterial agent", "a and c", "all of the above"],
+        "correct": 3
+      },
+      {
+        "text": "A glass ionomer base is used for which of the following purposes?",
+        "options": ["Thermal insulator under composite restorations", "Increases retention of composite restorations", "Stimulates reparative dentin under metallic restorations", "All of the above", "None of the above"],
+        "correct": 4
+      },
+      {
+        "text": "While removing decay from a large carious lesion in tooth #31, it is determined that the floor of the preparation is within 0.5 mm of the mesial pulp horn. Prior to placing an amalgam restoration, which of the following procedures should be performed?",
+        "options": ["Place (Dycal®) over the entire pulpal floor of the preparation, then place the amalgam", "Place (Dycal®) over the mesial pulp horn area, then place the amalgam", "Place glass ionomer base over the entire pulpal floor of the preparation, then place the amalgam", "Place (Dycal®) over the mesial pulp horn area, place a thick layer of glass ionomer base to replace missing dentin, then place the amalgam", "Place a thick layer glass ionomer base to replace missing dentin, then place the amalgam"],
+        "correct": 3
+      },
+      {
+        "text": "Which of the following is/are reasons for placing a bevel on the facial margin of an anterior composite restoration?",
+        "options": ["Provides additional retention", "Decreases marginal leakage", "Makes the transition from restoration to tooth less visually obvious", "all of the above", "none of the above"],
+        "correct": 3
+      },
+      {
+        "text": "IRM® is used for which of the following purposes?",
+        "options": ["Temporary intracoronal restorations.", "Liner under composite restorations", "Base in shallow amalgam preparations", "all of the above", "none of the above"],
+        "correct": 0
+      },
+      {
+        "text": "The ingredient of IRM® is that is responsible for its anodyne property is:",
+        "options": ["methylmethacrylate (MMA)", "eugenol", "water", "zinc acetate", "none of the above"],
+        "correct": 1
+      },
+      {
+        "text": "The difference in the bonding mechanism to tooth structure for a composite and a glass ionomer (GIC) is:",
+        "options": ["the bond of composite to dentin is chemical, and GIC to dentin is micromechanical", "the bond of composite to dentin is micromechanical, and GIC to dentin is chemical", "the bond of composite to enamel is chemical, and GIC to enamel is micromechanical", "there is no difference between the bond of composites and GIC to tooth structure", "none of the above"],
+        "correct": 1
+      },
+      {
+        "text": "For a lingual approach Class III composite preparation, the facial margin is beveled:",
+        "options": ["when the facial margin extends into the facial embrasure", "whenever the gingival margin is beveled", "whenever the lingual margin is beveled", "all of the above", "none of the above"],
+        "correct": 0
+      },
+      {
+        "text": "A facial approach Class III composite preparation is used only when:",
+        "options": ["a carious lesion is visually evident from the facial view", "the lingual wall is intact with no visual evidence of a carious lesion", "the proximal carious lesion is only evident on a radiograph and not visually evident", "a and b", "all of the above"],
+        "correct": 3
+      },
+      {
+        "text": "In a lingual approach Class III composite preparation, retention is achieved by:",
+        "options": ["preparing the gingival and incisal walls parallel to each other", "beveling and bonding the lingual cavosurface margin", "beveling the facial cavosurface margin", "a and c", "all of the above"],
+        "correct": 0
+      },
+      {
+        "text": "The buccal and lingual walls of the proximal box of a Class II MOD composite preparation should not be:",
+        "options": ["divergent", "parallel", "convergent", "all of the above", "none of the above"],
+        "correct": 0
+      },
+      {
+        "text": "Marginal breakdown (loss of marginal seal) of an amalgam restoration may be due to:",
+        "options": ["solubility", "refraction", "corrosion", "aborption", "adsorption"],
+        "correct": 2
+      },
+      {
+        "text": "Which of the following restorative materials has a compressive strength approximately equal to the compressive strength of tooth enamel?",
+        "options": ["amalgam", "composite", "glass ionomer", "cast gold", "porcelain"],
+        "correct": 0
+      },
+      {
+        "text": "The elastic modulus is a measurement of:",
+        "options": ["the toughness of a restorative material", "the ductility of a restorative material", "the yield strength of a restorative material", "the stiffness of a restorative material", "plastic deformation of a restorative material"],
+        "correct": 3
+      },
+      {
+        "text": "The amount of stress exerted on a restoration by an opposing tooth cusp depends on:",
+        "options": ["the occlusal contact area of the opposing cusp on the restoration", "the strength of the masseter muscle", "the proximity of the tooth to the TMJ", "all of the above", "none of the above"],
+        "correct": 3
+      },
+      {
+        "text": "Tensile strength measurements are useful when evaluating:",
+        "options": ["wear resistance of restorations against natural tooth structure", "elastic modulus of restorative materials in function", "bond strength of restorative materials to tooth structure", "resistance of restorative materials to occlusal crushing forces", "strength of the masseter muscle"],
+        "correct": 2
+      },
+      {
+        "text": "What clinical property does “compressive strength” relate to?",
+        "options": ["the burnishability of the margins of a gold crown", "the ability of a restorative material to resist crushing forces during mastication", "the flexure of a three-unit bridge in function", "the retention of a restorative material", "none of the above"],
+        "correct": 1
+      },
+      {
+        "text": "The clinical performance of a restorative material depends on:",
+        "options": ["its chemical and physical properties", "its composition and microstructure", "the manner in which it is placed by the dentist", "a and b only", "all of the above"],
+        "correct": 4
+      },
+      {
+        "text": "When a material is being considered for the restoration of a large occlusal area of a second molar, a major consideration should be its:",
+        "options": ["tensile strength", "shear strength", "compressive strength", "percent elongation", "flexural strength"],
+        "correct": 2
+      },
+      {
+        "text": "Which of the following physical and chemical properties can affect the abrasive wear of a restoration in function?",
+        "options": ["hardness", "thermal expansion", "passivation", "compressive strength", "elastic modulus"],
+        "correct": 0
+      },
+      {
+        "text": "A composite hardens primarily by what mechanism?",
+        "options": ["acid-base reaction", "polymerization reaction", "gelation", "hydrogen bonding", "evaporation"],
+        "correct": 1
+      },
+      {
+        "text": "In which of the following clinical situations would a conventional glass ionomer be the material of choice as a restorative material?",
+        "options": ["Class IV restorations of permanent teeth.", "Restoration of deciduous teeth in a pediatric patient with rampant caries.", "Restoration of root caries in an adult.", "b and c", "all of the above"],
+        "correct": 3
+      },
+      {
+        "text": "Which of the following has the greatest amount of fluoride release?",
+        "options": ["resin modified glass ionomer", "glass ionomer", "compomer", "all are the same"],
+        "correct": 1
+      },
+      {
+        "text": "Which of the following statements is true?",
+        "options": ["An inlay replaces tooth structure within the cusp tips of the tooth", "An onlay replaces one or more cusps of the tooth", "A crown replaces the entire exterior surface of the tooth", "b and c", "all of the above"],
+        "correct": 4
+      },
+      {
+        "text": "The advantage of using a ceramic onlay restoration vs. a gold onlay restoration is:",
+        "options": ["the ceramic onlay does not fatigue", "the ceramic onlay cementation is not as technique sensitive", "the ceramic onlay is softer than the opposing natural enamel", "all of the above", "none of the above"],
+        "correct": 4
+      },
+      {
+        "text": "In order to achieve a bond between a ceramic onlay and the natural tooth structure:",
+        "options": ["the onlay is etched with hydrofluoric acid and the tooth is etched with phosphoric acid", "the onlay is etched with phosphoric acid and the tooth is etched with hydrofluoric acid", "both the onlay and tooth are etched with phosphoric acid", "both the onlay and tooth are etched with sulfuric acid", "none of the above"],
+        "correct": 0
+      },
+      {
+        "text": "Indications for cast gold onlays include:",
+        "options": ["low caries rate", "areas of the mouth where esthetics are important", "high stress areas", "a and c", "none of the above"],
+        "correct": 3
+      },
+      {
+        "text": "The major difference between a cast gold onlay preparation and a ceramic onlay preparation is (are):",
+        "options": ["the internal line angles of the cast gold onlay preparation are round, and for the ceramic onlay they are sharp", "the axio-pulpal line angle of the cast gold onlay preparation is round, for the ceramic it is sharp", "the cavosurface margin of the cast gold onlay prep is beveled, and for the ceramic it is a butt joint", "the internal walls of the cast gold onlay prep are divergent, for the ceramic they are convergent", "all the above"],
+        "correct": 2
+      },
+      {
+        "text": "The non-working side shelf is a characteristic of which type of preparation?",
+        "options": ["the ceramic inlay prep", "the ceramic onlay prep", "the cast gold inlay prep", "the ceramic inlay prep", "none of the above"],
+        "correct": 1
+      },
+      {
+        "text": "A provisional restoration is fabricated in order to:",
+        "options": ["provide for protection of the pulp", "prevent tooth movement", "maintain occlusion", "prevent food impaction", "all of the above"],
+        "correct": 4
+      },
+      {
+        "text": "Retention of a ceramic inlay or onlay restoration is derived from:",
+        "options": ["parallelism of the internal walls of the preparation", "convergence of the axial wall of the preparation", "slots and grooves in the pulpal and gingival floor of the preparation", "the cementation procedure", "all of the above"],
+        "correct": 3
+      },
+      {
+        "text": "A 200 pound male patient comes to your office with a medium sized area of decay on the lingual surface of tooth #14. What would be the best restorative material for this situation?",
+        "options": ["composite", "glass ionomer", "amalgam", "gold onlay", "ceramic onlay"],
+        "correct": 2
+      },
+      {
+        "text": "A geriatric patient comes to your office with root surface decay in most of his anterior and posterior teeth and complains that his mouth often feels very dry. You determine that this is due to psychotropic medications that he is taking that have a side effect of chronically severely reducing his saliva flow. The best material for restoring the carious lesions on the root surfaces is:",
+        "options": ["amalgam", "composite.", "glass ionomer", "hybrid ionomer", "compomer"],
+        "correct": 2
+      },
+      {
+        "text": "Which of the following treatment possibilities is/are indications for porcelain veneers?",
+        "options": ["Modifying the shade of a tooth", "Altering the length or width of a tooth", "Closing anterior diastemas", "a and c only", "all of the above"],
+        "correct": 4
+      },
+      {
+        "text": "Reducing the incisal edge of a maxillary anterior tooth that will be restored with aporcelain veneer increases the incisal translucency of the restoration. How muchshould the incisal edge of a maxillary anterior tooth be reduced?",
+        "options": ["0.5 mm", "2.0 mm", "0.3 mm", "It doesn't really matter as long as the porcelain shade matches the tooth."],
+        "correct": 1
+      },
+      {
+        "text": "When preparing an anterior tooth to be restored with a porcelain veneer, it is desirable to have the margin finish line on:",
+        "options": ["a pre-existing composite restoration.", "enamel only", "dentin and enamel only", "cementum and enamel only", "where the margin finish line ends is unimportant"],
+        "correct": 1
+      },
+      {
+        "text": "The shade of a cemented porcelain veneer is influenced by:",
+        "options": ["the porcelain shade itself", "the shade of the underlying resin cement", "the translucency of the porcelain", "the color of the underlying tooth structure", "all of the above"],
+        "correct": 4
+      },
+      {
+        "text": "Which of the following can be limitations or problems of porcelain veneer restorations:",
+        "options": ["marginal discoloration", "debonding of the restoration", "wear of any natural teeth when the veneers oppose natural teeth", "b and c only", "all the above"],
+        "correct": 4
+      },
+      {
+        "text": "When preparing a tooth for a porcelain veneer, if the tooth is lingually inclined (i.e., in“lingual version”) the facial reduction of the preparations should be",
+        "options": ["the same as normal", "less than normal", "greater than normal"],
+        "correct": 1
+      },
+      {
+        "text": "The single most important measure a patient can take to arrest (halt) the progression of an enamel white spot lesion is?",
+        "options": ["Reducing sugar intake.", "Effective plaque control.", "Fluoride application.", "All the above measures are of equal importance in halting the progression of enamel white enamel white spot lesions."],
+        "correct": 3
+      },
+      {
+        "text": "Which of the following dental findings is a sign of a potentially serious eating disorder?",
+        "options": ["White spots on the facial surface of the mandibular teeth.", "Severe erosion of the palatal aspects of the maxillary teeth.", "Wear or erosion on any portion of the tooth surface.", "Eating disorders never cause changes in the dentition.", "All of the above"],
+        "correct": 1
+      },
+      {
+        "text": "In the enamel white spot lesion, the area of maximal mineral loss is?",
+        "options": ["At the surface of the lesion.", "Below the surface of the lesion.", "Uniform through the depth of the lesion."],
+        "correct": 1
+      },
+      {
+        "text": "Which of the following are virulence factors of Streptococcus mutans?",
+        "options": ["Ability to produce acids.", "Acid tolerance.", "Ability to convert sucrose into an extracellular matrix.", "All the above."],
+        "correct": 3
+      },
+      {
+        "text": "The interproximal surfaces are susceptible to caries since they",
+        "options": ["are subjected to occlusal forces.", "are areas of plaque accumulation.", "are areas of poor access to saliva flow.", "b and c", "all the above"],
+        "correct": 3
+      },
+      {
+        "text": "With one more year of preclinical training, I believe that I will be ready to treat live patients.",
+        "options": ["I agree 100%", "I agree 75%", "I agree 50%", "I agree 25%", "I'm ready now!"],
+        "correct": 4
+      }
+    ]
+  },
+  "pcod2-final-spring-2019": {
+    "title": "PCOD II Final Exam (Spring 2019)",
+    "type": "pcod2",
+    "subtype": "final",
+    "questions": [
+      {
+        "text": "A 15 year old boy with cerebal palsy, living in a group home, came in with the following caries: 20-DO, 19-MO and 18-O. This patient would ideally be a good candidate for:",
+        "options": ["One appointment of quadrant dentistry", "Three individual appointments- one for each tooth.", "Four appointments in case all the work can not get done in 3 appointments", "This can not be treated by a general dentist since it is a medically complex patient"],
+        "correct": 0
+      },
+      {
+        "text": "A cervical lesion should be restored if it is:",
+        "options": ["Carious", "Very sensitive", "Causing gingival inflammation", "All of the above"],
+        "correct": 3
+      },
+      {
+        "text": "A composite restoration is wider than the diameter of the light tip of the curing light. In this situation, the restoration is cured by:",
+        "options": ["Moving the tip over the surface for the required time", "Placing the tip stepwise over each area and exposing each area for the required time", "Positioning the tip far enough from the surface to illuminate the entire surface", "Centering the tip on the surface and curing the entire restoration from this"],
+        "correct": 1
+      },
+      {
+        "text": "A glass ionomer base is used for which of the following purposes?",
+        "options": ["Thermal insulator under amalgam restorations", "Increases retention of composite restorations", "Stimulates reparative dentin under metallic restorations", "All of the above", "None of the above"],
+        "correct": 0
+      },
+      {
+        "text": "A patient presents with pain. Clinical examination reveals a fractured amalgam restoration at the isthmus. This was most probably caused by.",
+        "options": ["Poor quality of amalgam", "Poor condensation of the amalgam", "Poor retention form of the cavity preparation", "Poor resistance form of the cavity preparation", "Failure to remove all decay prior to placement of the amalgam."],
+        "correct": 3
+      },
+      {
+        "text": "A person weighs 150 pounds and has well equilibrated occlusion. How much stress can he/she exert on the posterior teeth ?",
+        "options": ["12,000 - 24,000 PSI", "12,000 - 24,000 MPa", "125 - 150 lb", "125 - 150 kg"],
+        "correct": 0
+      },
+      {
+        "text": "A posterior restoration has been placed and equilibrated into perfect occlusion. The amount of stress exerted on the restoration by an opposing tooth cusp depends on:",
+        "options": ["the strength of the masseter muscle", "the occlusal contact area of the opposing cusp on the restoration only", "the total occlusal contact area of all the teeth in the patient's arch", "a and b", "a and c"],
+        "correct": 4
+      },
+      {
+        "text": "A shade of a restoration appears to match the shade of the surrounding teeth when illuminated by the dental examination light, but does not match when illuminated with sunlight. This is referred to as:",
+        "options": ["color disparison", "incandescence", "metamerism", "hue shift", "none of the above"],
+        "correct": 2
+      },
+      {
+        "text": "Acid etching of enamel increases retention and adaptation of resin restorations by: A: Increasing surface area B: Conditioning the surface for better wetting C: Creating surface irregularities for better mechanical locking",
+        "options": ["A and B", "A and C", "B and C", "All of the above"],
+        "correct": 3
+      },
+      {
+        "text": "After the dentist has completed an etching procedure on a Class III composite restoration, the preparation becomes contaminated with saliva. In response, the dentist should do which of the following?",
+        "options": ["Blow away the saliva with air, then proceed.", "Rinse away the saliva with water, dry the preparation, and then proceed.", "Wipe away the saliva with a cotton pellet, rinse the preparation with water, dry it with air, and then proceed.", "Rinse away the saliva with water, dry the preparation with air, and then repeat the etching procedure."],
+        "correct": 3
+      },
+      {
+        "text": "Beveling the enamel margin of a composite resin preparation is accomplished in order to: A: Improve esthetics B: Improve wettability of the surface during bonding C: Smooth the enamel and cavosurface margins D: Expose the ends of the enamel rods for acid attack",
+        "options": ["A and C", "A and D", "B and C", "B and D", "C and D"],
+        "correct": 1
+      },
+      {
+        "text": "Calcium hydroxide is used as a liner under a composite restoration to:",
+        "options": ["act as an antimicrobial agent", "protect the pulp against chemical irritation", "stimulate secondary dentin", "all of the above", "none of the above"],
+        "correct": 3
+      },
+      {
+        "text": "Ceramic materials are non-metals typically composed of ___________:",
+        "options": ["metallic carbides", "metallic oxides", "non-metallic carbides", "non-metallic oxides", "none of the above"],
+        "correct": 1
+      },
+      {
+        "text": "Compressive strength measurements are useful when comparing:",
+        "options": ["wear resistance of restorations against natural tooth structure", "stiffness of restorative materials in function", "bond strength of restorative materials to tooth structure", "restorative materials resistance to crushing forces", "none of the above"],
+        "correct": 3
+      },
+      {
+        "text": "Doing the gold standard of dental care is always the best care and proper thing to do for your patient.",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "During the bonding procedure, the “hybrid layer” refers to:",
+        "options": ["the zone of bonding agent penetrating the smear layer in dentin", "the zone of bonding agent penetrating the collagen in dentin", "the zone of bonding agent penetrating the etched enamel", "the zone of bonding agent bonding to the composite", "none of the above"],
+        "correct": 1
+      },
+      {
+        "text": "External stain of a composite restoration due to heavy smoking is an example of:",
+        "options": ["absorption", "imbibition", "cessation", "wetting", "none of the above"],
+        "correct": 0
+      },
+      {
+        "text": "Factors that can influence a person's perception of color of an object include:",
+        "options": ["the color of adjacent objects", "color adaptation", "psychological associations", "a and c", "all of the above"],
+        "correct": 4
+      },
+      {
+        "text": "Fluorescence can contribute to the overall perception of a shade when a tooth/restoration is illuminated with:",
+        "options": ["sunlight", "UV “black” light", "Incandescenlight", "A and B", "All of the above"],
+        "correct": 3
+      },
+      {
+        "text": "Hue, value and chroma are three attributes of color according to:",
+        "options": ["the CIE-Lab System", "the Munsell System", "the Vita Lumin System", "none of the above"],
+        "correct": 1
+      },
+      {
+        "text": "In order to remove excess mercury from an amalgam restoration you must:",
+        "options": ["mix in the amalgamator for the proper time and speed", "condense with high pressure", "overbuild by at least 1 mm", "all of the above", "none of the above"],
+        "correct": 3
+      },
+      {
+        "text": "Many factors affect tooth/cavity preparation. Which of the following would be the LEAST important factor?",
+        "options": ["Extent of the defect", "Size of the tooth", "Fracture lines", "Extent of old material"],
+        "correct": 1
+      },
+      {
+        "text": "Neuological changes in humans are not detected below urine levels of mercury of _______.",
+        "options": ["2.5 mg/L", "4.0 mg/L", "50 mg/L", "500 mg/L", "4000 mg/L"],
+        "correct": 3
+      },
+      {
+        "text": "Properly trimmed wooden wedge will do each of the following EXCEPT one. Which one is the EXCEPTION?",
+        "options": ["Protect gingival tissue.", "Provide space for the matrix band.", "Prevent overcontouring of the contact area.", "Reduce moisture leakage into the cavity preparation"],
+        "correct": 2
+      },
+      {
+        "text": "Restoring the proper proximal contact results in all of the following except one. Which one is the exception?",
+        "options": ["Reduction and elimination of food impaction at the interdental papilla", "Provides appropriate space for the interdental papilla", "Provides increased retention form for the restoration", "Maintenance of the proper occlusal relationship"],
+        "correct": 2
+      },
+      {
+        "text": "Some reasons to use temporary filling materials include: A: Arrest decay in patients with rampant caries B: When there is pulpal sensitivity requiring determination of pulpal vitality C: Insufficient time to complete final restoration",
+        "options": ["A and B", "B and C", "A and C", "All of the above"],
+        "correct": 1
+      },
+      {
+        "text": "The amount of elastic deformation of a three-unit bridge under an occlusal load:",
+        "options": ["depends on the modulus of elasticity of the material", "depends on the ultimate tensile strength of the material", "depends on the toughness of the of the material", "depends on the elongation of the material", "all of the above"],
+        "correct": 0
+      },
+      {
+        "text": "The axio-pulpal line of a MOF preparation on tooth #3",
+        "options": ["Must be rounded on the mesial portion only.", "Must be rounded on the facial portion only.", "Must be rounded the full length of the axio-pulpal line angle.", "Does not need to be rounded at all."],
+        "correct": 2
+      },
+      {
+        "text": "The clinical performance of a restorative material depends on:",
+        "options": ["its chemical and physical properties", "its composition and microstructure", "the manner in which it is placed by the dentist", "a and b only", "all of the above"],
+        "correct": 4
+      },
+      {
+        "text": "The generally accepted maximum thickness of a composite increment that allows for proper cure is _____.",
+        "options": ["1 to 2 mm", "2 to 4 mm", "4-6 mm", "There is no maximum thickness restriction"],
+        "correct": 0
+      },
+      {
+        "text": "The material of choice for restoring a patient's cervical lesion is:",
+        "options": ["Amalgam", "Composite resins", "Glass ionomer", "Indirect resin inlay"],
+        "correct": 2
+      },
+      {
+        "text": "The most important attribute to match in determining the shade of a tooth is:",
+        "options": ["Hue", "Value", "Chroma", "All the above"],
+        "correct": 1
+      },
+      {
+        "text": "The most important part of the placement procedure to insure good contacts for a Class II amalgam restoration is to:",
+        "options": ["condense with high pressure", "place a wedge", "use amalgam within one minute after mixing", "place the matrix band at least 1 mm higher than the adjacent marginal ridge", "condense the amalgam in the proximal box up to the gingival floor, then loosen the band ¼turn before proceeding"],
+        "correct": 4
+      },
+      {
+        "text": "The primary reason that a light cured composite restoration should not be built up in layers greater than 2 mm in thickness is:",
+        "options": ["the wear resistance will decrease if built up in thicker layers", "the composite may shrink excessively if it is built up in thick layers", "the composite may not cure thoroughly in thicker layers", "the composite will be more difficulty to polish", "all of the above"],
+        "correct": 2
+      },
+      {
+        "text": "The restoration in the above example has a high spot. The amount of stress exerted on the restoration by an opposing tooth cusp depends on:",
+        "options": ["the strength of the masseter muscle", "the occlusal contact area of the opposing cusp on the restoration only", "the total occlusal contact area of all the teeth in the patient's arch", "a and b", "a and c"],
+        "correct": 3
+      },
+      {
+        "text": "The restoration on tooth #19 has an overhang on the distal aspect. The dentist MOST likely failed to do which of the following?",
+        "options": ["To use a matrix", "To place a wedge properly", "To prepare a flat gingival floor", "To use appropriate condensation force"],
+        "correct": 1
+      },
+      {
+        "text": "The tensile strength of the bond between a composite and enamel is:",
+        "options": ["equal to the tensile strength of the enamel", "around 3 times the tensile strength of the enamel", "around 1/3 of the tensile strength of the enamel", "around 1/10 of the tensile strength of the enamel", "none of the above"],
+        "correct": 2
+      },
+      {
+        "text": "The use of rubber dam is best indicated for",
+        "options": ["Adhesive procedures", "Quadrant dentistry", "Teeth with challenging preparations", "Difficult patients", "All of the above"],
+        "correct": 4
+      },
+      {
+        "text": "This tooth is prepared as a Class II preparation:",
+        "options": ["You will document it as an MO.", "You will document it as a M.", "You will document it as a DO.", "You will document it as a D."],
+        "correct": 0,
+        "image": "images/pcod2-final-spring-2019/fig39.jpeg"
+      },
+      {
+        "text": "To ensure better thermal and protective insulation of the pulp during a capping procedure, calcium hydroxide should be:",
+        "options": ["Applied in thickness of 3.0mm", "Placed in the entire cavity preparation", "Covered with a stronger base", "Proceeded by application of a cavity varnish", "Preceeded by an application of zinc oxide cement"],
+        "correct": 2
+      },
+      {
+        "text": "To remain stable, a rubber dam clamp must contact the anchor tooth gingival to the height of contour. Which of the other criterion must the clamp satisfy?",
+        "options": ["All four points must be sharp", "All four points must contact the tooth.", "The bow must be directed to the distal side of the tooth."],
+        "correct": 1
+      },
+      {
+        "text": "What is the purpose of a wax up?",
+        "options": ["To assess the final restoration", "To ensure patient satisfaction", "To verify occlusal scheme", "Two of the above", "All of the above"],
+        "correct": 4
+      },
+      {
+        "text": "When dissimilar metals come in contact in the oral environment, the patient may experience a “shock”. This is referred to as:",
+        "options": ["an exothermal shock", "an endodontic shock", "an intraoral shock", "a galvanic shock", "a transcendental shock"],
+        "correct": 3
+      },
+      {
+        "text": "When preforming a procedure requiring selection of a shade, ideally the selection should be made prior to placement of a rubber dam. However, if a grey- colored dam is utilized, then shade selection may be made subsequent to placement of a rubber dam.",
+        "options": ["The first statement is true, the second is false", "The first statement is false, the second is true", "Both statements are true", "Both statements are false"],
+        "correct": 0
+      },
+      {
+        "text": "When preparing the dentin for the placement of a glass ionomer:",
+        "options": ["etch the dentin with phosphoric acid for 10 seconds", "etch the dentin with phosphoric acid for 20 seconds", "etch the dentin with maleic acid for 10 seconds", "etch the dentin with maleic acid for 20 seconds", "do not etch the dentin"],
+        "correct": 2
+      },
+      {
+        "text": "Which of the following most affects curing of a light activated composite resin?",
+        "options": ["Increment thickness", "Shade of composite", "Length of exposure"],
+        "correct": 0
+      },
+      {
+        "text": "Which of the following is the primary contraindication for the use of a composite restoration?",
+        "options": ["Occlusal factors", "Inability to isolate the operating area", "Nonesthetic areas", "Extension onto the root surface."],
+        "correct": 1
+      },
+      {
+        "text": "Which of the following is TRUE about infected dentin? A. It has numerous bacteria B: The collagen is denatured C: Takes up stain from caries indicator",
+        "options": ["A and C", "B and C", "A and B", "All of the above"],
+        "correct": 3
+      },
+      {
+        "text": "You have finished excavating a Class I preparation on the occlusal surface of tooth #31 and note that at this point the preparation extends about ½of the way up the cusps and only deep enough to just barely reach the DEJ. Your next step should be to:",
+        "options": ["Place a rubber dam, etch and place an amalgam", "Place rubber dam and place an amalgam", "Place a rubber dam, etch, place a bonding agent and place a composite", "Deepen the preparation and place an amalgam"],
+        "correct": 3
+      },
+      {
+        "text": "You have just finished a Class II preparation on tooth #18 and have iatrogenically created a pulpal floor which is a near exposure. In restoring the tooth, after placement of a rubber dam, you must first:",
+        "options": ["Etch with 37% phosphoric acid", "Place a calcium hydroxide liner", "Place a base", "Perform a root canal therapy"],
+        "correct": 1
+      }
+    ]
+  },
+  "pcod2-final-spring-2020": {
+    "title": "PCOD II Final Exam (Spring 2020)",
+    "type": "pcod2",
+    "subtype": "final",
+    "questions": [
+      {
+        "text": "Below are characteristics of infected dentin.",
+        "options": ["Must be removed", "Cannot be remineralized", "Bacteria is present", "Collagen is denatured", "\"Cannot be remineralized\" and \"Bacteria is present\"", "All of the answer choices"],
+        "correct": 5
+      },
+      {
+        "text": "True/False: The use of caries detector dye can lead to a significant clinical over-preparation due to the diffusion into infected and affected dentin.",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "text": "The following is true of matrix bands",
+        "options": ["Must extend past the gingival margin of the preparation for adequate seal", "Matrix bands needs to be slightly smaller than the occlusal circumference of the tooth", "When placing the matrix band the narrow end is always toward the occlusal", "It is not recommended to use Denovo bands in pediatric patients"],
+        "correct": 0
+      },
+      {
+        "text": "True/False: You have completed a preparation and removed all the decay, but the outline form doesn’t look exactly like the preparations you learned in PCODII. The right thing is to modify the preparation to make it look like the image on the powerpoint.",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "What is the purpose of the outer nut?",
+        "options": ["To increase and decrease circumference of the tofflemire band.", "To lock the tofflemire band in place", "To allow for better visibility", "To allow for proper quadrant placement"],
+        "correct": 1,
+        "image": "images/pcod2-final-spring-2020/fig5.jpeg"
+      },
+      {
+        "text": "What is NOT true about this system?",
+        "options": ["Disposable", "Expensive", "Can be used in more than one quadrant", "All of the answer choices are TRUE."],
+        "correct": 3,
+        "image": "images/pcod2-final-spring-2020/fig6.jpeg"
+      },
+      {
+        "text": "What are some advantages of using a glass ionomer?",
+        "options": ["Tooth colored", "Fluoride release", "Resin can be added to it", "\"Tooth colored\" & \"Fluoride release\"", "All of the answer choices"],
+        "correct": 4
+      },
+      {
+        "text": "You have completed a restoration. After checking with articulating paper you  see a bull’s eye on a tooth. This means:",
+        "options": ["That was your Target and the restoration was great- no need to adjust", "The restoration is not ideal and needs to be adjusted", "There is heavy occlusion in that area- but that is okay, the patient will adjust after a week or two.", "Look at the rest of the tooth, if there are bull’s eyes on two other/additional cusps, its tripodization and its fine- no adjustment needed."],
+        "correct": 1
+      },
+      {
+        "text": "Teeth closer to a 60 degree anterior controlling factor will have _____________ (steeper/flatter) and those closer to the 45 degree posterior controlling factor will have _____________ (steeper/flatter) cusps",
+        "options": ["Steeper, Steeper", "Flatter, Flatter", "Steeper, Flatter", "Flatter, Steeper"],
+        "correct": 2
+      },
+      {
+        "text": "Tarnish can occur with the following materials.",
+        "options": ["Glass ionomer", "Amalgam", "Composite", "Polymers"],
+        "correct": 1
+      },
+      {
+        "text": "Which of the following is a primary contraindication for the use of a composite restoration?",
+        "options": ["Occlusal factors", "Inability to isolate the operating area", "Nonesthetic areas", "Extension onto the root surface"],
+        "correct": 1
+      },
+      {
+        "text": "Bonding of resins to dentin is best described as involving _______.",
+        "options": ["Mechanical interlocking", "Ionic bonding", "Covalent bonding", "Van der Waals forces"],
+        "correct": 0
+      },
+      {
+        "text": "This is an image of overhang. What did the doctor do wrong?",
+        "options": ["Did not place rubber dam", "Did not place wedge", "Did not use a matrix band.", "Did not remove old restoration"],
+        "correct": 1,
+        "image": "images/pcod2-final-spring-2020/fig13.jpeg"
+      },
+      {
+        "text": "This is an image of a ____ Preparation:",
+        "options": ["Class I", "Class II", "Class III", "Class IV", "Class V"],
+        "correct": 4,
+        "image": "images/pcod2-final-spring-2020/fig14.jpeg"
+      },
+      {
+        "text": "This will be restored with a glass ionomer. What is true in this situation?",
+        "options": ["Glass Ionomer cannot be used in this area because of occlusal wear", "Glass ionomer cannot match the tooth color", "Glass Ionomer can only be used as a base- not as a restorative material", "None of the answer choice"],
+        "correct": 3,
+        "image": "images/pcod2-final-spring-2020/fig15.jpeg"
+      },
+      {
+        "text": "How would you classify this preparation?",
+        "options": ["Mesial Occlusal (MO)", "Mesial (M)", "Distal-Occlusal (DO)", "Distal (D)"],
+        "correct": 2,
+        "image": "images/pcod2-final-spring-2020/fig16.jpeg"
+      },
+      {
+        "text": "True/False You must be careful with etching since the length of etching time will influence the time required for proper polymerization.",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "When placing a Class II restoration, the restorative material should be condensed in the following manner:",
+        "options": ["the proximal portion first", "the occlusal portion first", "the proximal portion last", "the cavosurface margin first"],
+        "correct": 0
+      },
+      {
+        "text": "You are doing a classic MO preparation on tooth #19. The outline form should:",
+        "options": ["preserve the integrity of the uninvolved marginal ridge", "be large enough to for the smallest plugger", "incorporate all the infected grooves", "all of the answer choices"],
+        "correct": 3
+      },
+      {
+        "text": "The acid that is used to etch enamel is:",
+        "options": ["Hydrofluoric acid", "Phosphoric acid", "Lactic Acid", "Clavulanic acid"],
+        "correct": 1
+      },
+      {
+        "text": "True/ False: The purpose of tying floss around the rubber dam clamp is to prevent possible aspiration of the clamp.",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "text": "True or false: When more than one-half of the cusp-tip to cusp-tip tooth structure is removed, a fullcrown or onlay covering all of the remaining cusps is indicated.",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "text": "Why would you want to do a large composite build up of a broken down tooth?",
+        "options": ["Due to patient finances", "Due to patient’s health", "Due to patient’s inability to come for many appointments", "More than one answer choice"],
+        "correct": 3
+      },
+      {
+        "text": "If you have a compromised tooth and you do a large interim restoration, its best to make sure",
+        "options": ["It is restored with heavy occlusion", "It is restored to be in occlusion with the opposing arch", "It is restored with light occlusion", "You do not have to worry about occlusion when restoring a tooth."],
+        "correct": 2
+      },
+      {
+        "text": "Iatrogenic means:",
+        "options": ["Damage caused by natural causes", "Damage caused by a provider", "Damage caused spontaneously", "Damage caused by genetics"],
+        "correct": 1
+      },
+      {
+        "text": "The way that you are MOST LIKELY to ensure that you have adequate contact is:",
+        "options": ["Using a wedge", "Burnish your matrix band", "Condensing your composite", "Using flowable composite"],
+        "correct": 1
+      },
+      {
+        "text": "According to the golden proportions the size of the central incisor is:",
+        "options": ["1.0", "1.6", "1.8", "0.8"],
+        "correct": 1
+      },
+      {
+        "text": "Statement 1: The wax up is used to help the patient visualize the final treatment outcome, Statement 2: and therefore a wax up is necessary for every operative patient.",
+        "options": ["Both statements are true.", "Both statements are false", "The first statement is true, the second one is false", "The first statement is false, the second one is true."],
+        "correct": 2
+      },
+      {
+        "text": "What is quadrant dentistry?",
+        "options": ["When all the dental work needed to be done in a single quadrant is done at one time.", "When four different providers split the dental work, each doing a quadrant.", "When one preparation is done in each quadrant.", "Another name for four handed dentistry."],
+        "correct": 0
+      },
+      {
+        "text": "Who can benefit from quadrant dentistry?",
+        "options": ["Special needs patients", "Pediatrics patients", "Provider", "All of the answer choices"],
+        "correct": 3
+      },
+      {
+        "text": "True/False: Telling your patient you can finish everything in a quadrant in one appointment is always a good idea.",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "When preparing two adjacent interproximal caries, you prepare the larger one first. What is the justification for preparing the larger one first?",
+        "options": ["You excavate the bigger one first so you do not want disease to spread.", "You excavate the bigger one so that the smaller preparation can be very conservative.", "You excavate the bigger one first so that you can break contact.", "You always prepare the smaller one first."],
+        "correct": 1
+      },
+      {
+        "text": "A Dentist should always remove questionably carious dentin if it is",
+        "options": ["Hard and shiny", "Soft and mushy", "Discolored"],
+        "correct": 1
+      },
+      {
+        "text": "A dentist will usually connect an MO with and OL cavity preparation on tooth #14 if the oblique ridge is:",
+        "options": ["Less than 1mm", "Greater than 1mm", "Less than 2mm", "Greater than 2mm"],
+        "correct": 0
+      },
+      {
+        "text": "The apical extent of the gingival margin of an MO in a cavity preparation is determined by:",
+        "options": ["Extent of the caries", "Position of the proximal contact with the adjacent tooth", "Location of the gingival sulcus", "\"Extent of the caries\" and \"Position of the proximal contact with the adjacent tooth\"", "\"Extent of the caries\" and \"Location of the gingival sulcus\""],
+        "correct": 3
+      },
+      {
+        "text": "An appropriate proximal contact results in all of the following EXCEPT:",
+        "options": ["Reduction or elimination of food impaction between teeth", "Provides increased retention from for the restoration", "Provides appropriate space for the interdental papilla", "Maintenance of the proper occlusal relationship"],
+        "correct": 1
+      },
+      {
+        "text": "A carious lesion along the margin of a restoration is considered:",
+        "options": ["Recurrent decay", "Incipient caries", "Affected dentin", "Microleakage"],
+        "correct": 0
+      },
+      {
+        "text": "What type pf movement is seen in the picture below:",
+        "options": ["Group function", "Canine guidance", "Anterior guidance", "Posterior guidance", "There is no guidance in this picture"],
+        "correct": 1,
+        "image": "images/pcod2-final-spring-2020/fig38.jpeg"
+      },
+      {
+        "text": "After the dentist has completed an etching procedure on a Class II composite preparation, the preparation becomes contaminated with saliva. IN response the dentist should do which of the following?",
+        "options": ["Blow away saliva with air, then proceed.", "Rinse away the saliva with water, dry the preparation, then proceed.", "Wipe away the saliva with a cotton pellet, rinse the preparation with water, dry it with air, and then proceed.", "Rinse away the saliva with water, dry the preparation with air, and then repeat the etching procedure."],
+        "correct": 3
+      },
+      {
+        "text": "The proximal contact area of posterior teeth should be placed:",
+        "options": ["At the same relative facial/lingual position as anterior teeth", "More to the facial surface than anterior teeth", "More to the lingual surface than anterior teeth", "At none of the above locations", "Depends on the restorative material used"],
+        "correct": 1
+      },
+      {
+        "text": "A practitioner who is restoring a tooth with composites wants to make sure that the matrix has adhered to the filler. Which of the following agents adheres the resin matrix to the filler?",
+        "options": ["Wetting", "Coupling", "Catalyzing", "Activating"],
+        "correct": 1
+      },
+      {
+        "text": "An evaluation of which of the following represents the most important aspect in shade selection?",
+        "options": ["Hue", "Value", "Chroma", "Size", "Shape"],
+        "correct": 1
+      },
+      {
+        "text": "An example of galvanism is",
+        "options": ["Amalgam contacting gold", "Amalgam contacting composite", "Amalgam contacting porcelain"],
+        "correct": 0
+      },
+      {
+        "text": "The leakage of fluid and debris extending along the tooth-restoration interface is called",
+        "options": ["Metamerism", "Trituration", "Microleakage", "Deformation"],
+        "correct": 2
+      },
+      {
+        "text": "A bur should be tilted lingually when preparing the occlusal aspect of the Class II preparation on the mandibular first premolar. A. To remove unsupported enamel   B. Prevent encroachment on the facial pulp horn   C. Prevent encroachment on the lingual pulp horn",
+        "options": ["A and B", "A and C", "B only", "C only"],
+        "correct": 2
+      },
+      {
+        "text": "The occlusal cavo-surface margin of a posterior composite preparation is finished",
+        "options": ["With a hollow point bevel", "With a ground hollow bevel", "With no bevel", "With a bevel that is .5mm-1mm wide", "With a bevel that is angled at 45 degrees and which is 0.5-1.0mm"],
+        "correct": 2
+      },
+      {
+        "text": "Your patient presents with a large diastema between teeth #8 and #9. The first thing you should do is",
+        "options": ["Ask the patient if there is anything they would like to change about their smile", "Measure the width of the diastema with a perio probe", "Make a shade selection", "Determine the best method of closing the diastema."],
+        "correct": 0
+      },
+      {
+        "text": "Statement 1: When preforming a procedure that requires selection of a shade, ideally the shade selection should be made prior to placement of rubber dam. Statement 2: However, if a grey-colored dam is utilized, then the shade selection may be made subsequent to the placement of the rubber dam.",
+        "options": ["The first statement is true, the second is false", "The first statement is false, the second is false", "Both statements are true", "Both statements are false"],
+        "correct": 0
+      },
+      {
+        "text": "What is wrong with this preparation?",
+        "options": ["Not open enough gingivally", "Not open enough facially", "Not open enough lingually", "This is a good preparation"],
+        "correct": 3,
+        "image": "images/pcod2-final-spring-2020/fig49.jpeg"
+      },
+      {
+        "text": "When taking a shade for a patient we want to make sure that",
+        "options": ["The teeth are wet", "We stare at the teeth for a long time and make sure it’s a perfect match", "Make sure our patient has a rubber dam to protect them from aspirating the shade tab", "Place a light blue bib on the patient to make sure our eye can pick the proper color."],
+        "correct": 0
+      }
+    ]
+  },
+  "pcod2-final-spring-2021": {
+    "title": "PCOD II Final Exam (Spring 2021)",
+    "type": "pcod2",
+    "subtype": "final",
+    "questions": [
+      {
+        "text": "Which of the following composites are made up of large glass particles and give a rough surface and poor polish?",
+        "options": ["Macrofilled composites", "Microfilled composites", "Flowable composites", "All composites and that is why we always polish"],
+        "correct": 0
+      },
+      {
+        "text": "Which statement is INCORRECT?",
+        "options": ["The smaller the filler particle size, the better the polishability", "The bigger the filler particle size, the greater the wear resistance", "The bigger the filler particle size, the great the strength", "The smaller the filler particle size, the greater the strength"],
+        "correct": 3
+      },
+      {
+        "text": "Finishing and polishing your restorations is important for your patient's:",
+        "options": ["Gingival health", "Comfort", "Chewing efficiency", "All of the answers"],
+        "correct": 3
+      },
+      {
+        "text": "Finishing of a restoration is define as:",
+        "options": ["Shaping the restored surface to the original", "Creating a high gloss or luster on the finished surface", "Removing surface scratches and any defects remaining after contouring", "None of the answers"],
+        "correct": 2
+      },
+      {
+        "text": "In which of the following order would you use instruments for finishing and polishing of a restoration?",
+        "options": ["Yellow, Red, White", "Yellow, White, Red", "Red, Yellow, White", "White, Yellow, Red"],
+        "correct": 2
+      },
+      {
+        "text": "This is an image of overhang. What did the doctor do wrong?",
+        "options": ["Did not place rubber dam", "Did not place wedge", "Did not use a matrix band", "Did not remove old restoration"],
+        "correct": 1
+      },
+      {
+        "text": "In clinic the entire preparation should be cut with a high speed handpiece.",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "When you are excavating decay a round bur should be used.",
+        "options": ["The smaller the round bur the less likely it is to perforate the pulp", "The larger the round bur the less likely it is to perforate the pulp", "The size of the round bur does not effect if someone perforates", "Only use a round bur to bevel the cavosurface margin"],
+        "correct": 1
+      },
+      {
+        "text": "Liners should be placed in",
+        "options": [".5mm increments", "1-2 mm increments", "2-4 mm increments", "The amount doesn't matter since we are using composite"],
+        "correct": 0
+      },
+      {
+        "text": "Bases are used to/for:",
+        "options": ["Prevent chemical Insult", "Thermal insulation", "Return the preparation to \"ideal\"", "Prevent chemical Insult, and thermal insulation", "Thermal insulation, and return the preparation to \"ideal\""],
+        "correct": 4
+      },
+      {
+        "text": "Below are characteristics of infected dentin.",
+        "options": ["Must be removed", "Cannot be remineralized", "Bacteria is present", "Collagen is denatured", "Cannot be remineralized, and bacteria is present", "All of the answers"],
+        "correct": 5
+      },
+      {
+        "text": "True/False: The use of caries detector dye can lead to a significant clinical over-preparation due to the diffusion into infected and affected dentin.",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "text": "A Dentist should always remove questionably carious dentin if it is",
+        "options": ["Hard and shiny", "Soft and mushy", "Discolored"],
+        "correct": 1
+      },
+      {
+        "text": "A carious lesion along the margin of a restoration is considered:",
+        "options": ["Recurrent decay", "Incipient caries", "Affected dentin", "Microleakage"],
+        "correct": 0
+      },
+      {
+        "text": "When placing a liner directly on pulp tissue it is called:",
+        "options": ["Indirect pulp capping", "Direct pulp capping", "We never place a liner on pulp tissue", "Indirect pulp covering"],
+        "correct": 1
+      },
+      {
+        "text": "The process of using a glass ionomer is simple and similar to that of composite. You must remember to etch and bond accordingly for effective use.",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "This will be restored with a glass ionomer. What is true in this situation?",
+        "options": ["Glass Ionomer cannot be used in this area because of occlusal wear", "Glass ionomer cannot match the tooth color", "Glass Ionomer can only be used as a base- not as a restorative material", "None of the answers"],
+        "correct": 3
+      },
+      {
+        "text": "What are some advantages of using a glass ionomer?",
+        "options": ["Tooth colored", "Fluoride release", "Resin can be added to it", "Tooth colored & fluoride release", "All of the answers"],
+        "correct": 4
+      },
+      {
+        "text": "Interim restorations are sometimes needed to:",
+        "options": ["Prevent contamination of a preparation", "Maintain space", "To prevent pain", "All of the answers"],
+        "correct": 3
+      },
+      {
+        "text": "Placing an interim restoration saves you time because:",
+        "options": ["No need to a matrix band", "You do not need to wait for the material to set", "It is not very technique sensitive", "All of the answers"],
+        "correct": 2
+      },
+      {
+        "text": "The following is true of matrix bands",
+        "options": ["Must extend past the gingival cavosurface margin of the preparation for adequate seal", "Matrix bands needs to be slightly smaller than the occlusal circumference of the tooth", "When placing the matrix band the narrow end is always toward the occlusal", "It is not recommended to use Denovo bands in pediatric patients"],
+        "correct": 0
+      },
+      {
+        "text": "What is NOT true about this system?",
+        "options": ["Disposable", "Expensive", "It is versatile and can be used in more than one quadrant", "All of the answers are TRUE."],
+        "correct": 3
+      },
+      {
+        "text": "You have completed a restoration. After checking with articulating paper you see a bull’s eye on a tooth. This means:",
+        "options": ["That was your Target and the restoration was great- no need to adjust", "The restoration is not ideal and needs to be adjusted", "There is heavy occlusion in that area- but that is okay, the patient will adjust after a week or two.", "Look at the rest of the tooth, if there are bull’s eyes on two other/additional cusps, its tripodization and its fine- no adjustment needed."],
+        "correct": 1
+      },
+      {
+        "text": "If you have a compromised tooth and you do a large interim restoration, its best to make sure",
+        "options": ["It is restored with heavy occlusion", "It is restored to be in occlusion with the opposing arch", "It is restored with light occlusion", "You do not have to worry about occlusion when restoring a tooth."],
+        "correct": 2
+      },
+      {
+        "text": "An example of galvanism is",
+        "options": ["Amalgam contacting gold", "Amalgam contacting composite", "Amalgam contacting porcelain"],
+        "correct": 0
+      },
+      {
+        "text": "When preparing two adjacent interproximal caries, you prepare the larger one first. What is the justification for preparing the larger one first?",
+        "options": ["You excavate the bigger one first so you do not want disease to spread.", "You excavate the bigger one so that the smaller preparation can be very conservative.", "You excavate the bigger one first so that you can break contact.", "You always prepare the smaller one first."],
+        "correct": 1
+      },
+      {
+        "text": "True/False: Telling your patient you can finish everything in a quadrant in one appointment is always a good idea.",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "Who can benefit from quadrant dentistry?",
+        "options": ["Special needs patients", "Pediatrics patients", "Provider", "All of the answers"],
+        "correct": 3
+      },
+      {
+        "text": "You are doing a classic MO preparation on tooth #19. The outline form should:",
+        "options": ["preserve the integrity of the uninvolved marginal ridge", "be large enough to for the smallest plugger", "incorporate all the infected grooves", "all of the answers"],
+        "correct": 3
+      },
+      {
+        "text": "How would you classify this preparation?",
+        "options": ["Mesial Occlusal (MO)", "Mesial (M)", "Distal-Occlusal (DO)", "Distal (D)"],
+        "correct": 2
+      },
+      {
+        "text": "True or false: When more than one-half of the cusp-tip to cusp-tip tooth structure is removed, a fullcrown or onlay covering all of the remaining cusps is recommended.",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "text": "Why would you choose to do a large composite buildup of a broken down tooth instead of making a crown?",
+        "options": ["Due to patient finances", "Due to patient's health", "Due to patient's inability to come for many appointments", "More than one answers"],
+        "correct": 3
+      },
+      {
+        "text": "Iatrogenic means:",
+        "options": ["Damage caused by natural causes", "Damage caused by a provider", "Damage caused spontaneously", "Damage caused by genetics"],
+        "correct": 1
+      },
+      {
+        "text": "The way that you are MOST LIKELY to ensure that you have adequate contact is:",
+        "options": ["Using a wedge", "Burnish your matrix band", "Condensing your composite", "Using flowable composite"],
+        "correct": 1
+      },
+      {
+        "text": "The occlusal cavo-surface margin of a posterior composite preparation is finished",
+        "options": ["With a hollow point bevel", "With a ground hollow bevel", "With no bevel", "With a bevel that is .5mm-1mm wide", "With a bevel that is angled at 45 degrees and which is .5-1.0mm"],
+        "correct": 2
+      },
+      {
+        "text": "Your patient presents with a large diastema between teeth #8 and #9. The first thing you should do is",
+        "options": ["Ask the patient if there is anything they would like to change about their smile", "Measure the width of the diastema with a perio probe", "Make a shade selection", "Determine the best method of closing the diastema."],
+        "correct": 0
+      },
+      {
+        "text": "Why is a bevel placed on the facial cavo-surface margin of a class III restoration?",
+        "options": ["To increase the surface area for bonding", "To aid in esthetics", "To provide a gradual transition from the restoration to the surrounding tooth structure", "To increase the surface area for bonding & to provide a gradual transition from the restoration to the surrounding tooth structure", "All of the answers"],
+        "correct": 4
+      },
+      {
+        "text": "According to the golden proportion rule the ratio of length to width of the central incisor is:",
+        "options": ["1.0", "1.6", "1.8", ".8"],
+        "correct": 1
+      },
+      {
+        "text": "Chroma refers to the",
+        "options": ["saturation of color", "complement of color", "the lightness of color", "the reflection of color"],
+        "correct": 0
+      },
+      {
+        "text": "Due to metamerism",
+        "options": ["Objects will appear the same in different light", "Objects will vary in appearance in different light", "Objects can blend together in different lighting", "Objects maintain their color over time"],
+        "correct": 1
+      },
+      {
+        "text": "Omnichromatic composites have the ability to shade match mainly based on its unique",
+        "options": ["coupling agent", "filler", "resin", "etch"],
+        "correct": 1
+      },
+      {
+        "text": "The difference in the bonding mechanism to tooth structure for a composite and a glass ionomer (GIC) is:",
+        "options": ["the bond of composite to dentin is chemical, and GIC to dentin is micromechanical", "the bond of composite to dentin is micromechanical, and GIC to dentin is chemical", "the bond of composite to enamel is chemical, and GIC to enamel is micromechanical", "there is no difference between the bond of composites and GIC to tooth structure", "none of the answers"],
+        "correct": 1
+      },
+      {
+        "text": "When carving an amalgam restoration, which of the following statements are false?",
+        "options": ["Carving may be easier by waiting 1-2 minutes after condensation before starting to carve", "The blade of a discoid-cleoid carver should be parallel to the margins, resting only on the partially set amalgam", "Proper occlusal anatomy should be carved", "The carved amalgam outline should coincide with the cavosurface margins"],
+        "correct": 1
+      },
+      {
+        "text": "The reason for overfilling a cavity preparation with amalgam prior to carving is:",
+        "options": ["to avoid creating flash at the margins", "to get acceptable interproximal contacts", "to eliminate the excess mercury in the restoration while carving the anatomical form", "so that polishing can be performed immediately after anatomical carving", "all of the answers"],
+        "correct": 2
+      },
+      {
+        "text": "What is the most predominant element in dental amalgam?",
+        "options": ["Silver", "Copper", "Tin", "Mercury", "Zinc"],
+        "correct": 3
+      },
+      {
+        "text": "Amalgam gamma-2 phase refers to:",
+        "options": ["Ag-Sn", "Ag-Hg", "Sn-Hg", "Cu-Sn", "Cu-Hg"],
+        "correct": 2
+      },
+      {
+        "text": "An evaluation of which of the following represents the most important aspect in shade selection?",
+        "options": ["Hue", "Value", "Chroma", "Size", "Shape"],
+        "correct": 1
+      },
+      {
+        "text": "True/False: You have completed a preparation and removed all the decay, but the outline form doesn’t look exactly like the preparations you learned in PCODII. The right thing is to modify and extend the preparation to make it look like the image on the powerpoint.",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "The generally accepted maximum thickness of a composite increment that allows for proper cure is",
+        "options": ["1-2mm", "2-4mm", "4-6mm", "There is no minimum thickness restriction"],
+        "correct": 0
+      },
+      {
+        "text": "Which of the following is a primary contraindication for the use of a composite restoration?",
+        "options": ["Occlusal factors", "Inability to isolate the operating area", "Nonesthetic areas", "Extension onto the root surface"],
+        "correct": 1
+      },
+      {
+        "text": "The powder component in an unmixed amalgam capsule contains:",
+        "options": ["Ag-Sn and Cu-Sn", "Ag-Sn and Ag-Cu", "Ag-Cu and Cu-Sn", "Ag-Hg and Cu-Sn", "none of the answers"],
+        "correct": 1
+      }
+    ]
+  },
+  "pcod2-final-spring-2022": {
+    "title": "PCOD II Final Exam (Spring 2022)",
+    "type": "pcod2",
+    "subtype": "final",
+    "questions": [
+      {
+        "text": "Fillers in Omnichroma are",
+        "options": ["Identical in shape", "Identical in color", "Identical in size", "A and C", "All of the above"],
+        "correct": 4
+      },
+      {
+        "text": "A Groom came in with a large Class IV, and he needed it repaired before his wedding tomorrow! You decided to grab Omnichroma and restore the tooth. The bride was upset with the way the restoration looked. What did you MOST LIKELY forget to do?",
+        "options": ["Place a blocker", "Chose the wrong color", "Did not cure long enough", "Forgot to bevel"],
+        "correct": 0
+      },
+      {
+        "text": "Which of the following causes an endocrine disruption?",
+        "options": ["bisGMA", "UDMA", "TEGDMA", "AWD"],
+        "correct": 0
+      },
+      {
+        "text": "You were removing decay in Dr. Yankoskie's tooth. It was a very deep carious lesion. After removing the decay, you noticed a pink hue on the tooth. You decided to place ____ over the pink area and restore with _______ type of composite to make sure it was fully cured. Choose the best answer based on lecture.",
+        "options": ["Liner, Dual Cure", "Nothing, Light cure", "Base, Dual Cure", "Flowable composite, AutoCure"],
+        "correct": 0
+      },
+      {
+        "text": "What is NOT a benefit of preheated composite?",
+        "options": ["Gives better cavity adaptation", "Better Marginal closure", "Decreases Voids", "None of the above"],
+        "correct": 2
+      },
+      {
+        "text": "Why are Bulk Fill composites more translucent?",
+        "options": ["More coupling agent", "Less Resin", "More Filler", "Less Filler"],
+        "correct": 3
+      },
+      {
+        "text": "The following is NOT a specialty within dentistry",
+        "options": ["Prosthodontics", "Esthetics", "Orthodontics", "Oral Surgery", "All are considered specialties within the dental field"],
+        "correct": 1
+      },
+      {
+        "text": "When evaluating the golden proportion of anterior teeth, we look at which teeth?",
+        "options": ["Central, laterals, canine and first premolar", "Central, laterals and the mesial of the canine", "Central, laterals and distal of the canine", "Both centrals"],
+        "correct": 1
+      },
+      {
+        "text": "Someone comes into your office for a bleaching. In evaluating their smile you notice brown staining. This is most likely due to:",
+        "options": ["Plaque build up", "Smoke and tobacco", "Too much fluoride", "Antibiotics"],
+        "correct": 1
+      },
+      {
+        "text": "When closing a diastema, the following will set a patient's expectations, help them visualize the final outcome and help identify any issues with occlusion",
+        "options": ["A diagnostic wax up", "A conversation with the patient explaining the procedure", "An Instagram Reel", "All of the above"],
+        "correct": 3
+      },
+      {
+        "text": "Restoring a peg lateral on a 9 year old is best done by:",
+        "options": ["Crown", "Veneer", "Composite build up", "All of the above"],
+        "correct": 2
+      },
+      {
+        "text": "When placing a strip crown to build up a peg lateral, it is important to drill a hole in the strip crown prior to filling it with composite. The reason for this is:",
+        "options": ["To make sure it fits the peg lateral perfectly", "To allow excess to escape", "To prevent air pockets", "B and C", "A and C"],
+        "correct": 3
+      },
+      {
+        "text": "What does it mean when we speak of the hue as it relates to color.",
+        "options": ["The color itself", "The lightness of the color", "The concentration of color", "The ability to transmit color"],
+        "correct": 0
+      },
+      {
+        "text": "Chroma is defined as",
+        "options": ["Saturation of color", "Color itself", "Ability to absorb color", "The lightness of color"],
+        "correct": 0
+      },
+      {
+        "text": "If you ______ chroma, you _______ value",
+        "options": ["Decrease, increase", "Increase, decrease", "Decrease, decrease", "Increase, increase"],
+        "correct": 1
+      },
+      {
+        "text": "When picking a color for your patient the first thing you will choose is the:",
+        "options": ["Hue", "Value", "Chroma"],
+        "correct": 1
+      },
+      {
+        "text": "The light source you use can affect your ability to choose the proper color for your patient.",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "text": "The phenomenon in which the same object will vary in appearance under different lighting conditions is called:",
+        "options": ["Reflection", "Metamerism", "Translucency", "Saturation"],
+        "correct": 1
+      },
+      {
+        "text": "The following are supporting cusps",
+        "options": ["MB #2", "DL #14", "ML #19", "B #6"],
+        "correct": 1
+      },
+      {
+        "text": "Which of the following maxillary teeth contacts only one other tooth on the opposing arch is the",
+        "options": ["#8", "#16", "#6", "#32"],
+        "correct": 1
+      },
+      {
+        "text": "The DB cusp of tooth #18 is in contact with",
+        "options": ["The central fossa of #2", "The lingual groove of #2", "The distal pit of #2", "Marginal ridge between #2 and #1", "None of the above"],
+        "correct": 0
+      },
+      {
+        "text": "In an ideal intercuspal position, the mesiolingual cusp of a permanent mandibular molar opposes",
+        "options": ["The opposing central fossa", "The lingual embrasure between their counterpart and one tooth distal to it", "The distal marginal ridge of its counterpart", "The lingual embrasure between their counterpart and the tooth mesial to it"],
+        "correct": 3
+      },
+      {
+        "text": "In mutually protected occlusion, there should be no contact of ______teeth in the lateral or protrusive movements",
+        "options": ["Anterior", "Posterior", "Shorter", "Taller"],
+        "correct": 1
+      },
+      {
+        "text": "When checking occlusion it is helpful to",
+        "options": ["Dry teeth", "Use Vaseline on the articulating paper", "Wet the teeth", "A and B", "B and C"],
+        "correct": 3
+      },
+      {
+        "text": "You have just built up a cusp on tooth #30. When you check for occlusion there is a strong target mark on the cusp tip of #30. You decide you will adjust this tooth by starting on",
+        "options": ["The cusp tip", "The incline", "The opposing tooth", "You can begin adjusting wherever you would like"],
+        "correct": 0
+      },
+      {
+        "text": "What is the consequence of neglecting to check our patient's occlusion?",
+        "options": ["TMD (temporomandibular joint disorder)", "Pain", "Periodontal disease", "All of the above"],
+        "correct": 3
+      },
+      {
+        "text": "If overbite is reduced, the posterior cusp height must be",
+        "options": ["Bigger", "Smaller", "The same"],
+        "correct": 1
+      },
+      {
+        "text": "You remove an old amalgam from a patient's tooth. The remaining tooth structure appears black. What is your next step?",
+        "options": ["Remove all the black since the black is obviously remaining decay", "Use an instrument to see if the black area is soft, firm or leathery", "Take an xray to determine if it is decay or not", "Place a liner over it- it will remineralize the tooth"],
+        "correct": 1
+      },
+      {
+        "text": "Mrs. Ramirez came to clinic for a crown. You prepared the crown and took an impression to send to the lab. The type of restoration you are doing is called",
+        "options": ["Direct restoration", "Indirect restoration", "Immediate restoration", "long term restoration"],
+        "correct": 1
+      },
+      {
+        "text": "What should the IDEAL treatment plan be when a tooth is missing half the tooth structure measuring cusp tip to cusp tip?",
+        "options": ["Crown", "Onlay", "Amalgam restoration", "A or B", "All of the above"],
+        "correct": 3
+      },
+      {
+        "text": "The following may cause gingival inflammation",
+        "options": ["Overhang", "Open contact", "Poorly made crown", "All of the above"],
+        "correct": 3
+      },
+      {
+        "text": "A patient comes in complaining of floss getting stuck and shredding in between their teeth when flossing. The Xray is seen below. What was the mistake that the provider made?",
+        "options": ["Forgetting a matrix band", "Forgetting a wedge", "Forgetting to cure", "Forgetting bonding agent"],
+        "correct": 1,
+        "image": "images/pcod2-final-spring-2022/fig32.jpeg"
+      },
+      {
+        "text": "The following are all used to create secondary/ additional retention EXCEPT:",
+        "options": ["Undercuts", "Retention grooves", "Boxes", "Divergent wall", "All can provide secondary retention"],
+        "correct": 3
+      },
+      {
+        "text": "True/False: in a sectional matrix system the separation of teeth is done by the ring- with a tofflemire system it is with a wedge",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "text": "When talking about restoring a Class II preparation, the following will NOT help create a good contact",
+        "options": ["Using a curved matrix band", "Burnishing a flat tofflemire band prior to use", "Placement of a wedge", "All statements above will help create contact in some way"],
+        "correct": 3
+      },
+      {
+        "text": "True/ False: When preparing two teeth with kissing cavities, it is important to begin preparing the tooth with less extensive decay so as to avoid pulp exposure.",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "You have a 75 year old patient who lives in an assisted living facility. He has suffered a stroke and it is hard for him to brush well. He presents with a Class V lesion on tooth #27. What material would be most beneficial to restore with:",
+        "options": ["IRM", "Composite", "Glass Ionomer", "Amalgam"],
+        "correct": 2
+      },
+      {
+        "text": "The following is NOT a benefit of an IRM:",
+        "options": ["Prevent contamination of a preparation", "Maintain space", "Maintain esthetics", "To prevent pain", "All of the above can be a benefit"],
+        "correct": 2
+      },
+      {
+        "text": "When mixing Glass ionomer it is important to use the scooper for the proper amount and use the dropper to add liquid until proper consistency is reached. The proper consistency should be:",
+        "options": ["Like a smooth dough ball", "Like a sticky dough ball", "Crumbly", "None of the above"],
+        "correct": 3
+      },
+      {
+        "text": "When placing a material such as Snoop over your preparation, the goal is to",
+        "options": ["Identify remaining decay, without having to think about it", "Distinguish between infected vs affected dentin", "Figure out how far you are from the pulp chamber", "None of the above"],
+        "correct": 3
+      },
+      {
+        "text": "Below are the characteristics of affected dentin:",
+        "options": ["Must be removed", "Can be remineralized", "Bacteria is present", "Collagen is denatured"],
+        "correct": 1
+      },
+      {
+        "text": "The main difference in a liner vs a base is in",
+        "options": ["The material", "The increment size", "Its ability to thermally insulate", "Two of the above are correct"],
+        "correct": 3
+      },
+      {
+        "text": "Mrs. Gluma came in for a restoration of tooth #2. In excavating the decay you ran out of time and needed to place an interim restoration. You chose to use Glass Ionomer. When the patient returns the following is TRUE:",
+        "options": ["Glass ionomer will help with any post-operative sensitivity that the patient may feel due to its eugenol content", "You have to avoid using composite since glass ionomer negatively effects the bonding of composite to tooth structure", "Glass Ionomer can be partially removed and used as a base", "It is important to etch the cavosurface margin of the tooth for 30 seconds prior to placement of the Glass Ionomer."],
+        "correct": 2
+      },
+      {
+        "text": "When removing decay clinically, you would use the following in what order?",
+        "options": ["Slow speed round bur, spoon excavator and then high speed hand piece", "High speed hand piece, spoon excavator and then slow speed round bur", "Slow speed round bur, high speed hand piece and then spoon excavator"],
+        "correct": 1
+      },
+      {
+        "text": "A patient comes in with a Class IV fracture on #8. In order to restore it you decide to bevel the cavosurface margin. The best thing to use to bevel is a",
+        "options": ["169 bur", "A diamond", "330 bur", "A disc", "We do not bevel on a #8"],
+        "correct": 1
+      }
+    ]
+  },
+  "pcod2-final-spring-2023": {
+    "title": "PCOD II Final Exam (Spring 2023)",
+    "type": "pcod2",
+    "subtype": "final",
+    "questions": [
+      {
+        "text": "____________ is a result of vertical overlap; _________________ is a result of horizontal overlap",
+        "options": ["Overjet; Overbite", "Overarch; Overjet", "Overbite; Overjet", "Over; Overarch"],
+        "correct": 2
+      },
+      {
+        "text": "Which of the following statements is true?",
+        "options": ["The maxillary palatal cusp and the mandibular buccal cusp are functional cusps", "The maxillary palatal cusp and the mandibular buccal cusp are nonfunctional cusps", "The maxillary buccal cusp and mandibular lingual cusp are functional cusps", "The maxillary buccal cusp and mandibular lingual cusp are supporting cusps"],
+        "correct": 0
+      },
+      {
+        "text": "How do we prevent the cusps of our teeth from crashing into each other?",
+        "options": ["Mutually protected occlusion", "Canine guidance", "Group function", "All of the above"],
+        "correct": 3
+      },
+      {
+        "text": "Your patient Timmy has Class II malocclusion. How would you explain this to him?",
+        "options": ["The upper teeth are positioned too far forward in relation to the lower teeth.", "The upper and lower teeth do not meet in the center of the mouth, causing a shift in the midline.", "The upper and lower teeth are in proper alignment, but the back molars do not fit together correctly.", "The upper teeth are positioned too far back in relation to the lower teeth."],
+        "correct": 0
+      },
+      {
+        "text": "When moving your jaw to the right:",
+        "options": ["The right side is the nonworking, laterotrusive side", "The left side is the nonworking, mediotrusive side.", "The left side is the nonworking, laterotrusive side.", "The right side is the working, laterotrusive side."],
+        "correct": 1
+      },
+      {
+        "text": "What is the name of the side to which the mandible is moving?",
+        "options": ["Working side", "Non working side", "Translating side", "Rotating side"],
+        "correct": 0
+      },
+      {
+        "text": "What is a possible consequence of a malocclusion?",
+        "options": ["Speech problems", "Difficulty chewing", "Gum disease", "All of the above"],
+        "correct": 3
+      },
+      {
+        "text": "A patient comes in with a carious lesion on a mandibular 1st molar that requires a class II preparation. After preparing an ideal class II preparation, you realize there is still decay on the axial wall. Which is true?",
+        "options": ["You must remove all the decay (infected and affected dentin) before you restore the tooth", "If it's infected dentin, you may leave it and restore the tooth", "If it's affected dentin, you may leave it and restore the tooth", "You may leave infected and affected dentin as long as your margins are sealed"],
+        "correct": 2
+      },
+      {
+        "text": "Which is true regarding pulp?",
+        "options": ["If the pulp is exposed during a preparation, the tooth is unsalvageable", "Placing material on a layer of affected dentin with a pinkish hue would be an indirect pulp cap", "Placing material on a spot that had a pinpoint of blood would be considered an indirect pulp cap", "We practice direct pulp capping at TCDM"],
+        "correct": 1
+      },
+      {
+        "text": "What is the advantage of a liner?",
+        "options": ["Protects against Chemical irritants", "Thermal insulation", "Adds bulk", "All of the above"],
+        "correct": 0
+      },
+      {
+        "text": "While drilling a class 1 lesion, you break through the outer enamel and reach a mushy space that has little resistance. What would be the best course of action to proceed with the preparation?",
+        "options": ["Continue with the highspeed handpiece", "Use a combination of highspeed handpiece and a spoon excavator to remove the caries", "Use a combination of a slow speed handpiece holding a round bur and a spoon excavator", "None of the above"],
+        "correct": 2
+      },
+      {
+        "text": "When using a limelight liner:",
+        "options": ["You do not need to light cure it", "You need to acid etch before applying limelight", "You can also use this liner to act as a base for both amalgam and composite", "None of the above"],
+        "correct": 2
+      },
+      {
+        "text": "Which material can be used as both base and liners?",
+        "options": ["Composite", "Varnish", "Dycal", "IRM"],
+        "correct": 0
+      },
+      {
+        "text": "What is Gluma?",
+        "options": ["An acid etch", "A varnish which acts as a desensitizer", "Universal Prime &Bond", "Resin Modified Glass Ionomer"],
+        "correct": 1
+      },
+      {
+        "text": "All varnishes are liners, but not all liners are varnishes. Liners protect from chemical insult, and if a varnish protects from chemical insult, it is a liner.",
+        "options": ["The statement is true and the reasoning is true", "The statement is false and the reasoning is true", "The statement is true and the reasoning is false", "The statement is false and the reasoning is false"],
+        "correct": 0
+      },
+      {
+        "text": "What is a direct pulp cap?",
+        "options": ["placing material on an enamel surface", "placing material on a dentin surface", "placing material directly on the exposed pulp", "placing a material around the tooth's root"],
+        "correct": 2
+      },
+      {
+        "text": "True or False: If you decide to total-etch, you need to etch after Gluma so that you prevent tooth sensitivity from the acid.",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "text": "Why is it important that liner is radiopaque?",
+        "options": ["Calcium hydroxide (Dycal) is always radiolucent", "Limelight is always radiolucent", "Radiolucent liner would be hard to differentiate from recurrent decay", "Radiolucent liner would be hard to differentiate from healthy enamel"],
+        "correct": 2
+      },
+      {
+        "text": "how wide should the mesio-distal width of the gingival floor of a premolar be",
+        "options": ["1.00 mm", "1.20mm", "1.25 mm", "1.50 mm"],
+        "correct": 2
+      },
+      {
+        "text": "What is the purpose of secondary retention and resistance ?",
+        "options": ["To provide additional support for the restoration", "To create a smooth surface on the walls of the preparation", "To remove carious or decayed tooth structure", "To preserve a thin wall of enamel on the proximal surface"],
+        "correct": 0
+      },
+      {
+        "text": "A slot prep for a class 2 composite should be used when decay is",
+        "options": ["Present on the proximal surface and occlusal surface", "Present only on the occlusal surface", "Present only on the proximal surface", "None of the above"],
+        "correct": 2
+      },
+      {
+        "text": "What does the acronym LASER stand for?",
+        "options": ["Light Absorption through Spectrally Emitted Radiation", "Light Amplification by Stimulated Emission of Radiation", "Light Amplification through Simultaneous Electronic Reduction", "Light Activated by Spontaneous Energy Radiation"],
+        "correct": 1
+      },
+      {
+        "text": "Depending on the wavelength, laser energy is emitted in very specific portions of the electromagnetic spectrum. Where in the spectrum do most DENTAL lasers operate?",
+        "options": ["In both the visible and ultraviolet (UV) portions", "In the visible portion", "In the infrared (IR) portion", "In the ultraviolet (UV) portion"],
+        "correct": 2
+      },
+      {
+        "text": "Lasers work by being",
+        "options": ["Absorbed by substances", "Refracted in substances", "Reflected by substances", "Transmitted through substances"],
+        "correct": 0
+      },
+      {
+        "text": "Which of the following is a benefit of Glass ionomer use?",
+        "options": ["Leeches fluoride into the tooth to form a stronger fluorapatite", "Removes the smear layer during restoration", "Good for pulp capping", "Can be used as a liner"],
+        "correct": 0
+      },
+      {
+        "text": "Which of the following is the correct reason for why INFECTED dentin can be left behind?",
+        "options": ["Infected dentin can re-mineralize and become viable again", "Infected dentin will be revitalized using “Snoop”", "If a proper seal is prepared on the tooth, the infected decay/bacteria will be starved of resources and die off on its own.", "The infected dentin contains tubules that we don't want to agitate or remove."],
+        "correct": 2
+      },
+      {
+        "text": "A patient comes into clinic complaining of tooth pain. Upon taking radiographs, it is found that they have decay present on the distal proximal surface of tooth #19. There is no decay present on the occlusal surface. What type of preparation should you do?",
+        "options": ["OL", "DO slot prep", "O", "MO"],
+        "correct": 1
+      },
+      {
+        "text": "What is the number one key to preventing bacterial infiltration in your restoration?",
+        "options": ["Properly packed restorative material", "Proper outline form", "A clean periphery and proper seal", "Use of a liner and base"],
+        "correct": 2
+      },
+      {
+        "text": "What is the true statement",
+        "options": ["Social media is a horrible tool to use.", "All influencers who are dentists are credible", "Bots cannot follow dentists", "A credible account usually follows no one and has no profile picture", "All of these are false"],
+        "correct": 4
+      },
+      {
+        "text": "What do we mean by Firm/Sound Dentin?",
+        "options": ["Dentin that cannot be removed through hand excavation", "Dentin that can be easily removed with a hand instrument", "Leathery dentin", "Mushy dentin"],
+        "correct": 0
+      },
+      {
+        "text": "Bitewing best use case is for?",
+        "options": ["Lingual", "Occlusal", "Buccal", "Interproximal"],
+        "correct": 3
+      },
+      {
+        "text": "Denovo Band is best used for?",
+        "options": ["Hypothalamic", "Pediatric", "Special Needs", "Left-handed patients"],
+        "correct": 1
+      },
+      {
+        "text": "When following international accounts you should,",
+        "options": ["Ignore their posts because without knowing the language, it's a waste of time", "Ignore their posts because what they do in one country is irrelevant to what we do in another", "Watch the post because you can learn a lot about another country's culture and it can help you become a better dentist", "Watch the post because it's rude to scroll past it"],
+        "correct": 2
+      },
+      {
+        "text": "True or False: Sectional matrices are the cheapest and most simple matrix system.",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "Which is an example of “kissing cavities”?",
+        "options": ["18 DO, 19 DO", "18 MO, 19 DO", "30 MO, 31 DO", "30 MO, 31 MO"],
+        "correct": 1
+      },
+      {
+        "text": "Using a pre-contoured matrix band can help with",
+        "options": ["Lowering cost of matrix band", "Operating visibility", "Tofflemire placement", "Restoration anatomy"],
+        "correct": 3
+      },
+      {
+        "text": "A ________ matrix is unique because you get good curing due to the matrix being translucent",
+        "options": ["Bioclear matrix system", "Sectional matrixes", "Denovo matrix system", "Automatrix"],
+        "correct": 0
+      },
+      {
+        "text": "Statement 1: Utilizing quadrant dentistry can lead to better visibility for the provider. Statement 2: Quadrant dentistry also utilizes less anesthesia.",
+        "options": ["Both statements are true.", "Both statements are false.", "The first statement is true and the second statement is false.", "The first statement is false and the second statement is true."],
+        "correct": 0
+      },
+      {
+        "text": "When approaching the kissing cavity, you should",
+        "options": ["First prep the teeth with larger decay, and first restore the teeth with the larger decay", "First prep the teeth with smaller decay, and first restore the teeth with the larger decay", "First prep the teeth with larger decay, and first restore the teeth with the smaller decay", "First prep the teeth with smaller decay, and first restore the teeth with the smaller decay"],
+        "correct": 2
+      },
+      {
+        "text": "What are appropriate behavior guidance techniques to use when treating patients with special needs?",
+        "options": ["Tell - show- do", "Distraction", "Positive Reinforcement", "All of the above"],
+        "correct": 3
+      },
+      {
+        "text": "What allows omnichroma to match all teeth shades?",
+        "options": ["The spherical fillers being uniform in size and shape", "The blocker built into it", "The UV light", "The polishability"],
+        "correct": 0
+      },
+      {
+        "text": "When dealing with a patient with sensory issues",
+        "options": ["Tell the patient exactly what you are going to do before you do it (bring chair down etc)", "Create a slow and relaxing environment for the patient", "You should immediately consider referring to a hospital to do the procedure under anesthesia", "A &B"],
+        "correct": 3
+      },
+      {
+        "text": "Who should be the focus of a conversation when talking with someone with I/DD?",
+        "options": ["The individual's caregiver", "The individual's family", "The individual in the chair", "The individual's doctor"],
+        "correct": 2
+      },
+      {
+        "text": "Order of steps to choose appropriate shade for patient",
+        "options": ["Value determination - Chroma determination - Hue determination", "Chroma determination - Value determination - Hue determination", "Hue determination - Value determination - Chroma determination", "Value determination - Hue determination - Chroma determination"],
+        "correct": 0
+      },
+      {
+        "text": "What is Value? What is high/low value?",
+        "options": ["Lightness (low value= dark colors, high value= light colors)", "Color (low value= red, High value= purple)", "How important a procedure is (low value= not important, high value= very important)", "None of the above"],
+        "correct": 0
+      },
+      {
+        "text": "What do complementary colors do to each other when added together?",
+        "options": ["Neutralize and become gray", "Combine and turn black", "Add and create a new bright color", "Combine and create a primary color"],
+        "correct": 0
+      },
+      {
+        "text": "When is it appropriate to use Omnichroma blocker",
+        "options": ["On all restoration", "On anterior teeth", "On posterior teeth", "It is optional"],
+        "correct": 1
+      },
+      {
+        "text": "When would you want to choose a shade?",
+        "options": ["After placing rubber dam", "After completing the tooth preparation", "When the patient wants to", "Before placing a rubber damn while the tooth is simultaneously wet."],
+        "correct": 3
+      },
+      {
+        "text": "Statement 1: Working time is the elapsed time from the start of mixing a material to the point at which the consistency of the material is no longer suitable for its intended use. Statement 2: Setting time is the time elapsed from the start of mixing to the time at which the setting reaction essentially stops as measured by reaching a desired hardness or consistency.",
+        "options": ["Both Statements are TRUE.", "Statement 1 is True. Statement 2 is False.", "Statement 1 is False. Statement 2 is True.", "Both statements are FALSE."],
+        "correct": 0
+      },
+      {
+        "text": "Mr. Tom comes into your office because of tooth pain. After checking, you see a large decay on tooth #30. You tell him that he needs to have a crown placed on the tooth. However, after further discussion, Mr. Tom tells you that he currently does not have the finances to afford a crown treatment. You should:",
+        "options": ["Tell Mr. Tom to go to another dentist because you cannot treat him", "Tell Mr. Tom he should extract the tooth in that case", "Tell Mr. Tom that you can remove half the decay now and save the half for later", "Tell Mr. Tom other restoration options including a direct restoration"],
+        "correct": 3
+      }
+    ]
+  },
+  "pcod2-midterm-spring-2022": {
+    "title": "PCOD II Midterm Exam (Spring 2022)",
+    "type": "pcod2",
+    "subtype": "midterm",
+    "questions": [
+      {
+        "text": "When taking a summative, your anonymous number is",
+        "options": ["Synonymous with your seat number", "Can be found on canvas the day before", "All of the above", "None of the above"],
+        "correct": 3
+      },
+      {
+        "text": "You are about to take a summative #19 MOD and you notice #20 has a significant nick on it. The summative did not yet start. What should you do?",
+        "options": ["Tell Dr. Erdfarb", "Tell your row instructor", "Go to the dispensary and get a new #20 to replace the nicked one", "Leave #20 the way it is"],
+        "correct": 2
+      },
+      {
+        "text": "You cut your finger in the middle of a summative. You are bleeding but there is only 30 minutes left to the summative. What is the first thing you should do?",
+        "options": ["Tell your row instructor", "Finish the summative and take care of the issue afterwards", "Rinse off your finger and get back to the summative", "Report the incident to Health Services"],
+        "correct": 0
+      },
+      {
+        "text": "You are absent for simlab. What should you do?",
+        "options": ["Email Dr. Erdfarb letting her know you were not here", "You are an adult, and can decide not to come whenever you want", "Lab is optional. As long as the work is done missing lab is no big deal", "You are never allowed to be absent since simlab is mandatory"],
+        "correct": 0
+      },
+      {
+        "text": "You are looking at a radiograph of the patient's upper left quadrant. #13 and #14 have decay. #14 has a large MOD and #13 has decay that just passed D1. Which do you restore first?",
+        "options": ["Only restore #14, we do not do operative on D1 lesions", "Restore #14 first, followed by #13", "Restore #13, followed by #14", "There is no difference which you restore first."],
+        "correct": 2
+      },
+      {
+        "text": "You are looking at a radiograph of the patient's lower right quadrant. The first molar has a large MOD decay. The second molar has a small MO. Which do you prepare first?",
+        "options": ["Prepare #30 first, and #31 second", "Prepare #31 first, and #30 second", "Prepare #18 first, and #19 second", "Prepare #19 first, #18 second"],
+        "correct": 0
+      },
+      {
+        "text": "Sam was born with Cerebral Palsy and lives in a group home and relies on access-a-ride to get to his doctor appointments. Sammy would benefit from",
+        "options": ["Doing one restoration at a time", "Doing more than one restoration at a time", "Full mouth of crowns", "Ignoring his medical and dental needs"],
+        "correct": 1
+      },
+      {
+        "text": "Quadrant dentistry is beneficial for",
+        "options": ["The provider", "The patient", "Both", "Neither, there is no real benefit"],
+        "correct": 2
+      },
+      {
+        "text": "I prepared two teeth, #5 DO and #4 MO, the preparations are equal in size, which should I restore first?",
+        "options": ["#4", "#5", "Restore both at the same time", "Doesn't matter since they are equal in size"],
+        "correct": 0
+      },
+      {
+        "text": "You have prepared a large MO on #18 and a slot preparation DO on #19. When restoring which band would you burnish?",
+        "options": ["The band around #19 DO", "The band around #18 MO", "Both", "Neither"],
+        "correct": 1
+      },
+      {
+        "text": "Where are bases placed in a cavity preparation?",
+        "options": ["Cementoenamel Junction", "External Walls", "Exposed Enamel", "Internal Walls"],
+        "correct": 3
+      },
+      {
+        "text": "In TCDM, when starting a cavity preparation, we always start with",
+        "options": ["Chasing decay", "An Ideal prep", "A slot prep", "None of the above"],
+        "correct": 1
+      },
+      {
+        "text": "Which statement is true:",
+        "options": ["Round burs are to be used in your high speed hand piece", "You can use a spoon excavator to create your outline and convenience form", "The edges of a spoon excavator are sharp", "The smaller the spoon excavator used, the less potential to reach the pulp"],
+        "correct": 2
+      },
+      {
+        "text": "After finishing an MOD cavity preparation, you realized there were only 10 minutes left to the clinic session. The best option for your patient would be:",
+        "options": ["Place an IRM and have them return to place a composite tomorrow", "Place a glass ionomer and have them return to place a composite tomorrow", "Quickly to a composite with a clear matrix band since it will cure quickly", "Leave the preparation open and that way it will be easy access when the patient returns for the permanent restoration"],
+        "correct": 1
+      },
+      {
+        "text": "Which statement is true?",
+        "options": ["A spoon excavator can be used for removal of deep decay in place of a rotary instrument", "A base can be used as thin as .5mm thick over the existing liner because of its great crushing strength.", "In a very deep cavity, the thicker the liner the easier it is for the pulp to regenerate", "Once you get deeper towards the pulp you should use the tip of the explorer to check how far you are from the pulp"],
+        "correct": 0
+      },
+      {
+        "text": "When mixing IRM it becomes very crumbly, what is my next step?",
+        "options": ["Throw out the IRM and begin again", "Add more powder", "Add more liquid", "Look at the expiration date and make sure it is not expired"],
+        "correct": 2
+      },
+      {
+        "text": "Which dental materials promotes the formation of secondary dentin.",
+        "options": ["Calcium hydroxide", "IRM", "Composites", "Amalgam", "Two of the above"],
+        "correct": 0
+      },
+      {
+        "text": "The following are functions of a base except",
+        "options": ["Formation of tertiary dentin", "A thermal insulator", "Keeps a liner from being crushed during condensation", "Is placed on a tooth in a thicker layer than a liner"],
+        "correct": 0
+      },
+      {
+        "text": "Calcium Hydroxide liner is a frequently used liner because it:",
+        "options": ["Stimulates production of secondary dentin", "Can be used with only composite resin material", "Acts as a base as well as a liner", "Does not require the use of a filling material."],
+        "correct": 0
+      },
+      {
+        "text": "Desensitizers used to prevent hypersensitivity should be used",
+        "options": ["In large amounts", "In contact with soft tissue", "To seal all affected dentinal tubules", "All of the above are correct"],
+        "correct": 2
+      },
+      {
+        "text": "The elapsed time from the start of mixing a material to the point at which the consistency of the material is no longer suitable is called:",
+        "options": ["Setting time", "Working time", "Distortion time", "Mixing time"],
+        "correct": 1
+      },
+      {
+        "text": "The following can affect the setting time of a material",
+        "options": ["The temperature", "The humidity", "The powder to liquid ratio", "All of the above"],
+        "correct": 3
+      },
+      {
+        "text": "Mrs. Sugarman has a lot of cavities. You begin her treatment plan with a large Class V on #11. You excavate the cavity beautifully, and you choose to restore with Glass ionomer. Which statement is TRUE?",
+        "options": ["You cannot restore with Glass Ionomer, since Glass Ionomer is only a temporary restorative material", "Glass ionomer only comes in one color and would not be esthetic.", "Glass Ionomer can be beneficial to my patient because of its ability to release fluoride", "Glass Ionomer cannot be used in a class V restoration because it has poor wear resistance", "More than one answer is TRUE"],
+        "correct": 2
+      },
+      {
+        "text": "There is research to support leaving infected dentin at",
+        "options": ["The cavosurface margin", "The axial wall", "The pulpal floor", "B and C", "You can never leave infected dentin"],
+        "correct": 3
+      },
+      {
+        "text": "Caries detector is a good learning tool because",
+        "options": ["It allows you to see the difference between infected and affected dentin", "It works only on the cavosurface margin", "It helps identity where there may be remaining decay", "Allows you to scan the tooth for tooth decay with a LED light"],
+        "correct": 2
+      },
+      {
+        "text": "Glass Ionomer is _______ than composite",
+        "options": ["Softer", "Harder", "Less esthetic", "A and C"],
+        "correct": 0
+      },
+      {
+        "text": "A Resin Modified Glass Ionomer sets by",
+        "options": ["Chemical Cure", "Light Cure", "Mechanical Retention only", "More than one answer is correct"],
+        "correct": 3
+      },
+      {
+        "text": "In a selective etch technique how long do you etch for?",
+        "options": ["10 seconds", "15 seconds", "20 seconds", "30 seconds"],
+        "correct": 3
+      },
+      {
+        "text": "You have prepared a Class II preparation, you choose to selectively etch. That means you are etching the following:",
+        "options": ["The entire cavosurface margin", "Only the occlusal portion of the cavosurface margin", "The entire preparation", "Only the internal walls of the preparation"],
+        "correct": 0
+      },
+      {
+        "text": "Partial Caries Removal is when",
+        "options": ["You leave affected dentin behind", "You leave infected dentin behind", "Is detrimental and should not be done", "Has been proven to be an elective treatment option for permanent teeth with deep carious lesions", "More than one answer is correct"],
+        "correct": 4
+      },
+      {
+        "text": "Which statement is FALSE?",
+        "options": ["It is challenging to use multiple tofflemire bands in a quadrant at a single time", "A flat unburnished tofflemire band will produce proper anatomy", "Using a tofflemire can sometimes compromise visibility", "Incomplete curing can be complication of using a metal matrix band"],
+        "correct": 1
+      },
+      {
+        "text": "A Pro-Matrix system",
+        "options": ["Is not specific to a single quadrant", "Is inexpensive", "Can be sterilized and used time and time again", "Allows for easy anatomical contact between teeth"],
+        "correct": 0
+      },
+      {
+        "text": "Timmy is a 5 year old patient w a DO on #B. In order to restore his tooth I may use:",
+        "options": ["A denovo band", "A curved tofflemire", "An automatrix system", "The Palodent system"],
+        "correct": 0
+      },
+      {
+        "text": "The following system uses a ring to help separate the teeth to ensure good contact:",
+        "options": ["Denovo Matrix System", "Palodent System", "Bioclear system", "Automatrix System"],
+        "correct": 1
+      },
+      {
+        "text": "A slot preparation is indicated if there is decay only on the _____ surface of the tooth and there is no clinical or radiographic decay on the ______",
+        "options": ["Proximal, occlusal", "Occlusal, proximal", "Facial, proximal", "Occlusal, lingual"],
+        "correct": 0
+      },
+      {
+        "text": "Dovetail is used",
+        "options": ["In all preparations", "For added retention", "Only in Class I minimally invasive preparations", "In crown preparations only"],
+        "correct": 1
+      },
+      {
+        "text": "When you are placing a Retention Groove in a proximal box, the retention groove can be located at",
+        "options": ["The axiopulpal line angle", "The axiolingual line angle", "The axiogingigival line angle", "None of the above"],
+        "correct": 1
+      },
+      {
+        "text": "Convenience form of a Class II amalgam slot preparation indicates the need to access the interproximal caries from the ____ making it a Class II preparation",
+        "options": ["Occlusal surface", "Mesial surface", "Distal surface", "Buccal surface"],
+        "correct": 0
+      },
+      {
+        "text": "The following preparations include a pulpal floor EXCEPT:",
+        "options": ["Class II conventional composite preparation", "Class II conventional amalgam preparation", "Class II slot preparation", "Class I slot preparation"],
+        "correct": 2
+      },
+      {
+        "text": "The difference between a retention groove and a dovetail is",
+        "options": ["A dovetail is only on the occlusal 1/3", "Retention grooves are only used with composite", "Dovetails are only used in composites", "A and C"],
+        "correct": 0
+      }
+    ]
+  },
+  "pcod2-quiz-spring-2017-1": {
+    "title": "PCOD II Quiz 1 (Spring 2017)",
+    "type": "pcod2",
+    "subtype": "quiz",
+    "questions": [
+      {
+        "text": "Calcium hydroxide liner is used for which the following purposes?",
+        "options": ["Protects the pulp from chemical insult", "Used as a thermal insulator", "Used as an antibacterial agent", "a and c", "all of the above"],
+        "correct": 3
+      },
+      {
+        "text": "A glass ionomer base is used for which of the following purposes?",
+        "options": ["As a thermal insulator under composite restorations", "To protect a calcium hydroxide liner from being crushed during condensation of amalgam", "To stimulate reparative dentin", "all of the above", "none of the above"],
+        "correct": 1
+      },
+      {
+        "text": "A calcium hydroxide liner should be applied in a thin layer because:",
+        "options": ["its thermal insulating effect is enhanced in thin layers", "it has low compressive strength", "it has high compressive strength", "a and b", "none of the above"],
+        "correct": 1
+      },
+      {
+        "text": "IRM is used for which of the following purposes?",
+        "options": ["Temporary intracoronal restorations.", "Restore function until a permanent restoration can be placed", "Relieve tooth pain", "b and c", "all of the above"],
+        "correct": 4
+      },
+      {
+        "text": "The main ingredient of the liquid portion of IRM® is:",
+        "options": ["Methylmethacrylate (MMA)", "Eugenol", "Water", "Zinc acetate", "None of the above"],
+        "correct": 1
+      },
+      {
+        "text": "IRM® should not be used under composite restorations because:",
+        "options": ["the zinc acetate will prevent composites from bonding to the tooth", "the material is too weak, and will distort during the placement of the composite", "the eugenol will prevent the bonding agent and composite from completely polymerizing", "a and c", "all of the above"],
+        "correct": 2
+      },
+      {
+        "text": "The chemical reaction of the components of IRM is considered to be “autocatalytic” because:",
+        "options": ["water is a catalyst and also a product of the reaction", "it can be used in the manufacture of catalytic mufflers", "zinc eugenolate is a catalyst for the reaction", "a and c", "none of the above"],
+        "correct": 0
+      },
+      {
+        "text": "The correct powder/liquid ratio for IRM is:",
+        "options": ["1 level scoop powder : 1 drop liquid", "2 level scoops powder : 1 drop liquid", "1 level scoop powder : 2 drops liquid", "1 level scoop powder : 3 drops liquid", "none of the above"],
+        "correct": 0
+      },
+      {
+        "text": "Both brands of glass ionomer base used in the preclinic exercises are mixed in the amalgamator at a speed of:",
+        "options": ["2400 CPM", "3500 CPM", "4800 CPM", "4200 CPM", "10,000 CPM", "none of the above"],
+        "correct": 3
+      },
+      {
+        "text": "The correct ratio of catalyst paste to base paste for Dycal® is:",
+        "options": ["Equal volumes of catalyst and base pastes", "2 to 1 : catalyst to base", "1 to 2 : catalyst to base", "none of the above"],
+        "correct": 0
+      },
+      {
+        "text": "For a lingual approach Class III composite preparation, the facial wall is beveled:",
+        "options": ["only when the facial wall extends into the facial embrasure", "whenever the facial wall breaks contact with the adjacent tooth", "whenever the lingual wall is beveled", "all of the above", "none of the above"],
+        "correct": 0
+      },
+      {
+        "text": "A facial approach Class III composite preparation is used only when:",
+        "options": ["a carious lesion is visually evident from the facial view", "the lingual wall is intact with no visual evidence of a carious lesion", "the proximal carious lesion is only evident on a radiograph and not visually evident", "a and b", "all of the above"],
+        "correct": 3
+      },
+      {
+        "text": "In a lingual approach Class III preparation, the gingival and incisal walls are parallel to each other in order to:",
+        "options": ["create retentive form", "create convenience form", "increase the bond strength of the restoration", "all of the above", "none of the above"],
+        "correct": 0
+      },
+      {
+        "text": "Which of the following are features of a three surface Class III preparation (e.g. FML)?",
+        "options": ["Facial cavosurface margin is crescent shaped", "Lingual cavosurface margin is rectangular in shape", "Facial cavosurface margin has a 1 mm bevel", "Retentive grooves are placed gingivally and incisally at the expense of the gingival and incisal walls", "all of the above"],
+        "correct": 4
+      },
+      {
+        "text": "The buccal and lingual walls of the proximal box of a Class II MOD composite preparation should be:",
+        "options": ["slightly divergent to form a dovetail", "parallel to form a dovetail", "slightly convergent to form a dovetail", "All of the above", "none of the above"],
+        "correct": 2
+      }
+    ]
+  },
+  "pcod2-quiz-spring-2017-2": {
+    "title": "PCOD II Quiz 2 (Spring 2017)",
+    "type": "pcod2",
+    "subtype": "quiz",
+    "questions": [
+      {
+        "text": "External stain on a tooth due to heavy smoking can be due to:",
+        "options": ["abrasion", "refraction", "corrosion", "galvanism", "adsorption"],
+        "correct": 4
+      },
+      {
+        "text": "Which of the following is an example of “passivation”?",
+        "options": ["Silver oxide corrosion layer on amalgam restorations", "Low thermal conductivity in non-metals", "Sedation of a toothache with eugenol", "Chrome oxide surface layer on RPD alloys", "Recovery to initial dimension after release of stress"],
+        "correct": 3
+      },
+      {
+        "text": "Which of the following restorative materials has a compressive strength approximately equal to the compressive strength of tooth enamel?",
+        "options": ["amalgam", "composite", "glass ionomer", "cast gold", "IRM"],
+        "correct": 0
+      },
+      {
+        "text": "The elastic modulus is a measurement of:",
+        "options": ["the stress to force ratio of a material in the elastic range of the stress-strain curve", "the slope of the stress-strain curve above the proportional limit", "the percent elongation of the material", "the slope of the stress-strain curve below proportional limit", "toughness of the material"],
+        "correct": 3
+      },
+      {
+        "text": "The amount of force exerted on a restoration by an opposing tooth cusp depends on:",
+        "options": ["the occlusal contact area of the opposing cusp on the restoration", "the strength of the masseter muscle", "the size of the cusp", "the strength of the restoration", "the resiliency of the restoration"],
+        "correct": 1
+      },
+      {
+        "text": "Tensile strength measurements are useful when evaluating:",
+        "options": ["wear resistance of restorations against natural tooth structure", "stiffness of restorative materials in function", "bond strength of restorative materials to tooth structure", "resistance of restorative materials to occlusal crushing forces", "tension of the masseter muscle"],
+        "correct": 2
+      },
+      {
+        "text": "What clinical property does “percent elongation” relate to?",
+        "options": ["the burnishability of the margins of a gold crown", "the length of a three-unit bridge", "the toughness of a three-unit bridge", "the clinical longevity of a restorative material expressed in percent", "the percent of clinical failures of a restorative material"],
+        "correct": 2
+      },
+      {
+        "text": "How much muscular force can an average adult exert on their posterior teeth?",
+        "options": ["125 - 150 MPa", "125 - 150 kgs.", "125 - 150 PSI", "125 - 150 lbs.", "125 - 150 grams"],
+        "correct": 3
+      },
+      {
+        "text": "The clinical performance of a restorative material depends on:",
+        "options": ["its chemical and physical properties", "its composition and microstructure", "the manner in which it is placed by the dentist", "a and b only", "all of the above"],
+        "correct": 4
+      },
+      {
+        "text": "When a material is being considered for the restoration of a large occlusal area of a second molar, a major consideration should be its:",
+        "options": ["tensile strength", "shear strength", "compressive strength", "percent elongation", "flexural strength"],
+        "correct": 2
+      },
+      {
+        "text": "The tensile strength of the bond between a composite restoration and tooth enamel is:",
+        "options": ["equal to the tensile strength of the enamel", "around 3 times the tensile strength of the enamel", "around 1/3 of the tensile strength of the enamel", "around 1/10 of the tensile strength of the enamel", "around 10 times the tensile strength of the enamel"],
+        "correct": 2
+      },
+      {
+        "text": "Which of the following physical and chemical properties can affect abrasive wear of a restoration?",
+        "options": ["hardness", "thermal expansion", "passivation", "compressive strength", "elastic modulus"],
+        "correct": 0
+      },
+      {
+        "text": "A glass ionomer hardens primarily by what mechanism?",
+        "options": ["acid-base reaction", "polymerization reaction", "gelation", "hydrogen bonding", "evaporation"],
+        "correct": 0
+      },
+      {
+        "text": "In which of the following clinical situations would a conventional glass ionomer be the material of choice as a restorative material?",
+        "options": ["Root surface Class V restorations.", "Restoration of deciduous teeth in a pediatric patient with rampant caries.", "Restoration of large occlusal caries in an adult.", "a and b", "all of the above"],
+        "correct": 3
+      },
+      {
+        "text": "Which of the following has the most amount of fluoride release?",
+        "options": ["resin modified glass ionomer", "glass ionomer", "compomer", "flowable composite", "hybrid composite"],
+        "correct": 1
+      }
+    ]
+  },
+  "pcod2-quiz-spring-2017-3": {
+    "title": "PCOD II Quiz 3 (Spring 2017)",
+    "type": "pcod2",
+    "subtype": "quiz",
+    "questions": [
+      {
+        "text": "An ceramic inlay is an example of:",
+        "options": ["a direct restoration", "a provisional restoration", "a cast restoration", "an indirect restoration", "none of the above"],
+        "correct": 3
+      },
+      {
+        "text": "The major difference between a direct and indirect restoration is:",
+        "options": ["the direct restoration requires an impression", "the indirect restoration is fabricated, finished and polished in the mouth", "the direct restoration is cemented in place for retention", "the indirect restoration is placed immediately after tooth preparation", "none of the above"],
+        "correct": 4
+      },
+      {
+        "text": "Which of the following statements is true?",
+        "options": ["An inlay replaces tooth structure within the cusp tips of the tooth", "An onlay replaces one or more cusps of the tooth", "A crown replaces the entire exterior surface of the tooth", "all of the above", "none of the above"],
+        "correct": 3
+      },
+      {
+        "text": "Which of the following is a contra-indication for the use of a ceramic onlay?",
+        "options": ["Gingival floor of the preparation terminates above the free gingival margin", "Heavy occlusal stresses", "Large defects due to caries or fracture of tooth structure", "Replacement of large previous restorations", "all of the above"],
+        "correct": 1
+      },
+      {
+        "text": "The advantage of using a ceramic onlay restoration vs. a cast gold onlay restoration is:",
+        "options": ["the ceramic onlay can be used in high stress areas", "the ceramic onlay cementation is not technique sensitive", "the ceramic onlay is softer than the opposing natural enamel", "the ceramic onlay will not fatigue over a period of time", "none of the above"],
+        "correct": 4
+      },
+      {
+        "text": "A patient states that the ceramic onlay that you placed several years ago fractured yesterday when he was chewing a piece of bread. The most probable cause of this fracture might have been:",
+        "options": ["fatigue of the ceramic", "biting stresses exceeding the compressive strength of the ceramic", "biting stresses exceeding the percent elongation of the ceramic", "absorption of saliva by the ceramic", "inadequate hardness of the ceramic"],
+        "correct": 0
+      },
+      {
+        "text": "How much muscular force can an average adult exert on his/her posterior teeth?",
+        "options": ["125 - 150 Mpa", "125 - 150 kgs.", "125 - 150 PSI", "125 - 150 lbs.", "125 - 150 grams"],
+        "correct": 3
+      },
+      {
+        "text": "In order to achieve a bond between a ceramic onlay and the natural tooth structure:",
+        "options": ["the onlay is etched with hydrofluoric acid and the tooth is etched with phosphoric acid", "the onlay is etched with phosphoric acid and the tooth is etched with hydrofluoric acid", "both the onlay and tooth are etched with phosphoric acid", "both the onlay and tooth are etched with hydrofluoric acid", "no etching is required for either the ceramic onlay or tooth"],
+        "correct": 0
+      },
+      {
+        "text": "Contra-indications for cast gold onlays include:",
+        "options": ["high caries rate", "areas of the mouth where esthetics are important", "small restorations", "all of the above", "none of the above"],
+        "correct": 3
+      },
+      {
+        "text": "The major difference between a cast gold onlay preparation and a ceramic onlay preparation is:",
+        "options": ["the internal line angles of the cast gold onlay prep are rounded, and for the ceramic they are sharp", "the axio-pulpal line angle of the cast gold onlay prep is sharp", "the cavosurface margin of the cast gold onlay prep is beveled, and for the ceramic is a butt joint", "the internal walls of the cast gold onlay prep are convergent", "the pulpal and gingival floors of the cast gold onlay prep are convex"],
+        "correct": 2
+      },
+      {
+        "text": "In preparing a tooth for an onlay, the cusps are reduced by:",
+        "options": ["holding the bur horizontally", "holding the bur vertically", "holding the bur at the same angle as the inner and outer slopes of the cusps", "using the flat end of the 847.31.18 diamond", "using the pear shaped carbide bur"],
+        "correct": 2
+      },
+      {
+        "text": "The non-working side shelf is a characteristic of which type of preparation?",
+        "options": ["the ceramic inlay prep", "the ceramic onlay prep", "the cast gold inlay prep", "the cast gold onlay prep", "all of the above"],
+        "correct": 1
+      },
+      {
+        "text": "A provisional restoration is fabricated in order to:",
+        "options": ["provide for protection of the pulp", "prevent tooth movement", "maintain occlusion", "prevent food impaction", "all of the above"],
+        "correct": 4
+      },
+      {
+        "text": "Retention of a ceramic inlay or onlay restoration is derived from:",
+        "options": ["parallelism of the internal walls of the preparation", "convergence of the axial wall of the preparation", "slots and grooves in the pulpal and gingival floor of the preparation", "the cementation procedure", "all of the above"],
+        "correct": 3
+      },
+      {
+        "text": "A patient comes to your office with a large area of decay on the occlusal and interproximal surfaces of tooth #31. Upon further examination you notice that the patient grinds his teeth causing a significant amount of occlusal wear on all the posterior teeth. The patient also has a high caries rate (many untreated areas of decay). What would be the best permanent restoration for tooth #31?",
+        "options": ["composite", "amalgam", "gold onlay", "ceramic onlay", "glass ionomer"],
+        "correct": 1
+      }
+    ]
+  },
+  "pcod2-quiz-spring-2018-1": {
+    "title": "PCOD II Quiz 1 (Spring 2018)",
+    "type": "pcod2",
+    "subtype": "quiz",
+    "questions": [
+      {
+        "text": "Which of the following is considered a “phase” in a solid material:",
+        "options": ["Porosity in a composite", "Translucency of dental porcelain", "Solubility of glass ionomer", "a and b only", "all of the above"],
+        "correct": 0
+      },
+      {
+        "text": "Internal stain of a composite restoration due to heavy smoking can be due to:",
+        "options": ["abrasion", "adsorption", "absorption", "galvanism", "none of the above"],
+        "correct": 2
+      },
+      {
+        "text": "Which of the following restorative materials has a compressive strength approximately equal to tooth enamel?",
+        "options": ["amalgam", "composite", "glass ionomer", "cast gold", "a and b"],
+        "correct": 0
+      },
+      {
+        "text": "The elastic modulus is a measurement of:",
+        "options": ["the stress to force ratio of a material in the elastic range of the stress-strain curve", "the slope of the stress-strain curve below the yield strength", "the stiffness of the material", "b and c", "all of the above"],
+        "correct": 3
+      },
+      {
+        "text": "The amount of stress exerted on a restoration by an opposing tooth cusp depends on:",
+        "options": ["the occlusal contact area of the opposing cusp on the restoration", "the occlusal contact area of the other teeth in the mouth", "the strength of the masseter muscle", "a and b", "all of the above"],
+        "correct": 4
+      },
+      {
+        "text": "Tensile strength measurements are useful when comparing:",
+        "options": ["wear resistance of restorations against natural tooth structure", "stiffness of restorative materials in function", "bond strength of restorative materials to tooth structure", "resistance to crushing forces during mastication of food", "b and d"],
+        "correct": 2
+      },
+      {
+        "text": "The amount of elastic deformation of a three-unit bridge under an occlusal load:",
+        "options": ["depends on the modulus of elasticity of the material", "depends on the ultimate flexural strength of the material", "depends on the toughness of the of the material", "depends on the elongation of the material", "all of the above"],
+        "correct": 0
+      },
+      {
+        "text": "How much masseter muscular force can an average adult exert on their posterior teeth?",
+        "options": ["125 - 150 MPa", "125 - 150 kgs.", "125 - 150 PSI", "125 - 150 lbs.", "125 - 150 grams"],
+        "correct": 3
+      },
+      {
+        "text": "The clinical performance of a restorative material depends on:",
+        "options": ["its chemical and physical properties", "its composition and microstructure", "the manner in which it is placed by the dentist", "a and b only", "all of the above"],
+        "correct": 4
+      },
+      {
+        "text": "The restorative material whose thermal expansion is closest to tooth enamel is:",
+        "options": ["amalgam", "composite", "glass ionomer", "unfilled resin (PMMA)", "cast gold"],
+        "correct": 2
+      },
+      {
+        "text": "As compared to a ceramic crown, a gold crown has:",
+        "options": ["lower thermal conductivity", "lower hardness", "higher toughness", "b and c", "all of the above"],
+        "correct": 3
+      },
+      {
+        "text": "The most important part of the placement procedure to insure good contacts for a Class II amalgam restoration is to:",
+        "options": ["place the amalgam in the carrier with a lot of pressure", "condense with high pressure", "use amalgam within one minute after mixing", "place the matrix band at least 1 mm higher than the adjacent marginal ridge", "condense the amalgam in the proximal box up to the pulpal floor, then loosen the band ¼turn before proceeding"],
+        "correct": 4
+      },
+      {
+        "text": "In order to remove excess mercury from an amalgam restoration you must:",
+        "options": ["mix in the amalgamator for the proper time and speed", "condense with high pressure", "overbuild by at least 1 mm", "all of the above", "none of the above"],
+        "correct": 3
+      },
+      {
+        "text": "When a material is being considered for the restoration of a large occlusal area of a second molar, a major consideration should be its:",
+        "options": ["tensile strength", "shear strength", "compressive strength", "all of the above", "none of the above"],
+        "correct": 2
+      },
+      {
+        "text": "The tensile strength of the bond between a composite and enamel is:",
+        "options": ["equal to the tensile strength of the enamel", "around 3 times the tensile strength of the enamel", "around 1/3 of the tensile strength of the enamel", "around  1/10 of the tensile strength of the enamel", "none of the above"],
+        "correct": 2
+      }
+    ]
+  },
+  "pcod2-quiz-spring-2018-2": {
+    "title": "PCOD II Quiz 2 (Spring 2018)",
+    "type": "pcod2",
+    "subtype": "quiz",
+    "questions": [
+      {
+        "text": "Calcium hydroxide liner can be used for which the following purpose(s)?",
+        "options": ["To seal the cavosurface margin", "Protects the pulp from thermal insult", "Used as an antibacterial agent", "a and c", "all of the above"],
+        "correct": 2
+      },
+      {
+        "text": "A glass ionomer base is used for which of the following purpose(s)?",
+        "options": ["As a thermal insulator under amalgam restorations", "To protect a calcium hydroxide liner from being crushed during condensation of amalgam", "To seal the cavosurface margins", "a and b", "all of the above"],
+        "correct": 3
+      },
+      {
+        "text": "IRM is used for which of the following purposes?",
+        "options": ["Temporary intracoronal restorations.", "Restore function until a permanent restoration can be placed", "Relieve tooth pain", "b and c", "all of the above"],
+        "correct": 4
+      },
+      {
+        "text": "The main ingredient of the liquid portion of IRM® is:",
+        "options": ["methylmethacrylate (MMA)", "eugenol", "water", "zinc acetate", "none of the above"],
+        "correct": 1
+      },
+      {
+        "text": "The chemical reaction of the components of IRM is considered to be “autocatalytic” because:",
+        "options": ["water is a catalyst and also a product of the reaction", "zinc oxide is a byproduct of the reaction", "zinc eugenolate is a catalyst for the reaction", "a and c", "none of the above"],
+        "correct": 0
+      },
+      {
+        "text": "For a through and through (lingual to facial) Class III composite preparation:",
+        "options": ["the facial cavosurface margin is always beveled", "the lingual cavosurface margin is always beveled", "retention is placed at the gingiva-axial line angle and the incisal-axial point angle", "a and c", "none of the above"],
+        "correct": 3
+      },
+      {
+        "text": "A facial approach Class III composite preparation is used only when:",
+        "options": ["a carious lesion is visually evident from the facial view", "the lingual wall is intact with no visual evidence of a carious lesion", "the proximal carious lesion is only evident on a radiograph and not visually evident", "a and b", "all of the above"],
+        "correct": 3
+      },
+      {
+        "text": "Caries free individuals generally lack Streptococcus mutans.",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "Which statement(s) concerning the bacterial etiology of caries is false?",
+        "options": ["The bacterial composition of the plaque can be altered by a patient's diet.", "The bacterial composition of the plaque can be altered by a reduction in a patient's saliva flow.", "Streptococcus mutans appears to be acquired by children at the time that the primary teeth erupt.", "Once plaque forms on the developing dentition its composition remains constant for life.", "None of these statements are false."],
+        "correct": 3
+      },
+      {
+        "text": "In the enamel white spot lesion, the area of maximal mineral loss is?",
+        "options": ["At the surface of the lesion.", "Below the surface of the lesion.", "Uniform through the depth of the lesion."],
+        "correct": 1
+      },
+      {
+        "text": "In early childhood caries, which statement or statements concerning the intra-oral distribution of caries is (are) true?",
+        "options": ["The lower anterior teeth are relatively caries free since they are close to salivary gland ducts.", "The lower anterior teeth tend to decay since they are close to salivary gland ducts.", "The upper anterior teeth tend to decay since they are exposed to sugar-containing liquids and low saliva flow when the baby is put to bed with a bottle.", "a and c", "all the above"],
+        "correct": 3
+      },
+      {
+        "text": "Which of the following are virulence factors of Streptococcus mutans?",
+        "options": ["Ability to produce acids.", "Acid tolerance.", "Ability to convert sucrose into an extracellular matrix.", "a and c", "All the above."],
+        "correct": 4
+      },
+      {
+        "text": "the liquid portion of glass ionomer is:",
+        "options": ["polyacrylic acid", "phosphoric acid", "sodium hydroxide", "methyl methacrylate", "none of the above"],
+        "correct": 0
+      },
+      {
+        "text": "Which of the following has the highest amount of fluoride release under acidic conditions?",
+        "options": ["compomer", "composite", "hybrid ionomer", "glass ionomer", "IRM"],
+        "correct": 3
+      },
+      {
+        "text": "To prepare the dentin surface for the placement of a glass ionomer:",
+        "options": ["etch the surface of the dentin with phosphoric acid to remove the smear layer and smear plugs", "etch the surface of the dentin with maleic acid to remove the smear layer", "use a small round bur at low speed (no water spray) to remove the smear layer", "etch the surface of the dentin with phosphoric acid to remove the smear layer, plugs, and to expose the collagen.", "none of the above"],
+        "correct": 1
+      }
+    ]
+  },
+  "pcod2-quiz-spring-2018-3": {
+    "title": "PCOD II Quiz 3 (Spring 2018)",
+    "type": "pcod2",
+    "subtype": "quiz",
+    "questions": [
+      {
+        "text": "An ceramic inlay is an example of:",
+        "options": ["a direct restoration", "a provisional restoration", "a cast restoration", "an indirect restoration", "none of the above"],
+        "correct": 3
+      },
+      {
+        "text": "The major difference between a direct and indirect restoration is:",
+        "options": ["the direct restoration requires an impression", "the indirect restoration is fabricated, finished and polished in the mouth", "the indirect restoration is cemented in place for retention", "the indirect restoration is placed immediately after tooth preparation", "none of the above"],
+        "correct": 2
+      },
+      {
+        "text": "Which of the following statements is true?",
+        "options": ["An onlay replaces tooth structure only within the cusp tips of the tooth", "An onlay replaces one or more cusps of the tooth", "A veneer covers only the facial surface of a tooth", "all of the above", "none of the above"],
+        "correct": 1
+      },
+      {
+        "text": "Which of the following is a contra-indication for the use of a ceramic onlay?",
+        "options": ["Gingival floor of the preparation terminates above the free gingival margin", "Heavy occlusal stresses", "Large defects due to caries or fracture of tooth structure", "Replacement of large previous restorations", "all of the above"],
+        "correct": 1
+      },
+      {
+        "text": "The advantage of using a ceramic onlay restoration vs. a cast gold onlay restoration is:",
+        "options": ["the ceramic onlay can be used in high stress areas", "the ceramic onlay cementation is not technique sensitive", "the ceramic onlay is softer than the opposing natural enamel", "the ceramic onlay will not fatigue over a period of time", "none of the above"],
+        "correct": 4
+      },
+      {
+        "text": "A patient states that the ceramic onlay that you placed several years ago fractured yesterday when he was chewing a piece of bread. The most probable cause of this fracture might have been:",
+        "options": ["fatigue of the ceramic", "biting stresses exceeding the compressive strength of the ceramic", "biting stresses exceeding the percent elongation of the ceramic", "absorption of saliva by the ceramic", "inadequate hardness of the ceramic"],
+        "correct": 0
+      },
+      {
+        "text": "How much muscular force can an average adult exert on his/her posterior teeth?",
+        "options": ["125 - 150 Mpa", "125 - 150 kgs.", "125 - 150 PSI", "125 - 150 lbs.", "125 - 150 grams"],
+        "correct": 3
+      },
+      {
+        "text": "In order to achieve a bond between a ceramic onlay and the natural tooth structure during cementation:",
+        "options": ["the onlay is etched with sulfuric acid and the tooth is etched with phosphoric acid", "the onlay is etched with phosphoric acid and the tooth is etched with hydrofluoric acid", "both the onlay and tooth are etched with phosphoric acid", "both the onlay and tooth are etched with hydrofluoric acid", "none of the above"],
+        "correct": 4
+      },
+      {
+        "text": "Contra-indications for cast gold onlays include:",
+        "options": ["high caries rate", "areas of the mouth where esthetics are important", "small restorations", "all of the above", "none of the above"],
+        "correct": 3
+      },
+      {
+        "text": "The major difference between a cast gold onlay preparation and a ceramic onlay preparation is:",
+        "options": ["the internal line angles of the cast gold onlay prep are rounded, and for the ceramic they are sharp", "the axio-pulpal line angle of the cast gold onlay prep is sharp", "the cavosurface margin of the cast gold onlay is a butt joint, and the ceramic cavosuface margin is beveled", "the internal walls of the cast gold onlay prep are convergent", "none of the above"],
+        "correct": 4
+      },
+      {
+        "text": "In preparing a tooth for an onlay, the cusps are reduced by:",
+        "options": ["holding the bur horizontally", "holding the bur vertically", "holding the bur at the same angle as the inner and outer slopes of the cusps", "using the flat end of the 847.31.18 diamond", "using the pear shaped carbide bur"],
+        "correct": 2
+      },
+      {
+        "text": "The non-working side shelf is a characteristic of which type of preparation?",
+        "options": ["the ceramic inlay prep", "the ceramic onlay prep", "the cast gold inlay prep", "the cast gold onlay prep", "all of the above"],
+        "correct": 1
+      },
+      {
+        "text": "A provisional restoration is fabricated in order to:",
+        "options": ["provide for protection of the pulp", "prevent tooth movement", "maintain occlusion", "prevent food impaction", "all of the above"],
+        "correct": 4
+      },
+      {
+        "text": "Retention of a ceramic inlay or onlay restoration is derived from:",
+        "options": ["parallelism of the internal walls of the preparation", "convergence of the axial wall of the preparation", "slots and grooves in the pulpal and gingival floor of the preparation", "the cementation procedure", "all of the above"],
+        "correct": 3
+      },
+      {
+        "text": "A patient comes to your office with a large area of decay on the occlusal and interproximal surfaces of tooth #31. Upon further examination you notice that the patient grinds his teeth causing a significant amount of occlusal wear on all the posterior teeth. The patient also has a high caries rate (many untreated areas of decay). What would be the best permanent restoration for tooth #31?",
+        "options": ["composite", "amalgam", "gold onlay", "ceramic onlay", "glass ionomer"],
+        "correct": 1
+      }
+    ]
   }
 }
