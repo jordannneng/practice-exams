@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TCDM Practice Exams</title>
-<meta name="description" content="Free practice exams and quizzes for TCDM dental school coursework — GDA, DAO, Ethics, PCOD, Cariology, and Oral Radiology.">
-<meta property="og:title" content="TCDM Practice Exams">
-<meta property="og:description" content="Free practice exams and quizzes for TCDM dental school coursework.">
+<title>Hand of God</title>
+<meta name="description" content="Free practice exams and quizzes for dental school coursework — GDA, DAO, Ethics, PCOD, Cariology, and Oral Radiology.">
+<meta property="og:title" content="Hand of God">
+<meta property="og:description" content="Free practice exams and quizzes for dental school coursework.">
 <meta property="og:type" content="website">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%23133a63'/%3E%3Cpath d='M7 12.5l3.2 3.2L17 8.5' stroke='white' stroke-width='2.4' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
 <style>
@@ -57,8 +57,6 @@
     max-width: 960px; margin: 0 auto; padding: 18px 24px 28px;
     font-size: 12.5px; color: var(--text-muted); text-align: center;
   }
-  .site-footer-inner a { color: var(--accent); text-decoration: none; }
-  .site-footer-inner a:hover { text-decoration: underline; }
   .app { max-width: 760px; margin: 0 auto; padding: 24px; }
   .app.wide { max-width: 960px; }
   h1 { font-size: 22px; font-weight: 600; margin: 0 0 4px; }
@@ -104,11 +102,6 @@
   }
   .category-card:hover {
     border-color: var(--accent); box-shadow: 0 6px 16px rgba(19, 58, 99, 0.12); transform: translateY(-1px);
-  }
-  .category-icon {
-    flex-shrink: 0; width: 40px; height: 40px; border-radius: 10px;
-    background: var(--accent-light); color: var(--accent);
-    display: flex; align-items: center; justify-content: center;
   }
   .category-body { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
   .category-title { font-weight: 600; font-size: 16px; }
@@ -210,8 +203,8 @@
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l4.2 4.2L20 5"/></svg>
     </span>
     <div class="site-titles">
-      <span class="site-name">TCDM Practice Exams</span>
-      <span class="site-tagline">Practice questions for TCDM coursework</span>
+      <span class="site-name">Hand of God</span>
+      <span class="site-tagline">Practice exams for dental school coursework</span>
     </div>
   </div>
 </header>
@@ -228,7 +221,7 @@
 </div>
 <footer class="site-footer">
   <div class="site-footer-inner">
-    Built by TCDM students, for TCDM students. Found an issue? <a href="https://github.com/xjengax/tcdm-practice-exams.github.io" target="_blank" rel="noopener">Open an issue on GitHub</a>.
+    This site is an independent, unofficial study resource provided for educational purposes only. It is not affiliated with, endorsed by, or sponsored by any academic institution, and no guarantee is made as to the accuracy or completeness of its content.
   </div>
 </footer>
 
@@ -354,20 +347,6 @@ const SUBTYPES_BY_TYPE = {
 };
 const SUBTYPE_LABELS = Object.values(SUBTYPES_BY_TYPE).flat().reduce((acc, s) => (acc[s.id] = s.label, acc), {});
 
-function icon(paths) {
-  return `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${paths}</svg>`;
-}
-const ICON_PCOD = icon('<rect x="8" y="2" width="8" height="4" rx="1"/><path d="M9 4H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-3"/><line x1="9" y1="12" x2="15" y2="12"/><line x1="9" y1="16" x2="15" y2="16"/>');
-const TYPE_ICONS = {
-  gda: icon('<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>'),
-  dao: icon('<polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/>'),
-  ethics: icon('<line x1="12" y1="3" x2="12" y2="21"/><path d="M5 7h14"/><path d="M5 7l-3 7a3.5 3.5 0 0 0 7 0l-3-7z"/><path d="M19 7l-3 7a3.5 3.5 0 0 0 7 0l-3-7z"/>'),
-  pcod1: ICON_PCOD,
-  cario: icon('<circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>'),
-  oralrad: icon('<rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="12" cy="12" r="4"/><line x1="12" y1="3" x2="12" y2="6"/><line x1="12" y1="18" x2="12" y2="21"/><line x1="3" y1="12" x2="6" y2="12"/><line x1="18" y1="12" x2="21" y2="12"/>'),
-  pcod2: ICON_PCOD,
-};
-
 // Which school semester each category belongs under on the home page. Types
 // with no entry here are shown in an unsectioned group at the end instead
 // of under a semester heading.
@@ -399,7 +378,6 @@ function categoryCardHtml(type) {
   const count = Object.values(exams).filter(e => e.type === type).length;
   return `
     <button type="button" class="category-card" data-action="open-category" data-type="${type}">
-      <span class="category-icon">${TYPE_ICONS[type] || ''}</span>
       <span class="category-body">
         <span class="category-title">${TYPE_LABELS[type]}</span>
         <span class="category-meta">${count} exam${count !== 1 ? 's' : ''}</span>
@@ -409,7 +387,7 @@ function categoryCardHtml(type) {
 }
 
 function renderHome() {
-  let html = `<p class="subtitle" style="margin-top:0;">Choose a category below to start practicing.</p>`;
+  let html = '';
   const bySemester = {};
   const unsectioned = [];
   TYPE_ORDER.forEach(type => {
@@ -445,7 +423,6 @@ function renderSubcategory() {
     const count = Object.values(exams).filter(e => e.type === type && e.subtype === st.id).length;
     html += `
       <button type="button" class="category-card" data-action="open-subcategory" data-type="${type}" data-subtype="${st.id}">
-        <span class="category-icon">${TYPE_ICONS[type] || ''}</span>
         <span class="category-body">
           <span class="category-title">${st.label}</span>
           <span class="category-meta">${count} exam${count !== 1 ? 's' : ''}</span>
