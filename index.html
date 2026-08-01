@@ -456,7 +456,7 @@ function renderFillBlanks(q, userAns, showFeedback) {
     html += `
       <div class="fill-blank-row">
         <label class="fill-blank-label">${q.blanks.length > 1 ? `Answer ${bi + 1}` : 'Your answer'}</label>
-        <input type="text" class="fill-blank-input${cls}" data-blank-index="${bi}" value="${escapeHtml(val)}" autocomplete="off" spellcheck="false">
+        <input type="text" class="fill-blank-input${cls}" data-blank-index="${bi}" value="${escapeHtml(val)}" autocomplete="off" spellcheck="false" ${showFeedback ? 'disabled' : ''}>
         ${showFeedback && !ok ? `<div class="fill-blank-accepted">Accepted answer: ${escapeHtml(alts[0])}</div>` : ''}
       </div>
     `;
@@ -725,15 +725,22 @@ function attachHandlers() {
     const nextBtn = document.getElementById('next-q-btn');
     if (nextBtn) nextBtn.onclick = () => { quizState.current++; render(); };
     app.querySelectorAll('.fill-blank-input').forEach(input => {
-      // Deliberately does NOT re-render on input/blur: a full-DOM-replace
+      // Deliberately does NOT re-render on plain input/blur: a full-DOM-replace
       // render() while focus is shifting between blank inputs (e.g. the
       // blur fired by focusing the next blank) can drop the focus/keystroke
-      // that triggered it. Grading feedback appears once the user navigates
-      // away from the question (Next/Previous/qnav), which already re-renders.
+      // that triggered it. Grading feedback appears when the user navigates
+      // away from the question (Next/Previous/qnav) or presses Enter, both of
+      // which already involve a deliberate re-render rather than a focus shift.
       input.oninput = (ev) => {
         const bi = parseInt(input.dataset.blankIndex);
         if (!Array.isArray(quizState.answers[quizState.current])) quizState.answers[quizState.current] = [];
         quizState.answers[quizState.current][bi] = ev.target.value;
+      };
+      input.onkeydown = (ev) => {
+        if (ev.key === 'Enter' && settings.immediateGrading) {
+          ev.preventDefault();
+          render();
+        }
       };
     });
     const submitBtn = document.getElementById('submit-quiz-btn');
