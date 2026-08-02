@@ -77,12 +77,17 @@
   button.primary:hover { opacity: 0.9; }
   button.small { padding: 5px 10px; font-size: 13px; }
   button:disabled { opacity: 0.5; cursor: default; }
-  .exam-list-item {
-    display: flex; justify-content: space-between; align-items: center;
-    padding: 14px 16px; border: 1px solid var(--border); border-radius: var(--radius); margin-bottom: 10px;
+  .exam-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; margin-bottom: 4px; }
+  .exam-card {
+    display: flex; flex-direction: column; gap: 14px;
+    background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);
+    padding: 16px 18px;
+    transition: border-color 0.15s, box-shadow 0.15s, transform 0.15s;
   }
-  .exam-title { font-weight: 500; font-size: 15px; }
-  .exam-meta { font-size: 13px; color: var(--text-muted); margin-top: 2px; }
+  .exam-card:hover {
+    border-color: var(--accent); box-shadow: 0 6px 16px rgba(33, 49, 77, 0.12); transform: translateY(-1px);
+  }
+  .exam-card-actions { display: flex; align-items: center; justify-content: flex-end; gap: 10px; }
   .issue-wrap { position: relative; display: inline-flex; }
   .issue-btn {
     width: 24px; height: 24px; padding: 0; border-radius: 50%; font-weight: 600; font-size: 12px;
@@ -361,7 +366,7 @@ function listViewForExam(examId) {
 
 function render() {
   const app = document.getElementById('app');
-  app.classList.toggle('wide', view.screen === 'home' || view.screen === 'subcategory');
+  app.classList.toggle('wide', view.screen === 'home' || view.screen === 'subcategory' || view.screen === 'list');
   if (view.screen === 'home') app.innerHTML = renderHome();
   else if (view.screen === 'subcategory') app.innerHTML = renderSubcategory();
   else if (view.screen === 'list') app.innerHTML = renderList();
@@ -460,18 +465,19 @@ function renderList() {
   if (ids.length === 0) {
     html += `<div class="card empty-state">No exams in this category yet. Add some to exams.json in the repo.</div>`;
   } else {
+    html += `<div class="exam-grid">`;
     ids.forEach(id => {
       const e = exams[id];
       const qCount = (e.questions || []).length;
       const s = scores[id];
       const scoreText = s ? `Best: ${s.best}% · Last: ${s.last}%` : 'Not attempted yet';
       html += `
-        <div class="exam-list-item">
-          <div>
-            <div class="exam-title">${escapeHtml(e.title)}</div>
-            <div class="exam-meta">${qCount} question${qCount !== 1 ? 's' : ''} · ${scoreText}</div>
+        <div class="exam-card">
+          <div class="category-body">
+            <div class="category-title">${escapeHtml(e.title)}</div>
+            <div class="category-meta">${qCount} question${qCount !== 1 ? 's' : ''} · ${scoreText}</div>
           </div>
-          <div style="display:flex; align-items:center; gap:10px;">
+          <div class="exam-card-actions">
             ${e.issues ? `
               <div class="issue-wrap">
                 <button type="button" class="icon-btn issue-btn" data-action="toggle-issue" data-id="${id}" title="This exam has a known issue">!</button>
@@ -483,6 +489,7 @@ function renderList() {
         </div>
       `;
     });
+    html += `</div>`;
     if (openIssuePopoverId) html += '<div class="menu-overlay" id="issue-overlay"></div>';
   }
   return html;
