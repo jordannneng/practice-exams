@@ -84,8 +84,10 @@
     padding: 16px 18px;
     transition: border-color 0.15s, box-shadow 0.15s, transform 0.15s;
   }
-  .exam-card:hover {
-    border-color: var(--accent); box-shadow: 0 6px 16px rgba(33, 49, 77, 0.12); transform: translateY(-1px);
+  @media (hover: hover) and (pointer: fine) {
+    .exam-card:hover {
+      border-color: var(--accent); box-shadow: 0 6px 16px rgba(33, 49, 77, 0.12); transform: translateY(-1px);
+    }
   }
   .exam-card-actions { display: flex; align-items: center; justify-content: flex-end; gap: 10px; }
   .issue-wrap { position: relative; display: inline-flex; }
@@ -93,7 +95,7 @@
     width: 24px; height: 24px; padding: 0; border-radius: 50%; font-weight: 600; font-size: 12px;
     border-color: var(--border-strong); color: var(--text-muted); background: none;
   }
-  .issue-btn:hover { border-color: var(--danger); color: var(--danger); background: var(--danger-light); }
+  .issue-btn:hover, .issue-btn.active { border-color: var(--danger); color: var(--danger); background: var(--danger-light); }
   .issue-popover {
     position: absolute; top: calc(100% + 6px); right: 0; z-index: 30; width: 260px;
     background: var(--card); border: 1px solid var(--danger); border-radius: var(--radius);
@@ -106,8 +108,10 @@
     padding: 16px 18px; border-radius: var(--radius);
     transition: border-color 0.15s, box-shadow 0.15s, transform 0.15s;
   }
-  .category-card:hover {
-    border-color: var(--accent); box-shadow: 0 6px 16px rgba(33, 49, 77, 0.12); transform: translateY(-1px);
+  @media (hover: hover) and (pointer: fine) {
+    .category-card:hover {
+      border-color: var(--accent); box-shadow: 0 6px 16px rgba(33, 49, 77, 0.12); transform: translateY(-1px);
+    }
   }
   .category-body { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
   .category-title { font-weight: 600; font-size: 16px; }
@@ -480,7 +484,7 @@ function renderList() {
           <div class="exam-card-actions">
             ${e.issues ? `
               <div class="issue-wrap">
-                <button type="button" class="icon-btn issue-btn" data-action="toggle-issue" data-id="${id}" title="This exam has a known issue">!</button>
+                <button type="button" class="icon-btn issue-btn ${openIssuePopoverId === id ? 'active' : ''}" data-action="toggle-issue" data-id="${id}" title="This exam has a known issue">!</button>
                 ${openIssuePopoverId === id ? `<div class="issue-popover">${escapeHtml(e.issues)}</div>` : ''}
               </div>
             ` : ''}
