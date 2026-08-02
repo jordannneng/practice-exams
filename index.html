@@ -95,7 +95,10 @@
     width: 24px; height: 24px; padding: 0; border-radius: 50%; font-weight: 600; font-size: 12px;
     border-color: var(--border-strong); color: var(--text-muted); background: none;
   }
-  .issue-btn:hover, .issue-btn.active { border-color: var(--danger); color: var(--danger); background: var(--danger-light); }
+  .issue-btn.active { border-color: var(--danger); color: var(--danger); background: var(--danger-light); }
+  @media (hover: hover) and (pointer: fine) {
+    .issue-btn:hover { border-color: var(--danger); color: var(--danger); background: var(--danger-light); }
+  }
   .issue-popover {
     position: absolute; top: calc(100% + 6px); right: 0; z-index: 30; width: 260px;
     background: var(--card); border: 1px solid var(--danger); border-radius: var(--radius);
