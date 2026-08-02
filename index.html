@@ -193,6 +193,11 @@
   .score-big { font-size: 40px; font-weight: 600; text-align: center; margin: 10px 0; }
   .score-label { text-align: center; color: var(--text-secondary); font-size: 14px; margin-bottom: 20px; }
   .top-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
+  .back-btn {
+    background: none; border: none; padding: 4px 0; margin: 0;
+    color: var(--text-secondary); font-size: 13px; font-weight: 500;
+  }
+  .back-btn:hover { background: none; color: var(--accent); }
   .loading, .error-state { text-align: center; padding: 40px; color: var(--text-muted); }
   .footer-row { display: flex; justify-content: space-between; margin-top: 20px; }
 </style>
@@ -405,7 +410,7 @@ function renderSubcategory() {
   const type = view.type;
   const subtypes = SUBTYPES_BY_TYPE[type] || [];
   let html = `
-    <div class="top-row"><button id="back-to-home-btn">← Back to categories</button></div>
+    <div class="top-row"><button id="back-to-home-btn" class="back-btn">← Back to categories</button></div>
     <h1>${TYPE_LABELS[type] || type}</h1>
     <p class="subtitle">Choose a section to get started.</p>
     <div class="category-grid">
@@ -448,7 +453,7 @@ function renderList() {
   const backLabel = subtype ? `← Back to ${TYPE_LABELS[type] || type}` : '← Back to categories';
   const heading = subtype ? `${TYPE_LABELS[type] || type} ${SUBTYPE_LABELS[subtype] || subtype}` : `${TYPE_LABELS[type] || type} exams`;
   let html = `
-    <div class="top-row"><button id="list-back-btn">${backLabel}</button></div>
+    <div class="top-row"><button id="list-back-btn" class="back-btn">${backLabel}</button></div>
     <h1>${heading}</h1>
     <p class="subtitle">Pick an exam below to start practicing.</p>
   `;
@@ -629,7 +634,7 @@ function renderResults() {
   e.questions.forEach((q, i) => { if (isQuestionCorrect(q, quizState.answers[i])) correctCount++; });
   const pct = Math.round((correctCount / total) * 100);
   return `
-    <div class="top-row"><button id="back-to-list-btn">← Back to exams</button></div>
+    <div class="top-row"><button id="back-to-list-btn" class="back-btn">← Back to exams</button></div>
     <div class="card">
       <div class="score-big">${pct}%</div>
       <div class="score-label">${correctCount} of ${total} correct</div>
