@@ -107,7 +107,9 @@ each one was added because a specific real exam broke without it:
 - **Two source formats**: most years use `Question #: N` markers;
   some older years use plain `N. question text` numbering instead
   (`parse_questions_numbered`, auto-selected when no `Question #:` markers
-  are found at all).
+  are found at all). That plain-numbering format and its option letters
+  are sometimes punctuated with `)` instead of `.` (e.g. `1) question` /
+  `a) option`) depending on the source document; both are accepted.
 - **Soft line-wrap hyphenation** (`join_wrapped_lines`): PDF text
   extraction breaks "prevent" across lines as "pre-" / "vent"; rejoined
   by de-hyphenating when a line ends in a letter+hyphen and the next line
