@@ -321,8 +321,8 @@ async function loadExams() {
   exams = await res.json();
 }
 
-const TYPE_LABELS = { gda: 'GDA', dao: 'DAO', ethics: 'Ethics', pcod1: 'PCOD I', cario: 'Cariology', oralrad: 'Oral Radiology', pcod2: 'PCOD II' };
-const TYPE_ORDER = ['gda', 'dao', 'ethics', 'pcod1', 'cario', 'oralrad', 'pcod2'];
+const TYPE_LABELS = { gda: 'GDA', dao: 'DAO', ethics: 'Ethics', pcod1: 'PCOD I', cario: 'Cariology', oralrad: 'Oral Radiology', pcod2: 'PCOD II', patho: 'Pathomedicine' };
+const TYPE_ORDER = ['gda', 'dao', 'ethics', 'pcod1', 'cario', 'oralrad', 'pcod2', 'patho'];
 const SUBTYPES_BY_TYPE = {
   gda: [
     { id: 'midterm', label: 'Midterms' },
@@ -352,6 +352,14 @@ const SUBTYPES_BY_TYPE = {
     { id: 'final', label: 'Final Exams' },
     { id: 'quiz', label: 'Quizzes' },
   ],
+  patho: [
+    { id: 'legacy', label: '2017–2018 (Legacy Curriculum)' },
+    { id: 'exam1', label: 'Exam 1' },
+    { id: 'exam2', label: 'Exam 2' },
+    { id: 'exam3', label: 'Exam 3' },
+    { id: 'exam4', label: 'Exam 4' },
+    { id: 'exam5', label: 'Exam 5' },
+  ],
 };
 const SUBTYPE_LABELS = Object.values(SUBTYPES_BY_TYPE).flat().reduce((acc, s) => (acc[s.id] = s.label, acc), {});
 
@@ -364,7 +372,7 @@ const SEMESTER_ORDER = [
   'D3 Summer', 'D3 Fall', 'D3 Spring',
   'D4 Summer', 'D4 Fall',
 ];
-const TYPE_SEMESTER = { gda: 'D1 Summer', dao: 'D1 Summer', ethics: 'D1 Summer', pcod1: 'D1 Fall', cario: 'D1 Fall', oralrad: 'D1 Fall', pcod2: 'D1 Spring' };
+const TYPE_SEMESTER = { gda: 'D1 Summer', dao: 'D1 Summer', ethics: 'D1 Summer', pcod1: 'D1 Fall', cario: 'D1 Fall', oralrad: 'D1 Fall', pcod2: 'D1 Spring', patho: 'D2 Fall' };
 
 function listViewForExam(examId) {
   const e = exams[examId];
