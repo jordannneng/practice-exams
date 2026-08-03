@@ -68,7 +68,7 @@ def join_wrapped_lines(lines):
     return result
 
 
-OPT_RE = re.compile(r'^(✓?)\s*([A-Za-z])\.\s*(.*)$')
+OPT_RE = re.compile(r'^(✓?)\s*([A-Za-z])[.)]\s*(.*)$')
 IMG_EXT_RE = re.compile(r'\.(png|jpg|jpeg)$', re.I)
 
 def find_best_option_run(lines):
@@ -167,10 +167,11 @@ def parse_questions(text):
     return questions
 
 def parse_questions_numbered(text):
-    """Format: "N. question text" ... "A. opt" / "✓B. opt" (no "Question #:" markers)."""
+    """Format: "N. question text" or "N) question text" ... "A. opt" / "✓B. opt"
+    (no "Question #:" markers)."""
     lines = [l.strip() for l in text.split('\n')]
     lines = [l for l in lines if l != '' and not re.fullmatch(r'_{15,}', l)]
-    q_start_re = re.compile(r'^(\d+)\.\s*(.*)$')
+    q_start_re = re.compile(r'^(\d+)[.)]\s*(.*)$')
 
     # find candidate question-start lines, keeping only sequentially-increasing numbers
     starts = []  # (line_index, num, rest_of_line)

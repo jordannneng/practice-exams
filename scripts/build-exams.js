@@ -64,7 +64,7 @@ function parseCsv(text) {
   return rows.filter(r => r.some(f => f.trim() !== ''));
 }
 
-const KNOWN_TYPES = ['gda', 'dao', 'ethics', 'pcod1', 'cario', 'oralrad', 'pcod2', 'patho'];
+const KNOWN_TYPES = ['gda', 'dao', 'ethics', 'pcod1', 'cario', 'oralrad', 'pcod2', 'patho', 'perio1', 'fixedpros', 'rempros', 'cd'];
 const KNOWN_SUBTYPES = {
   gda: ['midterm', 'final', 'quiz'],
   dao: ['midterm', 'final', 'quiz'],
@@ -73,6 +73,10 @@ const KNOWN_SUBTYPES = {
   cario: ['final', 'quiz'],
   oralrad: ['midterm', 'final'],
   patho: ['legacy', 'exam1', 'exam2', 'exam3', 'exam4', 'exam5'],
+  perio1: ['midterm', 'final', 'quiz'],
+  fixedpros: ['midterm', 'final', 'quiz'],
+  rempros: ['midterm', 'final', 'quiz'],
+  cd: ['final', 'quiz'],
 };
 
 const LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
