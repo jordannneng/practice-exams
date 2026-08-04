@@ -77,7 +77,7 @@ const KNOWN_SUBTYPES = {
   fixedpros: ['midterm', 'final', 'quiz'],
   rempros: ['midterm', 'final', 'quiz'],
   cd: ['final', 'quiz'],
-  ortho: ['exam1', 'exam2', 'midterm', 'final'],
+  ortho: ['midterm', 'final'],
 };
 
 const LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';

@@ -22515,522 +22515,10 @@
       }
     ]
   },
-  "ortho-exam1-spring-2020": {
-    "title": "Orthodontics Exam 1 (Spring 2020)",
+  "ortho-final-spring-2019": {
+    "title": "Orthodontics Final Exam (Spring 2019)",
     "type": "ortho",
-    "subtype": "exam1",
-    "questions": [
-      {
-        "text": "Anatomic points are drawn on panoramic x-rays and angles/measurements are derived from these points",
-        "options": ["True", "False"],
-        "correct": 1
-      },
-      {
-        "text": "In cephalometric analysis and the angle SNA, A refers to?:",
-        "options": ["A point on the mandible", "A point on the maxilla", "A point on the forehead", "A point in the cranial base"],
-        "correct": 1
-      },
-      {
-        "text": "Which of the following best represents the value of extra-oral and intra-oral photos as part of orthodontic records?",
-        "options": ["Define starting occlusal relationship", "Define facial balance", "Allow evaluation of treatment progress", "All of the above"],
-        "correct": 3
-      },
-      {
-        "text": "Panoramic x-rays do not provide information on which of the following?",
-        "options": ["Direction of facial growth", "Root position and length", "Eruption during the mixed dentition", "The presence of missing teeth"],
-        "correct": 0
-      },
-      {
-        "text": "What might one expect to see in a hyperdivergent individual?",
-        "options": ["Very deep bite", "Anterior open bite", "Short lower face", "A line tangent to the mandibular plane lies below the base of the cranium"],
-        "correct": 1
-      },
-      {
-        "text": "A high angle grower is characterized by what directions of growth",
-        "options": ["More downward, less forward", "Less downward, more forward", "Neither downward nor forward", "Upward and backward"],
-        "correct": 0
-      },
-      {
-        "text": "A line drawn tangent to the mandibular plane that intersects the head below the base of the cranium is characteristic of what type of grower?",
-        "options": ["Hyper-divergent", "Normo-divergent", "Hypo-divergent", "High angle"],
-        "correct": 2
-      },
-      {
-        "text": "What might one expect to see in a hypodivergent individual?",
-        "options": ["Short lower face height", "long lower face height", "Equal upper and lower face heights", "A line tangent to the mandibular plane lies within the base of the cranium"],
-        "correct": 0
-      },
-      {
-        "text": "A transverse discrepancy is also known as a?",
-        "options": ["Deep bite", "Open bite", "Crossbite", "Overbite"],
-        "correct": 2
-      },
-      {
-        "text": "Which is NOT true of overbite?",
-        "options": ["Is a vertical measurement", "Represents the vertical degree of overlap of the upper and lower incisors", "Is commonly confused with overjet by the public", "Is considered normal at 100 percent"],
-        "correct": 3
-      },
-      {
-        "text": "What of the following is NOT true of overjet?",
-        "options": ["Esthetics often promote desire for overjet correction", "Risk of anterior trauma increases with increased overjet", "Without incisal guidance, continued eruption of mandibular teeth can be destructive to upper anterior palatal tissue", "Severe overjet is irrelevant to risk of trauma to upper anterior teeth"],
-        "correct": 3
-      },
-      {
-        "text": "When considering proper incisor inclination or angulation:",
-        "options": ["Incisors should be flared significantly", "Incisors should be retroclined significantly", "Incisors should be leaning slightly forward", "Retroclined incisors is always a treatment goal"],
-        "correct": 2
-      },
-      {
-        "text": "The main growth site in the mandible is:",
-        "options": ["Mandibular suture", "Symphyseal suture", "ramus suture", "Condyle"],
-        "correct": 3
-      },
-      {
-        "text": "Orthodontists can use the leeway space to help correct crowding situations because?",
-        "options": ["The erupting premolars are larger than the deciduous molars", "The erupting premolars are smaller than the deciduous molars", "The erupting premolars are equal in size to the deciduous molars", "The premolars always have delayed eruption"],
-        "correct": 1
-      },
-      {
-        "text": "Which of the following is true about a crossbite?",
-        "options": ["Is always anterior only", "Is always posterior only", "Can present both anterior and posterior", "Is always bilateral"],
-        "correct": 2
-      },
-      {
-        "text": "A normo-divergent grower would exhibit the following:",
-        "options": ["Long lower face", "A line tangent to the mandibular plane lies below the base of the cranium", "A line tangent to the mandibular plane intersects the head at the base of the cranium", "A line tangent to the mandibular plane intersects the head within the base of the cranium"],
-        "correct": 2
-      },
-      {
-        "text": "Completely blocked out canines would represent:",
-        "options": ["Severe crowding", "No crowding", "mild crowding", "moderate crowding"],
-        "correct": 0
-      },
-      {
-        "text": "Lip incompetence refers to:",
-        "options": ["Closure of the lips with muscle strain", "Closure of the lips without muscle strain", "Well balanced faces", "Class 3 individuals"],
-        "correct": 0
-      },
-      {
-        "text": "In a well balanced face:",
-        "options": ["Lower face height is roughly equal to upper face height", "Lower face height is longer than upper face height", "Lower face height is shorter than upper face height", "Upper and lower face heights are not equal"],
-        "correct": 0
-      },
-      {
-        "text": "In cephalometric analysis and the angle SNB, B refers to?:",
-        "options": ["a point on the mandible", "a point on the maxilla", "a point on the forehead", "a point in the cranial base"],
-        "correct": 0
-      },
-      {
-        "text": "Normal overjet is considered:",
-        "options": ["2.5-3 mm", "4-5 mm", "6-7 mm", "7+ mm"],
-        "correct": 0
-      },
-      {
-        "text": "Moderate overbite is considered:",
-        "options": ["0-10%", "10-25%", "30-60%", "80-90%"],
-        "correct": 2
-      },
-      {
-        "text": "A Class II malocclusion is typically characterized by a",
-        "options": ["Prognathic mandible", "Retrognathic mandible", "“strong chin”", "Anterior Crossbite"],
-        "correct": 1
-      },
-      {
-        "text": "A class III malocclusion is typically characterized by a",
-        "options": ["Prognathic mandible", "Retrognathic mandible", "“weak chin”", "Large overjet"],
-        "correct": 0
-      },
-      {
-        "text": "Which best describes the Angle Classification?",
-        "options": ["Class I", "Class 2", "Class 3", "Class 4"],
-        "correct": 1,
-        "image": "images/ortho-exam1-spring-2020/fig25.jpg"
-      },
-      {
-        "text": "Inclination of the incisors would be considered:",
-        "options": ["upper incisors retroclined", "upper incisors proclined", "upper incisors normal", "both upper and lower incisors retroclined"],
-        "correct": 1,
-        "image": "images/ortho-exam1-spring-2020/fig26.jpg"
-      },
-      {
-        "text": "The lower arch has a deep Curve of Spee. This would:",
-        "options": ["Not affect crowding", "Decrease crowding", "Increase crowding", "Cause bite opening"],
-        "correct": 2,
-        "image": "images/ortho-exam1-spring-2020/fig27.jpg"
-      },
-      {
-        "text": "The overjet is considered:",
-        "options": ["Mild", "Moderate", "Normal", "Severe"],
-        "correct": 3,
-        "image": "images/ortho-exam1-spring-2020/fig28.jpg"
-      },
-      {
-        "text": "Which best describes the Angle Classification?",
-        "options": ["Class I", "Class 2", "Class 3", "Class 4"],
-        "correct": 1,
-        "image": "images/ortho-exam1-spring-2020/fig29.jpg"
-      },
-      {
-        "text": "Crowding in the upper arch would be considered:",
-        "options": ["Non-crowded", "Mild", "Moderate", "Severe"],
-        "correct": 3,
-        "image": "images/ortho-exam1-spring-2020/fig30.jpg"
-      },
-      {
-        "text": "The overbite is considered:",
-        "options": ["Openbite", "Shallow", "Moderate", "Normal"],
-        "correct": 2,
-        "image": "images/ortho-exam1-spring-2020/fig31.jpg"
-      },
-      {
-        "text": "Based on e-line, facial balance would best be described as:",
-        "options": ["Full for Caucasian", "The e-line does not describe facial balance", "Showing a class III facial type", "Balanced for Caucasian"],
-        "correct": 3,
-        "image": "images/ortho-exam1-spring-2020/fig32.jpg"
-      },
-      {
-        "text": "Which best describes the incisor inclination?",
-        "options": ["Upper incisors proclined", "Upper and lower incisors retroclined", "Upper and lower incisors proclined", "Normal incisor inclination"],
-        "correct": 1,
-        "image": "images/ortho-exam1-spring-2020/fig33.jpg"
-      },
-      {
-        "text": "SM is considered what type of grower?",
-        "options": ["Normo-divergent", "Hypo-divergent", "Hyper-divergent", "None of the above"],
-        "correct": 2,
-        "image": "images/ortho-exam1-spring-2020/fig34.jpg"
-      },
-      {
-        "text": "The overjet, at 9 mm, is considered:",
-        "options": ["Normal", "Mild", "Moderate", "Severe"],
-        "correct": 3,
-        "image": "images/ortho-exam1-spring-2020/fig35.jpg"
-      },
-      {
-        "text": "Which best describes the Angle Classification?",
-        "options": ["Class I both sides", "Class 2 both sides", "Class I on the right, class 2 on the left", "Class 2 on the right, class I on the left"],
-        "correct": 3,
-        "image": "images/ortho-exam1-spring-2020/fig36.jpg"
-      },
-      {
-        "text": "What best describes the transverse problem?",
-        "options": ["No crossbite", "left side posterior crossbite", "Anterior and posterior crossbites", "Posterior crossbite on both sides"],
-        "correct": 2,
-        "image": "images/ortho-exam1-spring-2020/fig37.jpg"
-      }
-    ]
-  },
-  "ortho-exam1-spring-2022": {
-    "title": "Orthodontics Exam 1 (Spring 2022)",
-    "type": "ortho",
-    "subtype": "exam1",
-    "questions": [
-      {
-        "text": "Which best describes the Angle Classification?",
-        "options": ["Class 1", "Class 2", "Class 3", "Class 2 Division 2"],
-        "correct": 1,
-        "image": "images/ortho-exam1-spring-2022/fig1.jpg"
-      },
-      {
-        "text": "The overbite is considered:",
-        "options": ["Open", "Shallow", "Moderate", "Very Deep"],
-        "correct": 2,
-        "image": "images/ortho-exam1-spring-2022/fig2.jpg"
-      },
-      {
-        "text": "The overjet, at 9, is considered:",
-        "options": ["Mild", "Moderate", "Severe", "Negative"],
-        "correct": 2,
-        "image": "images/ortho-exam1-spring-2022/fig3.jpg"
-      },
-      {
-        "text": "What best describes the transverse occlusion?",
-        "options": ["No crossbite", "Anterior crossbite only", "Anterior and posterior crossbites", "Right side posterior crossbite only"],
-        "correct": 0,
-        "image": "images/ortho-exam1-spring-2022/fig4.jpg"
-      },
-      {
-        "text": "Maxillary central incisors are:",
-        "options": ["Normal inclination", "Proclined", "Retroclined", "Typical of class 3"],
-        "correct": 1,
-        "image": "images/ortho-exam1-spring-2022/fig5.jpg"
-      },
-      {
-        "text": "Which of the following best describes alignment of the teeth?",
-        "options": ["No crowding", "Moderate crowding", "Severe crowding", "Moderate spacing"],
-        "correct": 0,
-        "image": "images/ortho-exam1-spring-2022/fig6.jpg"
-      },
-      {
-        "text": "The line tangent to the mandibular plane shows the case to be:",
-        "options": ["Hyperdivergent", "Hypodivergent", "Normodivergent", "None of the above"],
-        "correct": 1,
-        "image": "images/ortho-exam1-spring-2022/fig7.jpg"
-      },
-      {
-        "text": "In this case one would find, as compared to the norm:",
-        "options": ["Larger SNA", "Smaller SNA", "Larger SNB", "Negative ANB"],
-        "correct": 0,
-        "image": "images/ortho-exam1-spring-2022/fig8.jpg"
-      },
-      {
-        "text": "The angle SNB in this case would most likely be:",
-        "options": ["larger than normal", "smaller than normal", "Negative", "Normal"],
-        "correct": 1,
-        "image": "images/ortho-exam1-spring-2022/fig9.jpg"
-      },
-      {
-        "text": "Face height in this case would best be described as:",
-        "options": ["Short lower face height", "long lower face height", "Equal upper and lower face heights", "Short upper face height"],
-        "correct": 0,
-        "image": "images/ortho-exam1-spring-2022/fig10.jpg"
-      },
-      {
-        "text": "The direction of growth in this case is most likely:",
-        "options": ["More downward, less forward", "Less downward, more forward", "Neither downward nor forward", "Upward and backward"],
-        "correct": 1,
-        "image": "images/ortho-exam1-spring-2022/fig11.jpg"
-      },
-      {
-        "text": "Which best describes the Angle Classification?",
-        "options": ["Class 1", "Class 2", "Class 3", "Class 2 Division 2"],
-        "correct": 3,
-        "image": "images/ortho-exam1-spring-2022/fig12.jpg"
-      },
-      {
-        "text": "The overbite is considered:",
-        "options": ["Openbite", "Shallow", "Moderate", "Very Deep"],
-        "correct": 3,
-        "image": "images/ortho-exam1-spring-2022/fig13.jpg"
-      },
-      {
-        "text": "The overjet is considered:",
-        "options": ["Mild", "Moderate", "Severe", "Negative"],
-        "correct": 0,
-        "image": "images/ortho-exam1-spring-2022/fig14.jpg"
-      },
-      {
-        "text": "What best describes the transverse occlusion?",
-        "options": ["No crossbite", "Anterior crossbite only", "Anterior and posterior crossbites", "Left side posterior crossbite only"],
-        "correct": 0,
-        "image": "images/ortho-exam1-spring-2022/fig15.jpg"
-      },
-      {
-        "text": "Maxillary central incisors are:",
-        "options": ["Normal inclination", "Proclined", "Retroclined", "Typical of class 3"],
-        "correct": 2,
-        "image": "images/ortho-exam1-spring-2022/fig16.jpg"
-      },
-      {
-        "text": "Which of the following best describes alignment of the Lower teeth?",
-        "options": ["No crowding", "Moderate crowding", "Has leeway space available", "Mild spacing"],
-        "correct": 1,
-        "image": "images/ortho-exam1-spring-2022/fig17.jpg"
-      },
-      {
-        "text": "The occlusal plane is:",
-        "options": ["flat and normal", "Has reverse curve of Spee", "Has exaggerated curve of Spee", "No curve of Wilson"],
-        "correct": 2,
-        "image": "images/ortho-exam1-spring-2022/fig18.jpg"
-      },
-      {
-        "text": "Which is NOT a viable treatment option in this case:",
-        "options": ["Expansion", "Extraction of bicuspids", "IPR", "Use of leeway space"],
-        "correct": 3,
-        "image": "images/ortho-exam1-spring-2022/fig19.jpg"
-      },
-      {
-        "text": "Which best describes the Angle Classification?",
-        "options": ["Class 1", "Class 2", "Class 3", "Class 2 sub Left"],
-        "correct": 3,
-        "image": "images/ortho-exam1-spring-2022/fig20.jpg"
-      },
-      {
-        "text": "The overbite is considered:",
-        "options": ["Openbite", "Shallow", "Moderate", "Very Deep"],
-        "correct": 2,
-        "image": "images/ortho-exam1-spring-2022/fig21.jpg"
-      },
-      {
-        "text": "The overjet is considered:",
-        "options": ["Normal", "Moderate", "Severe", "Negative"],
-        "correct": 0,
-        "image": "images/ortho-exam1-spring-2022/fig22.jpg"
-      },
-      {
-        "text": "What best describes the transverse occlusion?",
-        "options": ["No crossbite", "Right side posterior crossbite only", "Anterior and posterior crossbites", "Left side posterior crossbite only"],
-        "correct": 0,
-        "image": "images/ortho-exam1-spring-2022/fig23.jpg"
-      },
-      {
-        "text": "Incisor inclination is best described as:",
-        "options": ["Normal inclination", "Proclined lower incisors, retroclined upper incisors", "Retroclined lower incisors, proclined upper incisors", "Proclined upper and lower incisors"],
-        "correct": 0,
-        "image": "images/ortho-exam1-spring-2022/fig24.jpg"
-      },
-      {
-        "text": "Which of the following best describes alignment of the teeth?",
-        "options": ["No crowding", "Mild crowding", "Has leeway space available", "Severe crowding"],
-        "correct": 3,
-        "image": "images/ortho-exam1-spring-2022/fig25.jpg"
-      },
-      {
-        "text": "The line tangent to the mandibular plane shows the case to be:",
-        "options": ["Hyperdivergent", "Hypodivergent", "Normodivergent", "None of the above"],
-        "correct": 2,
-        "image": "images/ortho-exam1-spring-2022/fig26.jpg"
-      },
-      {
-        "text": "Face height in this case would best be described as:",
-        "options": ["Short lower face height", "long lower face height", "Equal upper and lower face heights", "Short upper face height"],
-        "correct": 2,
-        "image": "images/ortho-exam1-spring-2022/fig27.jpg"
-      },
-      {
-        "text": "The direction of growth in this case is most likely:",
-        "options": ["More downward, less forward", "Less downward, more forward", "Downward and forward", "Upward and backward"],
-        "correct": 2,
-        "image": "images/ortho-exam1-spring-2022/fig28.jpg"
-      },
-      {
-        "text": "Based on e-line, facial balance would best be described as:",
-        "options": ["Full for Caucasian", "The e-line does not describe facial balance", "Showing a class 3 facial type", "Balanced for Caucasian"],
-        "correct": 3,
-        "image": "images/ortho-exam1-spring-2022/fig29.jpg"
-      },
-      {
-        "text": "The midline discrepancy in this case is most likely caused by?",
-        "options": ["Incisor Inclination", "Differential spacing", "Upper crowding", "Crossbite"],
-        "correct": 2,
-        "image": "images/ortho-exam1-spring-2022/fig30.jpg"
-      },
-      {
-        "text": "Which is NOT a viable treatment option in this case:",
-        "options": ["Expansion", "Extraction of bicuspids", "IPR", "Use of leeway space"],
-        "correct": 3,
-        "image": "images/ortho-exam1-spring-2022/fig31.jpg"
-      },
-      {
-        "text": "Which best describes the Angle Classification?",
-        "options": ["Class 1", "Class 2", "Class 3", "Class 2 sub Left"],
-        "correct": 2,
-        "image": "images/ortho-exam1-spring-2022/fig32.jpg"
-      },
-      {
-        "text": "The overjet is considered:",
-        "options": ["Normal", "Moderate", "Severe", "Negative"],
-        "correct": 3,
-        "image": "images/ortho-exam1-spring-2022/fig33.jpg"
-      },
-      {
-        "text": "What best describes the transverse occlusion?",
-        "options": ["No crossbite", "Right side posterior crossbite only", "Anterior and posterior crossbites", "Left side posterior crossbite only"],
-        "correct": 2,
-        "image": "images/ortho-exam1-spring-2022/fig34.jpg"
-      },
-      {
-        "text": "Incisor inclination is best described as:",
-        "options": ["Normal inclination", "Proclined lower incisors, retroclined upper incisors", "Retroclined lower incisors, normal upper incisors", "Proclined upper and lower incisors"],
-        "correct": 2,
-        "image": "images/ortho-exam1-spring-2022/fig35.jpg"
-      },
-      {
-        "text": "Face height in this case would best be described as:",
-        "options": ["Short lower face height", "long lower face height", "Equal upper and lower face heights", "Short upper face height"],
-        "correct": 1,
-        "image": "images/ortho-exam1-spring-2022/fig36.jpg"
-      },
-      {
-        "text": "The midline discrepancy in this case is most likely caused by?",
-        "options": ["Incisor inclination", "Differential spacing", "Asymmetric growth", "Angle classification"],
-        "correct": 2,
-        "image": "images/ortho-exam1-spring-2022/fig37.jpg"
-      },
-      {
-        "text": "In this case one would find, as compared to the norm:",
-        "options": ["Smaller SNA", "Larger SNB", "Negative ANB", "All of the above"],
-        "correct": 3,
-        "image": "images/ortho-exam1-spring-2022/fig38.jpg"
-      },
-      {
-        "text": "Which is NOT a viable treatment option for the crowding:",
-        "options": ["Expansion", "Extraction of upper bicuspids alone", "IPR", "Use of leeway space"],
-        "correct": 1,
-        "image": "images/ortho-exam1-spring-2022/fig39.jpg"
-      },
-      {
-        "text": "Camouflage treatment, if attempted in this case, would consist of:",
-        "options": ["Maxillary anterior retroclination", "Mandibular anterior proclination", "Maxillary anterior proclination, mandibular anterior retroclination", "Maxillary and mandibular anterior proclination"],
-        "correct": 2,
-        "image": "images/ortho-exam1-spring-2022/fig40.jpg"
-      },
-      {
-        "text": "Which best describes the Angle Classification?",
-        "options": ["Class 1", "Class 2", "Class 3", "Class 2 sub Right"],
-        "correct": 3,
-        "image": "images/ortho-exam1-spring-2022/fig41.jpg"
-      },
-      {
-        "text": "The overbite is considered:",
-        "options": ["Openbite", "Shallow", "Normal", "Deep"],
-        "correct": 3,
-        "image": "images/ortho-exam1-spring-2022/fig42.jpg"
-      },
-      {
-        "text": "The overjet, at 4, is considered:",
-        "options": ["Mild", "Moderate", "Severe", "Negative"],
-        "correct": 0,
-        "image": "images/ortho-exam1-spring-2022/fig43.jpg"
-      },
-      {
-        "text": "What best describes the transverse occlusion?",
-        "options": ["No crossbite", "Anterior crossbite only", "Anterior and posterior crossbites", "Right side posterior crossbite only"],
-        "correct": 3,
-        "image": "images/ortho-exam1-spring-2022/fig44.jpg"
-      },
-      {
-        "text": "Maxillary central incisors are:",
-        "options": ["Normal inclination", "Proclined", "Retroclined", "Typical of class 3"],
-        "correct": 0,
-        "image": "images/ortho-exam1-spring-2022/fig45.jpg"
-      },
-      {
-        "text": "Which of the following best describes alignment of the teeth?",
-        "options": ["Mild crowding", "Moderate crowding", "Severe crowding", "Mild Spacing"],
-        "correct": 3,
-        "image": "images/ortho-exam1-spring-2022/fig46.jpg"
-      },
-      {
-        "text": "Face height in this case would best be described as:",
-        "options": ["Short lower face height", "long lower face height", "Equal upper and lower face heights", "Short upper face height"],
-        "correct": 2,
-        "image": "images/ortho-exam1-spring-2022/fig47.jpg"
-      },
-      {
-        "text": "Based on e-line, facial balance would best be described as:",
-        "options": ["Full for Caucasian", "Balanced for caucasian", "Showing a class 2 facial type", "flat for Caucasian"],
-        "correct": 3,
-        "image": "images/ortho-exam1-spring-2022/fig48.jpg"
-      },
-      {
-        "text": "The midline discrepancy in this case is most likely caused by?",
-        "options": ["Incisor Inclination", "Differential spacing", "Angle classification", "Facial Asymmetry"],
-        "correct": 2,
-        "image": "images/ortho-exam1-spring-2022/fig49.jpg"
-      },
-      {
-        "text": "Case would most likely be treated with:",
-        "options": ["Crossbite correction and space closure", "Extraction of bicuspids", "IPR", "Use of leeway space"],
-        "correct": 0,
-        "image": "images/ortho-exam1-spring-2022/fig50.jpg"
-      }
-    ]
-  },
-  "ortho-exam2-spring-2019": {
-    "title": "Orthodontics Exam 2 (Spring 2019)",
-    "type": "ortho",
-    "subtype": "exam2",
+    "subtype": "final",
     "questions": [
       {
         "text": "Which of the following is not a possible class 2 skeletal pattern?",
@@ -23186,344 +22674,61 @@
         "text": "Which best describes the malocclusion?",
         "options": ["Class II Subdivision Left", "Class II", "Class III", "Class II subdivision Right"],
         "correct": 1,
-        "image": "images/ortho-exam2-spring-2019/fig31.jpg"
+        "image": "images/ortho-final-spring-2019/fig31.jpg"
       },
       {
         "text": "The overjet, at 2.5 mm, is considered:",
         "options": ["Normal", "Mild", "Moderate", "Severe"],
         "correct": 0,
-        "image": "images/ortho-exam2-spring-2019/fig32.jpg"
+        "image": "images/ortho-final-spring-2019/fig32.jpg"
       },
       {
         "text": "The overbite is considered:",
         "options": ["Openbite", "Normal", "Moderate", "Deep"],
         "correct": 2,
-        "image": "images/ortho-exam2-spring-2019/fig33.jpg"
+        "image": "images/ortho-final-spring-2019/fig33.jpg"
       },
       {
         "text": "The crossbite in this case is:",
         "options": ["Unilateral crossbite with a midline shift to the left", "Unilateral crossbite with a midline shift to the right", "Bilateral posterior crossbite", "There is no crossbite"],
         "correct": 3,
-        "image": "images/ortho-exam2-spring-2019/fig34.jpg"
+        "image": "images/ortho-final-spring-2019/fig34.jpg"
       },
       {
         "text": "Incisor angulation would best be described as :",
         "options": ["Maxillary teeth proclined, Mandibular teeth Retroclined", "Maxillary and Mandibular teeth proclined", "Maxillary and Mandibular teeth retroclined", "Maxillary teeth retroclined, Mandibular teeth proclined"],
         "correct": 2,
-        "image": "images/ortho-exam2-spring-2019/fig35.jpg"
+        "image": "images/ortho-final-spring-2019/fig35.jpg"
       },
       {
         "text": "Lower arch alignment would best be described as :",
         "options": ["Uncrowded", "Mild crowding", "Severe crowding", "Moderate spacing"],
         "correct": 1,
-        "image": "images/ortho-exam2-spring-2019/fig36.jpg"
+        "image": "images/ortho-final-spring-2019/fig36.jpg"
       },
       {
         "text": "Upper arch alignment would best be described as :",
         "options": ["Uncrowded", "Mild crowding", "Moderate crowding", "Mild spacing"],
         "correct": 2,
-        "image": "images/ortho-exam2-spring-2019/fig37.jpg"
+        "image": "images/ortho-final-spring-2019/fig37.jpg"
       },
       {
         "text": "E-line measurement shows the face to be:",
         "options": ["Balanced for Caucasian", "Full for Caucasian", "Flat for Caucasian", "None of the above"],
         "correct": 2,
-        "image": "images/ortho-exam2-spring-2019/fig38.jpg"
+        "image": "images/ortho-final-spring-2019/fig38.jpg"
       },
       {
         "text": "Crowding in this case might best be treated with bicuspid extraction",
         "options": ["True", "False"],
         "correct": 1,
-        "image": "images/ortho-exam2-spring-2019/fig39.jpg"
+        "image": "images/ortho-final-spring-2019/fig39.jpg"
       },
       {
         "text": "Use of the e-space will help alleviate crowding in this case",
         "options": ["True", "False"],
         "correct": 0,
-        "image": "images/ortho-exam2-spring-2019/fig40.jpg"
-      }
-    ]
-  },
-  "ortho-exam2-spring-2022": {
-    "title": "Orthodontics Exam 2 (Spring 2022)",
-    "type": "ortho",
-    "subtype": "exam2",
-    "questions": [
-      {
-        "text": "Posterior crossbite \"with a shift\" refers to a shift of what?:",
-        "options": ["The mandible forward", "The mandibular midline to the side of the crossbite", "The mandibular midline to the opposite side of the crossbite", "The maxillary midline"],
-        "correct": 1
-      },
-      {
-        "text": "Surgically assisted Rapid palatal expansion is indicated in",
-        "options": ["Adolescent boys", "Girls aged 10-12", "Adults", "All children under 9"],
-        "correct": 2
-      },
-      {
-        "text": "Which is TRUE of bilateral posterior crossbite?",
-        "options": ["Usually requires expansion with expander", "Usually associated with a shift of the lower midline", "Is seen only in children", "Is an antero-posterior problem"],
-        "correct": 0
-      },
-      {
-        "text": "A maRPE is an expander with:",
-        "options": ["Bands only on the molars", "Bands only on molars and premolars", "Bands on molars and mini-implants in the palate", "Surgery required to open the sutures"],
-        "correct": 2
-      },
-      {
-        "text": "Which is TRUE of anterior crossbite:",
-        "options": ["Can cause lower incisors to move labially off the bone", "Can be seen in Class III patients", "Can involve multiple teeth", "All of the above"],
-        "correct": 3
-      },
-      {
-        "text": "Anterior crossbite of one tooth:",
-        "options": ["Is a rare occurence", "Should be observed and followed", "Should be treated as soon as possible", "Has no effect on the opposing dentition"],
-        "correct": 2
-      },
-      {
-        "text": "During Stage 1 of orthodontic treatment, which of the following is accomplished:",
-        "options": ["Levelling of the Occlusal Plane", "Space closure", "Class 2 or Class 3 correction", "Finishing details"],
-        "correct": 0
-      },
-      {
-        "text": "Which is TRUE of impacted canines?",
-        "options": ["Only present in the Maxilla", "Are always on the lingual side of the arch", "Are best diagnosed using the “slob” rule", "Maxillary impactions are usually treated with canine exposure"],
-        "correct": 3
-      },
-      {
-        "text": "Which are helpful tools in diagnosing possible maxillary canine impaction?",
-        "options": ["Palpation of the ridge to feel for the unerupted canine", "Baseline panoramic film at age 9", "Looking for splayed maxillary laterals", "All of the above"],
-        "correct": 3
-      },
-      {
-        "text": "During Stage 2 of orthodontic treatment, which of the following is accomplished:",
-        "options": ["Elimination of rotations", "Levelling of the occlusal plane", "Class 2 or Class 3 correction", "Finishing details"],
-        "correct": 2
-      },
-      {
-        "text": "Which of the following is NOT a good treatment option for an impacted mandibular canine?",
-        "options": ["Extraction of the impacted canine and implant replacement", "Extraction of the impacted canine and extraction of bicuspids in the other 3 quadrants", "Extraction of the impacted canine and substituting a lower incisor for the canine", "Exposure of the impacted canine where there is risk of periodontal compromise"],
-        "correct": 3
-      },
-      {
-        "text": "What is a common problem seen in cases with a buccally impacted maxillary canine?",
-        "options": ["Resorption of the root of the adjacent lateral", "Difficulty in exposing the impacted canine", "Difficulty in diagnosing the impaction", "Resorption of the root of the adjacent first bicuspid"],
-        "correct": 0
-      },
-      {
-        "text": "Which of the following is TRUE about developing maxillary canine impaction?",
-        "options": ["Extraction of deciduous canines will not help", "Extraction of deciduous canines allows the permanent canines to erupt better", "Should be diagnosed after full eruption of permanent teeth", "Is a very rare problem"],
-        "correct": 1
-      },
-      {
-        "text": "Using the Palmer system, transposition of a maxillary canine would present as:",
-        "options": ["7,6,5,4,3,2,1", "7,6,5,3,4,2,1", "7,6,4,5,3,2,1", "7,6,3,5,4,2,1"],
-        "correct": 1
-      },
-      {
-        "text": "Which is TRUE of a transposed maxillary canine?",
-        "options": ["Erupts in its normal position", "Can result in asymmetric gingiva", "Bone around the erupted transposed canine is usually compromised", "Results in resorption of the adjacent lateral"],
-        "correct": 1
-      },
-      {
-        "text": "Diastema closure is usually stable and rarely requires fixed retention",
-        "options": ["True", "False"],
-        "correct": 1
-      },
-      {
-        "text": "During Stage 3 of orthodontic treatment, which of the following is accomplished:",
-        "options": ["Levelling of the Occlusal Plane", "Space closure", "Class 2 or Class 3 correction", "Finishing details"],
-        "correct": 3
-      },
-      {
-        "text": "Missing maxillary lateral incisors:",
-        "options": ["Is more common than missing third molars", "Always occurs bilaterally", "Requires careful implant site preparation at gingival margin and root apices", "Should never be replaced by canine substitution"],
-        "correct": 2
-      },
-      {
-        "text": "In a situation with at least one missing lower second premolar:",
-        "options": ["Case will usually present with a missing upper lateral incisor", "Roots of the remaining deciduous molar will always be short", "Remaining second premolars can be small and/or delayed", "Remaining deciduous second molars should be extracted"],
-        "correct": 2
-      },
-      {
-        "text": "Which of the following is NOT a good approach to maintain an implant site for a missing maxillary lateral incisor?",
-        "options": ["Maryland bridge", "Fixed wires adjacent to the implant site", "Zirconia bridge", "Any removable appliance such as a flipper"],
-        "correct": 3
-      },
-      {
-        "text": "Which of the following is FALSE regarding a fixed lingual retainer?",
-        "options": ["Is contoured bucco-lingually", "Is contoured occluso-gingivally", "Is held in with floss during fabrication", "Adhesive is placed into the contact areas to make sure the teeth don't relapse"],
-        "correct": 3
-      },
-      {
-        "text": "What is NOT a factor in the ability of an orthodontist to achieve ideal results?",
-        "options": ["Favorable growth", "Patient cooperation", "If aligners are used instead of braces", "Favorable genetics"],
-        "correct": 2
-      },
-      {
-        "text": "What are factors involved in dental relapse?",
-        "options": ["Elasticity of PDL fibers", "Squeezing of tissue", "Tongue/cheek/lip forces", "All of the above"],
-        "correct": 3
-      },
-      {
-        "text": "Which of the following is not a fixed retainer?",
-        "options": ["Gold Chain", "Lingual titanium bar", "Essix Retainer", "Flat titanium wire"],
-        "correct": 2
-      },
-      {
-        "text": "Which best describes the Angle Classification?",
-        "options": ["Class 1 with Class 3 tendencies", "Class 2", "Class 2 sub Right", "Class 2 Division 2"],
-        "correct": 0,
-        "image": "images/ortho-exam2-spring-2022/fig25.jpg"
-      },
-      {
-        "text": "The overbite is considered:",
-        "options": ["deep", "Shallow", "Moderate", "Very Deep"],
-        "correct": 1,
-        "image": "images/ortho-exam2-spring-2022/fig26.jpg"
-      },
-      {
-        "text": "The overjet is considered:",
-        "options": ["Mild", "Moderate", "Severe", "Negative"],
-        "correct": 0,
-        "image": "images/ortho-exam2-spring-2022/fig27.jpg"
-      },
-      {
-        "text": "What best describes the transverse occlusion?",
-        "options": ["No crossbite", "Bilateral crossbite", "Anterior and posterior crossbites", "One tooth crossbite"],
-        "correct": 3,
-        "image": "images/ortho-exam2-spring-2022/fig28.jpg"
-      },
-      {
-        "text": "Inclination of incisors:",
-        "options": ["Mandibular incisors have normal inclination", "Mandibular incisors are proclined", "Mandibular incisors are retroclined", "Maxillary and mandibular incisors are retroclined"],
-        "correct": 2,
-        "image": "images/ortho-exam2-spring-2022/fig29.jpg"
-      },
-      {
-        "text": "Which of the following best describes alignment of the teeth?",
-        "options": ["No crowding", "Moderate-severe crowding", "Mild crowding", "Mild spacing"],
-        "correct": 2,
-        "image": "images/ortho-exam2-spring-2022/fig30.jpg"
-      },
-      {
-        "text": "The line tangent to the mandibular plane shows the case to be:",
-        "options": ["Hyperdivergent", "Hypodivergent", "Normodivergent", "None of the above"],
-        "correct": 2,
-        "image": "images/ortho-exam2-spring-2022/fig31.jpg"
-      },
-      {
-        "text": "The direction of growth in this case is most likely:",
-        "options": ["More downward, less forward", "Less downward, more forward", "Downward and forward", "Upward and backward"],
-        "correct": 2,
-        "image": "images/ortho-exam2-spring-2022/fig32.jpg"
-      },
-      {
-        "text": "The patient is 20 years old. The PANORAMIC x-ray shows:",
-        "options": ["Unerupted right maxillary canine which will erupt by itself", "Buccally impacted right maxillary canine", "Lingually impacted right maxillary canine", "Impacted right maxillary canine"],
-        "correct": 3,
-        "image": "images/ortho-exam2-spring-2022/fig33.jpg"
-      },
-      {
-        "text": "The patient is 20 years old. The CBCT shows:",
-        "options": ["Unerupted right maxillary canine which will erupt by itself", "Buccally impacted right maxillary canine", "Lingually impacted right maxillary canine", "Proper inclination of right maxillary canine"],
-        "correct": 1,
-        "image": "images/ortho-exam2-spring-2022/fig34.jpg"
-      },
-      {
-        "text": "(Bonus Questions) Which stage of orthodontic treatment is depicted in the photo:",
-        "options": ["Stage 1", "Stage 2", "Stage 3", "Stage 4"],
-        "correct": 0,
-        "image": "images/ortho-exam2-spring-2022/fig35.jpg"
-      },
-      {
-        "text": "(Bonus Question) Which stage of orthodontic treatment is depicted in the photo:",
-        "options": ["Stage 1", "Stage 2", "Stage 3", "Stage 4"],
-        "correct": 1,
-        "image": "images/ortho-exam2-spring-2022/fig36.jpg"
-      },
-      {
-        "text": "Which best describes the Angle Classification?",
-        "options": ["Class 1", "Class 2", "Class 3", "Class 2 sub Right"],
-        "correct": 3,
-        "image": "images/ortho-exam2-spring-2022/fig37.jpg"
-      },
-      {
-        "text": "The overbite is considered:",
-        "options": ["Openbite", "Shallow", "Moderate", "Deep"],
-        "correct": 2,
-        "image": "images/ortho-exam2-spring-2022/fig38.jpg"
-      },
-      {
-        "text": "The overjet, at 4mm, is considered:",
-        "options": ["Mild", "Moderate", "Severe", "Negative"],
-        "correct": 0,
-        "image": "images/ortho-exam2-spring-2022/fig39.jpg"
-      },
-      {
-        "text": "What best describes the transverse occlusion?",
-        "options": ["No crossbite", "Anterior crossbite only", "Anterior and posterior crossbites", "Right side posterior crossbite only"],
-        "correct": 0,
-        "image": "images/ortho-exam2-spring-2022/fig40.jpg"
-      },
-      {
-        "text": "E-line suggests that facial balance is considered:",
-        "options": ["Full for Caucasian", "Balanced for Caucasian", "Flat for Caucasian", "E-line is not used for facial balance considerations"],
-        "correct": 2,
-        "image": "images/ortho-exam2-spring-2022/fig41.jpg"
-      },
-      {
-        "text": "Which of the following best describes alignment of the teeth?",
-        "options": ["No crowding", "Moderate crowding", "Severe crowding", "Mild Spacing"],
-        "correct": 1,
-        "image": "images/ortho-exam2-spring-2022/fig42.jpg"
-      },
-      {
-        "text": "Face height in this case would best be described as:",
-        "options": ["Short lower face height", "long lower face height", "Equal upper and lower face heights", "Short upper face height"],
-        "correct": 2,
-        "image": "images/ortho-exam2-spring-2022/fig43.jpg"
-      },
-      {
-        "text": "Which would NOT be a good protocol for retention in this case:",
-        "options": ["Upper and lower Hawley retainers", "Upper and lower essix retainers", "Upper and lower fixed wire retainers", "Lower fixed wire alone"],
-        "correct": 3,
-        "image": "images/ortho-exam2-spring-2022/fig44.jpg"
-      },
-      {
-        "text": "The midline discrepancy in this case is most likely caused by?",
-        "options": ["Incisor Inclination", "Differential spacing", "Angle classification", "Facial Asymmetry"],
-        "correct": 2,
-        "image": "images/ortho-exam2-spring-2022/fig45.jpg"
-      },
-      {
-        "text": "Crowding would NOT be treated with:",
-        "options": ["Expansion forward, lateral or distal", "Extraction of bicuspids", "IPR", "Use of leeway space"],
-        "correct": 3,
-        "image": "images/ortho-exam2-spring-2022/fig46.jpg"
-      },
-      {
-        "text": "Which best describes the Angle Classification?",
-        "options": ["Class 1", "Class 2", "Class 3", "Class 2 sub Left"],
-        "correct": 2,
-        "image": "images/ortho-exam2-spring-2022/fig47.jpg"
-      },
-      {
-        "text": "The overjet is considered:",
-        "options": ["Mild", "Moderate", "Severe", "Negative"],
-        "correct": 3,
-        "image": "images/ortho-exam2-spring-2022/fig48.jpg"
-      },
-      {
-        "text": "What best describes the transverse occlusion?",
-        "options": ["No crossbite", "Right side posterior crossbite only", "Anterior and posterior crossbites", "Left side posterior crossbite only"],
-        "correct": 2,
-        "image": "images/ortho-exam2-spring-2022/fig49.jpg"
-      },
-      {
-        "text": "The midline discrepancy in this case is most likely caused by?",
-        "options": ["Incisor inclination", "Differential spacing", "Asymmetric growth", "Crowding"],
-        "correct": 2,
-        "image": "images/ortho-exam2-spring-2022/fig50.jpg"
+        "image": "images/ortho-final-spring-2019/fig40.jpg"
       }
     ]
   },
@@ -23922,6 +23127,289 @@
       }
     ]
   },
+  "ortho-final-spring-2022": {
+    "title": "Orthodontics Final Exam (Spring 2022)",
+    "type": "ortho",
+    "subtype": "final",
+    "questions": [
+      {
+        "text": "Posterior crossbite \"with a shift\" refers to a shift of what?:",
+        "options": ["The mandible forward", "The mandibular midline to the side of the crossbite", "The mandibular midline to the opposite side of the crossbite", "The maxillary midline"],
+        "correct": 1
+      },
+      {
+        "text": "Surgically assisted Rapid palatal expansion is indicated in",
+        "options": ["Adolescent boys", "Girls aged 10-12", "Adults", "All children under 9"],
+        "correct": 2
+      },
+      {
+        "text": "Which is TRUE of bilateral posterior crossbite?",
+        "options": ["Usually requires expansion with expander", "Usually associated with a shift of the lower midline", "Is seen only in children", "Is an antero-posterior problem"],
+        "correct": 0
+      },
+      {
+        "text": "A maRPE is an expander with:",
+        "options": ["Bands only on the molars", "Bands only on molars and premolars", "Bands on molars and mini-implants in the palate", "Surgery required to open the sutures"],
+        "correct": 2
+      },
+      {
+        "text": "Which is TRUE of anterior crossbite:",
+        "options": ["Can cause lower incisors to move labially off the bone", "Can be seen in Class III patients", "Can involve multiple teeth", "All of the above"],
+        "correct": 3
+      },
+      {
+        "text": "Anterior crossbite of one tooth:",
+        "options": ["Is a rare occurence", "Should be observed and followed", "Should be treated as soon as possible", "Has no effect on the opposing dentition"],
+        "correct": 2
+      },
+      {
+        "text": "During Stage 1 of orthodontic treatment, which of the following is accomplished:",
+        "options": ["Levelling of the Occlusal Plane", "Space closure", "Class 2 or Class 3 correction", "Finishing details"],
+        "correct": 0
+      },
+      {
+        "text": "Which is TRUE of impacted canines?",
+        "options": ["Only present in the Maxilla", "Are always on the lingual side of the arch", "Are best diagnosed using the “slob” rule", "Maxillary impactions are usually treated with canine exposure"],
+        "correct": 3
+      },
+      {
+        "text": "Which are helpful tools in diagnosing possible maxillary canine impaction?",
+        "options": ["Palpation of the ridge to feel for the unerupted canine", "Baseline panoramic film at age 9", "Looking for splayed maxillary laterals", "All of the above"],
+        "correct": 3
+      },
+      {
+        "text": "During Stage 2 of orthodontic treatment, which of the following is accomplished:",
+        "options": ["Elimination of rotations", "Levelling of the occlusal plane", "Class 2 or Class 3 correction", "Finishing details"],
+        "correct": 2
+      },
+      {
+        "text": "Which of the following is NOT a good treatment option for an impacted mandibular canine?",
+        "options": ["Extraction of the impacted canine and implant replacement", "Extraction of the impacted canine and extraction of bicuspids in the other 3 quadrants", "Extraction of the impacted canine and substituting a lower incisor for the canine", "Exposure of the impacted canine where there is risk of periodontal compromise"],
+        "correct": 3
+      },
+      {
+        "text": "What is a common problem seen in cases with a buccally impacted maxillary canine?",
+        "options": ["Resorption of the root of the adjacent lateral", "Difficulty in exposing the impacted canine", "Difficulty in diagnosing the impaction", "Resorption of the root of the adjacent first bicuspid"],
+        "correct": 0
+      },
+      {
+        "text": "Which of the following is TRUE about developing maxillary canine impaction?",
+        "options": ["Extraction of deciduous canines will not help", "Extraction of deciduous canines allows the permanent canines to erupt better", "Should be diagnosed after full eruption of permanent teeth", "Is a very rare problem"],
+        "correct": 1
+      },
+      {
+        "text": "Using the Palmer system, transposition of a maxillary canine would present as:",
+        "options": ["7,6,5,4,3,2,1", "7,6,5,3,4,2,1", "7,6,4,5,3,2,1", "7,6,3,5,4,2,1"],
+        "correct": 1
+      },
+      {
+        "text": "Which is TRUE of a transposed maxillary canine?",
+        "options": ["Erupts in its normal position", "Can result in asymmetric gingiva", "Bone around the erupted transposed canine is usually compromised", "Results in resorption of the adjacent lateral"],
+        "correct": 1
+      },
+      {
+        "text": "Diastema closure is usually stable and rarely requires fixed retention",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "During Stage 3 of orthodontic treatment, which of the following is accomplished:",
+        "options": ["Levelling of the Occlusal Plane", "Space closure", "Class 2 or Class 3 correction", "Finishing details"],
+        "correct": 3
+      },
+      {
+        "text": "Missing maxillary lateral incisors:",
+        "options": ["Is more common than missing third molars", "Always occurs bilaterally", "Requires careful implant site preparation at gingival margin and root apices", "Should never be replaced by canine substitution"],
+        "correct": 2
+      },
+      {
+        "text": "In a situation with at least one missing lower second premolar:",
+        "options": ["Case will usually present with a missing upper lateral incisor", "Roots of the remaining deciduous molar will always be short", "Remaining second premolars can be small and/or delayed", "Remaining deciduous second molars should be extracted"],
+        "correct": 2
+      },
+      {
+        "text": "Which of the following is NOT a good approach to maintain an implant site for a missing maxillary lateral incisor?",
+        "options": ["Maryland bridge", "Fixed wires adjacent to the implant site", "Zirconia bridge", "Any removable appliance such as a flipper"],
+        "correct": 3
+      },
+      {
+        "text": "Which of the following is FALSE regarding a fixed lingual retainer?",
+        "options": ["Is contoured bucco-lingually", "Is contoured occluso-gingivally", "Is held in with floss during fabrication", "Adhesive is placed into the contact areas to make sure the teeth don't relapse"],
+        "correct": 3
+      },
+      {
+        "text": "What is NOT a factor in the ability of an orthodontist to achieve ideal results?",
+        "options": ["Favorable growth", "Patient cooperation", "If aligners are used instead of braces", "Favorable genetics"],
+        "correct": 2
+      },
+      {
+        "text": "What are factors involved in dental relapse?",
+        "options": ["Elasticity of PDL fibers", "Squeezing of tissue", "Tongue/cheek/lip forces", "All of the above"],
+        "correct": 3
+      },
+      {
+        "text": "Which of the following is not a fixed retainer?",
+        "options": ["Gold Chain", "Lingual titanium bar", "Essix Retainer", "Flat titanium wire"],
+        "correct": 2
+      },
+      {
+        "text": "Which best describes the Angle Classification?",
+        "options": ["Class 1 with Class 3 tendencies", "Class 2", "Class 2 sub Right", "Class 2 Division 2"],
+        "correct": 0,
+        "image": "images/ortho-final-spring-2022/fig25.jpg"
+      },
+      {
+        "text": "The overbite is considered:",
+        "options": ["deep", "Shallow", "Moderate", "Very Deep"],
+        "correct": 1,
+        "image": "images/ortho-final-spring-2022/fig26.jpg"
+      },
+      {
+        "text": "The overjet is considered:",
+        "options": ["Mild", "Moderate", "Severe", "Negative"],
+        "correct": 0,
+        "image": "images/ortho-final-spring-2022/fig27.jpg"
+      },
+      {
+        "text": "What best describes the transverse occlusion?",
+        "options": ["No crossbite", "Bilateral crossbite", "Anterior and posterior crossbites", "One tooth crossbite"],
+        "correct": 3,
+        "image": "images/ortho-final-spring-2022/fig28.jpg"
+      },
+      {
+        "text": "Inclination of incisors:",
+        "options": ["Mandibular incisors have normal inclination", "Mandibular incisors are proclined", "Mandibular incisors are retroclined", "Maxillary and mandibular incisors are retroclined"],
+        "correct": 2,
+        "image": "images/ortho-final-spring-2022/fig29.jpg"
+      },
+      {
+        "text": "Which of the following best describes alignment of the teeth?",
+        "options": ["No crowding", "Moderate-severe crowding", "Mild crowding", "Mild spacing"],
+        "correct": 2,
+        "image": "images/ortho-final-spring-2022/fig30.jpg"
+      },
+      {
+        "text": "The line tangent to the mandibular plane shows the case to be:",
+        "options": ["Hyperdivergent", "Hypodivergent", "Normodivergent", "None of the above"],
+        "correct": 2,
+        "image": "images/ortho-final-spring-2022/fig31.jpg"
+      },
+      {
+        "text": "The direction of growth in this case is most likely:",
+        "options": ["More downward, less forward", "Less downward, more forward", "Downward and forward", "Upward and backward"],
+        "correct": 2,
+        "image": "images/ortho-final-spring-2022/fig32.jpg"
+      },
+      {
+        "text": "The patient is 20 years old. The PANORAMIC x-ray shows:",
+        "options": ["Unerupted right maxillary canine which will erupt by itself", "Buccally impacted right maxillary canine", "Lingually impacted right maxillary canine", "Impacted right maxillary canine"],
+        "correct": 3,
+        "image": "images/ortho-final-spring-2022/fig33.jpg"
+      },
+      {
+        "text": "The patient is 20 years old. The CBCT shows:",
+        "options": ["Unerupted right maxillary canine which will erupt by itself", "Buccally impacted right maxillary canine", "Lingually impacted right maxillary canine", "Proper inclination of right maxillary canine"],
+        "correct": 1,
+        "image": "images/ortho-final-spring-2022/fig34.jpg"
+      },
+      {
+        "text": "(Bonus Questions) Which stage of orthodontic treatment is depicted in the photo:",
+        "options": ["Stage 1", "Stage 2", "Stage 3", "Stage 4"],
+        "correct": 0,
+        "image": "images/ortho-final-spring-2022/fig35.jpg"
+      },
+      {
+        "text": "(Bonus Question) Which stage of orthodontic treatment is depicted in the photo:",
+        "options": ["Stage 1", "Stage 2", "Stage 3", "Stage 4"],
+        "correct": 1,
+        "image": "images/ortho-final-spring-2022/fig36.jpg"
+      },
+      {
+        "text": "Which best describes the Angle Classification?",
+        "options": ["Class 1", "Class 2", "Class 3", "Class 2 sub Right"],
+        "correct": 3,
+        "image": "images/ortho-final-spring-2022/fig37.jpg"
+      },
+      {
+        "text": "The overbite is considered:",
+        "options": ["Openbite", "Shallow", "Moderate", "Deep"],
+        "correct": 2,
+        "image": "images/ortho-final-spring-2022/fig38.jpg"
+      },
+      {
+        "text": "The overjet, at 4mm, is considered:",
+        "options": ["Mild", "Moderate", "Severe", "Negative"],
+        "correct": 0,
+        "image": "images/ortho-final-spring-2022/fig39.jpg"
+      },
+      {
+        "text": "What best describes the transverse occlusion?",
+        "options": ["No crossbite", "Anterior crossbite only", "Anterior and posterior crossbites", "Right side posterior crossbite only"],
+        "correct": 0,
+        "image": "images/ortho-final-spring-2022/fig40.jpg"
+      },
+      {
+        "text": "E-line suggests that facial balance is considered:",
+        "options": ["Full for Caucasian", "Balanced for Caucasian", "Flat for Caucasian", "E-line is not used for facial balance considerations"],
+        "correct": 2,
+        "image": "images/ortho-final-spring-2022/fig41.jpg"
+      },
+      {
+        "text": "Which of the following best describes alignment of the teeth?",
+        "options": ["No crowding", "Moderate crowding", "Severe crowding", "Mild Spacing"],
+        "correct": 1,
+        "image": "images/ortho-final-spring-2022/fig42.jpg"
+      },
+      {
+        "text": "Face height in this case would best be described as:",
+        "options": ["Short lower face height", "long lower face height", "Equal upper and lower face heights", "Short upper face height"],
+        "correct": 2,
+        "image": "images/ortho-final-spring-2022/fig43.jpg"
+      },
+      {
+        "text": "Which would NOT be a good protocol for retention in this case:",
+        "options": ["Upper and lower Hawley retainers", "Upper and lower essix retainers", "Upper and lower fixed wire retainers", "Lower fixed wire alone"],
+        "correct": 3,
+        "image": "images/ortho-final-spring-2022/fig44.jpg"
+      },
+      {
+        "text": "The midline discrepancy in this case is most likely caused by?",
+        "options": ["Incisor Inclination", "Differential spacing", "Angle classification", "Facial Asymmetry"],
+        "correct": 2,
+        "image": "images/ortho-final-spring-2022/fig45.jpg"
+      },
+      {
+        "text": "Crowding would NOT be treated with:",
+        "options": ["Expansion forward, lateral or distal", "Extraction of bicuspids", "IPR", "Use of leeway space"],
+        "correct": 3,
+        "image": "images/ortho-final-spring-2022/fig46.jpg"
+      },
+      {
+        "text": "Which best describes the Angle Classification?",
+        "options": ["Class 1", "Class 2", "Class 3", "Class 2 sub Left"],
+        "correct": 2,
+        "image": "images/ortho-final-spring-2022/fig47.jpg"
+      },
+      {
+        "text": "The overjet is considered:",
+        "options": ["Mild", "Moderate", "Severe", "Negative"],
+        "correct": 3,
+        "image": "images/ortho-final-spring-2022/fig48.jpg"
+      },
+      {
+        "text": "What best describes the transverse occlusion?",
+        "options": ["No crossbite", "Right side posterior crossbite only", "Anterior and posterior crossbites", "Left side posterior crossbite only"],
+        "correct": 2,
+        "image": "images/ortho-final-spring-2022/fig49.jpg"
+      },
+      {
+        "text": "The midline discrepancy in this case is most likely caused by?",
+        "options": ["Incisor inclination", "Differential spacing", "Asymmetric growth", "Crowding"],
+        "correct": 2,
+        "image": "images/ortho-final-spring-2022/fig50.jpg"
+      }
+    ]
+  },
   "ortho-final-spring-2023": {
     "title": "Orthodontics Final Exam (Spring 2023)",
     "type": "ortho",
@@ -24219,6 +23707,211 @@
       }
     ]
   },
+  "ortho-midterm-spring-2020": {
+    "title": "Orthodontics Midterm Exam (Spring 2020)",
+    "type": "ortho",
+    "subtype": "midterm",
+    "questions": [
+      {
+        "text": "Anatomic points are drawn on panoramic x-rays and angles/measurements are derived from these points",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "In cephalometric analysis and the angle SNA, A refers to?:",
+        "options": ["A point on the mandible", "A point on the maxilla", "A point on the forehead", "A point in the cranial base"],
+        "correct": 1
+      },
+      {
+        "text": "Which of the following best represents the value of extra-oral and intra-oral photos as part of orthodontic records?",
+        "options": ["Define starting occlusal relationship", "Define facial balance", "Allow evaluation of treatment progress", "All of the above"],
+        "correct": 3
+      },
+      {
+        "text": "Panoramic x-rays do not provide information on which of the following?",
+        "options": ["Direction of facial growth", "Root position and length", "Eruption during the mixed dentition", "The presence of missing teeth"],
+        "correct": 0
+      },
+      {
+        "text": "What might one expect to see in a hyperdivergent individual?",
+        "options": ["Very deep bite", "Anterior open bite", "Short lower face", "A line tangent to the mandibular plane lies below the base of the cranium"],
+        "correct": 1
+      },
+      {
+        "text": "A high angle grower is characterized by what directions of growth",
+        "options": ["More downward, less forward", "Less downward, more forward", "Neither downward nor forward", "Upward and backward"],
+        "correct": 0
+      },
+      {
+        "text": "A line drawn tangent to the mandibular plane that intersects the head below the base of the cranium is characteristic of what type of grower?",
+        "options": ["Hyper-divergent", "Normo-divergent", "Hypo-divergent", "High angle"],
+        "correct": 2
+      },
+      {
+        "text": "What might one expect to see in a hypodivergent individual?",
+        "options": ["Short lower face height", "long lower face height", "Equal upper and lower face heights", "A line tangent to the mandibular plane lies within the base of the cranium"],
+        "correct": 0
+      },
+      {
+        "text": "A transverse discrepancy is also known as a?",
+        "options": ["Deep bite", "Open bite", "Crossbite", "Overbite"],
+        "correct": 2
+      },
+      {
+        "text": "Which is NOT true of overbite?",
+        "options": ["Is a vertical measurement", "Represents the vertical degree of overlap of the upper and lower incisors", "Is commonly confused with overjet by the public", "Is considered normal at 100 percent"],
+        "correct": 3
+      },
+      {
+        "text": "What of the following is NOT true of overjet?",
+        "options": ["Esthetics often promote desire for overjet correction", "Risk of anterior trauma increases with increased overjet", "Without incisal guidance, continued eruption of mandibular teeth can be destructive to upper anterior palatal tissue", "Severe overjet is irrelevant to risk of trauma to upper anterior teeth"],
+        "correct": 3
+      },
+      {
+        "text": "When considering proper incisor inclination or angulation:",
+        "options": ["Incisors should be flared significantly", "Incisors should be retroclined significantly", "Incisors should be leaning slightly forward", "Retroclined incisors is always a treatment goal"],
+        "correct": 2
+      },
+      {
+        "text": "The main growth site in the mandible is:",
+        "options": ["Mandibular suture", "Symphyseal suture", "ramus suture", "Condyle"],
+        "correct": 3
+      },
+      {
+        "text": "Orthodontists can use the leeway space to help correct crowding situations because?",
+        "options": ["The erupting premolars are larger than the deciduous molars", "The erupting premolars are smaller than the deciduous molars", "The erupting premolars are equal in size to the deciduous molars", "The premolars always have delayed eruption"],
+        "correct": 1
+      },
+      {
+        "text": "Which of the following is true about a crossbite?",
+        "options": ["Is always anterior only", "Is always posterior only", "Can present both anterior and posterior", "Is always bilateral"],
+        "correct": 2
+      },
+      {
+        "text": "A normo-divergent grower would exhibit the following:",
+        "options": ["Long lower face", "A line tangent to the mandibular plane lies below the base of the cranium", "A line tangent to the mandibular plane intersects the head at the base of the cranium", "A line tangent to the mandibular plane intersects the head within the base of the cranium"],
+        "correct": 2
+      },
+      {
+        "text": "Completely blocked out canines would represent:",
+        "options": ["Severe crowding", "No crowding", "mild crowding", "moderate crowding"],
+        "correct": 0
+      },
+      {
+        "text": "Lip incompetence refers to:",
+        "options": ["Closure of the lips with muscle strain", "Closure of the lips without muscle strain", "Well balanced faces", "Class 3 individuals"],
+        "correct": 0
+      },
+      {
+        "text": "In a well balanced face:",
+        "options": ["Lower face height is roughly equal to upper face height", "Lower face height is longer than upper face height", "Lower face height is shorter than upper face height", "Upper and lower face heights are not equal"],
+        "correct": 0
+      },
+      {
+        "text": "In cephalometric analysis and the angle SNB, B refers to?:",
+        "options": ["a point on the mandible", "a point on the maxilla", "a point on the forehead", "a point in the cranial base"],
+        "correct": 0
+      },
+      {
+        "text": "Normal overjet is considered:",
+        "options": ["2.5-3 mm", "4-5 mm", "6-7 mm", "7+ mm"],
+        "correct": 0
+      },
+      {
+        "text": "Moderate overbite is considered:",
+        "options": ["0-10%", "10-25%", "30-60%", "80-90%"],
+        "correct": 2
+      },
+      {
+        "text": "A Class II malocclusion is typically characterized by a",
+        "options": ["Prognathic mandible", "Retrognathic mandible", "“strong chin”", "Anterior Crossbite"],
+        "correct": 1
+      },
+      {
+        "text": "A class III malocclusion is typically characterized by a",
+        "options": ["Prognathic mandible", "Retrognathic mandible", "“weak chin”", "Large overjet"],
+        "correct": 0
+      },
+      {
+        "text": "Which best describes the Angle Classification?",
+        "options": ["Class I", "Class 2", "Class 3", "Class 4"],
+        "correct": 1,
+        "image": "images/ortho-midterm-spring-2020/fig25.jpg"
+      },
+      {
+        "text": "Inclination of the incisors would be considered:",
+        "options": ["upper incisors retroclined", "upper incisors proclined", "upper incisors normal", "both upper and lower incisors retroclined"],
+        "correct": 1,
+        "image": "images/ortho-midterm-spring-2020/fig26.jpg"
+      },
+      {
+        "text": "The lower arch has a deep Curve of Spee. This would:",
+        "options": ["Not affect crowding", "Decrease crowding", "Increase crowding", "Cause bite opening"],
+        "correct": 2,
+        "image": "images/ortho-midterm-spring-2020/fig27.jpg"
+      },
+      {
+        "text": "The overjet is considered:",
+        "options": ["Mild", "Moderate", "Normal", "Severe"],
+        "correct": 3,
+        "image": "images/ortho-midterm-spring-2020/fig28.jpg"
+      },
+      {
+        "text": "Which best describes the Angle Classification?",
+        "options": ["Class I", "Class 2", "Class 3", "Class 4"],
+        "correct": 1,
+        "image": "images/ortho-midterm-spring-2020/fig29.jpg"
+      },
+      {
+        "text": "Crowding in the upper arch would be considered:",
+        "options": ["Non-crowded", "Mild", "Moderate", "Severe"],
+        "correct": 3,
+        "image": "images/ortho-midterm-spring-2020/fig30.jpg"
+      },
+      {
+        "text": "The overbite is considered:",
+        "options": ["Openbite", "Shallow", "Moderate", "Normal"],
+        "correct": 2,
+        "image": "images/ortho-midterm-spring-2020/fig31.jpg"
+      },
+      {
+        "text": "Based on e-line, facial balance would best be described as:",
+        "options": ["Full for Caucasian", "The e-line does not describe facial balance", "Showing a class III facial type", "Balanced for Caucasian"],
+        "correct": 3,
+        "image": "images/ortho-midterm-spring-2020/fig32.jpg"
+      },
+      {
+        "text": "Which best describes the incisor inclination?",
+        "options": ["Upper incisors proclined", "Upper and lower incisors retroclined", "Upper and lower incisors proclined", "Normal incisor inclination"],
+        "correct": 1,
+        "image": "images/ortho-midterm-spring-2020/fig33.jpg"
+      },
+      {
+        "text": "SM is considered what type of grower?",
+        "options": ["Normo-divergent", "Hypo-divergent", "Hyper-divergent", "None of the above"],
+        "correct": 2,
+        "image": "images/ortho-midterm-spring-2020/fig34.jpg"
+      },
+      {
+        "text": "The overjet, at 9 mm, is considered:",
+        "options": ["Normal", "Mild", "Moderate", "Severe"],
+        "correct": 3,
+        "image": "images/ortho-midterm-spring-2020/fig35.jpg"
+      },
+      {
+        "text": "Which best describes the Angle Classification?",
+        "options": ["Class I both sides", "Class 2 both sides", "Class I on the right, class 2 on the left", "Class 2 on the right, class I on the left"],
+        "correct": 3,
+        "image": "images/ortho-midterm-spring-2020/fig36.jpg"
+      },
+      {
+        "text": "What best describes the transverse problem?",
+        "options": ["No crossbite", "left side posterior crossbite", "Anterior and posterior crossbites", "Posterior crossbite on both sides"],
+        "correct": 2,
+        "image": "images/ortho-midterm-spring-2020/fig37.jpg"
+      }
+    ]
+  },
   "ortho-midterm-spring-2021": {
     "title": "Orthodontics Midterm Exam (Spring 2021)",
     "type": "ortho",
@@ -24413,6 +24106,313 @@
         "text": "Facial balance in this case would be considered:",
         "options": ["Typical for class 3", "Non-Typical for class 3", "short lower face", "Prognathic mandible"],
         "correct": 1
+      }
+    ]
+  },
+  "ortho-midterm-spring-2022": {
+    "title": "Orthodontics Midterm Exam (Spring 2022)",
+    "type": "ortho",
+    "subtype": "midterm",
+    "questions": [
+      {
+        "text": "Which best describes the Angle Classification?",
+        "options": ["Class 1", "Class 2", "Class 3", "Class 2 Division 2"],
+        "correct": 1,
+        "image": "images/ortho-midterm-spring-2022/fig1.jpg"
+      },
+      {
+        "text": "The overbite is considered:",
+        "options": ["Open", "Shallow", "Moderate", "Very Deep"],
+        "correct": 2,
+        "image": "images/ortho-midterm-spring-2022/fig2.jpg"
+      },
+      {
+        "text": "The overjet, at 9, is considered:",
+        "options": ["Mild", "Moderate", "Severe", "Negative"],
+        "correct": 2,
+        "image": "images/ortho-midterm-spring-2022/fig3.jpg"
+      },
+      {
+        "text": "What best describes the transverse occlusion?",
+        "options": ["No crossbite", "Anterior crossbite only", "Anterior and posterior crossbites", "Right side posterior crossbite only"],
+        "correct": 0,
+        "image": "images/ortho-midterm-spring-2022/fig4.jpg"
+      },
+      {
+        "text": "Maxillary central incisors are:",
+        "options": ["Normal inclination", "Proclined", "Retroclined", "Typical of class 3"],
+        "correct": 1,
+        "image": "images/ortho-midterm-spring-2022/fig5.jpg"
+      },
+      {
+        "text": "Which of the following best describes alignment of the teeth?",
+        "options": ["No crowding", "Moderate crowding", "Severe crowding", "Moderate spacing"],
+        "correct": 0,
+        "image": "images/ortho-midterm-spring-2022/fig6.jpg"
+      },
+      {
+        "text": "The line tangent to the mandibular plane shows the case to be:",
+        "options": ["Hyperdivergent", "Hypodivergent", "Normodivergent", "None of the above"],
+        "correct": 1,
+        "image": "images/ortho-midterm-spring-2022/fig7.jpg"
+      },
+      {
+        "text": "In this case one would find, as compared to the norm:",
+        "options": ["Larger SNA", "Smaller SNA", "Larger SNB", "Negative ANB"],
+        "correct": 0,
+        "image": "images/ortho-midterm-spring-2022/fig8.jpg"
+      },
+      {
+        "text": "The angle SNB in this case would most likely be:",
+        "options": ["larger than normal", "smaller than normal", "Negative", "Normal"],
+        "correct": 1,
+        "image": "images/ortho-midterm-spring-2022/fig9.jpg"
+      },
+      {
+        "text": "Face height in this case would best be described as:",
+        "options": ["Short lower face height", "long lower face height", "Equal upper and lower face heights", "Short upper face height"],
+        "correct": 0,
+        "image": "images/ortho-midterm-spring-2022/fig10.jpg"
+      },
+      {
+        "text": "The direction of growth in this case is most likely:",
+        "options": ["More downward, less forward", "Less downward, more forward", "Neither downward nor forward", "Upward and backward"],
+        "correct": 1,
+        "image": "images/ortho-midterm-spring-2022/fig11.jpg"
+      },
+      {
+        "text": "Which best describes the Angle Classification?",
+        "options": ["Class 1", "Class 2", "Class 3", "Class 2 Division 2"],
+        "correct": 3,
+        "image": "images/ortho-midterm-spring-2022/fig12.jpg"
+      },
+      {
+        "text": "The overbite is considered:",
+        "options": ["Openbite", "Shallow", "Moderate", "Very Deep"],
+        "correct": 3,
+        "image": "images/ortho-midterm-spring-2022/fig13.jpg"
+      },
+      {
+        "text": "The overjet is considered:",
+        "options": ["Mild", "Moderate", "Severe", "Negative"],
+        "correct": 0,
+        "image": "images/ortho-midterm-spring-2022/fig14.jpg"
+      },
+      {
+        "text": "What best describes the transverse occlusion?",
+        "options": ["No crossbite", "Anterior crossbite only", "Anterior and posterior crossbites", "Left side posterior crossbite only"],
+        "correct": 0,
+        "image": "images/ortho-midterm-spring-2022/fig15.jpg"
+      },
+      {
+        "text": "Maxillary central incisors are:",
+        "options": ["Normal inclination", "Proclined", "Retroclined", "Typical of class 3"],
+        "correct": 2,
+        "image": "images/ortho-midterm-spring-2022/fig16.jpg"
+      },
+      {
+        "text": "Which of the following best describes alignment of the Lower teeth?",
+        "options": ["No crowding", "Moderate crowding", "Has leeway space available", "Mild spacing"],
+        "correct": 1,
+        "image": "images/ortho-midterm-spring-2022/fig17.jpg"
+      },
+      {
+        "text": "The occlusal plane is:",
+        "options": ["flat and normal", "Has reverse curve of Spee", "Has exaggerated curve of Spee", "No curve of Wilson"],
+        "correct": 2,
+        "image": "images/ortho-midterm-spring-2022/fig18.jpg"
+      },
+      {
+        "text": "Which is NOT a viable treatment option in this case:",
+        "options": ["Expansion", "Extraction of bicuspids", "IPR", "Use of leeway space"],
+        "correct": 3,
+        "image": "images/ortho-midterm-spring-2022/fig19.jpg"
+      },
+      {
+        "text": "Which best describes the Angle Classification?",
+        "options": ["Class 1", "Class 2", "Class 3", "Class 2 sub Left"],
+        "correct": 3,
+        "image": "images/ortho-midterm-spring-2022/fig20.jpg"
+      },
+      {
+        "text": "The overbite is considered:",
+        "options": ["Openbite", "Shallow", "Moderate", "Very Deep"],
+        "correct": 2,
+        "image": "images/ortho-midterm-spring-2022/fig21.jpg"
+      },
+      {
+        "text": "The overjet is considered:",
+        "options": ["Normal", "Moderate", "Severe", "Negative"],
+        "correct": 0,
+        "image": "images/ortho-midterm-spring-2022/fig22.jpg"
+      },
+      {
+        "text": "What best describes the transverse occlusion?",
+        "options": ["No crossbite", "Right side posterior crossbite only", "Anterior and posterior crossbites", "Left side posterior crossbite only"],
+        "correct": 0,
+        "image": "images/ortho-midterm-spring-2022/fig23.jpg"
+      },
+      {
+        "text": "Incisor inclination is best described as:",
+        "options": ["Normal inclination", "Proclined lower incisors, retroclined upper incisors", "Retroclined lower incisors, proclined upper incisors", "Proclined upper and lower incisors"],
+        "correct": 0,
+        "image": "images/ortho-midterm-spring-2022/fig24.jpg"
+      },
+      {
+        "text": "Which of the following best describes alignment of the teeth?",
+        "options": ["No crowding", "Mild crowding", "Has leeway space available", "Severe crowding"],
+        "correct": 3,
+        "image": "images/ortho-midterm-spring-2022/fig25.jpg"
+      },
+      {
+        "text": "The line tangent to the mandibular plane shows the case to be:",
+        "options": ["Hyperdivergent", "Hypodivergent", "Normodivergent", "None of the above"],
+        "correct": 2,
+        "image": "images/ortho-midterm-spring-2022/fig26.jpg"
+      },
+      {
+        "text": "Face height in this case would best be described as:",
+        "options": ["Short lower face height", "long lower face height", "Equal upper and lower face heights", "Short upper face height"],
+        "correct": 2,
+        "image": "images/ortho-midterm-spring-2022/fig27.jpg"
+      },
+      {
+        "text": "The direction of growth in this case is most likely:",
+        "options": ["More downward, less forward", "Less downward, more forward", "Downward and forward", "Upward and backward"],
+        "correct": 2,
+        "image": "images/ortho-midterm-spring-2022/fig28.jpg"
+      },
+      {
+        "text": "Based on e-line, facial balance would best be described as:",
+        "options": ["Full for Caucasian", "The e-line does not describe facial balance", "Showing a class 3 facial type", "Balanced for Caucasian"],
+        "correct": 3,
+        "image": "images/ortho-midterm-spring-2022/fig29.jpg"
+      },
+      {
+        "text": "The midline discrepancy in this case is most likely caused by?",
+        "options": ["Incisor Inclination", "Differential spacing", "Upper crowding", "Crossbite"],
+        "correct": 2,
+        "image": "images/ortho-midterm-spring-2022/fig30.jpg"
+      },
+      {
+        "text": "Which is NOT a viable treatment option in this case:",
+        "options": ["Expansion", "Extraction of bicuspids", "IPR", "Use of leeway space"],
+        "correct": 3,
+        "image": "images/ortho-midterm-spring-2022/fig31.jpg"
+      },
+      {
+        "text": "Which best describes the Angle Classification?",
+        "options": ["Class 1", "Class 2", "Class 3", "Class 2 sub Left"],
+        "correct": 2,
+        "image": "images/ortho-midterm-spring-2022/fig32.jpg"
+      },
+      {
+        "text": "The overjet is considered:",
+        "options": ["Normal", "Moderate", "Severe", "Negative"],
+        "correct": 3,
+        "image": "images/ortho-midterm-spring-2022/fig33.jpg"
+      },
+      {
+        "text": "What best describes the transverse occlusion?",
+        "options": ["No crossbite", "Right side posterior crossbite only", "Anterior and posterior crossbites", "Left side posterior crossbite only"],
+        "correct": 2,
+        "image": "images/ortho-midterm-spring-2022/fig34.jpg"
+      },
+      {
+        "text": "Incisor inclination is best described as:",
+        "options": ["Normal inclination", "Proclined lower incisors, retroclined upper incisors", "Retroclined lower incisors, normal upper incisors", "Proclined upper and lower incisors"],
+        "correct": 2,
+        "image": "images/ortho-midterm-spring-2022/fig35.jpg"
+      },
+      {
+        "text": "Face height in this case would best be described as:",
+        "options": ["Short lower face height", "long lower face height", "Equal upper and lower face heights", "Short upper face height"],
+        "correct": 1,
+        "image": "images/ortho-midterm-spring-2022/fig36.jpg"
+      },
+      {
+        "text": "The midline discrepancy in this case is most likely caused by?",
+        "options": ["Incisor inclination", "Differential spacing", "Asymmetric growth", "Angle classification"],
+        "correct": 2,
+        "image": "images/ortho-midterm-spring-2022/fig37.jpg"
+      },
+      {
+        "text": "In this case one would find, as compared to the norm:",
+        "options": ["Smaller SNA", "Larger SNB", "Negative ANB", "All of the above"],
+        "correct": 3,
+        "image": "images/ortho-midterm-spring-2022/fig38.jpg"
+      },
+      {
+        "text": "Which is NOT a viable treatment option for the crowding:",
+        "options": ["Expansion", "Extraction of upper bicuspids alone", "IPR", "Use of leeway space"],
+        "correct": 1,
+        "image": "images/ortho-midterm-spring-2022/fig39.jpg"
+      },
+      {
+        "text": "Camouflage treatment, if attempted in this case, would consist of:",
+        "options": ["Maxillary anterior retroclination", "Mandibular anterior proclination", "Maxillary anterior proclination, mandibular anterior retroclination", "Maxillary and mandibular anterior proclination"],
+        "correct": 2,
+        "image": "images/ortho-midterm-spring-2022/fig40.jpg"
+      },
+      {
+        "text": "Which best describes the Angle Classification?",
+        "options": ["Class 1", "Class 2", "Class 3", "Class 2 sub Right"],
+        "correct": 3,
+        "image": "images/ortho-midterm-spring-2022/fig41.jpg"
+      },
+      {
+        "text": "The overbite is considered:",
+        "options": ["Openbite", "Shallow", "Normal", "Deep"],
+        "correct": 3,
+        "image": "images/ortho-midterm-spring-2022/fig42.jpg"
+      },
+      {
+        "text": "The overjet, at 4, is considered:",
+        "options": ["Mild", "Moderate", "Severe", "Negative"],
+        "correct": 0,
+        "image": "images/ortho-midterm-spring-2022/fig43.jpg"
+      },
+      {
+        "text": "What best describes the transverse occlusion?",
+        "options": ["No crossbite", "Anterior crossbite only", "Anterior and posterior crossbites", "Right side posterior crossbite only"],
+        "correct": 3,
+        "image": "images/ortho-midterm-spring-2022/fig44.jpg"
+      },
+      {
+        "text": "Maxillary central incisors are:",
+        "options": ["Normal inclination", "Proclined", "Retroclined", "Typical of class 3"],
+        "correct": 0,
+        "image": "images/ortho-midterm-spring-2022/fig45.jpg"
+      },
+      {
+        "text": "Which of the following best describes alignment of the teeth?",
+        "options": ["Mild crowding", "Moderate crowding", "Severe crowding", "Mild Spacing"],
+        "correct": 3,
+        "image": "images/ortho-midterm-spring-2022/fig46.jpg"
+      },
+      {
+        "text": "Face height in this case would best be described as:",
+        "options": ["Short lower face height", "long lower face height", "Equal upper and lower face heights", "Short upper face height"],
+        "correct": 2,
+        "image": "images/ortho-midterm-spring-2022/fig47.jpg"
+      },
+      {
+        "text": "Based on e-line, facial balance would best be described as:",
+        "options": ["Full for Caucasian", "Balanced for caucasian", "Showing a class 2 facial type", "flat for Caucasian"],
+        "correct": 3,
+        "image": "images/ortho-midterm-spring-2022/fig48.jpg"
+      },
+      {
+        "text": "The midline discrepancy in this case is most likely caused by?",
+        "options": ["Incisor Inclination", "Differential spacing", "Angle classification", "Facial Asymmetry"],
+        "correct": 2,
+        "image": "images/ortho-midterm-spring-2022/fig49.jpg"
+      },
+      {
+        "text": "Case would most likely be treated with:",
+        "options": ["Crossbite correction and space closure", "Extraction of bicuspids", "IPR", "Use of leeway space"],
+        "correct": 0,
+        "image": "images/ortho-midterm-spring-2022/fig50.jpg"
       }
     ]
   },
