@@ -44,6 +44,21 @@ back as inline JSON; large files come back as a path to a `.txt` file under
 (`{content: base64 pdf bytes, id, mimeType, title}`) — either way, that's
 the `json_path` argument `parse_lib.decode_and_save_pdf` expects.
 
+**Always list a folder's contents with an explicit large `pageSize` (e.g.
+50), never the default.** This is not optional — with no `pageSize` set,
+`search_files` silently truncates to a small default page, and re-fetching
+with the returned `pageToken` can come back *identical* to the first page
+instead of actually advancing. Comparing two default-size fetches and
+seeing the same file set does **not** prove the folder is fully
+enumerated — it proves nothing, since a second default-size fetch can fail
+to advance for reasons unrelated to the folder actually being exhausted.
+This isn't a hypothetical: it's exactly how 7 exams got missed in the Intro
+to Clinical Dentistry unit (default-size fetch found 10 files; explicit
+`pageSize: 50` found 17) and 3 more got missed in Orthodontics on a
+re-check (found only after the fact). A response with no `nextPageToken`
+field at all is the actual "nothing more" signal — get there by asking for
+enough results up front, not by trusting a token comparison.
+
 ## 2. Reconnaissance: skim before you parse
 
 Before running the batch pipeline (or writing any code to extend it), do a
@@ -60,11 +75,15 @@ you've already half-built:
   same attachment name repeats across a run of consecutive questions (a
   case cluster, see "Case clusters" below) rather than each question having
   its own distinct figure.
+- **List the class folder itself with an explicit large `pageSize`
+  first**, before assuming you have the full set of source PDFs to skim in
+  the first place — see the pagination warning in section 1 above. Do this
+  even for a folder that "looks done"; it's the step that was skipped when
+  10 exams were assumed to be all of Intro to Clinical Dentistry when 17
+  actually existed.
 - **For any attachment that isn't embedded in the exam's own pages**,
   confirm the referenced file actually exists in Drive before planning
-  around it — and paginate the folder listing all the way through while
-  doing so (see the pagination-loop warning in "Case clusters" below;
-  don't conclude a file is missing from one page of results).
+  around it — same explicit-`pageSize` rule applies.
 - **Compare against what's already in the repo**: does this category exist
   yet (`KNOWN_TYPES`)? Do the exam ids collide with anything in
   `exams-csv/`? Does the source use a format `parse_lib.py` hasn't seen
@@ -212,12 +231,12 @@ composited screenshot (via `verify_batch.js`) for any newly-added
 case-based exam rather than trusting the pipeline blind.
 
 If a case's external attachment PDF genuinely isn't in the Drive folder
-(paginate all the way through with `search_files` before concluding this —
-watch for the API looping back to page 1 instead of truly ending), don't
-guess or ship the affected questions without their exhibit. Ask the user
-whether to hold the exam, drop the affected questions, or ship with an
-`issues` note — this happened for two Spring 2022 exams and cost real
-rework to notice after the fact instead of before parsing.
+(list the folder with an explicit large `pageSize` per section 1 before
+concluding this — do not trust a default-size fetch), don't guess or ship
+the affected questions without their exhibit. Ask the user whether to hold
+the exam, drop the affected questions, or ship with an `issues` note — this
+happened for two Spring 2022 exams and cost real rework to notice after the
+fact instead of before parsing.
 
 ## 4. Wiring a new category into the app
 
