@@ -1591,6 +1591,2987 @@
       }
     ]
   },
+  "coralrad-exam1-fall-2017": {
+    "title": "Clinical Oral Radiology Exam 1 (Fall 2017)",
+    "type": "coralrad",
+    "subtype": "exam1",
+    "questions": [
+      {
+        "text": "Which of the following does NOT apply to the #30 region?",
+        "options": ["Dental caries", "Apical periodontitis", "Missing mesial tooth structure", "Root-canal treatment"],
+        "correct": 3,
+        "image": "images/coralrad-exam1-fall-2017/fig1.jpeg"
+      },
+      {
+        "text": "There are four radiopaque entities just superior to the maxilla, overlapping with the inferior nasal concha. Based on the radiodensity of these entities, what are the most likely made of?",
+        "options": ["Bone", "Soft-tissue", "Metal", "Plastic"],
+        "correct": 2,
+        "image": "images/coralrad-exam1-fall-2017/fig2.jpeg"
+      },
+      {
+        "text": "This radiograph is of a 60-year-old male. Which of the following best describes tooth #16?",
+        "options": ["Impacted", "Taurodont", "Root-canal treated", "Has a PFM crown"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2017/fig3.jpeg"
+      },
+      {
+        "text": "Describe the borders of the object on the floor of maxillary sinus.",
+        "options": ["Moderately well-defined", "Poorly-defined"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2017/fig4.jpeg"
+      },
+      {
+        "text": "Describe the internal structure of the object on the floor of maxillary sinus.",
+        "options": ["Radiopaque", "Radiolucent"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2017/fig5.jpeg"
+      },
+      {
+        "text": "This radiograph is a:",
+        "options": ["Left maxillary periapical", "Right maxillary periapical", "Left maxillary bitewing", "Right maxillary bitewing"],
+        "correct": 1,
+        "image": "images/coralrad-exam1-fall-2017/fig6.jpeg"
+      },
+      {
+        "text": "Which of the following best describes the differences between images (a) and (b)? Image (a) Image (b)",
+        "options": ["Different brightness", "Different contrast", "Different spatial resolution", "Different type of radiograph"],
+        "correct": 1,
+        "image": "images/coralrad-exam1-fall-2017/fig7.jpeg"
+      },
+      {
+        "text": "Based on images (a), (b), and (c), which of the following best describes the #19/20 region? Image (a) Image (b) Image (c)",
+        "options": ["Dense bone island", "Impacted supernumerary tooth", "Dense, reactive bone formation", "Retained root fragment"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2017/fig8.jpeg"
+      },
+      {
+        "text": "Which of the following does NOT apply to the #10 region?",
+        "options": ["Periapical lucency", "Calcified root canal", "Periodontal bone loss", "Coronal decay"],
+        "correct": 3,
+        "image": "images/coralrad-exam1-fall-2017/fig9.jpeg"
+      },
+      {
+        "text": "Which of the following applies to the #11 region?",
+        "options": ["Widened PDL space", "Calcified root canal", "Root canal treatment", "Coronal decay"],
+        "correct": 2,
+        "image": "images/coralrad-exam1-fall-2017/fig10.jpeg"
+      },
+      {
+        "text": "Which of the following best describes the borders of the entity indicated by the red arrow in the #19 region?",
+        "options": ["Well-defined", "Poorly-defined"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2017/fig11.jpeg"
+      },
+      {
+        "text": "Which of the following best describes the internal structure of the entity indicated by the red arrow in the #19 region?",
+        "options": ["Radiolucent", "Radiopaque"],
+        "correct": 1,
+        "image": "images/coralrad-exam1-fall-2017/fig12.jpeg"
+      },
+      {
+        "text": "There are a few highly radiopaque flecks in the #19 region. Based on the overall radiographic presentation, which of these is most likely identity of the flecks?",
+        "options": ["Bony fragments", "Fixed orthodontic appliance", "Broken dental instrument", "Retained pieces of dental restorative material"],
+        "correct": 3,
+        "image": "images/coralrad-exam1-fall-2017/fig13.jpeg"
+      },
+      {
+        "text": "Based on the radiographic presentation, what is the entity indicated by the red arrow in the #19 region most likely?",
+        "options": ["Dense bone island", "Impacted supernumerary tooth", "Dense, reactive bone formation", "Retained root fragment"],
+        "correct": 3,
+        "image": "images/coralrad-exam1-fall-2017/fig14.jpeg"
+      },
+      {
+        "text": "Which of the following best describes the patient's overall caries condition?",
+        "options": ["Kissing caries", "Localized caries", "Gross caries", "Class II lesion"],
+        "correct": 2,
+        "image": "images/coralrad-exam1-fall-2017/fig15.jpeg"
+      },
+      {
+        "text": "Which of the following most accurately describes the overall condition of the PDL spaces?",
+        "options": ["All of the PDL spaces are within normal limits", "All of the PDL spaces are widened", "Some of the PDL spaces are widened", "None of the PDL spaces cannot be visualized on this panoramic radiograph"],
+        "correct": 2,
+        "image": "images/coralrad-exam1-fall-2017/fig16.jpeg"
+      },
+      {
+        "text": "What is the identity of the bilateral radiopaque entity indicated by the red arrow?",
+        "options": ["Hyoid bone", "Ossified stylohyoid ligament", "Styloid process", "Carotid calcification", "Calcified thyroid cartilage"],
+        "correct": 1,
+        "image": "images/coralrad-exam1-fall-2017/fig17.jpeg"
+      },
+      {
+        "text": "#20 appears to have a periapical lucency. Which of the following best describes the bone surrounding the #20 region?",
+        "options": ["Within normal limits", "Dense, reactive bone formation", "Relatively radiolucent compared to surrounding bone", "Hypervascular"],
+        "correct": 2,
+        "image": "images/coralrad-exam1-fall-2017/fig18.jpeg"
+      },
+      {
+        "text": "#20 appears to have a periapical lucency. Which of the following is the most likely reason for this lucency?",
+        "options": ["Apical periodontitis", "Mental foramen", "Primary intraosseous carcinoma", "Cemento-osseous dysplasia"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2017/fig19.jpeg"
+      },
+      {
+        "text": "Which of the following is NOT found in this panoramic radiograph?",
+        "options": ["Root canal treatment / gutta percha", "Dental caries or missing restoration", "Abnormally shaped mandibular condyles", "Calculus", "Coronal restorations (Class I, II, III, IV, V, or VI)"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2017/fig20.jpeg"
+      },
+      {
+        "text": "What type of radiographs are these?",
+        "options": ["Horizontal Bitewing", "Periapical", "Occlusal", "Vertical bitewing", "Panoramic"],
+        "correct": 3,
+        "image": "images/coralrad-exam1-fall-2017/fig21.jpeg"
+      },
+      {
+        "text": "Which of the following is NOT visualized in the radiographs",
+        "options": ["Class I restorations", "Calculus", "Periodontal bone loss", "Apical periodontitis"],
+        "correct": 3,
+        "image": "images/coralrad-exam1-fall-2017/fig22.jpeg"
+      },
+      {
+        "text": "Based on the radiographic presentation, which of the following is most likely the patient's age?",
+        "options": ["<6", "6 - 25", "25 - 50", ">50"],
+        "correct": 3,
+        "image": "images/coralrad-exam1-fall-2017/fig23.jpeg"
+      },
+      {
+        "text": "Which GV Black classification of restoration would be most appropriate to place on teeth #24 and #25?",
+        "options": ["Class I", "Class II", "Class III", "Class IV", "Class V", "Class VI"],
+        "correct": 4,
+        "image": "images/coralrad-exam1-fall-2017/fig24.jpeg"
+      },
+      {
+        "text": "The radiolucency on the distal aspect of #8 is most likely:",
+        "options": ["Cervical burnout", "Dental caries", "Root canal treatment", "Periapical lucency"],
+        "correct": 1,
+        "image": "images/coralrad-exam1-fall-2017/fig25.jpeg"
+      },
+      {
+        "text": "What is the name of the major error found in this radiographic?",
+        "options": ["Double image", "Horizontal misangulation", "Vertical misangulation", "Cone cut", "Beam-hardening artifact"],
+        "correct": 3,
+        "image": "images/coralrad-exam1-fall-2017/fig26.jpeg"
+      },
+      {
+        "text": "Which of the following teeth is missing in this left premolar bitewing image but would normally be expected to be present?",
+        "options": ["#10", "#11", "#12", "#13", "#14"],
+        "correct": 3,
+        "image": "images/coralrad-exam1-fall-2017/fig27.jpeg"
+      },
+      {
+        "text": "What is the most likely explanation for the radiolucency in the #29 region?",
+        "options": ["Periapical lucency", "Primary intraosseous carcinoma", "Periodontal bone loss", "Extraction socket"],
+        "correct": 3,
+        "image": "images/coralrad-exam1-fall-2017/fig28.jpeg"
+      },
+      {
+        "text": "Which of the following best describes the shape of the entity on the floor of the left maxillary sinus?",
+        "options": ["Dome-shaped", "Irregularly-shaped", "Flat", "Triangular"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2017/fig29.jpeg"
+      },
+      {
+        "text": "Which of the following best describes the radiodensity of the entity on the floor of the left maxillary sinus?",
+        "options": ["More radiolucent than the maxillary sinus", "More radiopaque than the maxillary sinus", "More radiopaque than the maxillary bone", "More radiolucent than the nasal cavity"],
+        "correct": 1,
+        "image": "images/coralrad-exam1-fall-2017/fig30.jpeg"
+      },
+      {
+        "text": "Which of the following is the most likely contributor to the finding on the floor of the left maxillary sinus?",
+        "options": ["#14 mesial caries and periapical lucency", "#15 periapical lucency", "Occlusal trauma", "Allergic rhinitis"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2017/fig31.jpeg"
+      },
+      {
+        "text": "Which of the following best describes the internal structure of the entity at the apical portion of the #20 region?",
+        "options": ["Radiopaque", "Radiolucent"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2017/fig32.jpeg"
+      },
+      {
+        "text": "Which of the following best describes the borders of the entity at the apical portion of the #20 region?",
+        "options": ["Moderately well-defined", "Poorly-defined"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2017/fig33.jpeg"
+      },
+      {
+        "text": "Based on the overall radiographic presentation, what do you think is the most likely diagnosis of the entity at the apical portion of the #20 region?",
+        "options": ["Dense bone island", "Dense, reactive bone formation", "Apical periodontitis", "Primary intraosseous carcinoma"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2017/fig34.jpeg"
+      },
+      {
+        "text": "Some calcifications are noted superior to the hyoid on the patient's right side. Which of the following is most likely to be the diagnosis?",
+        "options": ["Carotid calcifications", "Ossified thyroid cartilage", "Ossified stylohyoid ligament", "Bolus of food"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2017/fig35.jpeg"
+      },
+      {
+        "text": "What is the number of the tooth indicated by the red arrow?",
+        "options": ["#27", "#28", "#29", "#30", "#31"],
+        "correct": 2,
+        "image": "images/coralrad-exam1-fall-2017/fig36.jpeg"
+      },
+      {
+        "text": "Which of the following best describes the pattern of bone loss associated with the tooth indicated by the red arrow?",
+        "options": ["Horizontal bone loss", "Vertical bone loss", "Intra-radicular bone loss", "Periapical bone loss"],
+        "correct": 1,
+        "image": "images/coralrad-exam1-fall-2017/fig37.jpeg"
+      },
+      {
+        "text": "Two diagonal radiopaque entities, indicated by red arrows, are noted in the anterior maxilla. What is the most likely diagnosis?",
+        "options": ["Nasolabial fold", "Impacted canines", "Palatal torus", "Ala of the nose"],
+        "correct": 1,
+        "image": "images/coralrad-exam1-fall-2017/fig38.jpeg"
+      },
+      {
+        "text": "Based on the radiographic presentation of the two radiopaque objects in the #14 region, what are they most likely?",
+        "options": ["Dental implants", "Retained roots of #14", "Retained roots of #J", "Retained roots of #14 and #15"],
+        "correct": 1,
+        "image": "images/coralrad-exam1-fall-2017/fig39.jpeg"
+      },
+      {
+        "text": "Which of the visualized premolars is most suspicious for recurrent decay?",
+        "options": ["#12", "#13", "#20", "#21"],
+        "correct": 1,
+        "image": "images/coralrad-exam1-fall-2017/fig40.jpeg"
+      },
+      {
+        "text": "Which of the following best describes the patient's periodontal condition?",
+        "options": ["Generalized mild horizontal bone loss (bone level at coronal third of root)", "Generalized moderate horizontal bone loss (bone level at middle third of root)", "Generalized severe vertical bone loss (bone level at apical third of root)", "Generalized apical periodontitis"],
+        "correct": 1,
+        "image": "images/coralrad-exam1-fall-2017/fig41.jpeg"
+      },
+      {
+        "text": "Horizontal radiopacities are noted in the #3 and #14 regions. Which of the following is the most likely diagnosis?",
+        "options": ["Dental Implants", "Root canal treatment", "Broken dental instruments", "Ghost image of earrings"],
+        "correct": 3,
+        "image": "images/coralrad-exam1-fall-2017/fig42.jpeg"
+      }
+    ]
+  },
+  "coralrad-exam1-fall-2018": {
+    "title": "Clinical Oral Radiology Exam 1 (Fall 2018)",
+    "type": "coralrad",
+    "subtype": "exam1",
+    "questions": [
+      {
+        "text": "Which of the following best describes this patient's age?",
+        "options": ["Less than 10 years of age", "10 - 30 years of age", "30 - 50 years of age", "50+ years of age"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2018/fig1.jpg"
+      },
+      {
+        "text": "Which of the following errors in technique is present in this panoramic radiograph?",
+        "options": ["A double image is present, possibly due to incomplete erasure of the sensor", "The patient's glasses were not removed", "The patient moved during the scan", "There are no technical errors present"],
+        "correct": 1,
+        "image": "images/coralrad-exam1-fall-2018/fig2.jpg"
+      },
+      {
+        "text": "The tooth with the metallic restoration is tooth:",
+        "options": ["#30", "#29", "#K", "#T"],
+        "correct": 3,
+        "image": "images/coralrad-exam1-fall-2018/fig3.jpg"
+      },
+      {
+        "text": "Which of the following teeth appear to have or are suspicious for dental caries?",
+        "options": ["#13", "#20", "#12", "All of the answer choices are correct"],
+        "correct": 3,
+        "image": "images/coralrad-exam1-fall-2018/fig4.jpg"
+      },
+      {
+        "text": "All of the following aspects of this panoramic radiograph are within normal limits, EXCEPT one. Which one is the EXCEPTION?",
+        "options": ["The number of teeth", "The pulp chambers", "The mandibular condyles", "The inferior nasal conchae"],
+        "correct": 1,
+        "image": "images/coralrad-exam1-fall-2018/fig5.jpg"
+      },
+      {
+        "text": "Which of the following best describes the follicular space of #17?",
+        "options": ["well-defined", "poorly-defined"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2018/fig6.jpg"
+      },
+      {
+        "text": "Which of the following best describes the follicular space of #17?",
+        "options": ["well-corticated", "non-corticated"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2018/fig7.jpg"
+      },
+      {
+        "text": "What type of radiograph is this?",
+        "options": ["Horizontal bitewing", "Vertical bitewing", "Premolar periapical", "Molar periapical"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2018/fig8.jpg"
+      },
+      {
+        "text": "All of the following are present in this radiograph, EXCEPT one. Which one is the EXCEPTION?",
+        "options": ["Periodontal bone loss", "Occlusal restoration", "A crown", "Cervical burnout"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2018/fig9.jpg"
+      },
+      {
+        "text": "Which of the following best describes the class II restoration on tooth #3?",
+        "options": ["Well-defined", "Poorly-defined"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2018/fig10.jpg"
+      },
+      {
+        "text": "Which of the following best describes the class II restoration on tooth #3?",
+        "options": ["irregular in shape", "rectangular in shape", "multilocular in shape", "unilocular in shape"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2018/fig11.jpg"
+      },
+      {
+        "text": "All of the following are true about tooth #4, EXCEPT one. Which one is the EXCEPTION?",
+        "options": ["It has undergone root canal treatment", "Its crown has open margins", "Its PDL space is widened compared to its neighboring teeth", "Its apex cannot be visualized"],
+        "correct": 2,
+        "image": "images/coralrad-exam1-fall-2018/fig12.jpg"
+      },
+      {
+        "text": "Which of the following best describes this radiograph?",
+        "options": ["A molar bitewing radiograph with a double image", "A premolar periapical radiograph with a double image", "A molar periapical radiograph with a cone cut", "A premolar periapical radiograph with a cone cut"],
+        "correct": 3,
+        "image": "images/coralrad-exam1-fall-2018/fig13.jpg"
+      },
+      {
+        "text": "Of the two mandibular condyles, which one appears more regular in shape?",
+        "options": ["Left", "Right"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2018/fig14.jpg"
+      },
+      {
+        "text": "Mandibular alveolar bone loss is present.",
+        "options": ["True", "False"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2018/fig15.jpg"
+      },
+      {
+        "text": "What type of radiograph is this best described as?",
+        "options": ["Horizontal bitewing", "Vertical bitewing", "Mandibular periapical", "Maxillary periapical"],
+        "correct": 2,
+        "image": "images/coralrad-exam1-fall-2018/fig16.jpg"
+      },
+      {
+        "text": "Which of the following best describes the borders of the radiolucent entity in the #18 region?",
+        "options": ["Fairly well-defined and well-corticated except for superiorly", "Fairly well-defined and non-corticated", "Poorly defined except for mesially", "Poorly defined all around"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2018/fig17.jpg"
+      },
+      {
+        "text": "What is your impression of the entity in the #18 region?",
+        "options": ["Periapical pathology", "Extraction socket", "Dental caries", "None of other answer choices are correct"],
+        "correct": 1,
+        "image": "images/coralrad-exam1-fall-2018/fig18.jpg"
+      },
+      {
+        "text": "This patient has calculus.",
+        "options": ["True", "False"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2018/fig19.jpg"
+      },
+      {
+        "text": "This patient has dental caries.",
+        "options": ["True", "False"],
+        "correct": 1,
+        "image": "images/coralrad-exam1-fall-2018/fig20.jpg"
+      },
+      {
+        "text": "This patient has periodontal/alveolar bone loss.",
+        "options": ["True", "False"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2018/fig21.jpg"
+      },
+      {
+        "text": "How many teeth are present in this radiograph?",
+        "options": ["30", "31", "32", "33"],
+        "correct": 1,
+        "image": "images/coralrad-exam1-fall-2018/fig22.jpg"
+      },
+      {
+        "text": "Which of the following is visualized in this radiograph?",
+        "options": ["Carotid calcifications", "Hyoid bone", "Nose jewelry"],
+        "correct": 1,
+        "image": "images/coralrad-exam1-fall-2018/fig23.jpg"
+      },
+      {
+        "text": "Which of the following best describes the patient's periodontal bone?",
+        "options": ["Generalized severe bone loss", "Generalized mild bone loss with several localized areas of severe bone loss", "Generalized mild bone loss", "No bone loss is noted in this radiograph"],
+        "correct": 1,
+        "image": "images/coralrad-exam1-fall-2018/fig24.jpg"
+      },
+      {
+        "text": "Tooth #30 appears to have _____ roots.",
+        "options": ["1", "2", "3", "4"],
+        "correct": 2,
+        "image": "images/coralrad-exam1-fall-2018/fig25.jpg"
+      },
+      {
+        "text": "All of the following are well-visualized in this radiograph, EXCEPT one. Which one is the EXCEPTION?",
+        "options": ["Dental caries", "Class V restoration", "Overhanging restoration margins", "Cone cut"],
+        "correct": 1,
+        "image": "images/coralrad-exam1-fall-2018/fig26.jpg"
+      },
+      {
+        "text": "Which type of radiograph is this best described as?",
+        "options": ["Horizontal bitewing", "Vertical bitewing", "Mandibular periapical", "Occlusal"],
+        "correct": 2,
+        "image": "images/coralrad-exam1-fall-2018/fig27.jpg"
+      },
+      {
+        "text": "Calculus is noted in this radiograph.",
+        "options": ["True", "False"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2018/fig28.jpg"
+      },
+      {
+        "text": "Periodontal bone loss is noted in this radiograph.",
+        "options": ["True", "False"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2018/fig29.jpg"
+      },
+      {
+        "text": "Which of the following best describes this patient's age?",
+        "options": ["Less than 10 years of age", "10 - 30 years of age", "30 - 50 years of age", "50+ years of age"],
+        "correct": 3,
+        "image": "images/coralrad-exam1-fall-2018/fig30.jpg"
+      },
+      {
+        "text": "Ghost images are seen in this panoramic radiograph.",
+        "options": ["True", "False"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2018/fig31.jpg"
+      },
+      {
+        "text": "Which of the following best describes the radiopaque objects projected near the angles/rami of the mandible?",
+        "options": ["Poorly-defined", "Well-defined"],
+        "correct": 1,
+        "image": "images/coralrad-exam1-fall-2018/fig32.jpg"
+      },
+      {
+        "text": "Which of the following best describes the radiopaque objects projected near the angles of the mandible?",
+        "options": ["irregular in shape", "unilocular in shape"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2018/fig33.jpg"
+      },
+      {
+        "text": "The location of this radiograph is the anterior maxilla.",
+        "options": ["True", "False"],
+        "correct": 1,
+        "image": "images/coralrad-exam1-fall-2018/fig34.jpg"
+      },
+      {
+        "text": "The shape of the radiopaque entity projected near the crowns of the teeth is best described as:",
+        "options": ["(Curvi)linear", "Systemic lupus erythematosus-oid", "Multilocular", "Irregular"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2018/fig35.jpg"
+      },
+      {
+        "text": "Calculus is present in this radiograph.",
+        "options": ["True", "False"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2018/fig36.jpg"
+      },
+      {
+        "text": "The internal structure of the entity in the apical portion of the #12 region is best described as:",
+        "options": ["Radiolucent and containing a linear radiopacity", "Radiopaque and containing a linear radiopacity"],
+        "correct": 1,
+        "image": "images/coralrad-exam1-fall-2018/fig37.jpg"
+      },
+      {
+        "text": "The shape of the entity in the apical portion of the #12 region is best described as:",
+        "options": ["Round and containing a linear structure inside of it", "Irregular", "Multilocular", "Punched out"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2018/fig38.jpg"
+      },
+      {
+        "text": "The effects on adjacent structures from the entity in the apical portion of the #12 region is best described as:",
+        "options": ["Displacement of nearby roots", "Resorption of nearby roots", "Communication with the left maxillary sinus", "No effects on adjacent structures are observed"],
+        "correct": 3,
+        "image": "images/coralrad-exam1-fall-2018/fig39.jpg"
+      },
+      {
+        "text": "Considering the entire radiographic presentation, the entity in the #12 region is most likely:",
+        "options": ["Trabecular bone", "Supernumerary tooth", "Retained root fragment", "Lip piercing"],
+        "correct": 2,
+        "image": "images/coralrad-exam1-fall-2018/fig40.jpg"
+      },
+      {
+        "text": "Which of the following teeth has a large, well-visualized carious lesion that cannot be cervical burnout?",
+        "options": ["#17", "#18", "#19", "#20"],
+        "correct": 1,
+        "image": "images/coralrad-exam1-fall-2018/fig41.jpg"
+      },
+      {
+        "text": "All of the following teeth appear to have dental caries, EXCEPT one. Which one is the EXCEPTION?",
+        "options": ["#11", "#12", "#13", "#14"],
+        "correct": 3,
+        "image": "images/coralrad-exam1-fall-2018/fig42.jpg"
+      },
+      {
+        "text": "What type of radiograph is this?",
+        "options": ["Horizontal bitewing", "Vertical bitewing", "Premolar periapical", "Molar periapical"],
+        "correct": 1,
+        "image": "images/coralrad-exam1-fall-2018/fig43.jpg"
+      },
+      {
+        "text": "All of the following findings are present in this radiograph, EXCEPT one. Which one is the EXCEPTION?",
+        "options": ["Root canal treatment (gutta percha)", "Fully calcified canal", "Crown", "Periapical lucency"],
+        "correct": 1,
+        "image": "images/coralrad-exam1-fall-2018/fig44.jpg"
+      },
+      {
+        "text": "All of the following findings are present in this radiograph, EXCEPT one. Which one is the EXCEPTION?",
+        "options": ["Fractured teeth", "Caries", "Periodontal bone loss", "Calculus"],
+        "correct": 1,
+        "image": "images/coralrad-exam1-fall-2018/fig45.jpg"
+      }
+    ]
+  },
+  "coralrad-exam1-fall-2019": {
+    "title": "Clinical Oral Radiology Exam 1 (Fall 2019)",
+    "type": "coralrad",
+    "subtype": "exam1",
+    "questions": [
+      {
+        "text": "Which of the following teeth has radiopaque material in its root canal space?",
+        "options": ["Tooth #9", "Tooth #10", "Tooth #11", "Tooth #12"],
+        "correct": 2,
+        "image": "images/coralrad-exam1-fall-2019/fig1.jpg"
+      },
+      {
+        "text": "Which of the following teeth has a small periapical radiolucent lesion?",
+        "options": ["Tooth #9", "Tooth #10", "Tooth #11", "Tooth #12"],
+        "correct": 1,
+        "image": "images/coralrad-exam1-fall-2019/fig2.jpg"
+      },
+      {
+        "text": "Periodontal bone loss is present in this image.",
+        "options": ["True", "False"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2019/fig3.jpg"
+      },
+      {
+        "text": "The shape of the mandibular condyles is best described as Image 2A: Image 2B: Image 2C:",
+        "options": ["Irregular", "Round"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2019/fig4.jpg"
+      },
+      {
+        "text": "All of the following are present EXCEPT one. Which of the following is the EXCEPTION? Image 2A: Image 2B: Image 2C:",
+        "options": ["Root canal treatment / gutta percha", "Retained roots / root fragments", "Hyoid bone", "Inferior nasal concha"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2019/fig5.jpg"
+      },
+      {
+        "text": "Caries is present on the mesial of #21. Image 2A: Image 2B: Image 2C:",
+        "options": ["True", "False"],
+        "correct": 1,
+        "image": "images/coralrad-exam1-fall-2019/fig6.jpg"
+      },
+      {
+        "text": "Periodontal bone loss is present in these images. Image 2A: Image 2B: Image 2C:",
+        "options": ["True", "False"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2019/fig7.jpg"
+      },
+      {
+        "text": "How many teeth are present in this image?",
+        "options": ["25", "26", "27", "28"],
+        "correct": 1,
+        "image": "images/coralrad-exam1-fall-2019/fig8.jpg"
+      },
+      {
+        "text": "The hyoid bone is visualized.",
+        "options": ["True", "False"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2019/fig9.jpg"
+      },
+      {
+        "text": "The stylohyoid ligament is visualized.",
+        "options": ["True", "False"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2019/fig10.jpg"
+      },
+      {
+        "text": "All of the following are present EXCEPT one. Which of the following is the EXCEPTION? Image 4A: Image 4B:",
+        "options": ["Dental caries", "Periapical radiolucency", "Hyoid bone", "Carotid calcifications"],
+        "correct": 3,
+        "image": "images/coralrad-exam1-fall-2019/fig11.jpg"
+      },
+      {
+        "text": "There is dense, reactive bone formation around tooth #20. Which of the following best describes the internal structure of the dense, reactive bone formation? Image 4A: Image 4B:",
+        "options": ["Radiolucent", "Radiopaque"],
+        "correct": 1,
+        "image": "images/coralrad-exam1-fall-2019/fig12.jpg"
+      },
+      {
+        "text": "Which tooth is fractured?",
+        "options": ["Tooth #7", "Tooth #8", "Tooth #9", "Tooth #10"],
+        "correct": 2,
+        "image": "images/coralrad-exam1-fall-2019/fig13.jpg"
+      },
+      {
+        "text": "The shape of the fracture are best described as:",
+        "options": ["Triangular", "Linear", "Irregular", "Root"],
+        "correct": 2,
+        "image": "images/coralrad-exam1-fall-2019/fig14.jpg"
+      },
+      {
+        "text": "The location of the fracture is best described as:",
+        "options": ["Mid-root level", "Apical third of the root", "Incisal edge", "Mesial crown"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2019/fig15.jpg"
+      },
+      {
+        "text": "The mandibular condyles are severely irregular in shape.",
+        "options": ["True", "False"],
+        "correct": 1,
+        "image": "images/coralrad-exam1-fall-2019/fig16.jpg"
+      },
+      {
+        "text": "All of the following are present EXCEPT one. Which of the following is the EXCEPTION?",
+        "options": ["Class I restoration", "Class II restoration", "Class III restoration", "Crown"],
+        "correct": 2,
+        "image": "images/coralrad-exam1-fall-2019/fig17.jpg"
+      },
+      {
+        "text": "Which of the following is visible in this radiographic examination?",
+        "options": ["Plaque", "Calculus", "Caries", "Class I restoration"],
+        "correct": 1,
+        "image": "images/coralrad-exam1-fall-2019/fig18.jpg"
+      },
+      {
+        "text": "Which of the following aspects of this panoramic radiograph is NOT within normal limits?",
+        "options": ["The number of teeth", "The pulp chambers", "The mandibular condyles", "The inferior nasal conchae"],
+        "correct": 1,
+        "image": "images/coralrad-exam1-fall-2019/fig19.jpg"
+      },
+      {
+        "text": "A radiolucency is noted on the distal aspect of #18. This finding is most likely: Image 9A: Image 9B:",
+        "options": ["Caries", "Cervical burnout", "Radiolucent restoration", "Root canal treatment"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2019/fig20.jpeg"
+      },
+      {
+        "text": "A radiolucency is noted on the mesial aspect of #13. This finding is most likely: Image 9A: Image 9B:",
+        "options": ["Caries", "Cervical burnout", "Radiolucent restoration", "Root canal treatment"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2019/fig21.jpeg"
+      },
+      {
+        "text": "There is an intrabony radiolucency in the #3 region. Which of the following best describes its borders?",
+        "options": ["Moderately well-corticated", "Non-corticated"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2019/fig22.jpg"
+      },
+      {
+        "text": "There is an intrabony radiolucency in the #3 region. Which of the following best describes its borders?",
+        "options": ["Moderately well-defined", "Poorly-defined"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2019/fig23.jpg"
+      },
+      {
+        "text": "There is an intrabony radiolucency in the #3 region. Which is most likely the diagnosis?",
+        "options": ["Extraction socket", "Maxillary sinus", "Root canal treatment", "Retained roots"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2019/fig24.jpg"
+      },
+      {
+        "text": "Which of the following BEST describes the borders of the object on the floor of maxillary sinus.",
+        "options": ["Moderately well-defined", "Poorly-defined"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2019/fig25.jpg"
+      },
+      {
+        "text": "Describe the internal structure of the object on the floor of maxillary sinus.",
+        "options": ["Radiopaque", "Radiolucent"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2019/fig26.jpg"
+      },
+      {
+        "text": "This radiograph is a:",
+        "options": ["Left maxillary periapical", "Right maxillary periapical", "Left maxillary bitewing", "Right maxillary bitewing"],
+        "correct": 1,
+        "image": "images/coralrad-exam1-fall-2019/fig27.jpg"
+      },
+      {
+        "text": "All of the following are present EXCEPT one. Which of the following is the EXCEPTION?",
+        "options": ["Dental caries", "Class V restoration", "Overhanging restoration margins", "Cone cut"],
+        "correct": 1,
+        "image": "images/coralrad-exam1-fall-2019/fig28.jpg"
+      },
+      {
+        "text": "Ghost images are seen in this panoramic radiograph. Image 13:",
+        "options": ["True", "False"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2019/fig29.jpg"
+      },
+      {
+        "text": "Which of the following best describes the edges/borders of the foreign objects projected near the angles/rami of the mandible?",
+        "options": ["Poorly-defined", "Well-defined"],
+        "correct": 1,
+        "image": "images/coralrad-exam1-fall-2019/fig30.jpg"
+      },
+      {
+        "text": "Which of the following best describes the shape of the foreign objects projected near the angles/rami of the mandible?",
+        "options": ["Irregular", "Unilocular"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2019/fig31.jpg"
+      },
+      {
+        "text": "Which of the following best describes the internal structure of the foreign objects projected near the angles/rami of the mandible?",
+        "options": ["Radiolucent", "Radiopaque"],
+        "correct": 1,
+        "image": "images/coralrad-exam1-fall-2019/fig32.jpg"
+      },
+      {
+        "text": "There are a few entities inferior to the alveolar crest in the #2 region. Which of the following best describes their internal structure?",
+        "options": ["Radiolucent", "Radiopaque"],
+        "correct": 1,
+        "image": "images/coralrad-exam1-fall-2019/fig33.jpg"
+      },
+      {
+        "text": "There are a few entities inferior to the alveolar crest in the #2 region. Which of the following best describes their borders/edges?",
+        "options": ["Well-defined", "Poorly-defined"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2019/fig34.jpg"
+      },
+      {
+        "text": "There are a few entities inferior to the alveolar crest in the #2 region. Which would be the most logical impression of these entities?",
+        "options": ["Artifacts", "Accidentally retained surgical instruments", "Retained root fragments", "Lip ring"],
+        "correct": 2,
+        "image": "images/coralrad-exam1-fall-2019/fig35.jpg"
+      },
+      {
+        "text": "All of the following are present EXCEPT one. Which of the following is the EXCEPTION?",
+        "options": ["Fractured root", "Fractured/missing crown", "Periodontal bone loss", "Dental implant"],
+        "correct": 3,
+        "image": "images/coralrad-exam1-fall-2019/fig36.jpg"
+      },
+      {
+        "text": "Based on description and radiographic presentation of the two objects in the #14 region, what are they most likely?",
+        "options": ["Dental implants", "Retained roots of #14", "Retained roots of #J", "Retained roots of #14 and #15"],
+        "correct": 1,
+        "image": "images/coralrad-exam1-fall-2019/fig37.jpg"
+      },
+      {
+        "text": "#7 has a well-defined radiopacity projected in the crown of the tooth. Which of the following is the most likely location of the restoration?",
+        "options": ["Inside the clinical crown", "Buccal", "Mesial", "Distal"],
+        "correct": 1,
+        "image": "images/coralrad-exam1-fall-2019/fig38.jpg"
+      },
+      {
+        "text": "All of the following radiographic techniques would allow you to determine the exact (buccal-lingual, mesial-distal, and superior-inferior) location of the restoration EXCEPT one. Which of the following is the EXCEPTION?",
+        "options": ["CBCT (3D imaging)", "Take another periapical radiograph from another angle (SLOB rule)", "Take a panoramic radiograph", "Take an occlusal radiograph"],
+        "correct": 2,
+        "image": "images/coralrad-exam1-fall-2019/fig39.jpg"
+      },
+      {
+        "text": "All of the following are likely to be dental caries EXCEPT one. Which of the following is the EXCEPTION? Image A: Image B: Image C: Image D:",
+        "options": ["#F mesial", "#K distal", "#L distal", "#J mesial"],
+        "correct": 1,
+        "image": "images/coralrad-exam1-fall-2019/fig40.jpeg"
+      },
+      {
+        "text": "Which of the following best describes the borders of the lesion in the right posterior inferior mandible?",
+        "options": ["Poorly-defined", "Well-defined"],
+        "correct": 1,
+        "image": "images/coralrad-exam1-fall-2019/fig41.jpg"
+      },
+      {
+        "text": "Which of the following best describes the borders of the lesion in the right posterior inferior mandible?",
+        "options": ["Non corticated", "Well-corticated"],
+        "correct": 1,
+        "image": "images/coralrad-exam1-fall-2019/fig42.jpg"
+      },
+      {
+        "text": "Which of the following best describes the internal structure of the lesion in the right posterior inferior mandible?",
+        "options": ["Radiopaque", "Radiolucent", "Mixed"],
+        "correct": 1,
+        "image": "images/coralrad-exam1-fall-2019/fig43.jpg"
+      },
+      {
+        "text": "Which of the following best describes the effects on adjacent structures caused by the lesion in the right posterior inferior mandible?",
+        "options": ["None", "Root resorption", "Thinning of the inferior border of the mandible", "Destruction of the mandibular canal"],
+        "correct": 2,
+        "image": "images/coralrad-exam1-fall-2019/fig44.jpg"
+      },
+      {
+        "text": "Tooth #3 has been root canal treated.",
+        "options": ["True", "False"],
+        "correct": 1,
+        "image": "images/coralrad-exam1-fall-2019/fig45.jpg"
+      },
+      {
+        "text": "Tooth #5 has a periapical radiolucency.",
+        "options": ["True", "False"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2019/fig46.jpg"
+      },
+      {
+        "text": "A diagonal line is projected over the root of #6. The radiographic presentation, and in particular the location, is consistent with:",
+        "options": ["dental caries", "cervical burnout", "root fracture", "the nasolabial fold"],
+        "correct": 3,
+        "image": "images/coralrad-exam1-fall-2019/fig47.jpg"
+      },
+      {
+        "text": "Multiple vertical radiopacities are projected over the bilateral mandibular rami, consistent with:",
+        "options": ["the patient's hair", "the spine", "stylohyoid ligaments", "the hyoid bone"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2019/fig48.jpg"
+      },
+      {
+        "text": "All of the following are reasonable entities to consider for the well-defined irregularly-shaped radiopacity near the left mandibular angle EXCEPT one. Which of the following is the EXCEPTION?",
+        "options": ["Sialolith", "Calcified lymph node", "Calcified thyroid cartilage"],
+        "correct": 2,
+        "image": "images/coralrad-exam1-fall-2019/fig49.jpg"
+      },
+      {
+        "text": "Are you excited for the CBCT block in the second half of the semester? (Any answer will receive full credit.)",
+        "options": ["Heck yeah!", "3D interpretation is intimidating.", "What is a CBCT?", "Thank you for the free points."],
+        "correct": 3
+      }
+    ]
+  },
+  "coralrad-exam1-fall-2020": {
+    "title": "Clinical Oral Radiology Exam 1 (Fall 2020)",
+    "type": "coralrad",
+    "subtype": "exam1",
+    "questions": [
+      {
+        "text": "There is a disto-cervical radiolucency associated with tooth #3. Which is the BEST impression of this radiolucency?",
+        "options": ["Caries", "Cervical burnout", "Root canal treatment", "Amalgam restoration"],
+        "correct": 0
+      },
+      {
+        "text": "Tooth #3 has undergone root canal treatment.",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "The radiolucency superior to tooth #3 is most likely:",
+        "options": ["The right maxillary sinus", "The nasal cavity", "The incisive foramen", "The lingual foramen Image 2 and questions set:"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2020/fig3.jpeg"
+      },
+      {
+        "text": "Calculus is present in the anterior mandible.",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "text": "Periodontal bone loss is present in the anterior mandible.",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "text": "This radiograph is a vertical bitewing.",
+        "options": ["True", "False Image 3 and questions set:"],
+        "correct": 1,
+        "image": "images/coralrad-exam1-fall-2020/fig6.jpeg"
+      },
+      {
+        "text": "This radiograph is a molar periapical.",
+        "options": ["True", "False Image 4 and questions set:"],
+        "correct": 1,
+        "image": "images/coralrad-exam1-fall-2020/fig7.jpeg"
+      },
+      {
+        "text": "Recall that pulp and root canal spaces decrease in size with age. Based on your knowledge and experience, which of the following categories is MOST likely to include the patient’s actual age?",
+        "options": ["Less than 10 years old", "Between 10 and 25 years old", "Between 25 and 40 years old", "Greater than 40 years old"],
+        "correct": 3
+      },
+      {
+        "text": "All of the following findings are present in the radiograph EXCEPT one. Which of the following is the EXCEPTION?",
+        "options": ["Caries", "Root restorations", "Gutta percha (root canal treatment material)", "Periodontal bone loss Image 5 and questions set:"],
+        "correct": 2,
+        "image": "images/coralrad-exam1-fall-2020/fig9.jpeg"
+      },
+      {
+        "text": "A supernumerary tooth is present. Where is this supernumerary tooth located?",
+        "options": ["#1 region", "#8 region", "#13 region", "#30 region"],
+        "correct": 0
+      },
+      {
+        "text": "The supernumerary tooth appears to be displacing/moving the nearby teeth.",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "The supernumerary tooth appears to be resorbing at least one nearby tooth.",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "text": "The supernumerary tooth is impacted/unerupted.",
+        "options": ["True", "False Image 6 and questions set:"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2020/fig13.jpeg"
+      },
+      {
+        "text": "One tooth is marked with a red star. What is the number of this tooth?",
+        "options": ["#3", "#15", "#1", "#14"],
+        "correct": 0
+      },
+      {
+        "text": "This tooth has a lesion. Which of the following best describes the location of this lesion?",
+        "options": ["Mesio-cervical", "Disto-cervical", "Periapical", "Occlusal"],
+        "correct": 1
+      },
+      {
+        "text": "The internal structure of this lesion is best described as:",
+        "options": ["Radiolucent", "Radiopaque"],
+        "correct": 0
+      },
+      {
+        "text": "The best impression for this lesion is:",
+        "options": ["Apical periodontitis", "Cervical burnout", "Cervical caries", "Missing restoration Image 7 and questions set:"],
+        "correct": 2,
+        "image": "images/coralrad-exam1-fall-2020/fig17.jpeg"
+      },
+      {
+        "text": "#20 appears to have a periapical lucency. Which of the following best describes the bone surrounding the periapical lucency?",
+        "options": ["Within normal limits", "Some dense, reactive bone formation", "Scalloped", "Hypervascular"],
+        "correct": 1
+      },
+      {
+        "text": "#20 appears to have a periapical lucency. Which of the following is the most likely reason for this lucency?",
+        "options": ["Apical periodontitis (periapical infection)", "Mental foramen is overlapping", "Primary intraosseous carcinoma", "Cemento-osseous dysplasia Image 8 and questions set:"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2020/fig19.jpeg"
+      },
+      {
+        "text": "Two radiopaque objects are noted between the roots of #20 and #21. These objects would be best described as:",
+        "options": ["Well-defined", "Poorly-defined"],
+        "correct": 0
+      },
+      {
+        "text": "Two radiopaque objects are noted between the roots of #20 and #21. These objects are most likely:",
+        "options": ["Resorbing the root of #20", "Resorbing the root of #21", "Having no effects on the adjacent structures"],
+        "correct": 2
+      },
+      {
+        "text": "Two radiopaque objects are noted between the roots of #20 and #21. The BEST impression of these objects is:",
+        "options": ["Dental implants", "Retained primary root fragments", "Dense reactive bone formation", "Calculus Image 9 and questions set:"],
+        "correct": 1,
+        "image": "images/coralrad-exam1-fall-2020/fig22.jpeg"
+      },
+      {
+        "text": "This radiograph is a:",
+        "options": ["Horizontal bitewing", "Periapical", "Occlusal", "Panoramic"],
+        "correct": 0
+      },
+      {
+        "text": "Multiple interproximal radiolucencies are present in this image. ALL of these radiolucencies extend PRECISELY from the CEJ to the alveolar crest.",
+        "options": ["The second sentence is TRUE.", "The second sentence is FALSE."],
+        "correct": 1
+      },
+      {
+        "text": "Multiple interproximal radiolucencies are present in this image. The borders of these lesions are BEST described as:",
+        "options": ["Extremely sharp and extremely well-defined", "Somewhat blended and moderately well-defined", "Well-corticated with thick borders"],
+        "correct": 1
+      },
+      {
+        "text": "Multiple interproximal radiolucencies are present in this image. The BEST impression of these radiolucencies is:",
+        "options": ["Cervical caries", "Cervical Burnout", "Periodontal disease", "Apical periodontitis Image 10 and questions set:"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2020/fig26.jpeg"
+      },
+      {
+        "text": "Which of the following is the BEST impression for the entity indicated by the RED arrow?",
+        "options": ["Stylohyoid ligament", "Carotid/vascular calcifications", "Hyoid bone", "Clavicle"],
+        "correct": 1
+      },
+      {
+        "text": "Which of the following is the BEST impression for the entity indicated by the BLUE arrow?",
+        "options": ["Stylohyoid ligament", "Carotid/vascular calcifications", "Hyoid bone", "Clavicle Image 11 and questions set:"],
+        "correct": 2,
+        "image": "images/coralrad-exam1-fall-2020/fig28.jpeg"
+      },
+      {
+        "text": "Which of the following is the BEST impression for the entity indicated by the BLUE curve? (There is another similar entity on the patient’s right side if you would like to see it without the BLUE marking in the way.)",
+        "options": ["Base of the skull", "Inferior nasal concha", "Hard palate", "Cervical spine Image 12 and questions set:"],
+        "correct": 1,
+        "image": "images/coralrad-exam1-fall-2020/fig29.jpeg"
+      },
+      {
+        "text": "What type of radiograph is this best described as?",
+        "options": ["Horizontal bitewing", "Vertical bitewing", "Mandibular periapical", "Maxillary periapical"],
+        "correct": 2
+      },
+      {
+        "text": "Compared to the surrounding/normal bone, what is the internal structure of the entity in the #18 region?",
+        "options": ["More radiolucent", "More radiopaque", "Isoradiodense (same radiodensity)"],
+        "correct": 0
+      },
+      {
+        "text": "Which of the following best describes the borders of the entity in the #18 region?",
+        "options": ["Fairly well-defined and well-corticated except for superiorly", "Fairly well-defined and non-corticated", "Poorly defined except for mesially", "Poorly defined all around"],
+        "correct": 0
+      },
+      {
+        "text": "What is your impression of the entity in the #18 region?",
+        "options": ["Periapical pathology", "Extraction socket", "Dental caries", "None of other answer choices are correct Image 13 and questions set:"],
+        "correct": 1,
+        "image": "images/coralrad-exam1-fall-2020/fig33.jpeg"
+      },
+      {
+        "text": "Which of the following best describes the borders of the lesion in the right posterior inferior mandible?",
+        "options": ["Poorly-defined", "Well-defined"],
+        "correct": 1
+      },
+      {
+        "text": "Which of the following best describes the borders of the lesion in the right posterior inferior mandible?",
+        "options": ["Non corticated", "Well-corticated"],
+        "correct": 1
+      },
+      {
+        "text": "Which of the following best describes the internal structure of the lesion in the right posterior inferior mandible?",
+        "options": ["Radiopaque", "Radiolucent", "Mixed"],
+        "correct": 1
+      },
+      {
+        "text": "Which of the following best describes the effects on adjacent structures caused by the lesion in the right posterior inferior mandible?",
+        "options": ["None", "Root resorption", "Thinning of the inferior border of the mandible", "Destruction of the mandibular canal Image 14 and questions set:"],
+        "correct": 2,
+        "image": "images/coralrad-exam1-fall-2020/fig37.jpeg"
+      },
+      {
+        "text": "Which of the following aspects of this panoramic radiograph is NOT within normal limits?",
+        "options": ["The number of teeth", "The pulp chambers", "The shape of the mandibular condyles", "The inferior nasal conchae"],
+        "correct": 1
+      },
+      {
+        "text": "Which of the following best describes the follicular space surrounding #17?",
+        "options": ["well-defined", "poorly-defined"],
+        "correct": 0
+      },
+      {
+        "text": "Which of the following best describes the follicular space surrounding #17?",
+        "options": ["well-corticated", "non-corticated"],
+        "correct": 0
+      }
+    ]
+  },
+  "coralrad-exam1-fall-2021": {
+    "title": "Clinical Oral Radiology Exam 1 (Fall 2021)",
+    "type": "coralrad",
+    "subtype": "exam1",
+    "questions": [
+      {
+        "text": "Which tooth has a periapical hypodense lesion?",
+        "options": ["#12", "#13", "#14", "#15"],
+        "correct": 2,
+        "image": "images/coralrad-exam1-fall-2021/fig1.jpeg"
+      },
+      {
+        "text": "Which tooth has the largest carious lesion?",
+        "options": ["#12", "#13", "#14", "#15"],
+        "correct": 2,
+        "image": "images/coralrad-exam1-fall-2021/fig2.jpeg"
+      },
+      {
+        "text": "The nasal cavity is visualized in this radiograph.",
+        "options": ["True", "False"],
+        "correct": 1,
+        "image": "images/coralrad-exam1-fall-2021/fig3.jpeg"
+      },
+      {
+        "text": "There is a periapical lesion in the #24/#25 region. Which of the following BEST describes the internal structure of the lesion?",
+        "options": ["Radiopaque", "Radiolucent", "Radiopaque surrounded by a radiolucent rim", "Radiolucent surrounded by a radiopaque rim"],
+        "correct": 2,
+        "image": "images/coralrad-exam1-fall-2021/fig4.jpeg"
+      },
+      {
+        "text": "The PDL space of #25 is still intact and visualized.",
+        "options": ["True", "False"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2021/fig5.jpeg"
+      },
+      {
+        "text": "All of the following are visualized in this image EXCEPT one. Which is the EXCEPTION?",
+        "options": ["Calculus", "Cervical burnout", "Trabecular bone", "Mental foramen"],
+        "correct": 3,
+        "image": "images/coralrad-exam1-fall-2021/fig6.jpeg"
+      },
+      {
+        "text": "Calcifications are noted in the bilateral neck region. Which of the following entities should be considered in your differential diagnosis for these calcifications in the neck?",
+        "options": ["Metallic screws", "Carotid calcifications", "Piercings / jewelry", "Ossified stylohyoid ligaments"],
+        "correct": 1,
+        "image": "images/coralrad-exam1-fall-2021/fig7.jpeg"
+      },
+      {
+        "text": "All of the following are visualized in this image EXCEPT one. Which is the EXCEPTION?",
+        "options": ["Class V caries", "Periodontal / alveolar bone loss", "Hyoid bone", "Crowns"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2021/fig8.jpeg"
+      },
+      {
+        "text": "Which of the following is a periapical hypodense lesion?",
+        "options": ["A", "B", "Neither A nor B is a periapical lesion"],
+        "correct": 1,
+        "image": "images/coralrad-exam1-fall-2021/fig9.jpeg"
+      },
+      {
+        "text": "Which of the following best describes this type of radiograph?",
+        "options": ["Left premolar bitewing", "Right maxillary premolar periapical", "Left maxillary molar periapical", "Right vertical bitewing"],
+        "correct": 1,
+        "image": "images/coralrad-exam1-fall-2021/fig10.jpeg"
+      },
+      {
+        "text": "Which of the following best describes this type of radiograph?",
+        "options": ["Left premolar bitewing", "Right maxillary premolar periapical", "Left maxillary molar periapical", "Right vertical bitewing"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2021/fig11.jpeg"
+      },
+      {
+        "text": "Caries on tooth #20 is most likely originating from which surface?",
+        "options": ["Distal", "Buccal", "Mesial", "Occlusal"],
+        "correct": 1,
+        "image": "images/coralrad-exam1-fall-2021/fig12.jpeg"
+      },
+      {
+        "text": "On the mesial of #30, just below the contact point, we see a radiolucency. This is most likely:",
+        "options": ["Caries", "Cervical burnout"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2021/fig13.jpeg"
+      },
+      {
+        "text": "On the distal of #30, we see a large radiolucency. This is most likely:",
+        "options": ["Caries", "Cervical burnout"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2021/fig14.jpeg"
+      },
+      {
+        "text": "Periodontal bone loss is present in this image.",
+        "options": ["True", "False"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2021/fig15.jpeg"
+      },
+      {
+        "text": "All of the following are present in this image EXCEPT for one. Which is the EXCEPTION?",
+        "options": ["Dental caries", "Missing teeth", "Ossified stylohyoid ligaments", "Dense reactive bone formation"],
+        "correct": 3,
+        "image": "images/coralrad-exam1-fall-2021/fig16.jpeg"
+      },
+      {
+        "text": "The clavicle is present in this panoramic radiograph.",
+        "options": ["True", "False"],
+        "correct": 1,
+        "image": "images/coralrad-exam1-fall-2021/fig17.jpeg"
+      },
+      {
+        "text": "A young patient presents with his mother for an initial dental visit. The patient's chief complaint was “tooth discoloration.” The attached panoramic radiograph is taken during the initial visit. Which of the following is striking about the patient's radiograph?",
+        "options": ["Generalized caries", "Generalized periodontal bone loss", "Generalized absence of pulp / root canal spaces", "Generalized periapical pathology"],
+        "correct": 2,
+        "image": "images/coralrad-exam1-fall-2021/fig18.jpeg"
+      },
+      {
+        "text": "A young patient presents with his mother for an initial dental visit. The patient's chief complaint was “tooth discoloration.” The attached panoramic radiograph is taken during the initial visit. The radiographic presentation is most consistent with:",
+        "options": ["Aggressive periodontitis", "Poor oral hygiene", "Dentinogenesis imperfecta", "Down syndrome"],
+        "correct": 2,
+        "image": "images/coralrad-exam1-fall-2021/fig19.jpeg"
+      },
+      {
+        "text": "All of the following are present in this radiograph EXCEPT one. Which of the following is the EXCEPTION?",
+        "options": ["Fractured teeth", "Caries", "Periodontal bone loss", "Calculus"],
+        "correct": 1,
+        "image": "images/coralrad-exam1-fall-2021/fig20.jpeg"
+      },
+      {
+        "text": "The radiopaque entities in the #6/#7 region and in the region superior to #10 are so radiopaque that they are probably made of metal.",
+        "options": ["The above statement is true.", "The above statement is false."],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2021/fig21.jpeg"
+      },
+      {
+        "text": "The stylohyoid ligaments are partially ossified.",
+        "options": ["True", "False"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2021/fig22.jpeg"
+      },
+      {
+        "text": "Which of the following best describes this type of radiograph?",
+        "options": ["Left mandibular premolar periapical", "Right mandibular anterior periapical", "Right mandibular canine periapical", "Left mandibular vertical bitewing"],
+        "correct": 2,
+        "image": "images/coralrad-exam1-fall-2021/fig23.jpeg"
+      },
+      {
+        "text": "All of the following are present in this radiograph EXCEPT one. Which of the following is the EXCEPTION?",
+        "options": ["Fractured teeth", "Caries / open margin", "Periodontal bone loss", "Calculus"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2021/fig24.jpeg"
+      },
+      {
+        "text": "Which of the following is the BEST impression for the curvilinear radiopacity projected in the mandible from the #20 region to the #30 region?",
+        "options": ["Metal from a facemask", "Orthodontic wire", "Facial jewelry / piercings", "Hardware from LeFort I surgery"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2021/fig25.jpeg"
+      }
+    ]
+  },
+  "coralrad-exam1-fall-2022": {
+    "title": "Clinical Oral Radiology Exam 1 (Fall 2022)",
+    "type": "coralrad",
+    "subtype": "exam1",
+    "questions": [
+      {
+        "text": "What are the names of Dr. Steinberg's cats? (Any answer will receive full credit as long as you guess!)",
+        "options": ["Tiger and Tully", "Maxilla and Mandible", "Opaque and Lucent", "Carrie and Sealant", "Scatter and Artifact"],
+        "correct": 4
+      },
+      {
+        "text": "All of the following are reasonable entities to consider for the well-defined irregularly-shaped radiopacity near the left mandibular angle EXCEPT one. Which of the following is the EXCEPTION?",
+        "options": ["Sialolith", "Calcified lymph node", "Calcified thyroid cartilage"],
+        "correct": 2,
+        "image": "images/coralrad-exam1-fall-2022/fig2.jpg"
+      },
+      {
+        "text": "Multiple vertical radiopacities are projected over the bilateral mandibular rami, consistent with:",
+        "options": ["the patient's hair", "The spine", "Stylohyoid ligaments", "Carotid calcifications"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2022/fig3.jpg"
+      },
+      {
+        "text": "Tooth #5 has a periapical radiolucency.",
+        "options": ["True", "False"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2022/fig4.jpg"
+      },
+      {
+        "text": "Tooth #3 has been root canal treated.",
+        "options": ["True", "False"],
+        "correct": 1,
+        "image": "images/coralrad-exam1-fall-2022/fig5.jpg"
+      },
+      {
+        "text": "The right mandibular condylar head appears flattened.",
+        "options": ["True", "False"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2022/fig6.jpg"
+      },
+      {
+        "text": "Which of the following is the best impression of the lesion in the right posterior inferior mandible?",
+        "options": ["Dentigerous cyst", "Stafne defect", "Hyoid bone", "Sialolith"],
+        "correct": 1,
+        "image": "images/coralrad-exam1-fall-2022/fig7.jpg"
+      },
+      {
+        "text": "Which of the following best describes the effects on adjacent structures caused by the lesion in the right posterior inferior mandible?",
+        "options": ["None", "Root resorption", "Thinning of the inferior border of the mandible", "Destruction of the mandibular canal"],
+        "correct": 2,
+        "image": "images/coralrad-exam1-fall-2022/fig8.jpg"
+      },
+      {
+        "text": "Which of the following best describes the internal structure of the lesion in the right posterior inferior mandible?",
+        "options": ["Radiopaque", "Radiolucent", "50% radiolucent and 50% radiopaque"],
+        "correct": 1,
+        "image": "images/coralrad-exam1-fall-2022/fig9.jpg"
+      },
+      {
+        "text": "Which of the following best describes the borders of the lesion in the right posterior inferior mandible?",
+        "options": ["Non corticated", "Well-corticated"],
+        "correct": 1,
+        "image": "images/coralrad-exam1-fall-2022/fig10.jpg"
+      },
+      {
+        "text": "Which of the following best describes the borders of the lesion in the right posterior inferior mandible?",
+        "options": ["Poorly-defined", "Well-defined"],
+        "correct": 1,
+        "image": "images/coralrad-exam1-fall-2022/fig11.jpg"
+      },
+      {
+        "text": "*Please see attachment* All of the following are likely to be dental caries EXCEPT one. Which of the following is the EXCEPTION?",
+        "options": ["#E mesial", "#K distal", "#L distal", "#I distal"],
+        "correct": 1,
+        "image": "images/coralrad-exam1-fall-2022/fig12.jpg"
+      },
+      {
+        "text": "There are a few entities inferior to the alveolar crest in the #2 region. Which would be the most logical impression of these entities?",
+        "options": ["Artifacts", "Accidentally retained surgical instruments", "Retained root fragments", "Broken burs"],
+        "correct": 2,
+        "image": "images/coralrad-exam1-fall-2022/fig13.jpg"
+      },
+      {
+        "text": "There are a few entities inferior to the alveolar crest in the #2 region. Which of the following best describes their borders/edges?",
+        "options": ["Well-defined", "Poorly-defined", "Their borders cannot be visualized"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2022/fig14.jpg"
+      },
+      {
+        "text": "There are a few entities inferior to the alveolar crest in the #2 region. Which of the following best describes their internal structure?",
+        "options": ["Radiolucent", "Radiopaque", "Metallic radiodensity"],
+        "correct": 1,
+        "image": "images/coralrad-exam1-fall-2022/fig15.jpg"
+      },
+      {
+        "text": "There is an intrabony radiolucency in the #3 region. Which is most likely the diagnosis?",
+        "options": ["Extraction socket", "Maxillary sinus", "Root canal treatment", "Retained roots"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2022/fig16.jpg"
+      },
+      {
+        "text": "There is an intrabony radiolucency in the #3 region. Which of the following BEST describes its borders?",
+        "options": ["Moderately well-defined", "Poorly-defined"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2022/fig17.jpg"
+      },
+      {
+        "text": "There is an intrabony radiolucency in the #3 region. Which of the following BEST describes its borders?",
+        "options": ["Moderately well-corticated", "Non-corticated"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2022/fig18.jpg"
+      },
+      {
+        "text": "A radiolucency is noted on the mesial aspect of #13. This finding is most likely:",
+        "options": ["Caries", "Cervical burnout", "Radiolucent restoration", "Enamel pearl"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2022/fig19.jpg"
+      },
+      {
+        "text": "A radiolucency is noted on the distal aspect of #18. This finding is most likely:",
+        "options": ["Caries", "Cervical burnout", "Radiolucent restoration", "Root canal treatment"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2022/fig20.jpg"
+      },
+      {
+        "text": "#24 has a rectangular mesio-incisal radiolucency. Based on the location and borders of this finding, which of the following is the better impression?",
+        "options": ["Dental caries", "Fractured tooth"],
+        "correct": 1,
+        "image": "images/coralrad-exam1-fall-2022/fig21.jpg"
+      },
+      {
+        "text": "#24 has a rectangular mesio-incisal radiolucency. Which of the following best describes the borders of this finding?",
+        "options": ["Well defined", "Poorly defined"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2022/fig22.jpg"
+      },
+      {
+        "text": "Vertical radiolucent channels are noted between the roots of some of the teeth. The best impression for these is:",
+        "options": ["Periodontal bone loss", "Nutrient canals", "Dental caries", "Periapical cemento-osseous dysplasia"],
+        "correct": 1,
+        "image": "images/coralrad-exam1-fall-2022/fig23.jpg"
+      },
+      {
+        "text": "Severe periodontal bone loss is present.",
+        "options": ["True", "False"],
+        "correct": 1,
+        "image": "images/coralrad-exam1-fall-2022/fig25.jpg"
+      },
+      {
+        "text": "A circular entity is noted near the right mandibular angle. Which of the following is the best impression of this entity?",
+        "options": ["Ossified stylohyoid ligament", "Ossified thyroid cartilage", "Calcified lymph node", "Trachea"],
+        "correct": 2,
+        "image": "images/coralrad-exam1-fall-2022/fig26.jpg"
+      },
+      {
+        "text": "A circular entity is noted near the right mandibular angle. Which of the following best describes the borders of this entity?",
+        "options": ["Well defined", "Poorly defined"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2022/fig27.jpg"
+      },
+      {
+        "text": "A circular entity is noted near the right mandibular angle. Which of the following best describes the internal structure of this entity?",
+        "options": ["Radiopaque", "Radiolucent"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2022/fig28.jpg"
+      },
+      {
+        "text": "Which of the following findings is present in the left mandibular body?",
+        "options": ["Root canal treatment", "Retained primary tooth", "Calcified lymph node", "Small Stafne defect"],
+        "correct": 3,
+        "image": "images/coralrad-exam1-fall-2022/fig29.jpg"
+      },
+      {
+        "text": "Flattening of at least some parts of the TMJs is noted in this image.",
+        "options": ["True", "False"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2022/fig30.jpg"
+      },
+      {
+        "text": "Flattening of at least some teeth is noted in this image.",
+        "options": ["True", "False"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2022/fig31.jpg"
+      },
+      {
+        "text": "#21 has undergone root canal treatment.",
+        "options": ["True", "False"],
+        "correct": 1,
+        "image": "images/coralrad-exam1-fall-2022/fig32.jpg"
+      },
+      {
+        "text": "#21 has a periapical hypodensity.",
+        "options": ["True", "False"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2022/fig33.jpg"
+      },
+      {
+        "text": "#21 has a greatly widened PDL space, particularly on the mesial.",
+        "options": ["True", "False"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2022/fig34.jpg"
+      },
+      {
+        "text": "At the inferior aspect of the field of view, on the patient's right side, a diagonal linear radiopacity is present, which is the same density as the patient's crowns. Based on its radiodensity, which of the following is the best impression:",
+        "options": ["Sternocleidomastoid", "Hyoid", "Something made of metal", "Stylohyoid ligament"],
+        "correct": 2,
+        "image": "images/coralrad-exam1-fall-2022/fig35.jpg"
+      },
+      {
+        "text": "At the inferior aspect of the field of view, on the patient's right side, a diagonal linear radiopacity is present, which is the same density as the patient's crowns. This entity is best described as:",
+        "options": ["Well defined", "Poorly defined", "Multilocular", "Scalloped"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2022/fig36.jpg"
+      },
+      {
+        "text": "The stylohyoid ligament is visualized.",
+        "options": ["True", "False"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2022/fig37.jpg"
+      },
+      {
+        "text": "The hyoid bone is visualized.",
+        "options": ["True", "False"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2022/fig38.jpg"
+      },
+      {
+        "text": "How many teeth are present in this image?",
+        "options": ["25", "26", "27", "28"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2022/fig39.jpg"
+      },
+      {
+        "text": "Calculus is present in this image.",
+        "options": ["True", "False"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2022/fig40.jpg"
+      },
+      {
+        "text": "Radiolucencies are noted on the incisal edges of the incisors. The shape of these defects is crater-shaped. Its borders are best described as:",
+        "options": ["Well defined", "Poorly defined / ill defined"],
+        "correct": 0,
+        "image": "images/coralrad-exam1-fall-2022/fig41.jpg"
+      },
+      {
+        "text": "This radiograph is best described as a:",
+        "options": ["Periapical of left anterior mandible", "Periapical of right anterior mandible", "Periapical of left anterior maxilla", "Periapical of right anterior maxilla", "Left bitewing", "Right bitewing"],
+        "correct": 1,
+        "image": "images/coralrad-exam1-fall-2022/fig42.jpg"
+      },
+      {
+        "text": "All of the following are present in this image EXCEPT one. Which of the following is the EXCEPTION?",
+        "options": ["Root canal treated teeth", "Crowns and fillings", "Primary tooth", "Hyoid bone"],
+        "correct": 2,
+        "image": "images/coralrad-exam1-fall-2022/fig43.jpg"
+      },
+      {
+        "text": "In the #19 region, there is a radiolucent shape in the bone that resembles the shape of a tooth. Which of the following is the best impression of this region?",
+        "options": ["Ghost tooth", "Dental caries", "Extraction socket", "Dentigerous cyst"],
+        "correct": 2,
+        "image": "images/coralrad-exam1-fall-2022/fig44.jpg"
+      },
+      {
+        "text": "Which one of the following teeth has the largest carious lesion?",
+        "options": ["#2", "#14", "#17", "#31"],
+        "correct": 3,
+        "image": "images/coralrad-exam1-fall-2022/fig45.jpg"
+      }
+    ]
+  },
+  "coralrad-exam2-fall-2017": {
+    "title": "Clinical Oral Radiology Exam 2 (Fall 2017)",
+    "type": "coralrad",
+    "subtype": "exam2",
+    "questions": [
+      {
+        "text": "Which of the following best describes the maxillary sinuses?",
+        "options": ["Filled with air", "Filled with soft-tissue density material", "The maxillary sinuses are not visualized in this coronal slice", "The inferior borders of the maxillary sinuses are poorly defined"],
+        "correct": 1,
+        "image": "images/coralrad-exam2-fall-2017/fig1.jpeg"
+      },
+      {
+        "text": "Which if the following structures is NOT visualized in this slice?",
+        "options": ["Spine", "Maxilla", "Mental foramen", "Incisive canal"],
+        "correct": 2,
+        "image": "images/coralrad-exam2-fall-2017/fig2.jpeg"
+      },
+      {
+        "text": "Which of the following best describes the sphenoid sinuses?",
+        "options": ["Completely filled with air", "Completely filled with soft-tissue density material", "The sphenoid sinuses are not visualized in this sagittal slice", "Mucosal thickening on the floor of the sinus"],
+        "correct": 3,
+        "image": "images/coralrad-exam2-fall-2017/fig3.jpeg"
+      },
+      {
+        "text": "Which of the following best describes the internal structure of the majority of the right maxillary sinus?",
+        "options": ["Air-filled", "Filled with bone", "Filled with soft tissue and one or more teeth", "Filled with amalgam"],
+        "correct": 2,
+        "image": "images/coralrad-exam2-fall-2017/fig4.jpeg"
+      },
+      {
+        "text": "Which of the following best describes the borders of the right maxillary sinus?",
+        "options": ["Expanded", "Within normal limits"],
+        "correct": 0,
+        "image": "images/coralrad-exam2-fall-2017/fig5.jpeg"
+      },
+      {
+        "text": "Based on the radiographic presentation, what is the majority of the contents of the right maxillary sinus most likely?",
+        "options": ["A lesion/tumor", "Mucosal thickening", "Regular mucous; the patient probably has a cold", "Air"],
+        "correct": 0,
+        "image": "images/coralrad-exam2-fall-2017/fig6.jpeg"
+      },
+      {
+        "text": "A doctor has noted something in the #12/#13 region. Where is this finding located, specifically?",
+        "options": ["Between the teeth and towards the buccal", "Between the teeth and towards the lingual"],
+        "correct": 1,
+        "image": "images/coralrad-exam2-fall-2017/fig7.jpeg"
+      },
+      {
+        "text": "What is this finding most likely?",
+        "options": ["A fistula", "A supernumerary tooth", "A mucous retention pseudocyst", "A periapical lesion"],
+        "correct": 1,
+        "image": "images/coralrad-exam2-fall-2017/fig8.jpeg"
+      },
+      {
+        "text": "The three axial slices are demonstrating which jaw?",
+        "options": ["Maxilla", "Mandible"],
+        "correct": 0,
+        "image": "images/coralrad-exam2-fall-2017/fig9.jpeg"
+      },
+      {
+        "text": "The tooth-like structure noted in image c is in close proximity to which anatomical structure? Image c",
+        "options": ["Maxillary sinus", "Nasopalatine canal", "Mandibular canal", "Mental foramen"],
+        "correct": 1,
+        "image": "images/coralrad-exam2-fall-2017/fig10.jpeg"
+      },
+      {
+        "text": "What is the most likely identity of the tooth-like structure noted in image c? Image c",
+        "options": ["Impacted #6", "Impacted #11", "Impacted #27", "An impacted supernumerary tooth"],
+        "correct": 0,
+        "image": "images/coralrad-exam2-fall-2017/fig11.jpeg"
+      },
+      {
+        "text": "Which of the following best describes the mandibular wisdom tooth?",
+        "options": ["The wisdom tooth appears to have roots buccal and lingual to the mandibular canal.", "The wisdom tooth is not near the mandibular canal.", "The wisdom tooth appears to be fully erupted.", "The wisdom tooth has gross dental caries."],
+        "correct": 0,
+        "image": "images/coralrad-exam2-fall-2017/fig12.jpeg"
+      },
+      {
+        "text": "Assume the patient is 50 years old. Which of the following best describes the mandibular wisdom tooth?",
+        "options": ["Impacted (something is preventing it from erupting)", "Unerupted (give it more time and it might erupt)", "Delayed eruption", "The wisdom tooth has periodontal bone loss."],
+        "correct": 0,
+        "image": "images/coralrad-exam2-fall-2017/fig13.jpeg"
+      },
+      {
+        "text": "Which of the following best describes tooth #5?",
+        "options": ["Fractured obliquely (diagonally)", "Not fractured - just a diagonal artifact"],
+        "correct": 0,
+        "image": "images/coralrad-exam2-fall-2017/fig14.jpeg"
+      },
+      {
+        "text": "Which of the following best describes tooth #5?",
+        "options": ["Periodontally within normal limits", "Periodontal bone loss and/or widened PDL space"],
+        "correct": 1,
+        "image": "images/coralrad-exam2-fall-2017/fig15.jpeg"
+      },
+      {
+        "text": "Which of the following best describes tooth #5?",
+        "options": ["Has root-canal treatment", "Has a calcified canal", "Its canal appears hypodense"],
+        "correct": 0,
+        "image": "images/coralrad-exam2-fall-2017/fig16.jpeg"
+      },
+      {
+        "text": "There is a lesion in the anterior mandible. Which of the following best describes the behavior of this lesion?",
+        "options": ["Expansile", "Non-expansile"],
+        "correct": 0,
+        "image": "images/coralrad-exam2-fall-2017/fig17.jpeg"
+      },
+      {
+        "text": "Which of the following best describes in the internal structure of this lesion?",
+        "options": ["Hyperdense", "Hypodense", "Mixed hyperdense/hypodense"],
+        "correct": 2,
+        "image": "images/coralrad-exam2-fall-2017/fig18.jpeg"
+      },
+      {
+        "text": "There is an object in the anterior maxilla that is not typically present. Which of these structures are you NOT concerned about the object communicating with?",
+        "options": ["Nasopalatine canal", "Nose", "Maxillary sinus", "Floor of mouth"],
+        "correct": 3,
+        "image": "images/coralrad-exam2-fall-2017/fig19.jpeg"
+      },
+      {
+        "text": "Based on the location, internal structure, and overall radiographic presentation, what do you think this object most likely is?",
+        "options": ["Osteoma", "Enamel pearl", "Periapical hypodensity", "Supernumerary tooth"],
+        "correct": 3,
+        "image": "images/coralrad-exam2-fall-2017/fig20.jpeg"
+      },
+      {
+        "text": "Note the tooth indicated by the red arrow. Which of the following best describes the pathology associated with its tooth?",
+        "options": ["Periodontal bone loss only", "Endodontic lesion only", "Perio-endo lesion", "Within normal limits"],
+        "correct": 2,
+        "image": "images/coralrad-exam2-fall-2017/fig21.jpeg"
+      },
+      {
+        "text": "Which of the following most accurately describes the prognosis of this tooth?",
+        "options": ["Excellent", "Fair", "Questionable", "Hopeless"],
+        "correct": 3,
+        "image": "images/coralrad-exam2-fall-2017/fig22.jpeg"
+      },
+      {
+        "text": "Which term most accurately describes the “black area” indicated by the red arrow?",
+        "options": ["Intraosseous carcinoma", "Beam-hardening artifacts", "Peri-implantitis", "Hypodense bone"],
+        "correct": 1,
+        "image": "images/coralrad-exam2-fall-2017/fig23.jpeg"
+      },
+      {
+        "text": "Which term most accurately describes the streaking “black area” indicated by the blue arrow?",
+        "options": ["Cleft lip", "Beam-hardening artifacts", "Peri-implantitis", "Hypodense lip"],
+        "correct": 1,
+        "image": "images/coralrad-exam2-fall-2017/fig24.jpeg"
+      },
+      {
+        "text": "The borders of structures A and B are both best described as:",
+        "options": ["Moderately well-defined", "Poorly-defined", "Blending", "Radiolucent"],
+        "correct": 0,
+        "image": "images/coralrad-exam2-fall-2017/fig25.jpeg"
+      },
+      {
+        "text": "Structures A and B are most likely:",
+        "options": ["Intraosseous carcinoma", "Wisdom tooth extraction sockets", "Periapical lesions"],
+        "correct": 1,
+        "image": "images/coralrad-exam2-fall-2017/fig26.jpeg"
+      },
+      {
+        "text": "Structure C, which runs through the mandible, is known as the:",
+        "options": ["Mandibular canal", "Mental foramen", "Mandibular foramen", "Mental canal"],
+        "correct": 0,
+        "image": "images/coralrad-exam2-fall-2017/fig27.jpeg"
+      },
+      {
+        "text": "Note the periapical hypodensity associated with tooth #6. The patient is asymptomatic. Root canal treatment was performed one month ago. Which of the following is the best treatment for this tooth at this time?",
+        "options": ["Refer to endodontist", "Extraction", "Do nothing / monitor the hypodensity"],
+        "correct": 2,
+        "image": "images/coralrad-exam2-fall-2017/fig28.jpeg"
+      },
+      {
+        "text": "Again, note the periapical hypodensity associated with tooth #6. This time, assume the patient is in pain. Root canal treatment was performed many years ago. Which of the following is the best treatment for this tooth at this time?",
+        "options": ["Refer to endodontist", "Extraction", "Do nothing/ monitor the hypodensity"],
+        "correct": 0,
+        "image": "images/coralrad-exam2-fall-2017/fig29.jpeg"
+      },
+      {
+        "text": "Note the periapical hypodensity associated with tooth #8. The patient is asymptomatic. Root canal treatment was performed many years ago. Which of the following is the best treatment for this tooth at this time?",
+        "options": ["Refer to endodontist or oral surgeon", "Do nothing / monitor the hypodensity"],
+        "correct": 0,
+        "image": "images/coralrad-exam2-fall-2017/fig30.jpeg"
+      },
+      {
+        "text": "Again, note the periapical hypodensity associated with tooth #8. The patient is in pain. Root canal treatment was performed many years ago. Which of the following is the best treatment for this tooth at this time?",
+        "options": ["Refer to endodontist or oral surgeon", "Do nothing / monitor the hypodensity"],
+        "correct": 0,
+        "image": "images/coralrad-exam2-fall-2017/fig31.jpeg"
+      },
+      {
+        "text": "In the Section (MPR) view, what happens when you double-click on the axial, sagittal, or coronal view?",
+        "options": ["It makes the view bigger (or smaller if it is already big)", "It enables you to take distance measurements", "It centers all the reference lines around the location where you double-clicked", "It creates a CT-panoramic reconstruction"],
+        "correct": 0
+      },
+      {
+        "text": "Which of the following does NOT cycle through the slices of a CBCT volume?",
+        "options": ["Spinning the mouse wheel", "Clicking and dragging the reference lines", "Using the up and down arrows on the keyboard"],
+        "correct": 2
+      },
+      {
+        "text": "Which of the following is TRUE regarding a CT-Panoramic reconstruction?",
+        "options": ["It provides a quick overview of the teeth and jaws", "It has a better spatial resolution than a traditional panoramic radiograph", "It can be used to screen for caries", "It avoids the issue of beam-hardening artifacts."],
+        "correct": 0
+      },
+      {
+        "text": "Which of the following is FALSE regarding properly measuring buccal-lingual bone width on CBCT?",
+        "options": ["You can create true cross sections using the ArchSection feature", "You can create true cross sections by rotating the axial plane with respect to the bone and then measuring in another plane", "Measurements taken in the coronal plane are always true buccal-lingual measurements"],
+        "correct": 2
+      },
+      {
+        "text": "What are the ramifications of beam-hardening artifacts in CBCT?",
+        "options": ["Dental crowns cause streak artifacts across the axial plane", "Dental amalgam cause streak artifacts across the axial plane", "Dental implants cause streak artifacts across the axial plane", "All of the answer choices are true"],
+        "correct": 3
+      },
+      {
+        "text": "Which of the following is TRUE regarding cervical burnout in CBCT?",
+        "options": ["Cervical burnout usually extends between the DEJ and the CEJ", "Cervical burnout does not occur in CBCT", "Cervical burnout is the reason it is difficult to detect recurrent decay in CBCT", "Cervical burnout is best visualized in the axial plane."],
+        "correct": 1
+      },
+      {
+        "text": "Which of the following is NOT an indication for taking a CBCT?",
+        "options": ["To screen for pathology in an asymptomatic patient", "Implant planning", "Evaluation of a sinus lesion seen on a panoramic radiograph", "Evaluation of wisdom tooth for extraction"],
+        "correct": 0
+      },
+      {
+        "text": "What is a general dentist responsible for interpreting in a CBCT?",
+        "options": ["Teeth and jaws only", "Teeth, jaws, sinuses, and airway only", "Everything in the field of view", "Only the part the dentist is interested in"],
+        "correct": 2
+      },
+      {
+        "text": "Good luck studying for your board exam!",
+        "options": ["Thank you", "I don't need luck with skills like these", "Not until I finish these other exams….", "“Roads? Where we're going, we don't need roads.”"],
+        "correct": 0
+      }
+    ]
+  },
+  "coralrad-exam2-fall-2018": {
+    "title": "Clinical Oral Radiology Exam 2 (Fall 2018)",
+    "type": "coralrad",
+    "subtype": "exam2",
+    "questions": [
+      {
+        "text": "Image D is in which plane? Image A: Image B: Image C: Image D:",
+        "options": ["Axial", "Sagittal", "Coronal", "Cross-section"],
+        "correct": 1,
+        "image": "images/coralrad-exam2-fall-2018/fig1.jpg"
+      },
+      {
+        "text": "How would you describe the borders of the periapical hypodensity associated with #3? Image A: Image B: Image C: Image D:",
+        "options": ["Poorly-defined and non-corticated", "Well-defined and well-corticated", "Well-defined but non-corticated", "Poorly-defined and well-corticated"],
+        "correct": 1,
+        "image": "images/coralrad-exam2-fall-2018/fig2.jpg"
+      },
+      {
+        "text": "After carefully examining the provided slices, you notice there is another problem with #3 aside from the periapical hypodensity. Which of the following best describes the issue? Image A: Image B: Image C: Image D:",
+        "options": ["Severe periodontal bone loss", "Cervical burnout", "HYPERdense material past the palatal root apex", "Impaction on #4"],
+        "correct": 2,
+        "image": "images/coralrad-exam2-fall-2018/fig3.jpg"
+      },
+      {
+        "text": "The patient is having pain associated with tooth #2. You diagnose a fracture on the radiograph. Which root has the fracture? Image A: Image B: Image C:",
+        "options": ["Mesiobuccal root", "Distobuccal root", "Palatal root", "Crown"],
+        "correct": 1,
+        "image": "images/coralrad-exam2-fall-2018/fig4.jpg"
+      },
+      {
+        "text": "Which of the following best describes the type of fracture? Image A: Image B: Image C:",
+        "options": ["Horizontal root fracture", "Vertical root fracture", "Oblique (diagonal) root fracture", "Class IV coronal fracture"],
+        "correct": 2,
+        "image": "images/coralrad-exam2-fall-2018/fig5.jpg"
+      },
+      {
+        "text": "Which tooth has a root fracture? Image A: Image B: Image C: Image D:",
+        "options": ["#4", "#5", "#12", "#13"],
+        "correct": 1,
+        "image": "images/coralrad-exam2-fall-2018/fig6.jpg"
+      },
+      {
+        "text": "There is an entity on the floor of the left maxillary sinus. Which of the following BEST describes the internal structure of the entity? Image A: Image B: Image C: Image D:",
+        "options": ["HYPERdense", "Hypodense", "Isodense with soft tissue (the same density as soft tissue)", "Radiopaque"],
+        "correct": 2,
+        "image": "images/coralrad-exam2-fall-2018/fig7.jpg"
+      },
+      {
+        "text": "Based on the radiographic presentation of the entity on the floor of the left maxillary sinus, which is the BEST impression? Image A: Image B: Image C: Image D:",
+        "options": ["Mucosal thickening", "Frothy mucous", "Mucous-retention pseudocyst", "Squamous cell carcinoma"],
+        "correct": 2,
+        "image": "images/coralrad-exam2-fall-2018/fig8.jpg"
+      },
+      {
+        "text": "Please only look at image D for this question. The dentist is hoping to place an implant in the visualized portion of left maxilla Approximately how much bone is available for implant placement? Image A: Image B: Image C: Image D:",
+        "options": ["1.5 mm", "3.0 mm", "7.0 mm", "10.0 mm"],
+        "correct": 1,
+        "image": "images/coralrad-exam2-fall-2018/fig9.jpg"
+      },
+      {
+        "text": "Please examine the left temporomandibular joint (TMJ). Note the hypodense lesion. Where is the lesion located? Image A: Image B: Image C:",
+        "options": ["Condylar head", "Condylar neck", "Articular disc", "Articular eminence"],
+        "correct": 3,
+        "image": "images/coralrad-exam2-fall-2018/fig10.jpg"
+      },
+      {
+        "text": "The internal structure of the left mandibular condyle: Image A: Image B: Image C:",
+        "options": ["Has significant erosive changes", "Has significant sclerotic changes", "Is within normal limits.", "Suggests the presence of a tumor"],
+        "correct": 2,
+        "image": "images/coralrad-exam2-fall-2018/fig11.jpg"
+      },
+      {
+        "text": "Which of the following best describes the periodontal bone surrounding the visualized maxillary tooth?",
+        "options": ["No bone loss", "Mild bone loss", "Moderate bone loss", "Severe bone loss"],
+        "correct": 3,
+        "image": "images/coralrad-exam2-fall-2018/fig12.jpg"
+      },
+      {
+        "text": "One of the paranasal sinuses contains something other than air. What is the name of this sinus? Image A: Image B: Image C: Image D:",
+        "options": ["Maxillary sinus", "Frontal sinus", "Ethmoid sinus", "Sphenoid sinus"],
+        "correct": 2,
+        "image": "images/coralrad-exam2-fall-2018/fig13.jpg"
+      },
+      {
+        "text": "An entity isodense with (the same density as) soft tissue is noted on the floor of the maxillary sinuses. Note how it follows the walls of the sinus. Which of the following is the BEST impression?",
+        "options": ["Sinonasal carcinoma", "Mucosal thickening", "Mucous-retention pseudocyst", "Boogers"],
+        "correct": 1,
+        "image": "images/coralrad-exam2-fall-2018/fig14.jpg"
+      },
+      {
+        "text": "There is a lesion near the floor of the left maxillary sinus. Which of the following best describes its borders? Image A: Image B: Image C:",
+        "options": ["Poorly-defined and non-corticated", "Well-defined and well-corticated", "Well-defined but non-corticated", "Poorly-defined and well-corticated"],
+        "correct": 1,
+        "image": "images/coralrad-exam2-fall-2018/fig15.jpg"
+      },
+      {
+        "text": "There is a lesion near the floor of the left maxillary sinus. Which of the following best describes its borders? Image A: Image B: Image C:",
+        "options": ["It communicates with the left maxillary sinus", "communicates with tooth #15", "It communicates with both the left maxillary sinus AND with tooth #15", "It appears independent of both the left maxillary sinus AND tooth #15"],
+        "correct": 2,
+        "image": "images/coralrad-exam2-fall-2018/fig16.jpg"
+      },
+      {
+        "text": "There is a lesion near the floor of the left maxillary sinus. Which of the following best describes its borders? Image A: Image B: Image C:",
+        "options": ["Expansile", "Non-expansile"],
+        "correct": 0,
+        "image": "images/coralrad-exam2-fall-2018/fig17.jpg"
+      },
+      {
+        "text": "There is a lesion near the floor of the left maxillary sinus. Based on your observations, which of the following is the BEST impression? Image A: Image B: Image C:",
+        "options": ["Mucous-retention pseudocyst", "Periapical lesion", "Cemento-osseous dysplasia", "Nasal polyp"],
+        "correct": 1,
+        "image": "images/coralrad-exam2-fall-2018/fig18.jpg"
+      },
+      {
+        "text": "In the sagittal slice, you note #13 and #12 have intracoronal hypodensities. You also note that there are multiple restorations on surrounding teeth. Which of the following is the BEST impression of the hypodensities? Image A: Image B: Image C:",
+        "options": ["Dental caries", "Periodontal disease", "Beam-hardening artifacts", "Fixed partial denture"],
+        "correct": 2,
+        "image": "images/coralrad-exam2-fall-2018/fig19.jpg"
+      },
+      {
+        "text": "There is a HYPERdense entity visualized in the field of view that is normally not present. Where is this entity located? Image A: Image B: Image C:",
+        "options": ["#4/#5 region", "#12/#13 region", "#20/#21 region", "#28/#29 region"],
+        "correct": 1,
+        "image": "images/coralrad-exam2-fall-2018/fig20.jpg"
+      },
+      {
+        "text": "Which of the following best describes the effect of this entity on the buccal plate? Image A: Image B: Image C:",
+        "options": ["No effect", "Thickening and/or hypertrophy of the buccal plate", "Thinning and/or perforation of the buccal plate", "The buccal plate is not visualized in the provided slices"],
+        "correct": 0,
+        "image": "images/coralrad-exam2-fall-2018/fig21.jpg"
+      },
+      {
+        "text": "Which of the following best describes the effect of this entity on the palatal/lingual plate? Image A: Image B: Image C:",
+        "options": ["No effect", "Thickening and/or hypertrophy of the palatal/lingual plate", "Thinning and/or perforation of the palatal/lingual plate", "The palatal/lingual plate is not visualized in the provided slices"],
+        "correct": 2,
+        "image": "images/coralrad-exam2-fall-2018/fig22.jpg"
+      },
+      {
+        "text": "Tooth #32 is being evaluated for extraction. Which of the following best describes the orientation of #32? Image A: Image B: Image C: Image D: Image E:",
+        "options": ["Angled mesially", "Angled distally", "Angled buccally", "Angled lingually"],
+        "correct": 0,
+        "image": "images/coralrad-exam2-fall-2018/fig23.jpg"
+      },
+      {
+        "text": "Tooth #32 is being evaluated for extraction. The crown of #32 is located near: Image A: Image B: Image C: Image D: Image E:",
+        "options": ["The superior aspect of the mandibular canal", "The buccal aspect of the mandibular canal", "The lingual aspect of the mandibular canal", "The superior and buccal aspects of the mandibular canal", "The superior and lingual aspects of the mandibular canal"],
+        "correct": 0,
+        "image": "images/coralrad-exam2-fall-2018/fig24.jpg"
+      },
+      {
+        "text": "Tooth #32 is being evaluated for extraction. The root tips of #32 are located near: Image A: Image B: Image C: Image D: Image E:",
+        "options": ["The superior aspect of the mandibular canal", "The buccal aspect of the mandibular canal", "The lingual aspect of the mandibular canal", "The superior and buccal aspects of the mandibular canal", "The superior and lingual aspects of the mandibular canal"],
+        "correct": 3,
+        "image": "images/coralrad-exam2-fall-2018/fig25.jpg"
+      },
+      {
+        "text": "Structures A and B are most likely:",
+        "options": ["Hypoplastic teeth", "Wisdom tooth extraction sockets", "Periapical lesions", "The temporomandibular joints (TMJs)"],
+        "correct": 1,
+        "image": "images/coralrad-exam2-fall-2018/fig26.jpg"
+      },
+      {
+        "text": "Structure C, which runs through the mandible, is known as the:",
+        "options": ["Mandibular canal", "Mental foramen", "Mandibular foramen", "Mental canal"],
+        "correct": 0,
+        "image": "images/coralrad-exam2-fall-2018/fig27.jpg"
+      },
+      {
+        "text": "Which of the following is MOST DIFFICULT to diagnose on a CBCT due to the possibility of artifacts?",
+        "options": ["Dental caries", "Periodontal disease", "Periapical lesions", "Sinusitis"],
+        "correct": 0
+      },
+      {
+        "text": "When evaluating a structure (such as a tooth) in a CBCT, in which of the following planes should the structure be examined?",
+        "options": ["Axial", "Frontal/Coronal", "Sagittal", "Axial, Coronal, and Sagittal"],
+        "correct": 3
+      },
+      {
+        "text": "Which imaging modalities are prone to beam-hardening artifacts?",
+        "options": ["CBCT only", "CBCT and panoramic", "Intraoral and panoramic", "Panoramic only"],
+        "correct": 0
+      },
+      {
+        "text": "All of the following are true regarding TMJ imaging EXCEPT one. Which is the EXCEPTION?",
+        "options": ["The TMJ disc is well-visualized on a CBCT", "The bony structures of the TMJ are well-visualized on a CBCT", "The radiographic signs of TMD do not always match the clinical symptoms.", "Erosive and sclerotic changes can be seen on a CBCT"],
+        "correct": 0
+      },
+      {
+        "text": "When obtaining a CBCT to evaluate for mandibular wisdom tooth extraction, all of the following should be examined EXCEPT one. Which is the EXCEPTION?",
+        "options": ["Proximity to the buccal and lingual plates", "Proximity to the mandibular canal", "Proximity to the nearest sinus", "The amount the roots are dilacerated"],
+        "correct": 2
+      },
+      {
+        "text": "All of the following are weaknesses of CBCTs EXCEPT one. Which is the EXCEPTION?",
+        "options": ["CBCTs have lower spatial resolution than intraoral radiographs", "CBCTs are prone to beam-hardening artifacts", "CBCTs generally give more radiation to the patient than a panoramic radiograph", "CBCTs are prone to ghost images"],
+        "correct": 3
+      },
+      {
+        "text": "Which of the following is the correct way to “drag” a single slice around the screen using TxSTUDIO/InVivo on either Mac or PC?",
+        "options": ["Scroll the mouse wheel", "Click and drag", "Shift + click and drag", "Ctrl + click and drag (PC) / Option + click and drag (Mac)"],
+        "correct": 2
+      },
+      {
+        "text": "What is a general dentist responsible for when interpreting in a CBCT?",
+        "options": ["Teeth and jaws only", "Teeth, jaws, sinuses, and airway only", "Everything in the field of view", "Only the part the dentist is interested in"],
+        "correct": 2
+      },
+      {
+        "text": "Which of the following terms best describes a list of suspected diagnoses for a particular entity?",
+        "options": ["impression", "diagnosis", "prognosis", "differential diagnosis"],
+        "correct": 3
+      },
+      {
+        "text": "Which of the following terms best describes a single suspected diagnosis based solely on radiographic information?",
+        "options": ["impression", "diagnosis", "treatment plan", "differential diagnosis"],
+        "correct": 0
+      },
+      {
+        "text": "Which of the following terms best describes a procedure or set of procedures to be performed based on your analysis of the patient?",
+        "options": ["impression", "prognosis", "treatment plan", "differential diagnosis"],
+        "correct": 2
+      },
+      {
+        "text": "Which of the following is the most appropriate way to describe a mesiangular tooth #1 which has not erupted in a 50-year-old patient? Assume tooth #2 is present and fully erupted.",
+        "options": ["#1 is unerupted", "#1 is impacted by #2", "#1 is impacting #2", "#1 is next to #2"],
+        "correct": 1
+      },
+      {
+        "text": "Which of the following is TRUE regarding properly measuring true buccal-lingual bone width on CBCT?",
+        "options": ["The ArchSection feature is NOT recommended for this purpose", "Rotating the axial plane with respect to the bone and then measuring in another plane CANNOT give you true measurements", "Measurements taken in the coronal plane are ALWAYS TRUE buccal-lingual measurements", "Buccal-lingual measurements are NOT recommended to be taken in the Axial plane since you cannot see if you are at the widest part of the bone, narrowest part of the bone, or the average width of the bone"],
+        "correct": 3
+      }
+    ]
+  },
+  "coralrad-exam2-fall-2019": {
+    "title": "Clinical Oral Radiology Exam 2 (Fall 2019)",
+    "type": "coralrad",
+    "subtype": "exam2",
+    "questions": [
+      {
+        "text": "The radiodensity of healthy, clean maxillary sinuses is:",
+        "options": ["Hypodense / dark", "HYPERdense / bright", "Isodense with soft tissue", "Unknown"],
+        "correct": 0
+      },
+      {
+        "text": "The normal shape of the mandibular condylar head is:",
+        "options": ["Round", "Mostly round but pointed anteriorly", "Flattened", "Irregular"],
+        "correct": 0
+      },
+      {
+        "text": "You discover a well-defined, well-corticated round entity, isodense with soft tissue, associated with the crown of an unerupted tooth. This entity is most likely to be which of the following:",
+        "options": ["Periapical cyst", "Dentigerous cyst", "Mucous retention pseudocyst", "Squamous cell carcinoma"],
+        "correct": 1
+      },
+      {
+        "text": "Which of the following is NOT one of the paranasal sinuses?",
+        "options": ["Maxillary sinus", "Ethmoid sinus", "Sphenoid sinus", "Nasal sinus"],
+        "correct": 3
+      },
+      {
+        "text": "Which of the following is TRUE regarding a CT-Panoramic reconstruction / pseudopan / tru-pan?",
+        "options": ["It provides a quick overview of the teeth and jaws", "It has a better spatial resolution than a traditional panoramic radiograph", "It can be used to screen for caries", "It avoids the issue of beam-hardening artifacts."],
+        "correct": 0
+      },
+      {
+        "text": "What are the ramifications of beam-hardening artifacts in CBCT?",
+        "options": ["HYPERdense entities cause streak artifacts", "Beam-hardening artifacts make caries detection easier", "Hypodense entities cause smear artifacts", "All of the answer choices are true"],
+        "correct": 0
+      },
+      {
+        "text": "Which of the following is TRUE regarding properly measuring the true buccal-lingual bone width on CBCT?",
+        "options": ["The ArchSection feature is NOT recommended for this purpose", "Rotating the axial plane with respect to the bone and then measuring in another plane CANNOT give you true measurements", "Measurements taken in the coronal plane are ALWAYS TRUE buccal-lingual measurements", "Buccal-lingual measurements are NOT recommended to be taken in the Axial plane since you cannot see if you are at the widest part of the bone, narrowest part of the bone, or the average width of the bone"],
+        "correct": 3
+      },
+      {
+        "text": "When evaluating a CBCT, each structure should be evaluated in each plane.",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "text": "When obtaining a CBCT to evaluate for mandibular wisdom tooth extraction, all of the following should be examined EXCEPT one. Which is the EXCEPTION?",
+        "options": ["Proximity to the buccal and lingual plates", "Proximity to the mandibular canal", "Proximity to the mental foramen", "The amount the roots are dilacerated"],
+        "correct": 2
+      },
+      {
+        "text": "All of the following are true regarding TMJ imaging EXCEPT one. Which is the EXCEPTION?",
+        "options": ["The TMJ disc is well-visualized on a CBCT", "The bony structures of the TMJ are well-visualized on a CBCT", "Anterior osteophyte formation and flattening can be seen on a CBCT", "Erosive and sclerotic changes can be seen on a CBCT"],
+        "correct": 0
+      },
+      {
+        "text": "Which of the following phrases BEST explains what a dentist is responsible for when interpreting a CBCT?",
+        "options": ["“Just check the pseudo-pan and you're the man!”", "“Check all teeth in the sagittal plane to evaluate the pain.”", "“If you irradiate it, you are responsible for interpreting it.”", "“If the brain is outside your scope of practice, make it your tactic to ignore cerebral masses.”"],
+        "correct": 2
+      },
+      {
+        "text": "This cross-sectional image of the mandible was taken in the premolar region. The patient is edentulous in this region. You notice a hypodense channel exiting the buccal aspect of the bone. Which of the following is the BEST impression of this hypodense channel?",
+        "options": ["Periapical hypodensity", "Mental foramen", "Cemento-osseous dysplasia", "Dental implant"],
+        "correct": 1,
+        "image": "images/coralrad-exam2-fall-2019/fig12.jpg"
+      },
+      {
+        "text": "The selected slices are from the patient's left side. Tooth #14 is circled. This tooth has a small HYPERdensity on its disto-cervical aspect. Which of the following is the BEST impression of this HYPERdense finding?: Image 2A: Image 2B:",
+        "options": ["Overhanging restoration", "Periodontitis", "Root canal treatment", "Calculus"],
+        "correct": 3,
+        "image": "images/coralrad-exam2-fall-2019/fig13.jpg"
+      },
+      {
+        "text": "Tooth #14 is circled. Which root of #14 appears to have the GREATEST amount of periodontal/alveolar BONE LOSS? Image 2A: Image 2B:",
+        "options": ["Mesiobuccal", "Distobuccal", "Palatal", "Distopalatal"],
+        "correct": 2,
+        "image": "images/coralrad-exam2-fall-2019/fig14.jpg"
+      },
+      {
+        "text": "On which plane is this image of the mandible?",
+        "options": ["Axial", "Sagittal", "Frontal/Coronal", "Oblique"],
+        "correct": 0,
+        "image": "images/coralrad-exam2-fall-2019/fig15.jpg"
+      },
+      {
+        "text": "Multiple intrabony hypodensities which are normally not present are discovered incidentally while reviewing this CBCT scan. What is the shape of these entities?",
+        "options": ["Circular", "Triangular", "Irregular", "Scalloped"],
+        "correct": 0,
+        "image": "images/coralrad-exam2-fall-2019/fig16.jpg"
+      },
+      {
+        "text": "Multiple intrabony hypodensities which are normally not present are discovered incidentally while reviewing this CBCT scan. Which BEST describes the borders of these entities?",
+        "options": ["Well-defined", "Poorly-defined"],
+        "correct": 0,
+        "image": "images/coralrad-exam2-fall-2019/fig17.jpg"
+      },
+      {
+        "text": "After acquiring a CBCT scan, you notice something unusual about the resulting images. Which of the following best describes this finding? Image 4A: Image 4B:",
+        "options": ["The head is up-side down", "There is a double image of the structures", "The jaw is broken", "Nothing is unusual about this scan"],
+        "correct": 1,
+        "image": "images/coralrad-exam2-fall-2019/fig18.jpg"
+      },
+      {
+        "text": "Which is the most likely reason for this appearance? (Hint: Note that the patient has very few HYPERdense / metal entities in the mouth.) Image 4A: Image 4B:",
+        "options": ["The patient moved during the scan.", "Anatomic variation", "Beam-hardening artifacts", "The patient suffered a trauma"],
+        "correct": 0,
+        "image": "images/coralrad-exam2-fall-2019/fig19.jpg"
+      },
+      {
+        "text": "After reviewing ALL of the provided slices of the maxillary sinuses, which of the following is NOT present inside of the maxillary sinuses? Image 5A: Image 5B: Image 5C:",
+        "options": ["Hypodensity consistent with air", "HYPERdensity consistent with bone", "Medium density, isodense with soft tissue", "All of the other answer choices are present in the maxillary sinuses."],
+        "correct": 3,
+        "image": "images/coralrad-exam2-fall-2019/fig20.jpg"
+      },
+      {
+        "text": "Of the following choices, based on the radiographic findings, which is the BEST IMPRESSION of the findings inside of the maxillary sinuses? Image 5A: Image 5B: Image 5C:",
+        "options": ["Chronic maxillary sinusitis", "Mucous-retention pseudocyst", "Surgically drain the sinuses", "Apical periodontitis"],
+        "correct": 0,
+        "image": "images/coralrad-exam2-fall-2019/fig21.jpg"
+      },
+      {
+        "text": "A lesion is present in the selected slices. Where is the lesion located? Image 6A: Image 6B: Image 6C: Image 6D:",
+        "options": ["Right posterior maxilla", "Right posterior mandible", "Left posterior maxilla", "Left posterior mandible"],
+        "correct": 3,
+        "image": "images/coralrad-exam2-fall-2019/fig22.jpg"
+      },
+      {
+        "text": "Which of the following cortices has been expanded the most? Image 6A: Image 6B: Image 6C: Image 6D:",
+        "options": ["Buccal", "Lingual", "Inferior", "Superior"],
+        "correct": 0,
+        "image": "images/coralrad-exam2-fall-2019/fig23.jpg"
+      },
+      {
+        "text": "Which of the following cortices has been thinned and only underwent minimal expansion? Image 6A: Image 6B: Image 6C: Image 6D:",
+        "options": ["Buccal", "Lingual", "Inferior", "Superior"],
+        "correct": 1,
+        "image": "images/coralrad-exam2-fall-2019/fig24.jpg"
+      },
+      {
+        "text": "This lesion could be a dentigerous cyst. Image 6A: Image 6B: Image 6C: Image 6D:",
+        "options": ["True", "False"],
+        "correct": 1,
+        "image": "images/coralrad-exam2-fall-2019/fig25.jpg"
+      },
+      {
+        "text": "Which of the following is present on all of the visualized teeth? Image 7A: Image 7B: Image 7C:",
+        "options": ["Periodontal bone loss", "Dental caries", "Periapical lesions", "Root-canal treatment"],
+        "correct": 0,
+        "image": "images/coralrad-exam2-fall-2019/fig26.jpg"
+      },
+      {
+        "text": "The maxillary sinuses are clear and only contain air. Image 7A: Image 7B: Image 7C:",
+        "options": ["True", "False"],
+        "correct": 1,
+        "image": "images/coralrad-exam2-fall-2019/fig27.jpg"
+      },
+      {
+        "text": "Many of the visualized roots are surrounded by a lesion. Which of the following best describes the internal structure of the lesion? Image 8A: Image 8B: Image 8C:",
+        "options": ["HYPERdense", "Hypodense", "Mixed HYPERdense/hypodense", "Normal trabecular bone"],
+        "correct": 2,
+        "image": "images/coralrad-exam2-fall-2019/fig28.jpg"
+      },
+      {
+        "text": "Assume the teeth are vital and asymptomatic. Which of these impressions is MOST appropriate for this radiographic presentation? Image 8A: Image 8B: Image 8C:",
+        "options": ["Cemento-osseous dysplasia", "Multiple periapical cysts", "Multiple enamel pearls", "Severe chronic periodontitis"],
+        "correct": 0,
+        "image": "images/coralrad-exam2-fall-2019/fig29.jpg"
+      },
+      {
+        "text": "Which tooth, visualized in both images, has an abnormality with its root canal space? Image 9A: Image 9B:",
+        "options": ["#6", "#7", "#9", "#10"],
+        "correct": 0,
+        "image": "images/coralrad-exam2-fall-2019/fig30.jpg"
+      },
+      {
+        "text": "The streaking bright and dark lines coming off of tooth #7 (and some other teeth) indicate what?",
+        "options": ["Beam-hardening artifacts", "Trauma", "Infection spreading into the soft tissues", "The dark lines are air and the bright lines are dental restorations"],
+        "correct": 0,
+        "image": "images/coralrad-exam2-fall-2019/fig31.jpeg"
+      },
+      {
+        "text": "There is a lesion near the floor of the left maxillary sinus. Which of the following best describes its borders?",
+        "options": ["Poorly-defined and non-corticated", "Well-defined and partially corticated", "Well-defined but non-corticated", "Poorly-defined and partially corticated"],
+        "correct": 1,
+        "image": "images/coralrad-exam2-fall-2019/fig32.jpg"
+      },
+      {
+        "text": "Which if the following is TRUE regarding the lesion near the floor of the left maxillary sinus?",
+        "options": ["It appears to have originated on the floor of the left maxillary sinus.", "It appear to have originated from the apex of #15 and grown superiorly"],
+        "correct": 1,
+        "image": "images/coralrad-exam2-fall-2019/fig33.jpg"
+      },
+      {
+        "text": "Based on your observations, which of the following is the BEST impression of the lesion?",
+        "options": ["Mucous-retention pseudocyst", "Apical periodontitis / periapical lesion", "Osteochondroma", "Frothy sinusitis"],
+        "correct": 1,
+        "image": "images/coralrad-exam2-fall-2019/fig34.jpg"
+      },
+      {
+        "text": "#12 and #13 have intracoronal hypodensities. Which of the following is TRUE about this finding?",
+        "options": ["It is most consistent with dental caries / recurrent decay", "It is most consistent with beam-hardening artifacts", "It is most consistent with the pulp chambers of these teeth"],
+        "correct": 1,
+        "image": "images/coralrad-exam2-fall-2019/fig35.jpg"
+      },
+      {
+        "text": "The following is an image of the right TMJ. All of the following are present EXCEPT one. Which is the EXCEPTION?",
+        "options": ["Flattening", "Anterior osteophyte formation", "Sclerosis", "Erosion"],
+        "correct": 3,
+        "image": "images/coralrad-exam2-fall-2019/fig36.jpg"
+      },
+      {
+        "text": "Tooth #17 approximates the buccal cortex. Image 13A: Image 13B: Image 13C: Image 13D: Image 13E:",
+        "options": ["True", "False"],
+        "correct": 1,
+        "image": "images/coralrad-exam2-fall-2019/fig37.jpg"
+      },
+      {
+        "text": "Tooth #17 approximates the lingual cortex. Image 13A: Image 13B: Image 13C: Image 13D: Image 13E:",
+        "options": ["True", "False"],
+        "correct": 0,
+        "image": "images/coralrad-exam2-fall-2019/fig38.jpg"
+      },
+      {
+        "text": "Tooth #17 approximates the lingual border of the left mandibular canal. Image 13A: Image 13B: Image 13C: Image 13D: Image 13E:",
+        "options": ["True", "False"],
+        "correct": 0,
+        "image": "images/coralrad-exam2-fall-2019/fig39.jpg"
+      },
+      {
+        "text": "Based on the provided slice, which of the following is the BEST impression for the left-most mandibular incisor? (Hint: One of the four mandibular incisors is missing.)",
+        "options": ["Periodontal bone loss", "Internal root resorption", "Periapical lesion", "Root canal treatment"],
+        "correct": 1,
+        "image": "images/coralrad-exam2-fall-2019/fig40.jpg"
+      },
+      {
+        "text": "What is unusual about tooth #29 in the provided slice?",
+        "options": ["It is missing a root", "It is impacted", "It is missing", "It is rotated"],
+        "correct": 3,
+        "image": "images/coralrad-exam2-fall-2019/fig41.jpg"
+      },
+      {
+        "text": "The visualized TMJ has some erosive changes. Image 15A: Image 15B: Image 15C:",
+        "options": ["True", "False"],
+        "correct": 0,
+        "image": "images/coralrad-exam2-fall-2019/fig42.jpg"
+      },
+      {
+        "text": "The visualized TMJ has some sclerotic changes. Image 15A: Image 15B: Image 15C:",
+        "options": ["True", "False"],
+        "correct": 0,
+        "image": "images/coralrad-exam2-fall-2019/fig43.jpg"
+      },
+      {
+        "text": "The visualized TMJ has some flattening. Image 15A: Image 15B: Image 15C:",
+        "options": ["True", "False"],
+        "correct": 0,
+        "image": "images/coralrad-exam2-fall-2019/fig44.jpg"
+      },
+      {
+        "text": "The visualized TMJ has some anterior osteophyte formation. Image 15A: Image 15B: Image 15C:",
+        "options": ["True", "False"],
+        "correct": 0,
+        "image": "images/coralrad-exam2-fall-2019/fig45.jpg"
+      }
+    ]
+  },
+  "coralrad-exam2-fall-2020": {
+    "title": "Clinical Oral Radiology Exam 2 (Fall 2020)",
+    "type": "coralrad",
+    "subtype": "exam2",
+    "questions": [
+      {
+        "text": "The radiodensity of healthy, clean maxillary sinuses is:",
+        "options": ["Hypodense / dark", "HYPERdense / bright", "The same radiodensity as soft tissue", "Unknown"],
+        "correct": 0
+      },
+      {
+        "text": "The normal shape of the mandibular condylar head is:",
+        "options": ["Rounded", "Triangular", "Flattened", "Pointy"],
+        "correct": 0
+      },
+      {
+        "text": "Which of the following is TRUE regarding a CT-Panoramic reconstruction / pseudopan / tru-pan?",
+        "options": ["It provides a quick overview of the teeth and jaws", "It has a better spatial resolution than a traditional panoramic radiograph", "It can be used to screen for caries", "It avoids the issue of beam-hardening artifacts."],
+        "correct": 0
+      },
+      {
+        "text": "What are the ramifications of beam-hardening artifacts in CBCT?",
+        "options": ["HYPERdense entities cause streak artifacts", "Beam-hardening artifacts make caries detection easier", "Hypodense entities cause smear artifacts", "All of the answer choices are true"],
+        "correct": 0
+      },
+      {
+        "text": "Measurements taken in the coronal plane are always true buccal-lingual measurements",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "When evaluating a CBCT, each structure should be evaluated in each plane.",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "text": "When obtaining a CBCT to evaluate for mandibular wisdom tooth extraction, all of the following should be examined EXCEPT one. Which is the EXCEPTION?",
+        "options": ["Proximity to the buccal and lingual plates", "Proximity to the mandibular canal", "Proximity to the mental foramen", "The amount the roots are dilacerated"],
+        "correct": 2
+      },
+      {
+        "text": "Which of the following phrases BEST explains what a dentist is responsible for when interpreting a CBCT?",
+        "options": ["“Focus on the teeth to avoid going outside of your scope of practice.”", "“If you irradiate it, you are responsible for interpreting it.”"],
+        "correct": 1
+      },
+      {
+        "text": "Beam hardening artifacts MOST COMMONLY hinder interpretation of what condition?",
+        "options": ["Dental caries", "Periapical cyst", "Periodontal bone loss", "Maxillary sinusitis"],
+        "correct": 0
+      },
+      {
+        "text": "The DISC of the temporomandibular joint cannot be seen on a CBCT.",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "text": "Periodontal bone loss can occur around teeth in which of the following locations? Choose the BEST answer.",
+        "options": ["Buccal", "Lingual", "Mesial", "Distal", "Both mesial and distal", "Mesial, distal, buccal, and lingual"],
+        "correct": 5
+      },
+      {
+        "text": "Which of the following BEST describes the typical appearance of the mandibular canal?",
+        "options": ["Completely HYPERdense", "Completely hypodense", "HYPERdense internal structure surrounded by hypodense borders", "Hypodense internal structure surrounded by HYPERdense borders"],
+        "correct": 3
+      },
+      {
+        "text": "Which of the following is NOT an indication to take a CBCT?",
+        "options": ["Implant planning", "Evaluation of crown margins", "Evaluate maxillary first molar to see if a second mesiobuccal root canal is present", "Evaluate bony lesion discovered on panoramic radiograph For following 2 questions:"],
+        "correct": 1,
+        "image": "images/coralrad-exam2-fall-2020/fig13.jpeg"
+      },
+      {
+        "text": "What plane is this?",
+        "options": ["Axial", "Coronal/Frontal", "Sagittal"],
+        "correct": 0
+      },
+      {
+        "text": "Which term most accurately describes the “black area” indicated by the arrows?",
+        "options": ["Intraosseous carcinoma", "Beam-hardening artifacts", "Peri-implantitis", "Hypodense bone For following 6 questions:"],
+        "correct": 1,
+        "image": "images/coralrad-exam2-fall-2020/fig15.jpeg"
+      },
+      {
+        "text": "What plane is this?",
+        "options": ["Axial", "Coronal/Frontal", "Sagittal"],
+        "correct": 2
+      },
+      {
+        "text": "Which of the following best describes the internal structure of the lesion apical to tooth #3?",
+        "options": ["Hypodense, like air", "Isodense with (the same density as) soft tissues", "HYPERdense, like bone", "HYPERdense, like restorative material"],
+        "correct": 1
+      },
+      {
+        "text": "Which of the following best describes the borders of the lesion apical to tooth #3?",
+        "options": ["Well-defined", "Poorly-defined"],
+        "correct": 0
+      },
+      {
+        "text": "Which of the following best describes the borders of the lesion apical to tooth #3?",
+        "options": ["Corticated", "Non-corticated"],
+        "correct": 0
+      },
+      {
+        "text": "Which of the following best describes the shape of the lesion apical to tooth #3?",
+        "options": ["Oval", "Irregular", "Scalloped", "Rectangular"],
+        "correct": 0
+      },
+      {
+        "text": "Based on the radiographic presentation of the lesion apical to tooth #3, which of the following is the most likely origin of the lesion?",
+        "options": ["Formed inside of the right maxillary sinus", "Formed from the apex of tooth #3"],
+        "correct": 1
+      },
+      {
+        "text": "A bony defect is present. Where is this defect located?",
+        "options": ["Right buccal mandible", "Right lingual mandible", "Left buccal mandible", "Left lingual mandible For following 5 questions:"],
+        "correct": 3,
+        "image": "images/coralrad-exam2-fall-2020/fig22.jpeg"
+      },
+      {
+        "text": "One tooth, depicted in all 3 slices, has a lesion. What is the number of this tooth?",
+        "options": ["#3", "#14", "#19", "#30"],
+        "correct": 0
+      },
+      {
+        "text": "One tooth, depicted in all 3 slices, has a lesion. Which of the following best describes the location of the lesion?",
+        "options": ["Associated with the tooth’s buccal roots", "Associated with the tooth’s palatal/lingual roots", "Associated with the tooth’s crown"],
+        "correct": 0
+      },
+      {
+        "text": "One tooth, depicted in all 3 slices, has a lesion. Which of the following BEST describes the internal structure of the lesion?",
+        "options": ["Hypodense", "HYPERdense", "Air", "Multilocular"],
+        "correct": 0
+      },
+      {
+        "text": "One tooth, depicted in all 3 slices, has a lesion. Which of the following BEST describes the borders of the lesion?",
+        "options": ["Well-corticated", "Corticated on most, but not all, sides", "Non-corticated"],
+        "correct": 1
+      },
+      {
+        "text": "One tooth, depicted in all 3 slices, has a lesion. Which of the following is the BEST impression?",
+        "options": ["Periodontal defect", "Dental caries", "Mucous retention pseudocyst", "Apical periodontitis (periapical lesion) For following 3 questions:"],
+        "correct": 3,
+        "image": "images/coralrad-exam2-fall-2020/fig27.jpeg"
+      },
+      {
+        "text": "Tooth #30 typically has how many roots?",
+        "options": ["1", "2", "3", "4"],
+        "correct": 1
+      },
+      {
+        "text": "Upon examining #30 closely, you note that there is an extra, unobturated lingual root. You also not that #30 has one mesial root with two canals. Based on this information, how many roots does tooth #30 have in this case?",
+        "options": ["1", "2", "3", "4"],
+        "correct": 2
+      },
+      {
+        "text": "One other tooth in this image has undergone root canal treatment. What is the number of this tooth?",
+        "options": ["#27", "#28", "#29", "#31"],
+        "correct": 1
+      },
+      {
+        "text": "Which of the lines indicates the alveolar crest?",
+        "options": ["The line labeled “A”", "The line labeled “B” For following 2 questions:"],
+        "correct": 0,
+        "image": "images/coralrad-exam2-fall-2020/fig31.jpeg"
+      },
+      {
+        "text": "Which of the paranasal sinuses are visualized in this image?",
+        "options": ["Maxillary", "Ethmoid", "Sphenoid", "Frontal"],
+        "correct": 0
+      },
+      {
+        "text": "Which of the visualized paranasal sinuses is ABNORMAL?",
+        "options": ["Patient’s left", "Patient’s right For following 2 questions:"],
+        "correct": 0,
+        "image": "images/coralrad-exam2-fall-2020/fig33.jpeg"
+      },
+      {
+        "text": "What plane is this?",
+        "options": ["Axial", "Coronal/Frontal", "Sagittal"],
+        "correct": 2
+      },
+      {
+        "text": "Please note that mesial and distal are labeled with M and D, respectively. Tooth #30 has undergone root canal treatment. Which root has a periapical hypodensity?",
+        "options": ["Mesial", "Distal"],
+        "correct": 0
+      },
+      {
+        "text": "Which of the following TMJ degenerative changes is MOST apparent in the image?",
+        "options": ["Flattening", "Expansion", "Erosion", "Crepitus"],
+        "correct": 0,
+        "image": "images/coralrad-exam2-fall-2020/fig36.jpeg"
+      },
+      {
+        "text": "Which of the following TMJ degenerative changes is MOST apparent in the image?",
+        "options": ["Flattening", "Sclerosis", "Erosion", "Disc displacement"],
+        "correct": 2,
+        "image": "images/coralrad-exam2-fall-2020/fig37.jpeg"
+      },
+      {
+        "text": "An entity isodense with (the same density as) soft tissue is noted on the floor of the maxillary sinuses. Note how it follows the walls of the sinus. Which of the following is the BEST impression?",
+        "options": ["Nasal polyps", "Mucosal thickening", "Mucous-retention pseudocyst", "Frothy mucus For following 2 questions:"],
+        "correct": 1,
+        "image": "images/coralrad-exam2-fall-2020/fig38.jpeg"
+      },
+      {
+        "text": "Structures A and B are most likely:",
+        "options": ["Ghost images", "Extraction sockets", "Periapical lesions", "Supernumerary teeth"],
+        "correct": 1
+      },
+      {
+        "text": "Structure C, which runs through the mandible, is known as the:",
+        "options": ["Mandibular canal", "Mental foramen", "Mandibular foramen", "Mental canal For following 4 questions:"],
+        "correct": 0,
+        "image": "images/coralrad-exam2-fall-2020/fig40.jpeg"
+      },
+      {
+        "text": "The visualized TMJ has some erosive changes.",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "text": "The visualized TMJ has some sclerotic changes.",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "text": "The visualized TMJ has some flattening.",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "text": "The visualized TMJ has some anterior osteophyte formation.",
+        "options": ["True", "False For following 3 questions:"],
+        "correct": 0,
+        "image": "images/coralrad-exam2-fall-2020/fig44.jpeg"
+      },
+      {
+        "text": "Which of the paranasal sinuses is indicated by the YELLOW color?",
+        "options": ["Maxillary", "Ethmoid", "Sphenoid", "Frontal"],
+        "correct": 0
+      },
+      {
+        "text": "Which of the paranasal sinuses is indicated by the MAGENTA/PURPLE/PINK color?",
+        "options": ["Maxillary", "Ethmoid", "Sphenoid", "Frontal"],
+        "correct": 1
+      },
+      {
+        "text": "Which of the paranasal sinuses is indicated by the GREEN color?",
+        "options": ["Maxillary", "Ethmoid", "Sphenoid", "Frontal"],
+        "correct": 2
+      }
+    ]
+  },
+  "coralrad-exam2-fall-2021": {
+    "title": "Clinical Oral Radiology Exam 2 (Fall 2021)",
+    "type": "coralrad",
+    "subtype": "exam2",
+    "questions": [
+      {
+        "text": "The radiodensity of healthy, clean maxillary sinuses is:",
+        "options": ["Hypodense / dark", "HYPERdense / bright", "The same radiodensity as soft tissue", "Unknown"],
+        "correct": 0
+      },
+      {
+        "text": "The normal shape of the mandibular condylar head is:",
+        "options": ["Flattened", "Triangular", "Rounded", "Pointy"],
+        "correct": 2
+      },
+      {
+        "text": "Which of the following is TRUE regarding a CT-Panoramic reconstruction / pseudopan / tru-pan?",
+        "options": ["It avoids the issue of beam-hardening artifacts.", "It has a better spatial resolution than a traditional panoramic radiograph", "It can be used to screen for caries", "It provides a quick overview of the teeth and jaws"],
+        "correct": 3
+      },
+      {
+        "text": "Beam-hardening artifacts are seen in which imaging modalities?",
+        "options": ["CBCT only", "CBCT and panoramic", "CBCT, panoramic, and intraoral radiographs", "CBCT and intraoral radiographs"],
+        "correct": 0
+      },
+      {
+        "text": "Measurements taken in the coronal plane are always true buccal-lingual measurements",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "When evaluating a CBCT, each structure should be evaluated in each plane.",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "text": "Beam hardening artifacts MOST COMMONLY hinder interpretation of what condition?",
+        "options": ["Dental caries", "Periapical cyst", "Periodontal bone loss", "Maxillary sinusitis"],
+        "correct": 0
+      },
+      {
+        "text": "You should be able to see the DISC of the temporomandibular joint in a CBCT.",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "You should be able to see the dentinoenamel junction in a CBCT.",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "text": "You should be able to see the root canal space of a young healthy patient’s teeth in a CBCT.",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "text": "Which of the following is NOT an indication to take a CBCT?",
+        "options": ["Implant planning", "6-month recall evaluation", "Evaluation of wisdom tooth near mandibular canal", "Evaluate bony lesion discovered on panoramic radiograph"],
+        "correct": 1
+      },
+      {
+        "text": "Which of the following terms best describes a list of suspected diagnoses for a particular entity?",
+        "options": ["impression", "diagnosis", "prognosis", "differential diagnosis"],
+        "correct": 3
+      },
+      {
+        "text": "Which of the following terms best describes a single suspected diagnosis based solely on radiographic information?",
+        "options": ["impression", "diagnosis", "treatment plan", "differential diagnosis"],
+        "correct": 0
+      },
+      {
+        "text": "A bony defect is present. Where is this defect located?",
+        "options": ["Right buccal mandible", "Right lingual mandible", "Left buccal mandible", "Left lingual mandible"],
+        "correct": 3,
+        "image": "images/coralrad-exam2-fall-2021/fig14.jpeg"
+      },
+      {
+        "text": "Which of the lines indicates the alveolar crest?",
+        "options": ["The line labeled “A”", "The line labeled “B”"],
+        "correct": 0,
+        "image": "images/coralrad-exam2-fall-2021/fig15.jpeg"
+      },
+      {
+        "text": "Which of the paranasal sinuses are visualized in this image?",
+        "options": ["Maxillary", "Ethmoid", "Sphenoid", "Frontal"],
+        "correct": 0,
+        "image": "images/coralrad-exam2-fall-2021/fig16.jpeg"
+      },
+      {
+        "text": "Which of the visualized paranasal sinuses is ABNORMAL?",
+        "options": ["Patient’s left", "Patient’s right"],
+        "correct": 0,
+        "image": "images/coralrad-exam2-fall-2021/fig17.jpeg"
+      },
+      {
+        "text": "Which of the following TMJ degenerative changes is MOST apparent in the image?",
+        "options": ["Flattening", "Expansion", "Erosion", "Crepitus"],
+        "correct": 0,
+        "image": "images/coralrad-exam2-fall-2021/fig18.jpeg"
+      },
+      {
+        "text": "Which of the following TMJ degenerative changes is MOST apparent in the image?",
+        "options": ["Flattening", "Sclerosis", "Erosion", "Disc displacement"],
+        "correct": 2,
+        "image": "images/coralrad-exam2-fall-2021/fig19.jpeg"
+      },
+      {
+        "text": "An entity isodense with (the same density as) soft tissue is noted on the floor of the maxillary sinuses. Note how it follows the walls of the sinus. Which of the following is the BEST impression?",
+        "options": ["Nasal polyps", "Mucosal thickening", "Sinonasal undifferentiated carcinoma (SNUC)", "Frothy mucus"],
+        "correct": 1,
+        "image": "images/coralrad-exam2-fall-2021/fig20.jpeg"
+      },
+      {
+        "text": "Which of the paranasal sinuses is indicated by the YELLOW color?",
+        "options": ["Maxillary", "Ethmoid", "Sphenoid", "Frontal"],
+        "correct": 0,
+        "image": "images/coralrad-exam2-fall-2021/fig21.jpeg"
+      },
+      {
+        "text": "Which of the paranasal sinuses is indicated by the MAGENTA/PURPLE/PINK color?",
+        "options": ["Maxillary", "Ethmoid", "Sphenoid", "Frontal"],
+        "correct": 1,
+        "image": "images/coralrad-exam2-fall-2021/fig22.jpeg"
+      },
+      {
+        "text": "Which of the paranasal sinuses is indicated by the GREEN color?",
+        "options": ["Maxillary", "Ethmoid", "Sphenoid", "Frontal These images are for the following questions:"],
+        "correct": 2,
+        "image": "images/coralrad-exam2-fall-2021/fig23.jpeg"
+      },
+      {
+        "text": "Which tooth number is indicated by the red arrow?",
+        "options": ["#1", "#16", "#17", "#32"],
+        "correct": 1
+      },
+      {
+        "text": "Is the tooth indicated by the red arrow impacted?",
+        "options": ["Yes", "No"],
+        "correct": 0
+      },
+      {
+        "text": "How many roots (or root canals) does the tooth indicated by the red arrow have?",
+        "options": ["2", "3", "4", "5"],
+        "correct": 2
+      },
+      {
+        "text": "Is any pathology noted in the visualized portions of the maxillary sinuses?",
+        "options": ["Yes", "No These images are for the following questions:"],
+        "correct": 1,
+        "image": "images/coralrad-exam2-fall-2021/fig27.jpeg"
+      },
+      {
+        "text": "Which of the following is the BEST impression for the maxillary sinuses?",
+        "options": ["Completely clear", "Mucosal thickening", "Mucous retention pseudocysts", "Frothy mucus"],
+        "correct": 1
+      },
+      {
+        "text": "Consider the HYPERdense entity in the maxillary bone, indicated by a red arrow. Based on its radiodensity (how HYPERdense it is), Which of the following is the LEAST REASONABLE to consider in your differential diagnosis?",
+        "options": ["Screw or other surgical hardware", "Retained restorative material", "Retained tooth root", "Metal from previous trauma"],
+        "correct": 2
+      },
+      {
+        "text": "Which of the following best describes the periodontal bone surrounding the visualized maxillary tooth?",
+        "options": ["No bone loss", "Mild bone loss", "Severe bone loss", "Cannot determine on a CBCT due to beam-hardening artifacts This image is for the following questions:"],
+        "correct": 2,
+        "image": "images/coralrad-exam2-fall-2021/fig30.jpeg"
+      },
+      {
+        "text": "One tooth is indicated by the reference lines. Which jaw is this tooth in?",
+        "options": ["Maxilla", "Mandible"],
+        "correct": 0
+      },
+      {
+        "text": "One tooth is indicated by the reference lines. Which side of the patient is this tooth located on?",
+        "options": ["Right", "Left"],
+        "correct": 1
+      },
+      {
+        "text": "One tooth is indicated by the reference lines. Is this tooth impacted?",
+        "options": ["Yes", "No"],
+        "correct": 0
+      },
+      {
+        "text": "One tooth is indicated by the reference lines. The tooth is at an angle. The crown is facing which direction?",
+        "options": ["Mesial", "Distal", "Buccal", "Lingual"],
+        "correct": 2
+      },
+      {
+        "text": "One tooth is indicated by the reference lines. Does the tooth approximate (come close enough to make contact with) the buccal cortex?",
+        "options": ["Yes", "No This image is for the following questions:"],
+        "correct": 0,
+        "image": "images/coralrad-exam2-fall-2021/fig35.jpeg"
+      },
+      {
+        "text": "A lesion is depicted in all 3 planes. Which if the following best describes its edges/borders?",
+        "options": ["Non-corticated", "Corticated (at least partially)"],
+        "correct": 1
+      },
+      {
+        "text": "A lesion is depicted in all 3 planes. Which if the following best describes its internal structure?",
+        "options": ["The same density as air", "The same density as bone", "The same density as soft tissue"],
+        "correct": 2
+      },
+      {
+        "text": "A lesion is depicted in all 3 planes. Which if the following is the best impression of this lesion?",
+        "options": ["Periodontal disease", "Periapical lesion", "Dental caries", "Mental foramen This image is for the following questions:"],
+        "correct": 1,
+        "image": "images/coralrad-exam2-fall-2021/fig38.jpeg"
+      },
+      {
+        "text": "What plane is this?",
+        "options": ["Axial", "Coronal/Frontal", "Sagittal"],
+        "correct": 0
+      },
+      {
+        "text": "Which term most accurately describes the “black area” indicated by the arrows?",
+        "options": ["Cancer", "Beam-hardening artifacts", "Peri-implantitis", "Infection This image is for the following questions:"],
+        "correct": 1,
+        "image": "images/coralrad-exam2-fall-2021/fig40.jpeg"
+      },
+      {
+        "text": "What plane is this?",
+        "options": ["Axial", "Coronal/Frontal", "Sagittal"],
+        "correct": 2
+      },
+      {
+        "text": "Due the periapical lesion associated with #3, Which of the following effects on adjacent structures can be seen in this image?",
+        "options": ["The buccal cortex has been eroded.", "The lingual cortex has been eroded.", "The floor of the maxillary sinus has been displaced.", "#3 has become loose in the mouth"],
+        "correct": 2
+      }
+    ]
+  },
+  "coralrad-exam2-fall-2022": {
+    "title": "Clinical Oral Radiology Exam 2 (Fall 2022)",
+    "type": "coralrad",
+    "subtype": "exam2",
+    "questions": [
+      {
+        "text": "Consider maxillary sinuses with mucosal thickening or a dome-shaped mucous retention pseudocyst. What is the internal structure of the mucosal thickening or a dome-shaped mucous retention pseudocyst?",
+        "options": ["Hypodense / dark", "HYPERdense / bright", "Isodense with (the same density as) soft tissue", "Mixed"],
+        "correct": 2
+      },
+      {
+        "text": "Sclerotic changes of the temporomandibular joints present as _________ on a CBCT.",
+        "options": ["Hypodense / dark", "HYPERdense / bright", "Isodense with (the same density as) soft tissue", "(cannot be visualized)"],
+        "correct": 1
+      },
+      {
+        "text": "You discover a well-defined, well-corticated round entity, isodense with soft tissue, associated with the crown of an unerupted tooth. This entity is most likely to be which of the following:",
+        "options": ["Periapical cyst", "Dentigerous cyst", "Mucous retention pseudocyst", "Squamous cell carcinoma"],
+        "correct": 1
+      },
+      {
+        "text": "Which of the following is NOT one of the paranasal sinuses?",
+        "options": ["Maxillary sinuses", "Ethmoid sinuses", "Sphenoid sinuses", "Nasal sinuses", "Frontal sinuses"],
+        "correct": 3
+      },
+      {
+        "text": "Which of the following is TRUE regarding a CT-Panoramic reconstruction / pseudopan / tru-pan?",
+        "options": ["It provides a quick overview of the teeth and jaws", "It shows the same structures as a traditional panoramic radiograph", "It can be used to screen for caries", "The focal trough / arch section cannot be adjusted"],
+        "correct": 0
+      },
+      {
+        "text": "What are the ramifications of beam-hardening artifacts in CBCT?",
+        "options": ["HYPERdense entities cause streak (beam-hardening) artifacts", "Detecting recurrent carries is difficult", "Gutta percha, posts, implants, and coronal restorations may all cause beam-hardening artifacts", "All of the answer choices are true"],
+        "correct": 3
+      },
+      {
+        "text": "Measurements taken in the coronal plane are always true buccal-lingual measurements",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "Measurements taken in the sagittal plane are always true buccal-lingual measurements",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "A CBCT provides more information than a panoramic radiograph about the relationship between wisdom teeth and their respective mandibular canals.",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "text": "When obtaining a CBCT to evaluate for mandibular wisdom tooth extraction, all of the following should be examined EXCEPT one. Which is the EXCEPTION?",
+        "options": ["Proximity to the buccal and lingual plates", "Proximity to the mandibular canal", "Proximity to the mental foramen", "The amount the roots are dilacerated"],
+        "correct": 2
+      },
+      {
+        "text": "All of the following are true regarding TMJ imaging EXCEPT one. Which is the EXCEPTION?",
+        "options": ["The TMJ disc is well-visualized on a CBCT", "The bony structures of the TMJ are well-visualized on a CBCT", "Anterior osteophyte formation and flattening can be seen on a CBCT", "Erosive and sclerotic changes can be seen on a CBCT"],
+        "correct": 0
+      },
+      {
+        "text": "If a tooth has internal resorption, its pulp chamber and/or root canals will appear:",
+        "options": ["Larger", "Smaller", "More HYPERdense", "Blurry"],
+        "correct": 0
+      },
+      {
+        "text": "Which of the following CANNOT be seen on a CBCT?",
+        "options": ["Periapical hypodensities", "Periodontal bone loss", "Endodontic (root canal) treatment", "All of the other answer choices can, in fact, be seen on a CBCT!"],
+        "correct": 3
+      },
+      {
+        "text": "Which of the following terms best describes a single suspected disease or condition based solely on radiographic information?",
+        "options": ["Impression", "Diagnosis", "Prognosis", "Treatment plan"],
+        "correct": 0
+      },
+      {
+        "text": "Which tooth is identified by the red arrow?",
+        "options": ["#6", "#11", "#27", "#22"],
+        "correct": 1,
+        "image": "images/coralrad-exam2-fall-2022/fig15.jpg"
+      },
+      {
+        "text": "Which pathological condition is best depicted for the tooth in the provided slices?",
+        "options": ["Hypercementosis", "Root canal treatment", "Apical periodontitis", "Internal resorption"],
+        "correct": 3,
+        "image": "images/coralrad-exam2-fall-2022/fig16.jpg"
+      },
+      {
+        "text": "Two planes are shown in the two provided slices. Which plane is NOT shown?",
+        "options": ["Axial", "Sagittal", "Coronal", "Frontal"],
+        "correct": 1,
+        "image": "images/coralrad-exam2-fall-2022/fig17.jpg"
+      },
+      {
+        "text": "In the CT-pan view, there appears to be a circular hypodensity the anterior mandible. Pay close attention to how the focal trough is drawn in the axial slice. Also pay close attention to the cross sections on the right side of the screen. Which of the following is the best impression of this circular hypodense entity?",
+        "options": ["Periapical cyst", "Buccal soft tissues", "Stafne defect", "Glandular odontogenic cyst"],
+        "correct": 1,
+        "image": "images/coralrad-exam2-fall-2022/fig18.jpg"
+      },
+      {
+        "text": "There is an entity noted around the crown of the wisdom tooth. Which of the following BEST describes its INTERNAL STRUCTURE?",
+        "options": ["HYPERdense, like bone", "Mixed radiolucent/radiopaque", "Isodense with (the same density as) soft tissue", "Mixed radiolucent with small circular calcifications"],
+        "correct": 2,
+        "image": "images/coralrad-exam2-fall-2022/fig19.jpg"
+      },
+      {
+        "text": "There is an entity noted around the crown of the wisdom tooth. Which of the following BEST describes its BORDERS?",
+        "options": ["Well-defined", "Poorly-defined"],
+        "correct": 0,
+        "image": "images/coralrad-exam2-fall-2022/fig20.jpg"
+      },
+      {
+        "text": "There is an entity noted around the crown of the wisdom tooth. Which of the following BEST describes its BORDERS?",
+        "options": ["Corticated", "Non-corticated"],
+        "correct": 0,
+        "image": "images/coralrad-exam2-fall-2022/fig21.jpg"
+      },
+      {
+        "text": "There is an entity noted around the crown of the wisdom tooth. Which of the following is the BEST IMPRESSION of this entity?",
+        "options": ["Periapical cyst of wisdom tooth", "Pericoronitis of wisdom tooth", "Dentigerous cyst of wisdom tooth", "Mucous retention pseudocyst of maxillary sinus"],
+        "correct": 2,
+        "image": "images/coralrad-exam2-fall-2022/fig22.jpg"
+      },
+      {
+        "text": "Based on the axial image, which mandibular condyle appears more irregular in shape?",
+        "options": ["Right mandibular condyle", "Left mandibular condyle"],
+        "correct": 1,
+        "image": "images/coralrad-exam2-fall-2022/fig23.jpg"
+      },
+      {
+        "text": "In cross sections of the TMJ, flattening is present.",
+        "options": ["True", "False"],
+        "correct": 0,
+        "image": "images/coralrad-exam2-fall-2022/fig24.jpg"
+      },
+      {
+        "text": "In cross sections of the TMJ, sclerosis is present.",
+        "options": ["True", "False"],
+        "correct": 0,
+        "image": "images/coralrad-exam2-fall-2022/fig25.jpg"
+      },
+      {
+        "text": "In cross sections of the TMJ, anterior osteophyte formation is present.",
+        "options": ["True", "False"],
+        "correct": 0,
+        "image": "images/coralrad-exam2-fall-2022/fig26.jpg"
+      },
+      {
+        "text": "In cross sections of the TMJ, erosive changes are present.",
+        "options": ["True", "False"],
+        "correct": 0,
+        "image": "images/coralrad-exam2-fall-2022/fig27.jpg"
+      },
+      {
+        "text": "In cross sections of the TMJ, degenerative changes are present:",
+        "options": ["At the mandibular condyle only", "At the articular eminence only", "At both the mandibular condyle and the articular eminence", "At neither the mandibular condyle nor the articular eminence"],
+        "correct": 2,
+        "image": "images/coralrad-exam2-fall-2022/fig28.jpg"
+      },
+      {
+        "text": "Which tooth has been root canal treated?",
+        "options": ["#1", "#2", "#3", "#4"],
+        "correct": 2,
+        "image": "images/coralrad-exam2-fall-2022/fig29.jpg"
+      },
+      {
+        "text": "Which of the follow best describes the periapical region?",
+        "options": ["Within normal limits", "Hypodense", "HYPERdense"],
+        "correct": 1,
+        "image": "images/coralrad-exam2-fall-2022/fig30.jpg"
+      },
+      {
+        "text": "Which of the following is the BEST IMPRESSION of this finding?",
+        "options": ["Dentigerous cyst", "Periapical lesion", "Periodontal bone loss", "Normal anatomy"],
+        "correct": 1,
+        "image": "images/coralrad-exam2-fall-2022/fig31.jpg"
+      },
+      {
+        "text": "There is an entity indicated by an arrow. Which of the following best describes the BORDERS of the entity?",
+        "options": ["Well-defined", "Poorly-defined"],
+        "correct": 0,
+        "image": "images/coralrad-exam2-fall-2022/fig32.jpg"
+      },
+      {
+        "text": "There is an entity indicated by an arrow. Which of the following best describes the INTERNAL STRUCTURE of the entity?",
+        "options": ["Hypodense compared to dentin", "HYPERdense compared to dentin"],
+        "correct": 0,
+        "image": "images/coralrad-exam2-fall-2022/fig33.jpg"
+      },
+      {
+        "text": "The entity is also visualized in the axial slice. Which of the following best describes the LOCATION of the entity?",
+        "options": ["Distal of #14", "Disto-lingual-cervical of #3", "Mesio-cervical of #15", "Disto-buccal-occlusal of #2"],
+        "correct": 1,
+        "image": "images/coralrad-exam2-fall-2022/fig34.jpg"
+      },
+      {
+        "text": "You notice that the tooth containing the unknown entity also has a small restoration and does not appear to causing beam-hardening artifacts. Given this information, what is the BEST IMPRESSION of the entity indicated by the arrow?",
+        "options": ["Dental caries", "Beam-hardening artifacts", "Internal resorption", "Cervical burnout"],
+        "correct": 0,
+        "image": "images/coralrad-exam2-fall-2022/fig35.jpg"
+      },
+      {
+        "text": "In what plane are all four of these slices?",
+        "options": ["Axial", "Frontal", "Sagittal", "Oblique"],
+        "correct": 1,
+        "image": "images/coralrad-exam2-fall-2022/fig36.jpg"
+      },
+      {
+        "text": "In this 15-year-old patient, which of the following is the BEST impression of the entity indicated by the red arrow?",
+        "options": ["Impacted molar", "Tooth in the nose", "Impacted supernumerary tooth", "Unerupted premolar"],
+        "correct": 2,
+        "image": "images/coralrad-exam2-fall-2022/fig37.jpg"
+      },
+      {
+        "text": "Which tooth has a root fracture?",
+        "options": ["#4", "#5", "#12", "#13"],
+        "correct": 1,
+        "image": "images/coralrad-exam2-fall-2022/fig38.jpg"
+      },
+      {
+        "text": "Which of the following red arrows BEST indicates the location of the alveolar crest? (I kept all the arrows the same color to ensure the exam is colorblind-friendly.)",
+        "options": ["Arrow A", "Arrow B", "Arrow C", "None of the arrows points to the alveolar crest"],
+        "correct": 1,
+        "image": "images/coralrad-exam2-fall-2022/fig39.jpg"
+      },
+      {
+        "text": "Based on the provided slices, which central incisors, if any, are fractured?",
+        "options": ["#8 and #9", "#8 only", "#9 only", "Neither #8 nor #9"],
+        "correct": 0,
+        "image": "images/coralrad-exam2-fall-2022/fig40.jpg"
+      },
+      {
+        "text": "Which of the following is the BEST impression of the maxillary sinuses?",
+        "options": ["Clear, filled only with air", "Filled with fluid", "Left and right maxillary sinus mucous retention pseudocysts", "Mucosal thickening"],
+        "correct": 3,
+        "image": "images/coralrad-exam2-fall-2022/fig41.jpg"
+      },
+      {
+        "text": "Which term best describes the “black areas” indicated by the arrows?",
+        "options": ["Osteomyelitis", "Beam-hardening artifacts", "Peri-implantitis", "Infection"],
+        "correct": 1,
+        "image": "images/coralrad-exam2-fall-2022/fig42.jpg"
+      },
+      {
+        "text": "There is a lesion near the floor of the left maxillary sinus. Which of the following best describes its borders?",
+        "options": ["Poorly-defined and non-corticated", "Well-defined and well-corticated", "Well-defined but non-corticated", "Poorly-defined and well-corticated"],
+        "correct": 1,
+        "image": "images/coralrad-exam2-fall-2022/fig43.jpg"
+      },
+      {
+        "text": "There is a lesion near the floor of the left maxillary sinus. Which of the following best describes its borders?",
+        "options": ["It is arising from the left maxillary sinus", "It is attached to the apex of tooth #15", "It appears to arise from the left maxillary sinus AND is attached to tooth #15", "It appears independent of both the left maxillary sinus AND tooth #15"],
+        "correct": 1,
+        "image": "images/coralrad-exam2-fall-2022/fig44.jpg"
+      },
+      {
+        "text": "There is a lesion near the floor of the left maxillary sinus. Based on your observations, which of the following is the BEST impression?",
+        "options": ["Mucous-retention pseudocyst", "Periapical lesion", "Cemento-osseous dysplasia", "Nasal polyp"],
+        "correct": 1,
+        "image": "images/coralrad-exam2-fall-2022/fig45.jpg"
+      },
+      {
+        "text": "In the sagittal slice, you note #13 and #12 have intracoronal hypodensities. You also note that there are multiple restorations on surrounding teeth. Which of the following is the BEST impression of the hypodensities?",
+        "options": ["Dental caries", "Periodontal disease", "Beam-hardening artifacts", "Fixed partial denture"],
+        "correct": 2,
+        "image": "images/coralrad-exam2-fall-2022/fig46.jpg"
+      }
+    ]
+  },
   "dao-final-summer-2016": {
     "title": "DAO Final Exam (Summer 2016)",
     "type": "dao",
