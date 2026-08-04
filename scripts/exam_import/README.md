@@ -153,14 +153,31 @@ are added.
 
 ```
 node scripts/build-exams.js   # regenerates exams.json from exams-csv/*.csv — never hand-edit exams.json
-python3 -m http.server 8000   # from the repo root, to preview locally
 ```
 
-Before shipping, visually verify in a real browser (Playwright is
-pre-installed at `/opt/pw-browsers/chromium`) — click into the new
-category/exams, take at least one exam, confirm images render, confirm
-question counts match what the Drive PDF summary reported. Don't rely on
-`build-exams.js` running without errors as proof the content is right.
+Before shipping, run the automated browser check instead of clicking
+through the app by hand:
+
+```
+NODE_PATH="$(npm root -g)" node scripts/exam_import/verify_batch.js <exam-id> [exam-id...]
+```
+
+(pass the same `exam-id`s used in the batch's `jobs` list). It starts a
+local server itself, loads the app in headless Chromium, jumps straight to
+every question of each exam, and checks: `exams.json`'s question count
+against the CSV's row count (catches a forgotten `build-exams.js` rerun),
+every question's rendered option/blank count against `exams.json`, and that
+every question image actually loads (not a 404). It screenshots one
+question per exam (preferring one with an image) to
+`/tmp/exam-verify-screenshots/<exam-id>.png` (override with `--out=`) —
+look at those to confirm the content actually reads right, since the script
+checks structure, not correctness of the parsed text/answers. Exits
+non-zero if anything failed. Don't rely on `build-exams.js` running without
+errors as proof the content is right.
+
+Requires the `playwright` package + Chromium (both pre-installed in this
+environment — see the module docstring in `verify_batch.js` if
+`require('playwright')` fails).
 
 Then commit, push to the working branch, open a PR, and merge — see the
 top-level `CLAUDE.md` for the exact git/PR workflow and this repo's
