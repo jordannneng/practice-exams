@@ -44,7 +44,41 @@ back as inline JSON; large files come back as a path to a `.txt` file under
 (`{content: base64 pdf bytes, id, mimeType, title}`) — either way, that's
 the `json_path` argument `parse_lib.decode_and_save_pdf` expects.
 
-## 2. The parsing pipeline (`parse_lib.py`)
+## 2. Reconnaissance: skim before you parse
+
+Before running the batch pipeline (or writing any code to extend it), do a
+quick pass over the raw material and form a plan — this is standard
+practice for every batch, not just ones that look unusual going in. It's
+cheap to do up front and expensive to discover midway through a batch
+you've already half-built:
+
+- **Extract text from each PDF and skim it** (`extract_text_and_images` is
+  enough — you don't need the full pipeline yet). Check the first page for
+  the actual course name/date (catches filename-vs-content year mismatches
+  like the Cariology gotcha in section 1), and grep for `Attachment:` to
+  see whether questions reference shared exhibits, and if so whether the
+  same attachment name repeats across a run of consecutive questions (a
+  case cluster, see "Case clusters" below) rather than each question having
+  its own distinct figure.
+- **For any attachment that isn't embedded in the exam's own pages**,
+  confirm the referenced file actually exists in Drive before planning
+  around it — and paginate the folder listing all the way through while
+  doing so (see the pagination-loop warning in "Case clusters" below;
+  don't conclude a file is missing from one page of results).
+- **Compare against what's already in the repo**: does this category exist
+  yet (`KNOWN_TYPES`)? Do the exam ids collide with anything in
+  `exams-csv/`? Does the source use a format `parse_lib.py` hasn't seen
+  before?
+
+If this turns up anything that isn't "a standard flat multiple-choice exam,
+same shape as what's already been imported" — a new attachment/exhibit
+pattern, a missing referenced file, an ambiguous or absent date, a format
+the parser doesn't already handle — stop and walk through a plan with the
+user before writing code or running the batch, the same way the
+Orthodontics unit's case-cluster pattern and its two exams with missing
+attachments got handled. Don't guess and don't silently work around a gap.
+
+## 3. The parsing pipeline (`parse_lib.py`)
 
 `parse_lib.py` in this directory is a finished, battle-tested library — do
 not rewrite it from scratch. It was built up incrementally across the DAO,
@@ -185,7 +219,7 @@ whether to hold the exam, drop the affected questions, or ship with an
 `issues` note — this happened for two Spring 2022 exams and cost real
 rework to notice after the fact instead of before parsing.
 
-## 3. Wiring a new category into the app
+## 4. Wiring a new category into the app
 
 If the batch is for a **class/category that doesn't exist yet** in the app
 (as opposed to just adding more exams to an existing category), you also
@@ -205,7 +239,7 @@ directly in `index.html`'s `TYPE_SEMESTER` block — read it rather than
 trusting this doc to stay in sync, since it will drift as more semesters
 are added.
 
-## 4. Build, verify, ship
+## 5. Build, verify, ship
 
 ```
 node scripts/build-exams.js   # regenerates exams.json from exams-csv/*.csv — never hand-edit exams.json
@@ -239,7 +273,7 @@ Then commit, push to the working branch, open a PR, and merge — see the
 top-level `CLAUDE.md` for the exact git/PR workflow and this repo's
 standing auto-ship policy for additive content changes.
 
-## 5. Keep this doc (and others) current
+## 6. Keep this doc (and others) current
 
 This file exists because a future Claude Code session will start with none
 of the current conversation's context — the whole point is to not have to
@@ -251,7 +285,7 @@ add it before you finish, not just when explicitly asked to update docs.
 
 Put it wherever a future session would actually look for it: a parser
 edge case goes in "Known gotchas" above, a Drive/folder quirk goes in
-section 1, a workflow change goes in section 4, and anything about the app
+section 1, a workflow change goes in section 5, and anything about the app
 or repo generally (not specific to importing) belongs in the top-level
 `CLAUDE.md` instead of here. If it doesn't fit any existing doc, it's fine
 to say so and ask the user where it should live rather than skipping it.
