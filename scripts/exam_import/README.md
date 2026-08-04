@@ -182,3 +182,20 @@ environment — see the module docstring in `verify_batch.js` if
 Then commit, push to the working branch, open a PR, and merge — see the
 top-level `CLAUDE.md` for the exact git/PR workflow and this repo's
 standing auto-ship policy for additive content changes.
+
+## 5. Keep this doc (and others) current
+
+This file exists because a future Claude Code session will start with none
+of the current conversation's context — the whole point is to not have to
+rediscover things the hard way twice. So: whenever you hit something during
+a batch that isn't already written down here — a new Drive folder quirk, a
+new parser gotcha, a wrinkle in the shipping workflow, a preference or
+correction the user gave you mid-session that'll matter again next time —
+add it before you finish, not just when explicitly asked to update docs.
+
+Put it wherever a future session would actually look for it: a parser
+edge case goes in "Known gotchas" above, a Drive/folder quirk goes in
+section 1, a workflow change goes in section 4, and anything about the app
+or repo generally (not specific to importing) belongs in the top-level
+`CLAUDE.md` instead of here. If it doesn't fit any existing doc, it's fine
+to say so and ask the user where it should live rather than skipping it.
