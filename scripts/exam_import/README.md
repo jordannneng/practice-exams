@@ -115,8 +115,11 @@ each one was added because a specific real exam broke without it:
   by de-hyphenating when a line ends in a letter+hyphen and the next line
   starts lowercase.
 - **Watermark/letterhead images** (`map_images_to_questions`): an image
-  whose exact bytes repeat identically across more than 2 pages is
-  filtered out as a watermark, not treated as a real per-question figure.
+  whose exact bytes repeat identically across more than half the document's
+  pages is filtered out as a watermark, not treated as a real figure. (This
+  used to be a flat ">2 pages" cutoff; raised to scale with document length
+  once the Orthodontics unit showed up with figures legitimately repeated
+  across 5-10 consecutive pages -- see "Case clusters" below.)
 - **Duplicate/typo'd option letters in the source**: `write_exam_csv`
   places options *positionally* and re-derives the correct answer from
   which option had the checkmark, rather than trusting the source's letter
@@ -128,6 +131,59 @@ each one was added because a specific real exam broke without it:
 If a new PDF breaks the parser in a way not covered above, fix
 `parse_lib.py` itself (it's shared, reusable infrastructure) and add a
 bullet here documenting the new gotcha.
+
+### Case clusters (one exhibit shared across several consecutive questions)
+
+First seen in the Orthodontics unit (D2 Fall): rather than each question
+carrying its own figure, a block of consecutive questions all say "Refer to
+[the] case" and share one clinical exhibit (a photo grid, a panoramic
+X-ray, or both), given via an identical `Attachment:` value repeated under
+every question in the block (e.g. `CASE 1.jpg` under questions 1-10). This
+shows up in two different forms depending on the source PDF, and a single
+exam can mix both:
+
+- **Embedded**: the exhibit image(s) are embedded directly in the exam PDF,
+  repeated on every page in the block. `map_images_to_questions` already
+  picks these up per-question (that's what the relaxed watermark threshold
+  above is for) -- no extra lookup needed.
+- **External**: the exhibit isn't in the exam PDF at all; it's a *separate*
+  PDF uploaded alongside it in the same Drive folder (e.g.
+  `Case 2 PDF.pdf`). The filename inside the exam text is **not**
+  reliable for an exact match against Drive (`Case 2 PDF.pdf` in the text
+  vs. `Spring 2023 Ortho Final Exam - Case 2.pdf` on Drive) -- find it by
+  fuzzy title match (e.g. "contains 'Case 2'") within the same subfolder,
+  download it, and pull its images with `extract_all_images`.
+
+Workflow: after `parse_questions`, call `find_attachment_clusters(questions)`
+to get `[(attachment_text, [question_nums]), ...]` for every contiguous run
+sharing one non-blank attachment (case-insensitive, since the source has
+typo'd casing on the same attachment mid-block at least once). For each
+cluster, `resolve_case_clusters(image_map, clusters, map_dir,
+external_images)` composites that cluster's image(s) into one file (via
+`composite_images`, stacked vertically -- keeps the CSV/app to one
+`image` field per question, no schema change) and points every question in
+the cluster at it. `external_images` is `{attachment_text: [images]}` for
+clusters you had to resolve externally (build it yourself from
+`extract_all_images` before calling); a cluster with no embedded images and
+no entry there raises rather than silently shipping a blank exhibit.
+
+Watch for **re-embedded duplicates**: some source PDFs embed the *same*
+exhibit image twice per question (identical pixel dimensions, different
+JPEG bytes from re-compression) rather than one image appearing once.
+`resolve_case_clusters` dedupes by pixel dimensions before compositing so
+these don't get stacked on top of a copy of themselves -- this means two
+*genuinely* different exhibits that happen to share exact dimensions would
+wrongly get merged into one. Low probability, but it's why you check the
+composited screenshot (via `verify_batch.js`) for any newly-added
+case-based exam rather than trusting the pipeline blind.
+
+If a case's external attachment PDF genuinely isn't in the Drive folder
+(paginate all the way through with `search_files` before concluding this —
+watch for the API looping back to page 1 instead of truly ending), don't
+guess or ship the affected questions without their exhibit. Ask the user
+whether to hold the exam, drop the affected questions, or ship with an
+`issues` note — this happened for two Spring 2022 exams and cost real
+rework to notice after the fact instead of before parsing.
 
 ## 3. Wiring a new category into the app
 

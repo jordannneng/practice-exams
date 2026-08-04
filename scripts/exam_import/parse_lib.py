@@ -16,7 +16,7 @@ in Drive, how to run this, and known gotchas). In short, per PDF:
 Requires PyMuPDF: pip install pymupdf (importable as `fitz`).
 """
 
-import re, json, os, base64, fitz
+import re, json, os, base64, fitz, hashlib
 
 def decode_and_save_pdf(json_path, pdf_out_path):
     """json_path points at a file containing the Google Drive
@@ -224,10 +224,18 @@ def map_images_to_questions(pdf_path, out_dir):
     pages_per_hash = {}
     for _, page_no, h, *_ in candidates:
         pages_per_hash.setdefault(h, set()).add(page_no)
+    # A watermark/letterhead repeats on essentially every page of the
+    # document; a real figure shared across a handful of consecutive
+    # questions (a "case cluster" -- see find_attachment_clusters) does not
+    # get anywhere close to that. Scale the cutoff to the document length
+    # instead of a fixed page count so multi-page case clusters (seen first
+    # in the Orthodontics unit, where one figure covers 5-10 consecutive
+    # questions) don't get discarded as if they were letterhead.
+    watermark_threshold = max(2, len(doc) // 2)
     result = {}
     img_counter = 0
     for current_q, page_no, h, ext, data, w, ht in candidates:
-        if len(pages_per_hash[h]) > 2:
+        if len(pages_per_hash[h]) > watermark_threshold:
             continue  # repeats across too many pages to be a real figure
         img_counter += 1
         fname = f'mapped_img{img_counter}.{ext}'
@@ -235,6 +243,150 @@ def map_images_to_questions(pdf_path, out_dir):
             f.write(data)
         result.setdefault(current_q, []).append({'file': fname, 'w': w, 'h': ht})
     return result
+
+def find_attachment_clusters(questions):
+    """Group consecutive question numbers that share the same non-blank
+    'attachment' value (e.g. "Case 2 PDF.pdf" repeated under questions 11-18)
+    -- these questions share one reference exhibit rather than each having
+    their own distinct figure. Returns [(attachment_text, [nums]), ...],
+    nums sorted ascending and contiguous within each cluster."""
+    nums = sorted(questions.keys())
+    clusters = []
+    cur_att = None
+    cur_key = None
+    cur_nums = []
+    for n in nums:
+        att = (questions[n].get('attachment') or '').strip()
+        # Compare case-insensitively: the source has typo'd casing on the
+        # same attachment within one cluster (e.g. "Case 1.pdf" then
+        # "case 1.pdf" a question later, in exam1_2022) -- an exact-string
+        # comparison would wrongly split one cluster into several.
+        key = att.lower()
+        if att and key == cur_key and cur_nums and n == cur_nums[-1] + 1:
+            cur_nums.append(n)
+        else:
+            if cur_nums:
+                clusters.append((cur_att, cur_nums))
+            cur_att = att or None
+            cur_key = key or None
+            cur_nums = [n] if att else []
+    if cur_nums:
+        clusters.append((cur_att, cur_nums))
+    return clusters
+
+def extract_all_images(pdf_path):
+    """Return every distinct (by byte hash) embedded image in a PDF, in
+    reading order. For small single-purpose attachment PDFs (e.g. a "Case 2
+    PDF.pdf" exhibit that isn't embedded in the exam's own pages at all) --
+    not watermark-filtered, since the whole file is the exhibit, and there's
+    no "current question" to attribute images to block-by-block."""
+    doc = fitz.open(pdf_path)
+    seen = set()
+    out = []
+    for page in doc:
+        blocks = page.get_text('dict')['blocks']
+        blocks.sort(key=lambda b: (round(b['bbox'][1], 1), round(b['bbox'][0], 1)))
+        for b in blocks:
+            if b['type'] != 1:
+                continue
+            h = hashlib.md5(b['image']).hexdigest()
+            if h not in seen:
+                seen.add(h)
+                out.append({'ext': b.get('ext', 'png'), 'data': b['image']})
+    return out
+
+def composite_images(images, out_path):
+    """Stack a list of {'ext','data'} embedded images vertically into one
+    JPEG at out_path, scaling each to a common width. Used so a case
+    cluster's multiple exhibits (e.g. a clinical-photo grid + a panoramic
+    radiograph) show up as the one figure a question can carry, instead of
+    requiring the app to support multiple images per question. Requires
+    Pillow (pip install pillow)."""
+    from PIL import Image
+    import io
+    pil_imgs = [Image.open(io.BytesIO(im['data'])).convert('RGB') for im in images]
+    width = max(im.width for im in pil_imgs)
+    scaled = []
+    for im in pil_imgs:
+        if im.width != width:
+            im = im.resize((width, round(im.height * width / im.width)))
+        scaled.append(im)
+    gap = 10
+    total_h = sum(im.height for im in scaled) + gap * (len(scaled) - 1)
+    canvas = Image.new('RGB', (width, total_h), 'white')
+    y = 0
+    for im in scaled:
+        canvas.paste(im, (0, y))
+        y += im.height + gap
+    canvas.save(out_path, quality=88)
+
+def _dedupe_images_by_size(images):
+    """Some source PDFs re-embed the exact same case picture more than once
+    per question (identical pixel dimensions, different JPEG compression, so
+    it doesn't dedupe by byte hash) -- e.g. Case 1/3/4/5 in the Spring 2023
+    Orthodontics final each carry one real exhibit image that shows up twice
+    in image_map with different bytes. Composite would otherwise stack a
+    picture on top of a copy of itself. A genuinely distinct second exhibit
+    (Case 2's clinical-photo grid + separate panoramic X-ray) has different
+    dimensions, so this dedupe doesn't touch it. Small risk: two truly
+    different exhibits that happen to share exact pixel dimensions would get
+    wrongly collapsed -- check the composite screenshot when a new
+    case-based exam is added."""
+    from PIL import Image
+    import io
+    seen_sizes = set()
+    out = []
+    for im in images:
+        size = Image.open(io.BytesIO(im['data'])).size
+        if size in seen_sizes:
+            continue
+        seen_sizes.add(size)
+        out.append(im)
+    return out
+
+def resolve_case_clusters(image_map, clusters, map_dir, external_images=None):
+    """Composite each attachment cluster's shared image(s) into one file and
+    point every question in the cluster at it, overwriting whatever those
+    questions' own image_map entries were -- a case cluster's questions
+    share one exhibit rather than each having a distinct figure.
+
+    For a cluster whose questions already carry embedded images (the case
+    picture is repeated on every page in that range, e.g. "CASE 1.jpg"),
+    those already-saved files (from map_images_to_questions) are read back
+    and composited. For a cluster with no embedded images at all (the case
+    is a separate attachment PDF not embedded in the exam, e.g.
+    "Case 2 PDF.pdf"), external_images must supply
+    {attachment_text: [{'ext','data'}, ...]} (see extract_all_images) --
+    raises if one is needed but missing, rather than silently shipping a
+    case cluster with no figure.
+
+    Mutates image_map in place. Returns [(attachment_text, nums, filename)]
+    for what was written, for the caller to log."""
+    external_images = external_images or {}
+    written = []
+    counter = 0
+    for att, nums in clusters:
+        images = None
+        for n in nums:
+            entries = image_map.get(n)
+            if entries:
+                images = []
+                for e in entries:
+                    with open(os.path.join(map_dir, e['file']), 'rb') as f:
+                        images.append({'ext': e['file'].rsplit('.', 1)[-1], 'data': f.read()})
+                break
+        if images is None:
+            if att not in external_images:
+                raise ValueError(f'case cluster {att!r} (questions {nums}) has no embedded images in the exam and no external images were supplied for it')
+            images = external_images[att]
+        images = _dedupe_images_by_size(images)
+        counter += 1
+        fname = f'case{counter}.jpg'
+        composite_images(images, os.path.join(map_dir, fname))
+        for n in nums:
+            image_map[n] = [{'file': fname}]
+        written.append((att, nums, fname))
+    return written
 
 def write_exam_csv(questions, image_map, out_csv_path, title, exam_type, image_url_prefix, subtype=''):
     """questions: {num: {text, options:[(letter,text)], correct, ...}}
