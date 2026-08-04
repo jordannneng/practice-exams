@@ -22515,6 +22515,223 @@
       }
     ]
   },
+  "ortho-final-spring-2018": {
+    "title": "Orthodontics Final Exam (Spring 2018)",
+    "type": "ortho",
+    "subtype": "final",
+    "questions": [
+      {
+        "text": "Which is NOT a typical approach to deal with crowding?",
+        "options": ["Extraction of bicuspids", "Slenderization (IPR) of teeth", "Utilization of e-space", "Extraction of molars"],
+        "correct": 3
+      },
+      {
+        "text": "Which of the following statements regarding facial balance is false?",
+        "options": ["Extraction of bicuspids can reduce facial fullness", "Race or ethnicity has no bearing on extraction of teeth for facial fullness", "Incisor proclination can increase facial fullness", "Slenderization of teeth alone may not improve facial fullness"],
+        "correct": 1
+      },
+      {
+        "text": "Which of the following is true of the curve of Spee?",
+        "options": ["Adds to crowding", "Can affect the Overbite", "is Levelled to achieve a flatter occlusal plane", "all of the above"],
+        "correct": 3
+      },
+      {
+        "text": "In spacing cases, an orthodontist should:",
+        "options": ["Close spaces anterior and posterior to the bicuspids", "Never extract bicuspids", "Always extract bicuspids", "Leave spaces distal to the bicuspids"],
+        "correct": 0
+      },
+      {
+        "text": "Which of the following applies to class II div 2?",
+        "options": ["Overjet is moderate to severe", "Frequently presents with an openbite", "Upper lateral incisors are flared", "Upper central incisors are flared"],
+        "correct": 2
+      },
+      {
+        "text": "A Class 2 subdivision right case will have?",
+        "options": ["class 2 on the left, class 1 on the right", "class 2 on the right, class 1 on the left", "class 2 on both sides", "Class 2 on the right, class 3 on the left"],
+        "correct": 1
+      },
+      {
+        "text": "Which of the following is not a possible class 2 skeletal pattern?",
+        "options": ["Maxilla protrusive, mandible retrusive", "Maxilla protrusive, mandible in good position", "Maxilla retrusive, mandible protrusive", "Maxilla in good position, mandible retrusive"],
+        "correct": 2
+      },
+      {
+        "text": "Which of the following is a typical class 3 skeletal pattern?",
+        "options": ["Maxilla Protrusive, mandible retrusive", "Maxilla protrusive, mandible in good position", "Maxilla retrusive, mandible protrusive", "Maxilla in good position, mandible retrusive"],
+        "correct": 2
+      },
+      {
+        "text": "Which is not true of class 2 division 1?",
+        "options": ["Overjet is more than 2.5-3 mm", "Upper central incisors are retroclined", "The mesio-buccal cusp of the upper first molar is anterior (mesial) to the buccal groove ofthe lower first molar bilaterally", "Class 2 division 1 cases can vary in overbite"],
+        "correct": 1
+      },
+      {
+        "text": "In a typical class 2 subdivision left case, one would find the mandibular midline:",
+        "options": ["Coincident with maxillary midline", "To the right of the maxillary midline", "To the left of the maxillary midline", "Both upper and lower midlines will be to the left"],
+        "correct": 2
+      },
+      {
+        "text": "An adult non -grower will respond to typical orthodontic forces",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "In a class 2 case with maxillary protrusion and the mandible in good position, extraction of upper bicuspids will:",
+        "options": ["not affect lip fullness", "reduce lip fullness", "increase lip incompetence", "have no effect on lip incompetence"],
+        "correct": 1
+      },
+      {
+        "text": "Adaptive growth response in class II correction pertains to:",
+        "options": ["Maxillary changes", "Mandibular symphysis changes", "Condylar changes", "Sutural changes"],
+        "correct": 2
+      },
+      {
+        "text": "which is true of pseudo Class III",
+        "options": ["patient cannot bite edge to edge", "Patient can bite edge to edge", "Is related to significant mandibular bone apposition", "Does not have a CO/CR shift"],
+        "correct": 1
+      },
+      {
+        "text": "Which of the following is false?",
+        "options": ["Growth of the mandible can continue beyond maxillary growth", "Genetics plays a role in growth of the mandible", "Growth of the mandible stops sooner in boys than in girls", "Growth of the mandible can continue into the twenties"],
+        "correct": 2
+      },
+      {
+        "text": "Camouflage treatment in a class III malocclusion involves",
+        "options": ["upper and lower incisor retroclination", "upper and lower incisor proclination", "upper incisor proclination; lower incisor retroclination", "upper incisor retroclination; lower incisor proclination"],
+        "correct": 2
+      },
+      {
+        "text": "The concept of \"meet to eat\" suggests that",
+        "options": ["There is a natural dental compensation for a skeletal discrepancy", "Dental compensations occur only in class I cases", "Class III cases will show proclination of lower incisors", "Class II cases will show retroclination of lower incisors"],
+        "correct": 0
+      },
+      {
+        "text": "Why is it important to determine if a patient is a pseudo or true class III",
+        "options": ["Pseudo class III is a skeletal problem", "True class III must be treated early because it will not relapse", "True class III is a basic dental problem", "none of the above"],
+        "correct": 3
+      },
+      {
+        "text": "Anterior crossbite of one tooth",
+        "options": ["Is a rare occurence", "Should be observed and followed", "Should be treated as soon as possible", "Has no effect on the opposing dentition"],
+        "correct": 2
+      },
+      {
+        "text": "Which of the following is not an etiological factor in the development of an anterior crossbite",
+        "options": ["over-retained upper deciduous anterior tooth", "early loss of an upper deciduous anterior tooth", "crowded upper anterior teeth/spaced lower anterior teeth", "Retroclined lower anteriors"],
+        "correct": 3
+      },
+      {
+        "text": "Anterior crossbite of one or more teeth can cause lower incisors to move labially off the bone",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "text": "Periodontal therapy is an important adjunct when treating an anterior crossbite of one or two teeth",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "Crossbites usually appear as",
+        "options": ["anterior only", "posterior only", "anterior and posterior", "all of the above"],
+        "correct": 3
+      },
+      {
+        "text": "Posterior crossbite \"with a shift\" refers to a shift of ?",
+        "options": ["The Mandible forward", "The mandibular midline to the side of the crossbite", "The mandibular midline to the opposite side of the crossbite", "The Maxillary midline"],
+        "correct": 1
+      },
+      {
+        "text": "Posterior crossbite causes a true facial asymmetry",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "Posterior crossbite correction is usually done",
+        "options": ["As the first step in treatment", "Midway through treatment", "After braces placed and teeth aligned", "Just Prior to braces removal"],
+        "correct": 0
+      },
+      {
+        "text": "Which of the following is true of a rapid palatal expander",
+        "options": ["Bands are placed only on the bicuspids", "Palate expander is turned once per week", "palate expander is turned 1-2 times per day", "palate expansion is rarely ovecorrected"],
+        "correct": 2
+      },
+      {
+        "text": "Palate expansion occurs at the midpalatal suture",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "text": "Which of the following situations does not always require palatal expansion?",
+        "options": ["posterior crosbite with a shift", "posterior crossbite without a shift", "Bilateral posterior crossbite", "Posterior crossbite related to a habit"],
+        "correct": 1
+      },
+      {
+        "text": "Surgically assisted Rapid palatal expansion is indicated in",
+        "options": ["Adolescent boys", "Pre-teens", "Adults", "children under 9"],
+        "correct": 2
+      },
+      {
+        "text": "The malocclusion is best classified as:",
+        "options": ["class I division2", "class 2 division 2", "class 3", "class 2 subdivision right"],
+        "correct": 3,
+        "image": "images/ortho-final-spring-2018/fig31.jpeg"
+      },
+      {
+        "text": "The overjet, at 3 , is considered:",
+        "options": ["normal", "mild", "moderate", "severe"],
+        "correct": 0,
+        "image": "images/ortho-final-spring-2018/fig32.jpeg"
+      },
+      {
+        "text": "The overbite would be described as :",
+        "options": ["Openbite", "Shallow", "Moderate", "Very deep"],
+        "correct": 2,
+        "image": "images/ortho-final-spring-2018/fig33.jpeg"
+      },
+      {
+        "text": "The crossbite present would be described as:",
+        "options": ["no crossbite", "posterior crossbite with a shift", "posterior crossbite without a shift", "bilateral posterior crossbite"],
+        "correct": 0,
+        "image": "images/ortho-final-spring-2018/fig34.jpeg"
+      },
+      {
+        "text": "The Incisor inclination would be described as:",
+        "options": ["Upper incisors proclined, lower incisors retroclined", "Upper and lower incisors proclined", "Upper and lower incisors retroclined", "upper incisors retroclined, lower incisors proclined"],
+        "correct": 2,
+        "image": "images/ortho-final-spring-2018/fig35.jpeg"
+      },
+      {
+        "text": "The best description of crowding in this case would be:",
+        "options": ["Severe upper crowding, moderate lower crowding, available e-space", "Mild upper crowding, mild lower crowding, no available e-space", "Severe upper crowding, mild lower crowding, no available e-space", "No upper crowding, moderate lower crowding, available e-space"],
+        "correct": 0,
+        "image": "images/ortho-final-spring-2018/fig36.jpeg"
+      },
+      {
+        "text": "An e-line drawn on this patient would indicate that the lip area is",
+        "options": ["Normal for caucasian", "Full for caucasian", "Flat for caucasian", "bimaxillary protrusive"],
+        "correct": 2,
+        "image": "images/ortho-final-spring-2018/fig37.jpeg"
+      },
+      {
+        "text": "Which of the following is not a consideration in the treatment plan of this patient?",
+        "options": ["bicuspid extraction risks facial flattening", "there is too much crowding for slenderization", "Incisors should not be flared", "there is e-space available"],
+        "correct": 2,
+        "image": "images/ortho-final-spring-2018/fig38.jpeg"
+      },
+      {
+        "text": "Extraction of bicuspids to deal with crowding in this case:",
+        "options": ["risks facial flattening", "is a viable treatment consideration", "would be better than slenderization", "all of the above"],
+        "correct": 3,
+        "image": "images/ortho-final-spring-2018/fig39.jpeg"
+      },
+      {
+        "text": "Expansion mesially, distally or sagitally is not a viable treatment option in this case",
+        "options": ["True", "False"],
+        "correct": 1,
+        "image": "images/ortho-final-spring-2018/fig40.jpeg"
+      }
+    ]
+  },
   "ortho-final-spring-2019": {
     "title": "Orthodontics Final Exam (Spring 2019)",
     "type": "ortho",
@@ -23704,6 +23921,468 @@
         "options": ["True class 3", "Pseudo class 3", "Skeletal problem instead of a dental problem", "No CO/CR shift forward"],
         "correct": 1,
         "image": "images/ortho-final-spring-2023/fig50.jpg"
+      }
+    ]
+  },
+  "ortho-midterm-spring-2018": {
+    "title": "Orthodontics Midterm Exam (Spring 2018)",
+    "type": "ortho",
+    "subtype": "midterm",
+    "questions": [
+      {
+        "text": "Which is not part of routine orthodontic records?",
+        "options": ["Panoramic X-ray", "Cephalometric x-ray", "Photos of face and teeth", "Hand-wrist radiograph"],
+        "correct": 3
+      },
+      {
+        "text": "Anatomic points are drawn on panoramic x-rays and angles/measurements are derived from these points",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "A large photo mirror is used for occlusal views of the dental arches",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "text": "Which of the following is not a routine photograph taken as part of orthodontic records?",
+        "options": ["Center-teeth in occlusion", "Submental view", "Right Buccal view", "Left buccal view"],
+        "correct": 1
+      },
+      {
+        "text": "Considering modern dental radiography, the “SLOB” rule is better than a cone beam x-ray to assess the bucco-lingual position of an impacted Maxillary canine",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "When taking intraoral photos, the center view with teeth in occlusion and the right/left buccal views should have the occlusal plane in the middle of the image and parallel to the edge of the photo",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "text": "Which of the following best represents the value of extra-oral and intra-oral photos as part of orthodontic records?",
+        "options": ["Define starting occlusal relationship", "Define facial balance", "Allow evaluation of treatment progress", "All of the above"],
+        "correct": 3
+      },
+      {
+        "text": "Panoramic x-rays do not provide information on which of the following?",
+        "options": ["Direction of facial growth", "Root position and length", "Eruption during the mixed dentition", "The presence of missing teeth"],
+        "correct": 0
+      },
+      {
+        "text": "Growth of the jaws is downward and forward",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "text": "The main growth site in the mandible is the chin",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "Sutures are the main growth sites in the mandible",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "A normo-divergent individual is also known as?",
+        "options": ["Low-angle", "Normal angle", "High angle", "Tri-angle"],
+        "correct": 1
+      },
+      {
+        "text": "What might one expect to see in a hyperdivergent individual?",
+        "options": ["Very deep bite", "Anterior open bite", "Short lower face", "A line tangent to the mandibular plane lies below the base of the cranium"],
+        "correct": 1
+      },
+      {
+        "text": "A high angle grower is characterized by what directions of growth",
+        "options": ["More downward, less forward", "Less downward, more forward", "Neither downward nor forward", "Upward and backward"],
+        "correct": 0
+      },
+      {
+        "text": "A line drawn tangent to the mandibular plane that intersects the head below the base of the cranium is characteristic of what type of grower?",
+        "options": ["Hyper-divergent", "Normo-divergent", "Hypo-divergent", "High angle"],
+        "correct": 2
+      },
+      {
+        "text": "Orthodontists favor the Palmer system of tooth numbering",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "text": "Orthodontists can use the leeway space to help correct crowding situations because?",
+        "options": ["The erupting premolars are larger than the deciduous molars", "The erupting premolars are smaller than the deciduous molars", "The erupting premolars are equal in size to the deciduous molars", "The premolars do not erupt"],
+        "correct": 1
+      },
+      {
+        "text": "Patients should never be evaluated for orthodontic treatment until the second deciduous molars have exfoliated",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "In a class 1 relation, the mesio-buccal cusp of the upper first molar is anterior (mesial) to the buccal groove of the lower first molar",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "Angle defined the jaw relationship as “normal” in what class of occlusion?",
+        "options": ["Class 1", "Class 2", "Class 3", "Class 4"],
+        "correct": 0
+      },
+      {
+        "text": "A prognathic or protrusive mandible is characteristic of what class of occlusion?",
+        "options": ["Class 1", "Class 2", "Class 3", "Class 4"],
+        "correct": 2
+      },
+      {
+        "text": "Angle defined a retrusive mandible as characteristic of what class of occlusion?",
+        "options": ["Class 1", "Class 2", "Class 3", "Class 4"],
+        "correct": 1
+      },
+      {
+        "text": "The normal value for overjet is approximately 2.5-3 mm",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "text": "A transverse discrepancy is also known as a?",
+        "options": ["Deep bite", "Open bite", "Crossbite", "Overbite"],
+        "correct": 2
+      },
+      {
+        "text": "Which is NOT true of overbite?",
+        "options": ["Is a vertical measurement", "Represents the vertical degree of overlap of the upper and lower incisors", "Is commonly confused with overjet by the public", "Is considered normal at 100 percent"],
+        "correct": 3
+      },
+      {
+        "text": "From a frontal perspective, the occlusal plane should always be canted relative to the face",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "The occlusal plane should be flat in an ideal occlusion and is therefore affected by curves of Spee",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "text": "The more the class II the patient, the more the overjet increases",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "text": "What of the following is NOT true of overjet?",
+        "options": ["Esthetics often promote desire for overjet correction", "Risk of anterior trauma increases with increased overjet", "Without incisal guidance, continued eruption of mandibular teeth can be destructive to upper anterior palatal tissue", "Severe overjet is irrelevant to risk of trauma to upper anterior teeth"],
+        "correct": 3
+      },
+      {
+        "text": "An overjet of 6 or more mm is considered “mild”",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "An overbite of 30-60% is considered “moderate”",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "text": "An open bite can result in difficulty eating certain foods such as pizza",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "text": "A deep bite can be destructive to upper anterior palatal tissues",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "text": "Which of the following is true about a crossbite?",
+        "options": ["Always anterior only", "Always posterior only", "Can present both anterior and posterior", "Is always bilateral"],
+        "correct": 2
+      },
+      {
+        "text": "Facial balance is influenced by race and ethnicity",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "text": "Which is NOT true of Ricketts E-line?",
+        "options": ["Is a line from the tip of the nose to the chin", "The lips should fall well forward of the line in a Caucasian individual", "The lips should fall at or behind the line in a Caucasian individual", "African- American or Hispanic individuals might have their lips fall forward of the E-line"],
+        "correct": 1
+      },
+      {
+        "text": "The further the lips are back from the E-line, the less the nose and chin will appear dominant",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "What is lip competence?",
+        "options": ["Ability to Whistle", "Ability to play a brass instrument", "Ability to close the lips without strain", "Ability to properly chew food"],
+        "correct": 2
+      },
+      {
+        "text": "Muscle strain in the chin region while trying to close is typical of what?",
+        "options": ["Deep overbite", "Class I relation", "Lip incompetence", "Canted occlusal plane"],
+        "correct": 2
+      },
+      {
+        "text": "When considering proper incisor inclination or angulation:",
+        "options": ["Incisors should be flared significantly", "Incisors should be retroclined significantly", "Incisors should be leaning slightly forward", "Retroclined incisors is always a treatment goal"],
+        "correct": 2
+      },
+      {
+        "text": "Distally splaying Maxillary lateral incisors is an early clue to possible what?",
+        "options": ["Crossbite", "Crowding", "Maxillary canine impaction", "Spacing"],
+        "correct": 2
+      },
+      {
+        "text": "Maxillary canine impaction is uncommon",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "In a 9-year-old patient, a panoramic x-ray shows the maxillary canines erupting towards the midline. You should:",
+        "options": ["Ignore the finding", "Retake the Panoramic x-ray", "Assume the permanent canines will erupt ideally", "Consider removal of Maxillary deciduous canines"],
+        "correct": 3
+      },
+      {
+        "text": "Buccally impacted Maxillary Canines can resorb the roots of adjacent lateral incisors",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "text": "Which is true for an exposure of a Maxillary impacted canine?",
+        "options": ["Rarely done procedure", "Is performed by the general dentist", "Never delays orthodontic treatment time", "An attachment is placed on the canine and the orthodontist teases the canine down onto place"],
+        "correct": 3
+      },
+      {
+        "text": "When should a typical patient be screened with a panoramic x-ray for potential Maxillary canine impaction?",
+        "options": ["age 9", "Age 6", "Age 7", "Age 12"],
+        "correct": 0
+      },
+      {
+        "text": "Removal of deciduous canines will always prevent Maxillary canine impaction",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "Lip Incompetence is a desirable facial feature and should never be eliminated",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "Lip competence should be taken into account when planning orthodontic treatment",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "text": "Facial balance is equally as important as occlusion in planning orthodontic intervention",
+        "options": ["True", "False"],
+        "correct": 0
+      }
+    ]
+  },
+  "ortho-midterm-spring-2019": {
+    "title": "Orthodontics Midterm Exam (Spring 2019)",
+    "type": "ortho",
+    "subtype": "midterm",
+    "questions": [
+      {
+        "text": "Anatomic points are drawn on panoramic x-rays and angles/measurements are derived from these points",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "Which of the following is not a routine photograph taken as part of orthodontic records?",
+        "options": ["Center-teeth in occlusion", "Submental view", "Right Buccal view", "Left buccal view"],
+        "correct": 1
+      },
+      {
+        "text": "Which of the following best represents the value of extra-oral and intra-oral photos as part of orthodontic records?",
+        "options": ["Define starting occlusal relationship", "Define facial balance", "Allow evaluation of treatment progress", "All of the above"],
+        "correct": 3
+      },
+      {
+        "text": "Panoramic x-rays do not provide information on which of the following?",
+        "options": ["Direction of facial growth", "Root position and length", "Eruption during the mixed dentition", "The presence of missing teeth"],
+        "correct": 0
+      },
+      {
+        "text": "What might one expect to see in a hyperdivergent individual?",
+        "options": ["Very deep bite", "Anterior open bite", "Short lower face", "A line tangent to the mandibular plane lies below the base of the cranium"],
+        "correct": 1
+      },
+      {
+        "text": "A high angle grower is characterized by what directions of growth",
+        "options": ["More downward, less forward", "Less downward, more forward", "Neither downward nor forward", "Upward and backward"],
+        "correct": 0
+      },
+      {
+        "text": "A line drawn tangent to the mandibular plane that intersects the head below the base of the cranium is characteristic of what type of grower?",
+        "options": ["Hyper-divergent", "Normo-divergent", "Hypo-divergent", "High angle"],
+        "correct": 2
+      },
+      {
+        "text": "What might one expect to see in a hypodivergent individual?",
+        "options": ["deep bite", "Anterior open bite", "Long lower face", "A line tangent to the mandibular plane lies within the base of the cranium"],
+        "correct": 0
+      },
+      {
+        "text": "A transverse discrepancy is also known as a?",
+        "options": ["Deep bite", "Open bite", "Crossbite", "Overbite"],
+        "correct": 2
+      },
+      {
+        "text": "Which is NOT true of overbite?",
+        "options": ["Is a vertical measurement", "Represents the vertical degree of overlap of the upper and lower incisors", "Is commonly confused with overjet by the public", "Is considered normal at 100 percent"],
+        "correct": 3
+      },
+      {
+        "text": "Which of the following is NOT true of overjet?",
+        "options": ["Esthetics often promote desire for overjet correction", "Risk of anterior trauma increases with increased overjet", "Without incisal guidance, continued eruption of mandibular teeth can be destructive to upper anterior palatal tissue", "Severe overjet is irrelevant to risk of trauma to upper anterior teeth"],
+        "correct": 3
+      },
+      {
+        "text": "When considering proper incisor inclination or angulation:",
+        "options": ["Incisors should be flared significantly", "Incisors should be retroclined significantly", "Incisors should be leaning slightly forward", "Retroclined incisors is always a treatment goal"],
+        "correct": 2
+      },
+      {
+        "text": "The main growth site in the mandible is:",
+        "options": ["Mandibular suture", "Symphyseal suture", "ramus suture", "Condyle"],
+        "correct": 3
+      },
+      {
+        "text": "Orthodontists can use the leeway space to help correct crowding situations because?",
+        "options": ["The erupting premolars are larger than the deciduous molars", "The erupting premolars are smaller than the deciduous molars", "The erupting premolars are equal in size to the deciduous molars", "The premolars always have delayed eruption"],
+        "correct": 1
+      },
+      {
+        "text": "Which of the following is true about a crossbite?",
+        "options": ["Is always anterior only", "Is always posterior only", "Can present both anterior and posterior", "Is always bilateral"],
+        "correct": 2
+      },
+      {
+        "text": "A normo-divergent grower would exhibit the following:",
+        "options": ["Long lower face", "A line tangent to the mandibular plane lies below the base of the cranium", "A line tangent to the mandibular plane intersects the head at the base of the cranium", "A line tangent to the mandibular plane intersects the head within the base of the cranium"],
+        "correct": 2
+      },
+      {
+        "text": "Facial balance is equally as important as occlusion in planning orthodontic intervention",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "text": "Growth of the jaws is downward and forward",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "text": "A deep bite can be destructive to upper anterior palatal tissues",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "text": "Extremes of hypo- or hyper-devergency are the most straightforward cases to treat",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "Normal overjet is considered:",
+        "options": ["2.5-3 mm", "4-5 mm", "6-7 mm", "7+ mm"],
+        "correct": 0
+      },
+      {
+        "text": "Moderate overbite is considered:",
+        "options": ["0-10%", "10-25%", "30-60%", "80-90%"],
+        "correct": 2
+      },
+      {
+        "text": "A Class II malocclusion is typically characterized by a",
+        "options": ["Prognathic mandible", "Retrognathic mandible", "“strong chin”", "Anterior Crossbite"],
+        "correct": 1
+      },
+      {
+        "text": "A class III malocclusion is typically characterized by a",
+        "options": ["Prognathic mandible", "Retrognathic mandible", "“weak chin”", "Large overjet"],
+        "correct": 0
+      },
+      {
+        "text": "The Molar and canine relations are as follows:",
+        "options": ["Class I molar, Class I canine", "Class II molar, class I canine", "Class I molar, Class II canine", "Class II molar, Class II canine"],
+        "correct": 2,
+        "image": "images/ortho-midterm-spring-2019/fig25.jpg"
+      },
+      {
+        "text": "Upper arch crowding would be considered:",
+        "options": ["Non-crowded", "Mild-moderate", "Moderate -Severe", "Severe"],
+        "correct": 1,
+        "image": "images/ortho-midterm-spring-2019/fig26.jpg"
+      },
+      {
+        "text": "Lower arch crowding would be considered:",
+        "options": ["Non-crowded", "Mild", "Moderate-severe", "Severe"],
+        "correct": 2,
+        "image": "images/ortho-midterm-spring-2019/fig27.jpg"
+      },
+      {
+        "text": "The overbite is considered:",
+        "options": ["Openbite", "Shallow", "Normal", "moderate"],
+        "correct": 3,
+        "image": "images/ortho-midterm-spring-2019/fig28.jpg"
+      },
+      {
+        "text": "What are the possible causes of the lower arch crowding?",
+        "options": ["Premature loss of deciduous second molar with mesial drift", "Genetics", "Lack of adequate space maintenance", "All of the above"],
+        "correct": 3,
+        "image": "images/ortho-midterm-spring-2019/fig29.jpg"
+      },
+      {
+        "text": "Which best describes the malocclusion?",
+        "options": ["Class I", "Class II", "Class III", "Class IV"],
+        "correct": 1,
+        "image": "images/ortho-midterm-spring-2019/fig30.jpg"
+      },
+      {
+        "text": "Crowding in this case would be considered:",
+        "options": ["Non-crowded", "Mild", "Moderate -Severe", "Severe"],
+        "correct": 0,
+        "image": "images/ortho-midterm-spring-2019/fig31.jpg"
+      },
+      {
+        "text": "The overbite is considered:",
+        "options": ["Openbite", "Shallow", "Normal", "Deep"],
+        "correct": 2,
+        "image": "images/ortho-midterm-spring-2019/fig32.jpg"
+      },
+      {
+        "text": "The overjet, at 8 mm, is considered:",
+        "options": ["Normal", "Mild", "Moderate", "Severe"],
+        "correct": 3,
+        "image": "images/ortho-midterm-spring-2019/fig33.jpg"
+      },
+      {
+        "text": "Shawn is considered what type of grower?",
+        "options": ["Normo-divergent", "Hypo-divergent", "Hyper-divergent", "None of the above"],
+        "correct": 2,
+        "image": "images/ortho-midterm-spring-2019/fig34.jpg"
+      },
+      {
+        "text": "The overjet, at 9 mm, is considered:",
+        "options": ["Normal", "Mild", "Moderate", "Severe"],
+        "correct": 3,
+        "image": "images/ortho-midterm-spring-2019/fig35.jpg"
+      },
+      {
+        "text": "Which best describes the malocclusion?",
+        "options": ["Class I with right posterior crossbite", "Class I with left posterior crossbite", "Class II with left posterior crossbite", "Class II with right posterior crossbite"],
+        "correct": 3,
+        "image": "images/ortho-midterm-spring-2019/fig36.jpg"
+      },
+      {
+        "text": "The overbite is considered:",
+        "options": ["Openbite", "Shallow", "Normal", "Moderate"],
+        "correct": 3,
+        "image": "images/ortho-midterm-spring-2019/fig37.jpg"
       }
     ]
   },
