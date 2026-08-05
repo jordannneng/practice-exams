@@ -215,7 +215,7 @@
 </style>
 </head>
 <body>
-<header class="site-header">
+<header class="site-header" id="site-header">
   <div class="site-header-inner">
     <img class="site-logo" src="images/tooth-white.png" alt="" width="40" height="40">
     <button type="button" id="site-title-btn" class="site-title-btn">PRACTICE EXAMS</button>
@@ -415,6 +415,7 @@ function listViewForExam(examId) {
 
 function render() {
   const app = document.getElementById('app');
+  document.getElementById('site-header').style.display = view.screen === 'quiz' ? 'none' : '';
   app.classList.toggle('wide', view.screen === 'home' || view.screen === 'subcategory' || view.screen === 'list');
   if (view.screen === 'home') app.innerHTML = renderHome();
   else if (view.screen === 'subcategory') app.innerHTML = renderSubcategory();
