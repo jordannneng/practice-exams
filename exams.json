@@ -1,4 +1,256 @@
 {
+  "biochem-exam1-summer-2026": {
+    "title": "Biochemistry Exam 1 (Unofficial) (Summer 2026)",
+    "type": "biochem",
+    "issues": "Unofficial student-compiled exam; not sourced from the official exam bank",
+    "questions": [
+      {
+        "text": "Why do chromosomes shorten with each round of replication?",
+        "options": ["After removal of the final RNA primer, DNA polymerase cannot completely replicate the end of the lagging strand", "Ribonuclease degrades the telomeric DNA", "Helicase degrades the ends of the chromosome", "DNA ligase fails to seal the final Okazaki fragment"],
+        "correct": 0
+      },
+      {
+        "text": "What is the role of the signaling cell?",
+        "options": ["Receives and interprets the signal", "Degrades the signal after use", "Amplifies the signal after receipt", "Sends out the original signal"],
+        "correct": 3
+      },
+      {
+        "text": "What is a telomere?",
+        "options": ["A protein complex that unwinds DNA", "A structure that joins nucleosomes together", "The site where RNA polymerase binds to begin transcription", "A region of repetitive DNA sequences at the end of a chromosome"],
+        "correct": 3
+      },
+      {
+        "text": "What type of cells make up the thyroid gland, and how are they arranged?",
+        "options": ["Columnar epithelial cells forming a solid mass", "Neuroendocrine cells arranged in clusters", "Cuboidal epithelial follicular cells lined up around colloid", "Squamous epithelial cells lined up around colloid"],
+        "correct": 2
+      },
+      {
+        "text": "How many sets of core histones combine to form the nucleosome octamer?",
+        "options": ["Three", "Four", "Two", "One"],
+        "correct": 2
+      },
+      {
+        "text": "In which direction does DNA polymerase add new nucleotides?",
+        "options": ["2' to 5'", "3' to 5'", "5' to 3'", "Randomly in either direction"],
+        "correct": 2
+      },
+      {
+        "text": "What does depolarization of the pancreatic cell membrane trigger?",
+        "options": ["ATP production stops immediately", "Voltage-gated calcium channels open", "Sodium channels close permanently", "Voltage-gated potassium channels open further"],
+        "correct": 1
+      },
+      {
+        "text": "Which organ converts inactive vitamin D into its active form, Calcitriol?",
+        "options": ["The thyroid gland", "The kidneys", "The parathyroid gland", "The liver"],
+        "correct": 1
+      },
+      {
+        "text": "What is Hashimoto's Thyroiditis?",
+        "options": ["A genetic condition causing excess TSH production", "An autoimmune condition attacking the thyroid gland, leading to hyperthyroidism", "An autoimmune condition attacking the thyroid gland, leading to inflammation, damage, and hypothyroidism", "A bacterial infection of the thyroid gland"],
+        "correct": 2
+      },
+      {
+        "text": "How does encapsulation typically differ between benign and malignant neoplasms?",
+        "options": ["Neither is typically encapsulated", "Benign neoplasms are typically encapsulated, while malignant neoplasms are typically non-encapsulated", "Both are typically encapsulated", "Benign neoplasms are typically non-encapsulated, while malignant neoplasms are typically encapsulated"],
+        "correct": 1
+      },
+      {
+        "text": "What is the second step of hemostasis?",
+        "options": ["Coagulation Cascade", "Vasoconstriction/Vascular Spasm", "Platelet Plug formation", "Fibrinolysis"],
+        "correct": 2
+      },
+      {
+        "text": "What enzymes are responsible for flipping phosphatidylserine between membrane surfaces?",
+        "options": ["Kinases and phosphatases", "Helicases and ligases", "Flippases and floppases", "Synthetases and hydrolases"],
+        "correct": 2
+      },
+      {
+        "text": "What type of damage can X-rays cause to DNA?",
+        "options": ["Single-stranded and/or double-stranded breaks", "Only thymine dimers", "Only deamination", "Only depurination"],
+        "correct": 0
+      },
+      {
+        "text": "How many steps make up the hemostasis pathway?",
+        "options": ["5", "4", "3", "2"],
+        "correct": 2
+      },
+      {
+        "text": "After RISC separates the dsRNA, what does the remaining single strand do?",
+        "options": ["Senses out similar RNA strands, which it will then help degrade", "Becomes a new ribosomal subunit", "Binds directly to DNA to block transcription", "Is exported from the cell to signal neighboring cells"],
+        "correct": 0
+      },
+      {
+        "text": "What effect does IGF-1 have on osteoclast and osteoblast activity?",
+        "options": ["Decreases their activity, decreasing endochondral ossification", "Only increases osteoclast activity, with no effect on osteoblasts", "Only increases osteoblast activity, with no effect on osteoclasts", "Increases their activity, increasing endochondral ossification"],
+        "correct": 3
+      },
+      {
+        "text": "What characterizes autocrine signaling?",
+        "options": ["It is signaling that requires direct contact between two different cells", "It is a type of endocrine signaling exclusive to hormones", "It is a subset of paracrine signaling where the signal acts on the cell that released it", "It is signaling that only occurs through the bloodstream"],
+        "correct": 2
+      },
+      {
+        "text": "What subunits make up the Insulin Receptor Tyrosine Kinase (Insulin RTK)?",
+        "options": ["Alpha and beta subunits", "Alpha, beta, and gamma subunits", "Only alpha subunits", "A single monomeric subunit"],
+        "correct": 0
+      },
+      {
+        "text": "How can a G-protein help cancer cells evade p53 regulation?",
+        "options": ["It can convert into a receptor tyrosine kinase", "It can only function when bound to p53 directly", "It can be permanently locked in the GDP-bound inactive state", "It can be fooled into constantly being 'on', with the alpha subunit not dissociating from GTP"],
+        "correct": 3
+      },
+      {
+        "text": "What does Thrombin (IIa) do to Factor XIII, and what is the result?",
+        "options": ["Activates it into XIIIa, which cross-links fibrin, forming a layer on top of the platelets to hold the clot together", "Activates it into XIIIa, which degrades fibrin to prevent excess clotting", "Converts it directly into fibrinogen", "Inactivates it, preventing fibrin cross-linking"],
+        "correct": 0
+      },
+      {
+        "text": "What happens at the ribosomal A site?",
+        "options": ["It brings in a new amino acid", "It is where the start codon is recognized", "It is where the tRNA exits the ribosome", "It adds the amino acid to the growing peptide chain"],
+        "correct": 0
+      },
+      {
+        "text": "Under what condition do DNA binding proteins bind tightly to DNA?",
+        "options": ["When the proper sequences are in the correct order", "Only when the DNA is single-stranded", "Only after DNA has been methylated", "Only during S phase of the cell cycle"],
+        "correct": 0
+      },
+      {
+        "text": "What repair pathway rejoins double-strand breaks by smoothing broken ends, discarding some nucleotides, and is fast but error-prone?",
+        "options": ["Base excision repair", "Non-homologous end joining", "Nucleotide excision repair", "Homologous recombination"],
+        "correct": 1
+      },
+      {
+        "text": "What does HbA1c (Hemoglobin A1c) measure?",
+        "options": ["The total insulin produced over a lifetime", "The average blood glucose level over the past 2-3 months", "The amount of glucagon secreted in the past week", "The current blood glucose level at the moment of testing"],
+        "correct": 1
+      },
+      {
+        "text": "What triggers the extrinsic pathway of the coagulation cascade?",
+        "options": ["Activation of Factor XII by phosphatidylserine", "Damage to the interior of the blood vessel", "Damage to the exterior of the blood vessel", "Release of thromboxane A2 from platelets"],
+        "correct": 2
+      },
+      {
+        "text": "Besides somatostatin, what else can shut down GHRH and GH release?",
+        "options": ["High blood glucose alone", "High blood levels of IGF-1", "Low blood glucose alone", "Low blood levels of IGF-1"],
+        "correct": 1
+      },
+      {
+        "text": "Which base is found in RNA in place of thymine?",
+        "options": ["Guanine", "Xanthine", "Uracil", "Inosine"],
+        "correct": 2
+      },
+      {
+        "text": "What is a neoplasm?",
+        "options": ["A new and abnormal growth of tissue, characteristic of cancer", "The process of programmed cell death", "A benign structure that never becomes a tumor", "A normal, healthy growth of tissue during development"],
+        "correct": 0
+      },
+      {
+        "text": "How does the growth rate of a benign neoplasm compare to a malignant one?",
+        "options": ["Benign neoplasms are slow growing, while malignant neoplasms are fast growing", "Benign neoplasms are fast growing, while malignant neoplasms are slow growing", "Neither benign nor malignant neoplasms have a defined growth rate", "Both grow at the same rate"],
+        "correct": 0
+      },
+      {
+        "text": "What two ribosomal subunits are found in eukaryotes?",
+        "options": ["30S and 50S", "30S and 60S", "40S and 60S", "40S and 50S"],
+        "correct": 2
+      },
+      {
+        "text": "What is the primary function of DNA?",
+        "options": ["Catalyzes metabolic reactions", "Provides structural support to the cell", "Transports oxygen through the blood", "Carries all the genetic information"],
+        "correct": 3
+      },
+      {
+        "text": "What component of TFIID binds directly to the TATA box, and what effect does its binding have?",
+        "options": ["TATA-binding protein binds the TATA box and bends the DNA", "The spliceosome binds the TATA box and splices the DNA", "RNA polymerase II binds the TATA box and cleaves the DNA", "TFIIH binds the TATA box and unwinds the DNA"],
+        "correct": 0
+      },
+      {
+        "text": "What is an exon?",
+        "options": ["A type of ribosomal RNA", "A coded sequence of DNA/RNA", "A repetitive telomeric sequence", "An uncoded sequence of DNA/RNA"],
+        "correct": 1
+      },
+      {
+        "text": "What effect does IGF-1 have on muscle cells?",
+        "options": ["Has no effect on muscle cells", "Only affects bone cells, not muscle cells", "Decreases uptake of glucose and amino acids by muscle cells", "Increases uptake of glucose and amino acids by muscle cells, increasing muscle mass"],
+        "correct": 3
+      },
+      {
+        "text": "How does PTH ultimately raise blood calcium levels via vitamin D?",
+        "options": ["PTH directly binds calcium in the blood, increasing free calcium levels", "PTH stimulates the thyroid to release more calcitonin", "PTH causes the kidneys to convert inactive vitamin D into active Calcitriol, allowing the intestines to absorb calcium", "PTH inhibits calcitriol production, indirectly raising blood calcium"],
+        "correct": 2
+      },
+      {
+        "text": "What can excess free-floating glucose be converted into within cells?",
+        "options": ["Amylin", "Thyroglobulin", "Sorbitol", "Glycogen"],
+        "correct": 2
+      },
+      {
+        "text": "What is inversion as a cause of cancer?",
+        "options": ["A gene segment is inverted", "A single nucleotide is exchanged for another", "A gene is completely deleted", "A gene segment moves to a different chromosome"],
+        "correct": 0
+      },
+      {
+        "text": "How does parathyroid hormone relate to calcitonin?",
+        "options": ["It has no functional relationship to calcitonin", "It is antagonistic to calcitonin", "It works synergistically with calcitonin to lower blood calcium", "It is produced by the same cells as calcitonin"],
+        "correct": 1
+      },
+      {
+        "text": "What allows RNA to fold into structures like ribozymes?",
+        "options": ["The presence of thymine", "Its phosphate backbone alone", "Intramolecular base pairing", "Its double-stranded nature"],
+        "correct": 2
+      },
+      {
+        "text": "What does activated Protein Kinase A (PKA) go on to do?",
+        "options": ["Directly opens ion channels in the membrane", "Activates additional pathways such as carbohydrate metabolism and gene expression", "Cleaves introns from pre-mRNA", "Directly converts ATP into cAMP"],
+        "correct": 1
+      },
+      {
+        "text": "What triggers insulin release from the secretory vesicle once calcium enters the pancreatic cell?",
+        "options": ["Calcium directly converts proinsulin into insulin", "Calcium binds the insulin secretory vesicle to the cell membrane, causing insulin release", "Calcium reopens the K channels, stopping insulin release", "Calcium closes the Glut-2 transporter, stopping insulin release"],
+        "correct": 1
+      },
+      {
+        "text": "What state is an inactive G protein in?",
+        "options": ["Bound to GDP, with alpha, beta, and gamma subunits together", "Bound to ATP", "Bound to GTP, with subunits separated", "Bound to cAMP"],
+        "correct": 0
+      },
+      {
+        "text": "Can the intestines absorb calcium without Calcitriol?",
+        "options": ["Yes, calcium absorption is entirely independent of Calcitriol", "No, calcium absorption instead requires TSH", "No, the intestines are unable to absorb calcium without the help of Calcitriol", "Yes, but only in the presence of calcitonin instead"],
+        "correct": 2
+      },
+      {
+        "text": "What happens to introns during splicing of pre-mRNA?",
+        "options": ["They are joined together to form the mature mRNA", "They remain in place within the mature mRNA", "They are converted into exons", "They are spliced out, leaving exons to form the mature mRNA"],
+        "correct": 3
+      },
+      {
+        "text": "What causes Von Willebrand Disease?",
+        "options": ["Excess Factor XII", "Excess Vitamin K", "Low levels of Von Willebrand Factor", "Low levels of Factor VIII only"],
+        "correct": 2
+      },
+      {
+        "text": "What happens to the pancreatic cell membrane once the K channels close and positive potassium accumulates inside?",
+        "options": ["The membrane potential remains unchanged", "The membrane hyperpolarizes", "The membrane becomes permanently impermeable", "The membrane depolarizes"],
+        "correct": 3
+      },
+      {
+        "text": "How can enhancers/activators work from a distance on a gene's promoter?",
+        "options": ["Through diffusion of the enhancer through the nucleus", "Through binding to the poly-A tail", "Through DNA looping caused by DNA binding proteins", "Through direct covalent bonding to the promoter"],
+        "correct": 2
+      },
+      {
+        "text": "Is photolyase functional in humans?",
+        "options": ["Yes, but only in germ line cells", "Yes, it is the primary repair mechanism in humans", "No, humans have no way to repair thymine dimers", "No, humans use NER instead to repair thymine dimers"],
+        "correct": 3
+      },
+      {
+        "text": "During translocation, which ribosomal subunit shifts first?",
+        "options": ["Both subunits shift simultaneously", "The small 40S subunit shifts first, then the large 60S subunit", "The large 60S subunit shifts first, then the small 40S subunit", "Neither subunit shifts; only the mRNA moves"],
+        "correct": 2
+      }
+    ]
+  },
   "cario-final-spring-2018": {
     "title": "Cariology Final Exam (Spring 2018)",
     "type": "cario",
