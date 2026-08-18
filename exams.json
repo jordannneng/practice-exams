@@ -16670,7 +16670,7 @@
         "correct": 1
       },
       {
-        "text": "What is the derivative of pharyngeal arch 2?",
+        "text": "What is the derivative of pharyngeal pouch 2?",
         "options": ["Auditory tube", "Palatine tonsils", "Thymus", "Ultimobranchial body"],
         "correct": 1
       },
@@ -16811,7 +16811,7 @@
         "correct": 1
       },
       {
-        "text": "Statement 1: The growth spurt in girls peaks at about 9cm per year at age 14. Statement 2: The onset of puberty is caused by the release of pituitary gonadotropins released from the thymus.",
+        "text": "Statement 1: The growth spurt in girls peaks at about 9cm per year at age 12. Statement 2: The onset of puberty is caused by the release of pituitary gonadotropins released from the thymus.",
         "options": ["Statement 1 is True. Statement 2 is True.", "Statement 1 is True. Statement 2 is False.", "Statement 1 is False. Statement 2 is False.", "Statement 1 is False. Statement 2 is True."],
         "correct": 2
       },
@@ -17407,7 +17407,7 @@
       },
       {
         "text": "What is the appropriate clinical term for over-production of cementum?",
-        "options": ["Concresence", "Hyper-proliferation", "Hypocalcification", "Gemination"],
+        "options": ["Hypercementosis", "Hyper-proliferation", "Hypocalcification", "Gemination"],
         "correct": 0
       },
       {
@@ -17910,7 +17910,7 @@
       {
         "text": "Which pharyngeal arch gives rise to the muscles of mastication?",
         "options": ["Arch 1", "Arch 2", "Arch 3", "Arch 4", "Arch 5"],
-        "correct": 1
+        "correct": 0
       },
       {
         "text": "Which two pharyngeal arches contribute to the formation of the hyoid?",
@@ -17923,7 +17923,7 @@
         "correct": 4
       },
       {
-        "text": "What is the name and function of Cranial Nerve XIII?",
+        "text": "What is the name and function of Cranial Nerve VIII?",
         "options": ["Glossopharyngeal, taste in the posterior tongue", "Hypoglossal, visceral muscle movement", "Glossopharyngeal, eyeball movement", "Vestibulocochlear, hearing", "Hypoglossal, movement of the tongue"],
         "correct": 3
       },
@@ -18811,7 +18811,7 @@
       {
         "text": "Which of the following is a consequence of an atrophic mandible?",
         "options": ["Decreased risk of jaw fracture", "Easily fabricated and well fitting dentures", "Mandibular canal and mental foramen further from the border of the mandible", "Difficulty placing implants due to lack of bone height and width"],
-        "correct": 0
+        "correct": 3
       },
       {
         "text": "Statement 1: Patients with missing teeth tend to look older than their age because of drooping of facial features. Statement 2: Implants are never helpful in maintaining bone and therefore the face will droop further after placement.",
@@ -18844,7 +18844,7 @@
         "correct": 1
       },
       {
-        "text": "During meiosis division occurs and chromosome number is reduced from 43 to 26.",
+        "text": "During meiosis division occurs and chromosome number is reduced from 46 to 23.",
         "options": ["True", "False"],
         "correct": 0
       },
