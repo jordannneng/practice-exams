@@ -42,17 +42,6 @@
     -webkit-tap-highlight-color: transparent;
   }
   :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-  .site-header { background: var(--accent); }
-  .site-header-inner {
-    max-width: 960px; margin: 0 auto; padding: 20px 24px;
-    display: flex; align-items: center; justify-content: center; gap: 12px;
-  }
-  .site-logo { flex-shrink: 0; width: 40px; height: 40px; display: block; }
-  .site-title-btn {
-    background: none; border: none; padding: 0; margin: 0; cursor: pointer;
-    font-family: 'Oswald', sans-serif; font-weight: 600; font-size: 40px; color: #fff;
-  }
-  .site-title-btn:hover { background: none; }
   .site-footer { border-top: 1px solid var(--border); margin-top: 40px; }
   .site-footer-inner {
     max-width: 960px; margin: 0 auto; padding: 18px 24px 28px;
@@ -215,12 +204,6 @@
 </style>
 </head>
 <body>
-<header class="site-header" id="site-header">
-  <div class="site-header-inner">
-    <img class="site-logo" src="images/tooth-white.png" alt="" width="40" height="40">
-    <button type="button" id="site-title-btn" class="site-title-btn">PRACTICE EXAMS</button>
-  </div>
-</header>
 <div class="app wide" id="app">
   <div class="loading">
     <div class="skeleton-block" style="width:180px; height:12px; margin-bottom:24px;"></div>
@@ -415,7 +398,6 @@ function listViewForExam(examId) {
 
 function render() {
   const app = document.getElementById('app');
-  document.getElementById('site-header').style.display = view.screen === 'quiz' ? 'none' : '';
   app.classList.toggle('wide', view.screen === 'home' || view.screen === 'subcategory' || view.screen === 'list');
   if (view.screen === 'home') app.innerHTML = renderHome();
   else if (view.screen === 'subcategory') app.innerHTML = renderSubcategory();
@@ -905,7 +887,6 @@ function attachHandlers() {
 }
 
 (async function init() {
-  document.getElementById('site-title-btn').onclick = () => { view = { screen: 'home' }; render(); };
   loadScores();
   loadSettings();
   try {
