@@ -61,9 +61,11 @@
     color: var(--text); cursor: pointer;
     touch-action: manipulation; -webkit-user-select: none; user-select: none;
   }
-  button:hover { background: var(--bg); }
   button.primary { background: var(--accent); color: white; border-color: var(--accent); }
-  button.primary:hover { opacity: 0.9; }
+  @media (hover: hover) and (pointer: fine) {
+    button:hover { background: var(--bg); }
+    button.primary:hover { opacity: 0.9; }
+  }
   button.small { padding: 5px 10px; font-size: 13px; }
   button:disabled { opacity: 0.5; cursor: default; }
   .exam-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; margin-bottom: 4px; }
@@ -125,7 +127,9 @@
     margin-bottom: 8px; cursor: pointer; font-size: 14px;
     touch-action: manipulation; -webkit-user-select: none; user-select: none; -webkit-touch-callout: none;
   }
-  .quiz-option:not(.locked):hover { background: var(--accent-light); }
+  @media (hover: hover) and (pointer: fine) {
+    .quiz-option:not(.locked):hover { background: var(--accent-light); }
+  }
   .quiz-option.selected { border-color: var(--accent); background: var(--accent-light); }
   .quiz-option.locked { cursor: default; }
   .option-main { display: flex; align-items: center; flex: 1; min-width: 0; }
@@ -138,7 +142,9 @@
     flex-shrink: 0; display: flex; align-items: center; justify-content: center;
     width: 30px; height: 30px; padding: 0; border: none; background: transparent; color: var(--text-secondary);
   }
-  .eye-toggle:hover { background: var(--border); }
+  @media (hover: hover) and (pointer: fine) {
+    .eye-toggle:hover { background: var(--border); }
+  }
   .eye-toggle.active { color: var(--accent); }
   .question-image { display: block; max-width: 100%; height: auto; border: 1px solid var(--border); border-radius: 8px; margin: 4px 0 16px; }
   .fill-blank-row { margin-bottom: 12px; }
@@ -181,7 +187,9 @@
     padding: 9px 10px; border-radius: 6px; font-size: 14px; cursor: pointer;
     touch-action: manipulation; -webkit-user-select: none; user-select: none;
   }
-  .options-menu-item:hover { background: var(--bg); }
+  @media (hover: hover) and (pointer: fine) {
+    .options-menu-item:hover { background: var(--bg); }
+  }
   .options-menu-divider { height: 1px; background: var(--border); margin: 6px 2px; }
   .toggle-switch { position: relative; width: 34px; height: 20px; border-radius: 10px; background: var(--border-strong); flex-shrink: 0; transition: background 0.15s; }
   .toggle-switch.on { background: var(--accent); }
@@ -198,7 +206,9 @@
     background: none; border: none; padding: 4px 0; margin: 0;
     color: var(--text-secondary); font-size: 13px; font-weight: 500;
   }
-  .back-btn:hover { background: none; color: var(--accent); }
+  @media (hover: hover) and (pointer: fine) {
+    .back-btn:hover { background: none; color: var(--accent); }
+  }
   .loading, .error-state { text-align: center; padding: 40px; color: var(--text-muted); }
   .footer-row { display: flex; justify-content: space-between; align-items: center; margin-top: 20px; }
   .footer-row-right { display: flex; align-items: center; gap: 12px; }
