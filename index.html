@@ -200,7 +200,9 @@
   }
   .back-btn:hover { background: none; color: var(--accent); }
   .loading, .error-state { text-align: center; padding: 40px; color: var(--text-muted); }
-  .footer-row { display: flex; justify-content: space-between; margin-top: 20px; }
+  .footer-row { display: flex; justify-content: space-between; align-items: center; margin-top: 20px; }
+  .footer-row-right { display: flex; align-items: center; gap: 12px; }
+  .auto-next-toggle { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--text-secondary); cursor: pointer; user-select: none; }
 </style>
 </head>
 <body>
@@ -221,7 +223,8 @@ const SCORES_KEY = 'exam_scores'; // local score history only — exam content i
 const SETTINGS_KEY = 'exam_settings';
 let exams = {};
 let scores = {};
-let settings = { immediateGrading: true };
+let settings = { immediateGrading: true, autoNext: false };
+const AUTO_NEXT_DELAY_MS = 600;
 let view = { screen: 'home' };
 let quizState = null;
 let optionsMenuOpen = false;
@@ -634,9 +637,15 @@ function renderQuiz() {
     </div>
     <div class="footer-row">
       <button id="prev-q-btn" ${quizState.current === 0 ? 'disabled' : ''}>Previous</button>
-      ${quizState.current === total - 1
-        ? `<button class="primary" id="submit-quiz-btn">Submit exam</button>`
-        : `<button class="primary" id="next-q-btn">Next</button>`}
+      <div class="footer-row-right">
+        <label class="auto-next-toggle" id="auto-next-toggle-item">
+          <span>Auto next</span>
+          <span class="toggle-switch ${settings.autoNext ? 'on' : ''}"></span>
+        </label>
+        ${quizState.current === total - 1
+          ? `<button class="primary" id="submit-quiz-btn">Submit exam</button>`
+          : `<button class="primary" id="next-q-btn">Next</button>`}
+      </div>
     </div>
     <div class="card qnav-wrap">
       ${renderQnav(false)}
@@ -800,6 +809,12 @@ function attachHandlers() {
       quizState.flags[quizState.current] = !quizState.flags[quizState.current];
       render();
     };
+    const autoNextToggle = document.getElementById('auto-next-toggle-item');
+    if (autoNextToggle) autoNextToggle.onclick = () => {
+      settings.autoNext = !settings.autoNext;
+      saveSettings();
+      render();
+    };
     app.querySelectorAll('.quiz-option').forEach(opt => {
       opt.onclick = (e) => {
         if (settings.immediateGrading && quizState.answers[quizState.current] !== undefined) { e.preventDefault(); return; }
@@ -807,7 +822,18 @@ function attachHandlers() {
         const crossedForQ = quizState.crossed[quizState.current] || {};
         if (crossedForQ[oi]) { e.preventDefault(); return; }
         quizState.answers[quizState.current] = oi;
+        const examId = quizState.examId;
+        const qIndex = quizState.current;
+        const isLast = qIndex === exams[examId].questions.length - 1;
         render();
+        if (settings.autoNext && !isLast) {
+          setTimeout(() => {
+            if (quizState && quizState.examId === examId && quizState.current === qIndex && view.screen === 'quiz') {
+              quizState.current++;
+              render();
+            }
+          }, AUTO_NEXT_DELAY_MS);
+        }
       };
     });
     app.querySelectorAll('.eye-toggle').forEach(btn => {
