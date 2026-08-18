@@ -17820,7 +17820,6 @@
     "title": "GDA Final Exam (Summer 2021)",
     "type": "gda",
     "subtype": "final",
-    "issues": "No figures are available in this exam's source file, so 6 questions (cleft lip/palate classification, a suture, a plane of reference, and 2 clinical findings) reference a figure that is not shown.",
     "questions": [
       {
         "text": "Enamel is derived from ectoderm from the oral cavity. All other tissues are derived from mesoderm.",
@@ -17935,17 +17934,20 @@
       {
         "text": "What is the classification of the cleft lip shown in the photo?",
         "options": ["Unilateral Complete", "Unilateral Incomplete", "Bilateral Complete", "Bilateral Incomplete"],
-        "correct": 0
+        "correct": 0,
+        "image": "images/gda-final-summer-2021/fig23.jpeg"
       },
       {
         "text": "What is the classification of the cleft palate shown in the figure?",
         "options": ["Class I", "Class II", "Class III", "Class IV"],
-        "correct": 2
+        "correct": 2,
+        "image": "images/gda-final-summer-2021/fig24.jpeg"
       },
       {
         "text": "Identify the suture from the figure provided (red line).",
         "options": ["Metallic", "Lambdoidal", "Sagittal", "Coronal"],
-        "correct": 3
+        "correct": 3,
+        "image": "images/gda-final-summer-2021/fig25.jpeg"
       },
       {
         "text": "Pluripotential is the strict programming of only type of cell formation.",
@@ -17975,7 +17977,8 @@
       {
         "text": "Identify the plane of reference shown in the figure.",
         "options": ["Coronal section", "Transverse section", "Median section", "Sagittal plane"],
-        "correct": 0
+        "correct": 0,
+        "image": "images/gda-final-summer-2021/fig31.jpeg"
       },
       {
         "text": "Meckel’s cartilage is associated with which pharyngeal arch?",
@@ -18020,7 +18023,8 @@
       {
         "text": "The attached figure is an example of what clinical finding?",
         "options": ["Gemination", "Dens invaginatus", "Dens evaginatus", "Fusion", "Peg lateral"],
-        "correct": 1
+        "correct": 1,
+        "image": "images/gda-final-summer-2021/fig40.jpeg"
       },
       {
         "text": "Which cells are responsible for the production of dentin?",
@@ -18125,7 +18129,8 @@
       {
         "text": "The figure provided shows what clinical condition which is a common finding in patients who have ill-fitting dentures?",
         "options": ["Candidiasis", "Denture Stomatitis", "Angular chelitis", "None of the above"],
-        "correct": 2
+        "correct": 2,
+        "image": "images/gda-final-summer-2021/fig61.jpeg"
       },
       {
         "text": "Which of the following age-related changes to teeth may make extractions more difficult?",
@@ -18148,7 +18153,6 @@
     "title": "GDA Final Exam (Summer 2022)",
     "type": "gda",
     "subtype": "final",
-    "issues": "3 questions (cleft lip classification, cleft palate classification, and a cranial suture) reference a figure that was not available in the source file.",
     "questions": [
       {
         "text": "What defines the period of middle childhood?",
@@ -18218,17 +18222,20 @@
       {
         "text": "What is the classification of the cleft lip shown in the photo?",
         "options": ["Unilateral Complete", "Unilateral Incomplete", "Bilateral Complete", "Bilateral Incomplete"],
-        "correct": 0
+        "correct": 0,
+        "image": "images/gda-final-summer-2022/fig14.jpeg"
       },
       {
         "text": "What is the classification of the cleft palate shown in the figure?",
         "options": ["Class I", "Class II", "Class III", "Class IV"],
-        "correct": 2
+        "correct": 2,
+        "image": "images/gda-final-summer-2022/fig15.jpeg"
       },
       {
         "text": "Identify the suture from the figure provided.",
         "options": ["Metallic", "Lambdoidal", "Sagittal", "Coronal"],
-        "correct": 3
+        "correct": 3,
+        "image": "images/gda-final-summer-2022/fig16.jpeg"
       },
       {
         "text": "The FDA Pregnancy Drug Class that includes medications like Accutane and Coumadin that have been shown to be harmful in both animal and human studies with evidence-based human risk and risk that greatly outweighs any benefit during pregnancy is:",
