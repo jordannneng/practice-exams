@@ -271,6 +271,20 @@ function isQuestionCorrect(q, ans) {
   return ans === q.correct;
 }
 
+function buildOptionOrder(exam) {
+  const order = {};
+  exam.questions.forEach((q, qi) => {
+    if (q.type === 'fill') return;
+    const idx = q.options.map((_, oi) => oi);
+    for (let i = idx.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [idx[i], idx[j]] = [idx[j], idx[i]];
+    }
+    order[qi] = idx;
+  });
+  return order;
+}
+
 function loadScores() {
   try {
     const raw = localStorage.getItem(SCORES_KEY);
@@ -540,9 +554,11 @@ function renderList() {
   return html;
 }
 
-function renderMcOptions(q, selectedOi, { showFeedback = false, crossedForQ = {}, interactive = true } = {}) {
+function renderMcOptions(q, selectedOi, { showFeedback = false, crossedForQ = {}, interactive = true, order } = {}) {
+  const displayOrder = order || q.options.map((_, oi) => oi);
   let html = '';
-  q.options.forEach((opt, oi) => {
+  displayOrder.forEach(oi => {
+    const opt = q.options[oi];
     const selected = selectedOi === oi ? 'selected' : '';
     const crossed = !!crossedForQ[oi];
     let feedbackClass = '';
@@ -612,7 +628,7 @@ function renderQuiz() {
   const crossedForQ = quizState.crossed[quizState.current] || {};
   const bodyHtml = q.type === 'fill'
     ? renderFillBlanks(q, userAns, showFeedback)
-    : renderMcOptions(q, userAns, { showFeedback, crossedForQ });
+    : renderMcOptions(q, userAns, { showFeedback, crossedForQ, order: quizState.optionOrder[quizState.current] });
   const feedbackHtml = showFeedback
     ? `<p class="answer-feedback ${isCorrect ? 'correct' : 'incorrect'}">${isCorrect ? 'Correct!' : `Incorrect — correct answer${q.type === 'fill' && q.blanks.length > 1 ? 's' : ''} highlighted above.`}</p>`
     : '';
@@ -714,7 +730,7 @@ function renderReviewQuestion() {
   const flagged = !!quizState.flags[quizState.current];
   const bodyHtml = q.type === 'fill'
     ? renderFillBlanksReview(q, userAns)
-    : renderMcOptions(q, userAns, { showFeedback: true, interactive: false });
+    : renderMcOptions(q, userAns, { showFeedback: true, interactive: false, order: quizState.optionOrder[quizState.current] });
   const multi = q.type === 'fill' && q.blanks.length > 1;
   const feedbackText = isCorrect ? 'Correct!' : (answered ? `Incorrect — correct answer${multi ? 's' : ''} highlighted above.` : `Not answered — correct answer${multi ? 's' : ''} highlighted above.`);
   return `
@@ -770,7 +786,7 @@ function attachHandlers() {
     app.querySelectorAll('[data-action="take"]').forEach(btn => {
       btn.onclick = () => {
         const id = btn.dataset.id;
-        quizState = { examId: id, current: 0, answers: {}, flags: {}, crossed: {} };
+        quizState = { examId: id, current: 0, answers: {}, flags: {}, crossed: {}, optionOrder: buildOptionOrder(exams[id]) };
         optionsMenuOpen = false;
         openIssuePopoverId = null;
         view = { screen: 'quiz' };
@@ -806,7 +822,7 @@ function attachHandlers() {
     const menuResetBtn = document.getElementById('menu-reset-btn');
     if (menuResetBtn) menuResetBtn.onclick = () => {
       if (confirm('Reset this exam? This clears all your answers and flags.')) {
-        quizState = { examId: quizState.examId, current: 0, answers: {}, flags: {}, crossed: {} };
+        quizState = { examId: quizState.examId, current: 0, answers: {}, flags: {}, crossed: {}, optionOrder: buildOptionOrder(exams[quizState.examId]) };
         optionsMenuOpen = false;
         render();
       }
@@ -904,7 +920,7 @@ function attachHandlers() {
       view = listViewForExam(quizState.examId); quizState = null; render();
     };
     document.getElementById('retake-btn').onclick = () => {
-      quizState = { examId: quizState.examId, current: 0, answers: {}, flags: {}, crossed: {} };
+      quizState = { examId: quizState.examId, current: 0, answers: {}, flags: {}, crossed: {}, optionOrder: buildOptionOrder(exams[quizState.examId]) };
       optionsMenuOpen = false;
       view = { screen: 'quiz' };
       render();
