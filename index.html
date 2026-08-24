@@ -81,6 +81,7 @@
     }
   }
   .exam-card-actions { display: flex; align-items: center; justify-content: flex-end; gap: 10px; }
+  .random-exam-card { display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap; }
   .issue-wrap { position: relative; display: inline-flex; }
   .issue-btn {
     width: 24px; height: 24px; padding: 0; border-radius: 50%; font-weight: 600; font-size: 12px;
@@ -283,6 +284,44 @@ function buildOptionOrder(exam) {
     order[qi] = idx;
   });
   return order;
+}
+
+const RANDOM_EXAM_ID_PREFIX = '__random__';
+const RANDOM_EXAM_QUESTION_COUNT = 50;
+
+function randomExamId(type, subtype) {
+  return `${RANDOM_EXAM_ID_PREFIX}${type}__${subtype || 'none'}`;
+}
+
+// Pools every question from the real (non-random) exams in a folder, deduping
+// questions that recur verbatim across exams (e.g. the same question reused
+// in multiple years) so a generated random exam can't show the same question twice.
+function collectUniqueQuestionPool(type, subtype) {
+  const seen = new Set();
+  const pool = [];
+  Object.keys(exams).forEach(id => {
+    const e = exams[id];
+    if (e.isRandom || e.type !== type || (subtype && e.subtype !== subtype)) return;
+    (e.questions || []).forEach(q => {
+      const key = q.text.trim().toLowerCase().replace(/\s+/g, ' ');
+      if (seen.has(key)) return;
+      seen.add(key);
+      pool.push(q);
+    });
+  });
+  return pool;
+}
+
+function buildRandomExam(type, subtype) {
+  const pool = collectUniqueQuestionPool(type, subtype);
+  const shuffled = pool.slice();
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  const questions = shuffled.slice(0, Math.min(RANDOM_EXAM_QUESTION_COUNT, shuffled.length));
+  const label = subtype ? `${TYPE_LABELS[type] || type} ${SUBTYPE_LABELS[subtype] || subtype}` : (TYPE_LABELS[type] || type);
+  return { title: `${label} — Random Practice Exam`, type, subtype, isRandom: true, questions };
 }
 
 function loadScores() {
@@ -505,7 +544,7 @@ function examSortKey(title) {
 function renderList() {
   const type = view.type;
   const subtype = view.subtype;
-  const ids = Object.keys(exams).filter(id => exams[id].type === type && (!subtype || exams[id].subtype === subtype));
+  const ids = Object.keys(exams).filter(id => !exams[id].isRandom && exams[id].type === type && (!subtype || exams[id].subtype === subtype));
   ids.sort((a, b) => {
     const ka = examSortKey(exams[a].title);
     const kb = examSortKey(exams[b].title);
@@ -521,6 +560,19 @@ function renderList() {
     <h1>${heading}</h1>
     <p class="subtitle">Pick an exam below to start practicing.</p>
   `;
+  if (ids.length >= 2) {
+    const poolSize = collectUniqueQuestionPool(type, subtype).length;
+    const genCount = Math.min(RANDOM_EXAM_QUESTION_COUNT, poolSize);
+    html += `
+      <div class="card random-exam-card">
+        <div class="category-body">
+          <div class="category-title">Random Practice Exam</div>
+          <div class="category-meta">Draws ${genCount} questions from all ${ids.length} exams in this section (${poolSize} unique questions available)</div>
+        </div>
+        <button class="primary" data-action="generate-random" data-type="${type}" data-subtype="${subtype || ''}">Generate Random Exam</button>
+      </div>
+    `;
+  }
   if (ids.length === 0) {
     html += `<div class="card empty-state">No exams in this category yet. Add some to exams.json in the repo.</div>`;
   } else {
@@ -793,6 +845,18 @@ function attachHandlers() {
         render();
       };
     });
+    const generateRandomBtn = app.querySelector('[data-action="generate-random"]');
+    if (generateRandomBtn) generateRandomBtn.onclick = () => {
+      const type = generateRandomBtn.dataset.type;
+      const subtype = generateRandomBtn.dataset.subtype || undefined;
+      const id = randomExamId(type, subtype);
+      exams[id] = buildRandomExam(type, subtype);
+      quizState = { examId: id, current: 0, answers: {}, flags: {}, crossed: {}, optionOrder: buildOptionOrder(exams[id]) };
+      optionsMenuOpen = false;
+      openIssuePopoverId = null;
+      view = { screen: 'quiz' };
+      render();
+    };
     app.querySelectorAll('[data-action="toggle-issue"]').forEach(btn => {
       btn.onclick = (e) => {
         e.stopPropagation();
@@ -906,9 +970,11 @@ function attachHandlers() {
       let correctCount = 0;
       e.questions.forEach((q, i) => { if (isQuestionCorrect(q, quizState.answers[i])) correctCount++; });
       const pct = Math.round((correctCount / e.questions.length) * 100);
-      const prevBest = scores[quizState.examId] ? scores[quizState.examId].best : pct;
-      scores[quizState.examId] = { best: Math.max(prevBest, pct), last: pct };
-      saveScores();
+      if (!e.isRandom) {
+        const prevBest = scores[quizState.examId] ? scores[quizState.examId].best : pct;
+        scores[quizState.examId] = { best: Math.max(prevBest, pct), last: pct };
+        saveScores();
+      }
       quizState.current = 0;
       view = { screen: 'results' };
       render();
