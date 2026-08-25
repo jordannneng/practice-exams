@@ -155,9 +155,6 @@
   .fill-blank-input.correct-answer { border-color: var(--success); background: var(--success-light); }
   .fill-blank-input.incorrect-answer { border-color: var(--danger); background: var(--danger-light); }
   .fill-blank-accepted { font-size: 12px; color: var(--text-muted); margin-top: 4px; }
-  .answer-feedback { font-size: 13px; font-weight: 500; margin: 10px 0 0; }
-  .answer-feedback.correct { color: var(--success); }
-  .answer-feedback.incorrect { color: var(--danger); }
   .icon-btn { display: flex; align-items: center; justify-content: center; width: 38px; height: 38px; padding: 0; font-size: 16px; line-height: 1; }
   .bare-icon {
     display: flex; align-items: center; justify-content: center; width: 38px; height: 38px;
@@ -803,15 +800,11 @@ function renderQuiz() {
   const userAns = quizState.answers[quizState.current];
   const answered = isQuestionAnswered(q, userAns);
   const showFeedback = answered && settings.immediateGrading;
-  const isCorrect = showFeedback && isQuestionCorrect(q, userAns);
   const flagged = !!quizState.flags[quizState.current];
   const crossedForQ = quizState.crossed[quizState.current] || {};
   const bodyHtml = q.type === 'fill'
     ? renderFillBlanks(q, userAns, showFeedback)
     : renderMcOptions(q, userAns, { showFeedback, crossedForQ, order: quizState.optionOrder[quizState.current] });
-  const feedbackHtml = showFeedback
-    ? `<p class="answer-feedback ${isCorrect ? 'correct' : 'incorrect'}">${isCorrect ? 'Correct!' : `Incorrect — correct answer${q.type === 'fill' && q.blanks.length > 1 ? 's' : ''} highlighted above.`}</p>`
-    : '';
   return `
     <div class="top-row quiz-top-row">
       <div class="options-wrap">
@@ -838,7 +831,6 @@ function renderQuiz() {
       <p style="font-size:16px; font-weight:500; margin-top:0;">${escapeHtml(q.text)}</p>
       ${renderQuestionImage(q)}
       ${bodyHtml}
-      ${feedbackHtml}
     </div>
     <div class="footer-row">
       <button id="prev-q-btn" ${quizState.current === 0 ? 'disabled' : ''}>Previous</button>
@@ -904,14 +896,10 @@ function renderReviewQuestion() {
   const q = e.questions[quizState.current];
   const total = e.questions.length;
   const userAns = quizState.answers[quizState.current];
-  const answered = isQuestionAnswered(q, userAns);
-  const isCorrect = answered && isQuestionCorrect(q, userAns);
   const flagged = !!quizState.flags[quizState.current];
   const bodyHtml = q.type === 'fill'
     ? renderFillBlanksReview(q, userAns)
     : renderMcOptions(q, userAns, { showFeedback: true, interactive: false, order: quizState.optionOrder[quizState.current] });
-  const multi = q.type === 'fill' && q.blanks.length > 1;
-  const feedbackText = isCorrect ? 'Correct!' : (answered ? `Incorrect — correct answer${multi ? 's' : ''} highlighted above.` : `Not answered — correct answer${multi ? 's' : ''} highlighted above.`);
   return `
     <div class="card">
       <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:4px;">
@@ -921,7 +909,6 @@ function renderReviewQuestion() {
       <p style="font-size:16px; font-weight:500; margin-top:0;">${escapeHtml(q.text)}</p>
       ${renderQuestionImage(q)}
       ${bodyHtml}
-      <p class="answer-feedback ${isCorrect ? 'correct' : 'incorrect'}">${feedbackText}</p>
     </div>
     <div class="footer-row">
       <button id="review-prev-btn" ${quizState.current === 0 ? 'disabled' : ''}>Previous</button>
