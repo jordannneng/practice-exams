@@ -243,8 +243,10 @@
 <script>
 const SCORES_KEY = 'exam_scores'; // local score history only — exam content itself comes from exams.json
 const SETTINGS_KEY = 'exam_settings';
+const PROGRESS_KEY = 'exam_progress'; // in-progress attempts, keyed by exam id, so an exam can be left and resumed
 let exams = {};
 let scores = {};
+let progress = {};
 let settings = { immediateGrading: true, autoNext: false };
 const AUTO_NEXT_DELAY_MS = 600;
 let view = { screen: 'home' };
@@ -402,6 +404,57 @@ function saveScores() {
   }
 }
 
+function loadProgress() {
+  try {
+    const raw = localStorage.getItem(PROGRESS_KEY);
+    progress = raw ? JSON.parse(raw) : {};
+  } catch (e) {
+    progress = {};
+  }
+}
+
+function saveProgress() {
+  try {
+    localStorage.setItem(PROGRESS_KEY, JSON.stringify(progress));
+  } catch (e) {
+    console.error('Could not save exam progress', e);
+  }
+}
+
+function hasProgress(examId) {
+  const p = progress[examId];
+  if (!p) return false;
+  return p.current > 0 || Object.keys(p.answers || {}).length > 0 || Object.keys(p.flags || {}).length > 0;
+}
+
+function clearProgress(examId) {
+  if (progress[examId]) {
+    delete progress[examId];
+    saveProgress();
+  }
+}
+
+// Snapshots quizState into localStorage on every quiz-screen render, so leaving
+// (closing the tab, navigating away, exiting the exam) preserves where the user was.
+function persistQuizProgress() {
+  const e = exams[quizState.examId];
+  if (!e || e.isRandom) return; // random exams regenerate their question pool each time, so there's nothing stable to resume into
+  const meaningful = quizState.current > 0 || Object.keys(quizState.answers).length > 0 || Object.keys(quizState.flags).length > 0;
+  if (!meaningful) {
+    clearProgress(quizState.examId);
+    return;
+  }
+  progress[quizState.examId] = {
+    current: quizState.current,
+    answers: quizState.answers,
+    flags: quizState.flags,
+    crossed: quizState.crossed,
+    optionOrder: quizState.optionOrder,
+    savedAt: Date.now(),
+  };
+  saveProgress();
+}
+
 function loadSettings() {
   try {
     const raw = localStorage.getItem(SETTINGS_KEY);
@@ -530,6 +583,7 @@ function render() {
     const currentBtn = app.querySelector('.qnav-btn.current');
     if (currentBtn) currentBtn.scrollIntoView({ block: 'nearest', inline: 'center' });
   }
+  if (view.screen === 'quiz') persistQuizProgress();
 }
 
 function categoryCardHtml(type) {
@@ -641,11 +695,15 @@ function renderList() {
       const qCount = (e.questions || []).length;
       const s = scores[id];
       const scoreText = s ? `Best: ${s.best}% · Last: ${s.last}%` : 'Not attempted yet';
+      const resuming = hasProgress(id);
+      const metaText = resuming
+        ? `${qCount} question${qCount !== 1 ? 's' : ''} · In progress — question ${progress[id].current + 1} of ${qCount}`
+        : `${qCount} question${qCount !== 1 ? 's' : ''} · ${scoreText}`;
       html += `
         <div class="exam-card">
           <div class="category-body">
             <div class="category-title">${escapeHtml(e.title)}</div>
-            <div class="category-meta">${qCount} question${qCount !== 1 ? 's' : ''} · ${scoreText}</div>
+            <div class="category-meta">${metaText}</div>
           </div>
           <div class="exam-card-actions">
             ${e.issues ? `
@@ -654,7 +712,8 @@ function renderList() {
                 ${openIssuePopoverId === id ? `<div class="issue-popover">${escapeHtml(e.issues)}</div>` : ''}
               </div>
             ` : ''}
-            <button class="primary" data-action="take" data-id="${id}" ${qCount === 0 ? 'disabled' : ''}>Take exam</button>
+            ${resuming ? `<button data-action="restart" data-id="${id}">Start over</button>` : ''}
+            <button class="primary" data-action="${resuming ? 'resume' : 'take'}" data-id="${id}" ${qCount === 0 ? 'disabled' : ''}>${resuming ? 'Resume exam' : 'Take exam'}</button>
           </div>
         </div>
       `;
@@ -902,6 +961,26 @@ function attachHandlers() {
         render();
       };
     });
+    app.querySelectorAll('[data-action="resume"]').forEach(btn => {
+      btn.onclick = () => {
+        const id = btn.dataset.id;
+        const p = progress[id];
+        quizState = { examId: id, current: p.current, answers: p.answers, flags: p.flags, crossed: p.crossed, optionOrder: p.optionOrder };
+        optionsMenuOpen = false;
+        openIssuePopoverId = null;
+        view = { screen: 'quiz' };
+        render();
+      };
+    });
+    app.querySelectorAll('[data-action="restart"]').forEach(btn => {
+      btn.onclick = () => {
+        const id = btn.dataset.id;
+        if (confirm('Start over? This clears your in-progress answers for this exam.')) {
+          clearProgress(id);
+          render();
+        }
+      };
+    });
     const generateRandomBtn = app.querySelector('[data-action="generate-random"]');
     if (generateRandomBtn) generateRandomBtn.onclick = () => {
       const type = generateRandomBtn.dataset.type;
@@ -1032,6 +1111,7 @@ function attachHandlers() {
         scores[quizState.examId] = { best: Math.max(prevBest, pct), last: pct };
         saveScores();
       }
+      clearProgress(quizState.examId);
       quizState.current = 0;
       view = { screen: 'results' };
       render();
@@ -1064,6 +1144,7 @@ function attachHandlers() {
 (async function init() {
   loadScores();
   loadSettings();
+  loadProgress();
   try {
     await loadExams();
     render();
