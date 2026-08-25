@@ -28,7 +28,6 @@
     --danger: #a3282d;
     --danger-light: #fbe9ea;
     --flag: #b9791a;
-    --flag-light: #fbf0dc;
     --radius: 8px;
   }
   * { box-sizing: border-box; }
@@ -120,8 +119,6 @@
   @keyframes skeleton-pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
   .skeleton-block, .skeleton-card { background: var(--border); border-radius: var(--radius); animation: skeleton-pulse 1.4s ease-in-out infinite; }
   .skeleton-card { height: 72px; }
-  .progress-bar { height: 6px; background: var(--border); border-radius: 3px; overflow: hidden; margin-bottom: 20px; }
-  .progress-fill { height: 100%; background: var(--accent); transition: width 0.2s; }
   .quiz-option {
     display: flex; align-items: center; justify-content: space-between; gap: 10px;
     padding: 12px 14px; border: 1px solid var(--border-strong); border-radius: 8px;
@@ -162,11 +159,24 @@
   .answer-feedback.correct { color: var(--success); }
   .answer-feedback.incorrect { color: var(--danger); }
   .icon-btn { display: flex; align-items: center; justify-content: center; width: 38px; height: 38px; padding: 0; font-size: 16px; line-height: 1; }
-  .flag-btn.active { background: var(--flag-light); border-color: var(--flag); color: var(--flag); }
+  .bare-icon {
+    display: flex; align-items: center; justify-content: center; width: 38px; height: 38px;
+    padding: 0; font-size: 26px; line-height: 1; border: none; background: none; border-radius: 8px; color: var(--text);
+  }
+  @media (hover: hover) and (pointer: fine) {
+    .bare-icon:hover { background: var(--bg); }
+  }
+  .flag-btn.active { color: var(--flag); }
   .qnav-wrap { margin-top: 20px; }
-  .qnav { display: grid; grid-template-columns: repeat(auto-fill, minmax(38px, 1fr)); gap: 8px; }
+  .qnav {
+    display: flex; flex-direction: row; align-items: center; gap: 10px;
+    overflow-x: auto; overflow-y: hidden; padding: 2px 2px 8px;
+    scrollbar-width: thin; scrollbar-color: var(--border-strong) transparent;
+  }
+  .qnav::-webkit-scrollbar { height: 6px; }
+  .qnav::-webkit-scrollbar-thumb { background: var(--border-strong); border-radius: 3px; }
   .qnav-btn {
-    position: relative; width: 100%; height: 38px; padding: 0; font-size: 13px;
+    position: relative; flex-shrink: 0; width: 38px; height: 38px; border-radius: 50%; padding: 0; font-size: 13px;
     border: 1px solid var(--border-strong); background: var(--card); color: var(--text);
   }
   .qnav-btn.current { border-color: var(--accent); box-shadow: inset 0 0 0 1px var(--accent); font-weight: 600; }
@@ -203,6 +213,7 @@
   .score-big { font-size: 40px; font-weight: 600; text-align: center; margin: 10px 0; }
   .score-label { text-align: center; color: var(--text-secondary); font-size: 14px; margin-bottom: 20px; }
   .top-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
+  .quiz-top-row { margin-bottom: 24px; }
   .back-btn {
     background: none; border: none; padding: 4px 0; margin: 0;
     color: var(--text-secondary); font-size: 13px; font-weight: 500;
@@ -249,7 +260,7 @@ function escapeHtml(str) {
 
 const EYE_OPEN_SVG = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8Z"/><circle cx="12" cy="12" r="3"/></svg>';
 const EYE_CLOSED_SVG = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.94 17.94A10.94 10.94 0 0 1 12 20c-7 0-11-8-11-8a21.86 21.86 0 0 1 5.06-6.06M9.9 4.24A10.94 10.94 0 0 1 12 4c7 0 11 8 11 8a21.86 21.86 0 0 1-3.22 4.55M14.12 14.12a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg>';
-const MENU_SVG = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>';
+const MENU_SVG = '<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>';
 
 function isBlankFilled(alts, value) {
   const norm = (value || '').trim().toLowerCase();
@@ -515,6 +526,10 @@ function render() {
   else if (view.screen === 'quiz') app.innerHTML = renderQuiz();
   else if (view.screen === 'results') app.innerHTML = renderResults();
   attachHandlers();
+  if (view.screen === 'quiz' || view.screen === 'results') {
+    const currentBtn = app.querySelector('.qnav-btn.current');
+    if (currentBtn) currentBtn.scrollIntoView({ block: 'nearest', inline: 'center' });
+  }
 }
 
 function categoryCardHtml(type) {
@@ -715,7 +730,6 @@ function renderQuiz() {
   const e = exams[quizState.examId];
   const q = e.questions[quizState.current];
   const total = e.questions.length;
-  const pct = Math.round((quizState.current / total) * 100);
   const userAns = quizState.answers[quizState.current];
   const answered = isQuestionAnswered(q, userAns);
   const showFeedback = answered && settings.immediateGrading;
@@ -729,9 +743,9 @@ function renderQuiz() {
     ? `<p class="answer-feedback ${isCorrect ? 'correct' : 'incorrect'}">${isCorrect ? 'Correct!' : `Incorrect — correct answer${q.type === 'fill' && q.blanks.length > 1 ? 's' : ''} highlighted above.`}</p>`
     : '';
   return `
-    <div class="top-row">
+    <div class="top-row quiz-top-row">
       <div class="options-wrap">
-        <button id="options-menu-btn" class="icon-btn" title="Options">${MENU_SVG}</button>
+        <button id="options-menu-btn" class="bare-icon" title="Options">${MENU_SVG}</button>
         ${optionsMenuOpen ? `
           <div class="options-menu">
             <div class="options-menu-item" id="grading-toggle-item">
@@ -745,12 +759,11 @@ function renderQuiz() {
         ` : ''}
       </div>
       <div style="display:flex; align-items:center; gap:12px;">
-        <button id="flag-btn" class="icon-btn flag-btn ${flagged ? 'active' : ''}" title="${flagged ? 'Unflag question' : 'Flag question'}">⚑</button>
+        <button id="flag-btn" class="bare-icon flag-btn ${flagged ? 'active' : ''}" title="${flagged ? 'Unflag question' : 'Flag question'}">⚑</button>
         <span style="font-size:13px; color: var(--text-secondary);">Question ${quizState.current + 1} of ${total}</span>
       </div>
     </div>
     ${optionsMenuOpen ? '<div class="menu-overlay" id="menu-overlay"></div>' : ''}
-    <div class="progress-bar"><div class="progress-fill" style="width:${pct}%"></div></div>
     <div class="card">
       <p style="font-size:16px; font-weight:500; margin-top:0;">${escapeHtml(q.text)}</p>
       ${renderQuestionImage(q)}
