@@ -305,10 +305,21 @@ function stemHasEnumeratedList(text) {
   return distinct.size >= 2;
 }
 
+// A "fixed truth-value menu" is a question where every option states a true/false
+// (or correct/incorrect) verdict — bare "True"/"False", "Statement 1 is True.
+// Statement 2 is False.", "Both statements are true", assertion-reason combos, etc.
+// These read as a fixed combinatorial menu, so they should always appear in their
+// original order rather than shuffle.
+const TRUTH_VALUE_OPTION_RE = /\b(true|false|correct|incorrect)\b/i;
+function isFixedTruthValueMenu(q) {
+  return q.options.length >= 2 && q.options.every(o => TRUTH_VALUE_OPTION_RE.test(o));
+}
+
 // True when shuffling this question's options could change its meaning: an option
 // like "B and C" only makes sense if B and C stay in their original list positions,
 // unless those letters are independently defined in the question's own stem text.
 function optionOrderIsUnsafe(q) {
+  if (isFixedTruthValueMenu(q)) return true;
   if (stemHasEnumeratedList(q.text)) return false;
   return q.options.some(o => COMPOUND_LETTER_OPTION_RE.test(o.trim()));
 }
