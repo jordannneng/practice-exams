@@ -272,16 +272,60 @@ function isQuestionCorrect(q, ans) {
   return ans === q.correct;
 }
 
+// Matches an option that is ENTIRELY a combination of letters, e.g. "A and B",
+// "Both A and C", "A, B and C", "a,c and d only" — the shape used when an option
+// refers back to sibling options by their list position (e.g. option D = "B and C").
+const COMPOUND_LETTER_OPTION_RE = /^(both\s+)?[a-h](\s*(,|&|and)\s*[a-h])+(\s+only)?\.?$/i;
+// "All of the above/these/answer choices/options/statements..." and "None of the..."
+// catch-all options — safe to shuffle in meaning, but read oddly unless they stay
+// wherever they originally sat in the list.
+const PINNED_OPTION_RE = /^(all|none)\s+of\s+(the|these)/i;
+
+// A stem that itself spells out a lettered/numbered sub-list (e.g. "...molars have
+// A) Two roots B) Crowns C) Lingual cusps") makes letter-combo options like "A and B"
+// safe to shuffle, since they're anchored to fixed stem text rather than to sibling
+// options' display positions. Require 2+ distinct markers so a stray "e.g." doesn't
+// count as a one-item list.
+function stemHasEnumeratedList(text) {
+  const matches = text.match(/\b([a-h])[).]\s|\b([1-8])[).]\s/gi) || [];
+  const distinct = new Set(matches.map(m => m.trim().replace(/[).]/g, '').toLowerCase()));
+  return distinct.size >= 2;
+}
+
+// True when shuffling this question's options could change its meaning: an option
+// like "B and C" only makes sense if B and C stay in their original list positions,
+// unless those letters are independently defined in the question's own stem text.
+function optionOrderIsUnsafe(q) {
+  if (stemHasEnumeratedList(q.text)) return false;
+  return q.options.some(o => COMPOUND_LETTER_OPTION_RE.test(o.trim()));
+}
+
+function shuffledIndices(idx) {
+  const copy = idx.slice();
+  for (let i = copy.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [copy[i], copy[j]] = [copy[j], copy[i]];
+  }
+  return copy;
+}
+
 function buildOptionOrder(exam) {
   const order = {};
   exam.questions.forEach((q, qi) => {
     if (q.type === 'fill') return;
-    const idx = q.options.map((_, oi) => oi);
-    for (let i = idx.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [idx[i], idx[j]] = [idx[j], idx[i]];
+    const allIdx = q.options.map((_, oi) => oi);
+    if (optionOrderIsUnsafe(q)) {
+      order[qi] = allIdx;
+      return;
     }
-    order[qi] = idx;
+    const pinnedIdx = allIdx.filter(oi => PINNED_OPTION_RE.test(q.options[oi].trim()));
+    const movableIdx = shuffledIndices(allIdx.filter(oi => !pinnedIdx.includes(oi)));
+    const result = [];
+    let mi = 0;
+    allIdx.forEach(oi => {
+      result.push(pinnedIdx.includes(oi) ? oi : movableIdx[mi++]);
+    });
+    order[qi] = result;
   });
   return order;
 }
