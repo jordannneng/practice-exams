@@ -244,7 +244,7 @@ const PROGRESS_KEY = 'exam_progress'; // in-progress attempts, keyed by exam id,
 let exams = {};
 let scores = {};
 let progress = {};
-let settings = { immediateGrading: true, autoNext: false };
+let settings = { immediateGrading: true, autoNext: false, newCurriculumOnly: false };
 const AUTO_NEXT_DELAY_MS = 600;
 let view = { screen: 'home' };
 let quizState = null;
@@ -353,20 +353,32 @@ function buildOptionOrder(exam) {
 
 const RANDOM_EXAM_ID_PREFIX = '__random__';
 const RANDOM_EXAM_QUESTION_COUNT = 50;
+const NEW_CURRICULUM_MIN_YEAR = 2020; // a 2019 curriculum change makes older exams less relevant
 
 function randomExamId(type, subtype) {
   return `${RANDOM_EXAM_ID_PREFIX}${type}__${subtype || 'none'}`;
 }
 
+function examYear(title) {
+  const m = title.match(/\((Spring|Summer|Fall|Winter)\s+(\d{4})\)/i);
+  return m ? parseInt(m[2], 10) : null;
+}
+
+function isNewCurriculumExam(exam) {
+  const year = examYear(exam.title);
+  return year != null && year >= NEW_CURRICULUM_MIN_YEAR;
+}
+
 // Pools every question from the real (non-random) exams in a folder, deduping
 // questions that recur verbatim across exams (e.g. the same question reused
 // in multiple years) so a generated random exam can't show the same question twice.
-function collectUniqueQuestionPool(type, subtype) {
+function collectUniqueQuestionPool(type, subtype, { newCurriculumOnly = false } = {}) {
   const seen = new Set();
   const pool = [];
   Object.keys(exams).forEach(id => {
     const e = exams[id];
     if (e.isRandom || e.type !== type || (subtype && e.subtype !== subtype)) return;
+    if (newCurriculumOnly && !isNewCurriculumExam(e)) return;
     (e.questions || []).forEach(q => {
       const key = q.text.trim().toLowerCase().replace(/\s+/g, ' ');
       if (seen.has(key)) return;
@@ -377,8 +389,8 @@ function collectUniqueQuestionPool(type, subtype) {
   return pool;
 }
 
-function buildRandomExam(type, subtype) {
-  const pool = collectUniqueQuestionPool(type, subtype);
+function buildRandomExam(type, subtype, { newCurriculumOnly = false } = {}) {
+  const pool = collectUniqueQuestionPool(type, subtype, { newCurriculumOnly });
   const shuffled = pool.slice();
   for (let i = shuffled.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -386,7 +398,8 @@ function buildRandomExam(type, subtype) {
   }
   const questions = shuffled.slice(0, Math.min(RANDOM_EXAM_QUESTION_COUNT, shuffled.length));
   const label = subtype ? `${TYPE_LABELS[type] || type} ${SUBTYPE_LABELS[subtype] || subtype}` : (TYPE_LABELS[type] || type);
-  return { title: `${label} — Random Practice Exam`, type, subtype, isRandom: true, questions };
+  const suffix = newCurriculumOnly ? ` (${NEW_CURRICULUM_MIN_YEAR}+ only)` : '';
+  return { title: `${label} — Random Practice Exam${suffix}`, type, subtype, isRandom: true, questions };
 }
 
 function loadScores() {
@@ -682,15 +695,29 @@ function renderList() {
     <p class="subtitle">Pick an exam below to start practicing.</p>
   `;
   if (ids.length >= 2) {
-    const poolSize = collectUniqueQuestionPool(type, subtype).length;
+    const hasOldCurriculum = ids.some(id => !isNewCurriculumExam(exams[id]));
+    const hasNewCurriculum = ids.some(id => isNewCurriculumExam(exams[id]));
+    const showCurriculumToggle = hasOldCurriculum && hasNewCurriculum;
+    const newCurriculumOnly = showCurriculumToggle && settings.newCurriculumOnly;
+    const eligibleCount = newCurriculumOnly ? ids.filter(id => isNewCurriculumExam(exams[id])).length : ids.length;
+    const poolSize = collectUniqueQuestionPool(type, subtype, { newCurriculumOnly }).length;
     const genCount = Math.min(RANDOM_EXAM_QUESTION_COUNT, poolSize);
+    const metaText = poolSize === 0
+      ? `No questions available — no exams in this section match the ${NEW_CURRICULUM_MIN_YEAR}+ curriculum filter.`
+      : `Draws ${genCount} questions from all ${eligibleCount} exam${eligibleCount !== 1 ? 's' : ''} in this section (${poolSize} unique questions available)`;
     html += `
       <div class="card random-exam-card">
         <div class="category-body">
           <div class="category-title">Random Practice Exam</div>
-          <div class="category-meta">Draws ${genCount} questions from all ${ids.length} exams in this section (${poolSize} unique questions available)</div>
+          <div class="category-meta">${metaText}</div>
+          ${showCurriculumToggle ? `
+            <label class="auto-next-toggle" id="new-curriculum-toggle-item" style="margin-top:6px;">
+              <span>${NEW_CURRICULUM_MIN_YEAR}+ curriculum only</span>
+              <span class="toggle-switch ${settings.newCurriculumOnly ? 'on' : ''}"></span>
+            </label>
+          ` : ''}
         </div>
-        <button class="primary" data-action="generate-random" data-type="${type}" data-subtype="${subtype || ''}">Generate Random Exam</button>
+        <button class="primary" data-action="generate-random" data-type="${type}" data-subtype="${subtype || ''}" ${genCount === 0 ? 'disabled' : ''}>Generate Random Exam</button>
       </div>
     `;
   }
@@ -984,11 +1011,17 @@ function attachHandlers() {
       const type = generateRandomBtn.dataset.type;
       const subtype = generateRandomBtn.dataset.subtype || undefined;
       const id = randomExamId(type, subtype);
-      exams[id] = buildRandomExam(type, subtype);
+      exams[id] = buildRandomExam(type, subtype, { newCurriculumOnly: settings.newCurriculumOnly });
       quizState = { examId: id, current: 0, answers: {}, flags: {}, crossed: {}, optionOrder: buildOptionOrder(exams[id]) };
       optionsMenuOpen = false;
       openIssuePopoverId = null;
       view = { screen: 'quiz' };
+      render();
+    };
+    const newCurriculumToggle = document.getElementById('new-curriculum-toggle-item');
+    if (newCurriculumToggle) newCurriculumToggle.onclick = () => {
+      settings.newCurriculumOnly = !settings.newCurriculumOnly;
+      saveSettings();
       render();
     };
     app.querySelectorAll('[data-action="toggle-issue"]').forEach(btn => {
