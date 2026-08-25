@@ -283,9 +283,10 @@ function isQuestionCorrect(q, ans) {
 }
 
 // Matches an option that is ENTIRELY a combination of letters, e.g. "A and B",
-// "Both A and C", "A, B and C", "a,c and d only" — the shape used when an option
+// "Both A and C", "A, B and C", "A, B, and C" (Oxford comma), "a,c and d only",
+// "a. and b." / "A. B. and C." (period-separated) — the shape used when an option
 // refers back to sibling options by their list position (e.g. option D = "B and C").
-const COMPOUND_LETTER_OPTION_RE = /^(both\s+)?[a-h](\s*(,|&|and)\s*[a-h])+(\s+only)?\.?$/i;
+const COMPOUND_LETTER_OPTION_RE = /^(both\s+)?[a-h]\.?(\s*[,.]\s*(and|&)?\s*[a-h]\.?|\s*(and|&)\s*[a-h]\.?)+(\s+only)?\.?$/i;
 // "All of the above/these/answer choices/options/statements..." and "None of the..."
 // catch-all options — safe to shuffle in meaning, but read oddly unless they stay
 // wherever they originally sat in the list.
