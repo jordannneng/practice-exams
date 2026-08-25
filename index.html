@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PRACTICE EXAMS</title>
+<title>Practice Exams</title>
 <meta name="description" content="">
-<meta property="og:title" content="PRACTICE EXAMS">
+<meta property="og:title" content="Practice Exams">
 <meta property="og:description" content="">
 <meta property="og:type" content="website">
 <link rel="icon" type="image/png" href="images/tooth-blue.png">
@@ -14,15 +14,16 @@
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg: #f4f6f9;
+    --bg: #ebebeb;
     --card: #ffffff;
-    --border: #dde3ea;
-    --border-strong: #c1cad6;
+    --border: #cdd5df;
+    --border-strong: #b7c1ce;
     --text: #21314d;
     --text-secondary: #57657a;
     --text-muted: #8a95a6;
     --accent: #21314d;
-    --accent-light: #e7e8eb;
+    --accent-light: #f1f1f1;
+    --accent-dark: #2c3f61;
     --success: #1e6b3e;
     --success-light: #e6f3ea;
     --danger: #a3282d;
@@ -49,6 +50,17 @@
   .app { max-width: 760px; margin: 0 auto; padding: 24px; }
   .app.wide { max-width: 960px; }
   h1 { font-size: 22px; font-weight: 600; margin: 0 0 4px; }
+  @media (hover: hover) and (pointer: fine) {
+    button.primaryLight:hover { background: var(--accent-light); border-color: var(--border-strong); }
+    button.primaryDark:hover { background: var(--accent-dark); }
+    .category-card:hover { background: var(--card);border-color: var(--border-strong); box-shadow: 0 6px 16px rgba(33, 49, 77, 0.12); transform: translateY(-1px); }
+    .exam-card:hover { border-color: var(--border-strong); box-shadow: 0 6px 16px rgba(33, 49, 77, 0.12); transform: translateY(-1px); }
+    .issue-btn:hover { border-color: var(--danger); color: var(--danger); background: var(--danger-light); }
+    .quiz-option:not(.locked or .crossed-out):hover { background: var(--accent-light); }
+    .bare-icon:hover { background: var(--bg); }
+    .options-menu-item:hover { background: var(--accent-light); }
+    .back-btn:hover { background: none; color: var(--accent); }
+  }
   .subtitle { color: var(--text-secondary); font-size: 14px; margin: 0 0 24px; }
   .card {
     background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);
@@ -60,11 +72,8 @@
     color: var(--text); cursor: pointer;
     touch-action: manipulation; -webkit-user-select: none; user-select: none;
   }
-  button.primary { background: var(--accent); color: white; border-color: var(--accent); }
-  @media (hover: hover) and (pointer: fine) {
-    button:hover { background: var(--bg); }
-    button.primary:hover { opacity: 0.9; }
-  }
+  button.primaryDark { background: var(--accent); color: white; border-color: var(--accent); }
+  button.primaryLight { background: var(--card); color: var(--accent); border-color: var(--border); }
   button.small { padding: 5px 10px; font-size: 13px; }
   button:disabled { opacity: 0.5; cursor: default; }
   .exam-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; margin-bottom: 4px; }
@@ -74,11 +83,6 @@
     padding: 16px 18px;
     transition: border-color 0.15s, box-shadow 0.15s, transform 0.15s;
   }
-  @media (hover: hover) and (pointer: fine) {
-    .exam-card:hover {
-      border-color: var(--accent); box-shadow: 0 6px 16px rgba(33, 49, 77, 0.12); transform: translateY(-1px);
-    }
-  }
   .exam-card-actions { display: flex; align-items: center; justify-content: flex-end; gap: 10px; }
   .random-exam-card { display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap; }
   .issue-wrap { position: relative; display: inline-flex; }
@@ -87,9 +91,6 @@
     border-color: var(--border-strong); color: var(--text-muted); background: none;
   }
   .issue-btn.active { border-color: var(--danger); color: var(--danger); background: var(--danger-light); }
-  @media (hover: hover) and (pointer: fine) {
-    .issue-btn:hover { border-color: var(--danger); color: var(--danger); background: var(--danger-light); }
-  }
   .issue-popover {
     position: absolute; top: calc(100% + 6px); right: 0; z-index: 30; width: 260px;
     background: var(--card); border: 1px solid var(--danger); border-radius: var(--radius);
@@ -99,13 +100,9 @@
   .category-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 12px; margin-bottom: 4px; }
   .category-card {
     display: flex; align-items: center; gap: 14px; width: 100%; text-align: left;
+    background: var(--card); border: 1px solid var(--border);
     padding: 16px 18px; border-radius: var(--radius);
     transition: border-color 0.15s, box-shadow 0.15s, transform 0.15s;
-  }
-  @media (hover: hover) and (pointer: fine) {
-    .category-card:hover {
-      border-color: var(--accent); box-shadow: 0 6px 16px rgba(33, 49, 77, 0.12); transform: translateY(-1px);
-    }
   }
   .category-body { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
   .category-title { font-weight: 600; font-size: 16px; }
@@ -125,25 +122,19 @@
     margin-bottom: 8px; cursor: pointer; font-size: 14px;
     touch-action: manipulation; -webkit-user-select: none; user-select: none; -webkit-touch-callout: none;
   }
-  @media (hover: hover) and (pointer: fine) {
-    .quiz-option:not(.locked):hover { background: var(--accent-light); }
-  }
   .quiz-option.selected { border-color: var(--accent); background: var(--accent-light); }
   .quiz-option.locked { cursor: default; }
   .option-main { display: flex; align-items: center; flex: 1; min-width: 0; }
   .quiz-option input { margin-right: 10px; flex-shrink: 0; accent-color: var(--accent); }
   .quiz-option.correct-answer { border-color: var(--success); background: var(--success-light); }
   .quiz-option.incorrect-answer { border-color: var(--danger); background: var(--danger-light); }
-  .quiz-option.crossed-out { cursor: not-allowed; }
-  .quiz-option.crossed-out .option-main { text-decoration: line-through; color: var(--text-muted); opacity: 0.7; }
+  .quiz-option.crossed-out { cursor: not-allowed; border-color: var(--border); }
+  .quiz-option.crossed-out .option-main { text-decoration: line-through; color: var(--text-muted); opacity: 0.7;}
   .eye-toggle {
     flex-shrink: 0; display: flex; align-items: center; justify-content: center;
-    width: 30px; height: 30px; padding: 0; border: none; background: transparent; color: var(--text-secondary);
+    width: 30px; height: 30px; padding: 0; border: none; background: transparent; color: var(--accent);
   }
-  @media (hover: hover) and (pointer: fine) {
-    .eye-toggle:hover { background: var(--border); }
-  }
-  .eye-toggle.active { color: var(--accent); }
+  .eye-toggle.active { color: var(--text-muted); }
   .question-image { display: block; max-width: 100%; height: auto; margin: 4px 0 16px; }
   .fill-blank-row { margin-bottom: 12px; }
   .fill-blank-label { font-size: 13px; color: var(--text-secondary); margin-bottom: 4px; display: block; }
@@ -159,9 +150,6 @@
   .bare-icon {
     display: flex; align-items: center; justify-content: center; width: 38px; height: 38px;
     padding: 0; font-size: 26px; line-height: 1; border: none; background: none; border-radius: var(--radius); color: var(--text);
-  }
-  @media (hover: hover) and (pointer: fine) {
-    .bare-icon:hover { background: var(--bg); }
   }
   .flag-btn.active { color: var(--flag); }
   .qnav-wrap { margin-top: 20px; }
@@ -195,9 +183,6 @@
     padding: 9px 10px; border-radius: 6px; font-size: 14px; cursor: pointer;
     touch-action: manipulation; -webkit-user-select: none; user-select: none;
   }
-  @media (hover: hover) and (pointer: fine) {
-    .options-menu-item:hover { background: var(--bg); }
-  }
   .options-menu-divider { height: 1px; background: var(--border); margin: 6px 2px; }
   .toggle-switch { position: relative; width: 34px; height: 20px; border-radius: 10px; background: var(--border-strong); flex-shrink: 0; transition: background 0.15s; }
   .toggle-switch.on { background: var(--accent); }
@@ -214,9 +199,6 @@
   .back-btn {
     background: none; border: none; padding: 4px 0; margin: 0;
     color: var(--text-secondary); font-size: 13px; font-weight: 500;
-  }
-  @media (hover: hover) and (pointer: fine) {
-    .back-btn:hover { background: none; color: var(--accent); }
   }
   .loading, .error-state { text-align: center; padding: 40px; color: var(--text-muted); }
   .footer-row { display: flex; justify-content: space-between; align-items: center; margin-top: 20px; }
@@ -718,7 +700,7 @@ function renderList() {
             </label>
           ` : ''}
         </div>
-        <button class="primary" data-action="generate-random" data-type="${type}" data-subtype="${subtype || ''}" ${genCount === 0 ? 'disabled' : ''}>Generate Random Exam</button>
+        <button class="primaryDark" data-action="generate-random" data-type="${type}" data-subtype="${subtype || ''}" ${genCount === 0 ? 'disabled' : ''}>Generate Random Exam</button>
       </div>
     `;
   }
@@ -748,8 +730,8 @@ function renderList() {
                 ${openIssuePopoverId === id ? `<div class="issue-popover">${escapeHtml(e.issues)}</div>` : ''}
               </div>
             ` : ''}
-            ${resuming ? `<button data-action="restart" data-id="${id}">Start over</button>` : ''}
-            <button class="primary" data-action="${resuming ? 'resume' : 'take'}" data-id="${id}" ${qCount === 0 ? 'disabled' : ''}>${resuming ? 'Resume exam' : 'Take exam'}</button>
+            ${resuming ? `<button class="primaryLight" data-action="restart" data-id="${id}">Start over</button>` : ''}
+            <button class="primaryDark" data-action="${resuming ? 'resume' : 'take'}" data-id="${id}" ${qCount === 0 ? 'disabled' : ''}>${resuming ? 'Resume exam' : 'Take exam'}</button>
           </div>
         </div>
       `;
@@ -861,15 +843,15 @@ function renderQuiz() {
       ${bodyHtml}
     </div>
     <div class="footer-row">
-      <button id="prev-q-btn" ${quizState.current === 0 ? 'disabled' : ''}>Previous</button>
+      <button class="primaryLight" id="prev-q-btn" ${quizState.current === 0 ? 'disabled' : ''}>Previous</button>
       <div class="footer-row-right">
         <label class="auto-next-toggle" id="auto-next-toggle-item">
           <span>Auto next</span>
           <span class="toggle-switch ${settings.autoNext ? 'on' : ''}"></span>
         </label>
         ${quizState.current === total - 1
-          ? `<button class="primary" id="submit-quiz-btn">Submit exam</button>`
-          : `<button class="primary" id="next-q-btn">Next</button>`}
+          ? `<button class="primaryDark" id="submit-quiz-btn">Submit exam</button>`
+          : `<button class="primaryDark" id="next-q-btn">Next</button>`}
       </div>
     </div>
     <div class="card qnav-wrap">
@@ -912,7 +894,7 @@ function renderResults() {
       <div class="score-big">${pct}%</div>
       <div class="score-label">${correctCount} of ${total} correct</div>
       <div style="display:flex; gap:8px; justify-content:center;">
-        <button class="primary" id="retake-btn">Retake exam</button>
+        <button class="primaryDark" id="retake-btn">Retake exam</button>
       </div>
     </div>
     ${renderReviewQuestion()}
@@ -939,8 +921,8 @@ function renderReviewQuestion() {
       ${bodyHtml}
     </div>
     <div class="footer-row">
-      <button id="review-prev-btn" ${quizState.current === 0 ? 'disabled' : ''}>Previous</button>
-      <button id="review-next-btn" ${quizState.current === total - 1 ? 'disabled' : ''}>Next</button>
+      <button class="primaryLight" id="review-prev-btn" ${quizState.current === 0 ? 'disabled' : ''}>Previous</button>
+      <button class="primaryDark" id="review-next-btn" ${quizState.current === total - 1 ? 'disabled' : ''}>Next</button>
     </div>
     <div class="card qnav-wrap">
       ${renderQnav(true)}
