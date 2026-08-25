@@ -28,7 +28,7 @@
     --danger: #a3282d;
     --danger-light: #fbe9ea;
     --flag: #b9791a;
-    --radius: 14px;
+    --radius: 16px;
   }
   * { box-sizing: border-box; }
   html { touch-action: manipulation; }
@@ -500,8 +500,8 @@ async function loadExams() {
   exams = await res.json();
 }
 
-const TYPE_LABELS = { gda: 'GDA', dao: 'DAO', ethics: 'Ethics', biochem: 'Biochemistry', pcod1: 'PCOD I', cario: 'Cariology', oralrad: 'Oral Radiology', pcod2: 'PCOD II', patho: 'Pathomedicine', perio1: 'Periodontics I', fixedpros: 'Fixed Prosthodontics', rempros: 'Removable Prosthodontics', cd: 'Complete Dentures', ortho: 'Orthodontics', icd: 'Intro to Clinical Dentistry', coralrad: 'Clinical Oral Radiology' };
-const TYPE_ORDER = ['gda', 'dao', 'ethics', 'biochem', 'pcod1', 'cario', 'oralrad', 'pcod2', 'patho', 'perio1', 'fixedpros', 'rempros', 'cd', 'ortho', 'icd', 'coralrad'];
+const TYPE_LABELS = { gda: 'GDA', dao: 'DAO', ethics: 'Ethics', pcod1: 'PCOD I', cario: 'Cariology', oralrad: 'Oral Radiology', pcod2: 'PCOD II', patho: 'Pathomedicine', perio1: 'Periodontics I', fixedpros: 'Fixed Prosthodontics', rempros: 'Removable Prosthodontics', cd: 'Complete Dentures', ortho: 'Orthodontics', icd: 'Intro to Clinical Dentistry', coralrad: 'Clinical Oral Radiology' };
+const TYPE_ORDER = ['gda', 'dao', 'ethics', 'pcod1', 'cario', 'oralrad', 'pcod2', 'patho', 'perio1', 'fixedpros', 'rempros', 'cd', 'ortho', 'icd', 'coralrad'];
 const SUBTYPES_BY_TYPE = {
   gda: [
     { id: 'midterm', label: 'Midterms' },
@@ -585,7 +585,7 @@ const SEMESTER_ORDER = [
   'D3 Summer', 'D3 Fall', 'D3 Spring',
   'D4 Summer', 'D4 Fall',
 ];
-const TYPE_SEMESTER = { gda: 'D1 Summer', dao: 'D1 Summer', ethics: 'D1 Summer', biochem: 'D1 Summer', pcod1: 'D1 Fall', cario: 'D1 Fall', oralrad: 'D1 Fall', pcod2: 'D1 Spring', patho: 'D2 Fall', perio1: 'D2 Summer', fixedpros: 'D2 Summer', rempros: 'D2 Summer', cd: 'D2 Summer', ortho: 'D2 Fall', icd: 'D2 Fall', coralrad: 'D2 Fall' };
+const TYPE_SEMESTER = { gda: 'D1 Summer', dao: 'D1 Summer', ethics: 'D1 Summer', pcod1: 'D1 Fall', cario: 'D1 Fall', oralrad: 'D1 Fall', pcod2: 'D1 Spring', patho: 'D2 Fall', perio1: 'D2 Summer', fixedpros: 'D2 Summer', rempros: 'D2 Summer', cd: 'D2 Summer', ortho: 'D2 Fall', icd: 'D2 Fall', coralrad: 'D2 Fall' };
 
 function listViewForExam(examId) {
   const e = exams[examId];
