@@ -482,8 +482,8 @@ async function loadExams() {
   exams = await res.json();
 }
 
-const TYPE_LABELS = { gda: 'GDA', dao: 'DAO', ethics: 'Ethics', pcod1: 'PCOD I', cario: 'Cariology', oralrad: 'Oral Radiology', pcod2: 'PCOD II', patho: 'Pathomedicine', perio1: 'Periodontics I', fixedpros: 'Fixed Prosthodontics', rempros: 'Removable Prosthodontics', cd: 'Complete Dentures', ortho: 'Orthodontics', icd: 'Intro to Clinical Dentistry', coralrad: 'Clinical Oral Radiology' };
-const TYPE_ORDER = ['gda', 'dao', 'ethics', 'pcod1', 'cario', 'oralrad', 'pcod2', 'patho', 'perio1', 'fixedpros', 'rempros', 'cd', 'ortho', 'icd', 'coralrad'];
+const TYPE_LABELS = { gda: 'GDA', dao: 'DAO', ethics: 'Ethics', pcod1: 'PCOD I', cario: 'Cariology', oralrad: 'Oral Radiology', pcod2: 'PCOD II', patho: 'Pathomedicine', perio1: 'Periodontics I', fixedpros: 'Fixed Prosthodontics', rempros: 'Removable Prosthodontics', cd: 'Complete Dentures', ortho: 'Orthodontics', icd: 'Intro to Clinical Dentistry', coralrad: 'Clinical Oral Radiology', occlusion: 'Concepts of Occlusion', endo: 'Endodontics', implants: 'Intro to Implants', oralpath: 'Oral Pathology', painanx: 'Pain & Anxiety Control', perio2: 'Periodontics II', omfs: 'Oral & Maxillofacial Surgery', pedo: 'Preclinical Pediatric Dentistry' };
+const TYPE_ORDER = ['gda', 'dao', 'ethics', 'pcod1', 'cario', 'oralrad', 'pcod2', 'patho', 'perio1', 'fixedpros', 'rempros', 'cd', 'ortho', 'icd', 'coralrad', 'occlusion', 'endo', 'implants', 'oralpath', 'painanx', 'perio2', 'omfs', 'pedo'];
 const SUBTYPES_BY_TYPE = {
   gda: [
     { id: 'midterm', label: 'Midterms' },
@@ -555,6 +555,48 @@ const SUBTYPES_BY_TYPE = {
     { id: 'exam1', label: 'Exam 1' },
     { id: 'exam2', label: 'Exam 2' },
   ],
+  endo: [
+    { id: 'midterm', label: 'Midterms' },
+    { id: 'final', label: 'Final Exams' },
+    { id: 'quiz', label: 'Quizzes' },
+  ],
+  implants: [
+    { id: 'exam1', label: 'Exam 1' },
+    { id: 'exam2', label: 'Exam 2' },
+  ],
+  oralpath: [
+    { id: 'exam1', label: 'Exam 1' },
+    { id: 'exam2', label: 'Exam 2' },
+    { id: 'exam3', label: 'Exam 3' },
+    { id: 'exam4', label: 'Exam 4' },
+    { id: 'exam5', label: 'Exam 5' },
+    { id: 'final', label: 'Final Exams' },
+  ],
+  painanx: [
+    { id: 'quiz', label: 'Quizzes' },
+    { id: 'exam1', label: 'Exam 1' },
+    { id: 'exam2', label: 'Exam 2' },
+    { id: 'exam3', label: 'Exam 3' },
+    { id: 'exam4', label: 'Exam 4' },
+    { id: 'exam23', label: 'Exam 2 & 3' },
+    { id: 'midterm', label: 'Midterms' },
+    { id: 'final', label: 'Final Exams' },
+  ],
+  perio2: [
+    { id: 'midterm', label: 'Midterms' },
+    { id: 'final', label: 'Final Exams' },
+    { id: 'quiz', label: 'Quizzes' },
+  ],
+  omfs: [
+    { id: 'midterm', label: 'Midterms' },
+    { id: 'final', label: 'Final Exams' },
+    { id: 'quiz', label: 'Quizzes' },
+  ],
+  pedo: [
+    { id: 'exam1', label: 'Exam 1' },
+    { id: 'exam2', label: 'Exam 2' },
+    { id: 'final', label: 'Final Exams' },
+  ],
 };
 const SUBTYPE_LABELS = Object.values(SUBTYPES_BY_TYPE).flat().reduce((acc, s) => (acc[s.id] = s.label, acc), {});
 
@@ -567,7 +609,7 @@ const SEMESTER_ORDER = [
   'D3 Summer', 'D3 Fall', 'D3 Spring',
   'D4 Summer', 'D4 Fall',
 ];
-const TYPE_SEMESTER = { gda: 'D1 Summer', dao: 'D1 Summer', ethics: 'D1 Summer', pcod1: 'D1 Fall', cario: 'D1 Fall', oralrad: 'D1 Fall', pcod2: 'D1 Spring', patho: 'D2 Fall', perio1: 'D2 Summer', fixedpros: 'D2 Summer', rempros: 'D2 Summer', cd: 'D2 Summer', ortho: 'D2 Fall', icd: 'D2 Fall', coralrad: 'D2 Fall' };
+const TYPE_SEMESTER = { gda: 'D1 Summer', dao: 'D1 Summer', ethics: 'D1 Summer', pcod1: 'D1 Fall', cario: 'D1 Fall', oralrad: 'D1 Fall', pcod2: 'D1 Spring', patho: 'D2 Fall', perio1: 'D2 Summer', fixedpros: 'D2 Summer', rempros: 'D2 Summer', cd: 'D2 Summer', ortho: 'D2 Fall', icd: 'D2 Fall', coralrad: 'D2 Fall', occlusion: 'D2 Spring', endo: 'D2 Spring', implants: 'D2 Spring', oralpath: 'D2 Spring', painanx: 'D2 Spring', perio2: 'D2 Spring', omfs: 'D2 Spring', pedo: 'D2 Spring' };
 
 function listViewForExam(examId) {
   const e = exams[examId];

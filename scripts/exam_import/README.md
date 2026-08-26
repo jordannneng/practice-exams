@@ -180,6 +180,23 @@ each one was added because a specific real exam broke without it:
 - **More than 4 options**: the CSV column count auto-expands to fit the
   widest question in the batch (`max_opts` in `write_exam_csv`), not
   hardcoded to A-D.
+- **Picture-based answer options**: some questions (first seen in OMFS,
+  D2 Spring) letter-label their options A-E but give each one no text at
+  all -- the options themselves are images (e.g. "which of these forceps",
+  each choice a photo in an attached case PDF). The CSV schema only
+  supports one image per *question*, not per option, so there's no way to
+  carry this; `parse_option_block` detects an option run where every
+  option's text is blank and treats it like a free-response question
+  (dropped, per "Questions that aren't multiple choice" above) rather than
+  writing a row with empty options that `build-exams.js` would reject.
+- **`*` as the correct-answer marker instead of `✓`**: some source PDFs
+  (first seen in Intro to Implants, D2 Spring) mark the correct option with
+  a literal asterisk (`*d. Removable`) rather than a checkmark. `OPT_RE`
+  and the option-parsing code in `parse_lib.py` accept either character as
+  "this option is correct" — a `no questions parsed`/"every question
+  skipped as not-multiple-choice" result on an otherwise normal-looking
+  numbered exam is the symptom to watch for if a *third* marker style ever
+  shows up.
 
 If a new PDF breaks the parser in a way not covered above, fix
 `parse_lib.py` itself (it's shared, reusable infrastructure) and add a
@@ -287,6 +304,15 @@ errors as proof the content is right.
 Requires the `playwright` package + Chromium (both pre-installed in this
 environment — see the module docstring in `verify_batch.js` if
 `require('playwright')` fails).
+
+If `verify_batch.js` throws `Cannot read properties of undefined (reading
+'0')` from `renderQuiz` for *every* exam (not just newly-imported ones),
+`index.html`'s `quizState` picked up a new field (e.g. `optionOrder`,
+added for the answer-shuffling feature) that the script's hand-built
+`quizState` object in its `page.evaluate` call doesn't set — fix the
+script to match how `index.html` itself constructs `quizState` when
+starting a quiz, rather than assuming the batch just imported is at
+fault.
 
 Then commit, push to the working branch, open a PR, and merge — see the
 top-level `CLAUDE.md` for the exact git/PR workflow and this repo's
