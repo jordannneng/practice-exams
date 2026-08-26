@@ -7,19 +7,30 @@ conversation's context — read it top to bottom before starting.
 
 ## 1. Where the source PDFs live
 
-Google Drive root folder **"TCDM Exam Banks"** contains 11 semester
-subfolders, one per school year/season, named:
+Google Drive root folder **"TCDM Exam Banks"** contains one subfolder per
+school year/season, plus one non-semester **"Elective"** folder. As of the
+D3 Fall/D3 Spring/D4 Summer/D4 Fall batch, the semester folders are:
 
 ```
 D1 Summer, D1 Fall, D1 Spring,
 D2 Summer, D2 Fall, D2 Spring,
 D3 Summer, D3 Fall, D3 Spring,
-D4 Fall, D4 Spring
+D4 Summer, D4 Fall
 ```
 
 (The school year starts in Summer, so within a year the order is
 Summer → Fall → Spring. Not every D-year necessarily has a Summer/every
-season — check what's actually there.)
+season, and this list will drift as more semesters get added to Drive —
+list the root folder with an explicit large `pageSize` rather than trusting
+this doc to stay in sync.)
+
+**"Elective" is not a school-year semester** — it groups standalone
+elective courses (first seen: a single "Surgical Principles of Periodontics
+& Implant Dentistry" final exam) and, unlike the semester folders, its PDFs
+so far sit directly in the folder rather than inside a per-class subfolder.
+It's wired into `index.html` the same way a semester is (its own
+`SEMESTER_ORDER` entry, sorted chronologically after the last real
+semester) — see section 4.
 
 Inside each semester folder are per-class subfolders (e.g. "GDA", "DAO",
 "Ethics", "PCOD I", "Cariology", "Oral Radiology", "PCOD II"). Inside those,
@@ -197,6 +208,21 @@ each one was added because a specific real exam broke without it:
   skipped as not-multiple-choice" result on an otherwise normal-looking
   numbered exam is the symptom to watch for if a *third* marker style ever
   shows up.
+- **Three source formats, not two**: some exams (first seen in Lasers in
+  Dentistry, Summer 2023) have no numbering markers at all -- not
+  `Question #:`, not plain `N.`/`N)`, nothing. `parse_questions_numbered`
+  falls back to `parse_questions_unmarked` when it finds zero `N.`-style
+  starts: question boundaries are inferred purely from where a fresh
+  `a`/`A`-lettered option run begins (stem lines accumulate until the next
+  `a`/`A` option line, then lettered options accumulate while strictly
+  increasing). This format also has no `Question #:` split to discard the
+  document's own header banner, so `parse_questions_unmarked` separately
+  strips leading lines ending in "Confidential" (every source PDF in this
+  bank opens with one, e.g. "Lasers in Dentistry Final Exam -
+  Confidential") before scanning for question 1. A `no questions parsed at
+  all` result on an exam that clearly has lettered options in the raw text
+  (unlike the picture-based-options gotcha, where the options are present
+  but blank) is the symptom of this format.
 
 If a new PDF breaks the parser in a way not covered above, fix
 `parse_lib.py` itself (it's shared, reusable infrastructure) and add a

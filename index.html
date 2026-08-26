@@ -482,8 +482,8 @@ async function loadExams() {
   exams = await res.json();
 }
 
-const TYPE_LABELS = { gda: 'GDA', dao: 'DAO', ethics: 'Ethics', pcod1: 'PCOD I', cario: 'Cariology', oralrad: 'Oral Radiology', pcod2: 'PCOD II', patho: 'Pathomedicine', perio1: 'Periodontics I', fixedpros: 'Fixed Prosthodontics', rempros: 'Removable Prosthodontics', cd: 'Complete Dentures', ortho: 'Orthodontics', icd: 'Intro to Clinical Dentistry', coralrad: 'Clinical Oral Radiology', occlusion: 'Concepts of Occlusion', endo: 'Endodontics', implants: 'Intro to Implants', oralpath: 'Oral Pathology', painanx: 'Pain & Anxiety Control', perio2: 'Periodontics II', omfs: 'Oral & Maxillofacial Surgery', pedo: 'Preclinical Pediatric Dentistry', mpm: 'Multidisciplinary Patient Management', oralmed: 'Oral Diagnosis & Oral Medicine', prosthrev: 'Prosthodontic Review' };
-const TYPE_ORDER = ['gda', 'dao', 'ethics', 'pcod1', 'cario', 'oralrad', 'pcod2', 'patho', 'perio1', 'fixedpros', 'rempros', 'cd', 'ortho', 'icd', 'coralrad', 'occlusion', 'endo', 'implants', 'oralpath', 'painanx', 'perio2', 'omfs', 'pedo', 'mpm', 'oralmed', 'prosthrev'];
+const TYPE_LABELS = { gda: 'GDA', dao: 'DAO', ethics: 'Ethics', pcod1: 'PCOD I', cario: 'Cariology', oralrad: 'Oral Radiology', pcod2: 'PCOD II', patho: 'Pathomedicine', perio1: 'Periodontics I', fixedpros: 'Fixed Prosthodontics', rempros: 'Removable Prosthodontics', cd: 'Complete Dentures', ortho: 'Orthodontics', icd: 'Intro to Clinical Dentistry', coralrad: 'Clinical Oral Radiology', occlusion: 'Concepts of Occlusion', endo: 'Endodontics', implants: 'Intro to Implants', oralpath: 'Oral Pathology', painanx: 'Pain & Anxiety Control', perio2: 'Periodontics II', omfs: 'Oral & Maxillofacial Surgery', pedo: 'Preclinical Pediatric Dentistry', mpm: 'Multidisciplinary Patient Management', oralmed: 'Oral Diagnosis & Oral Medicine', prosthrev: 'Prosthodontic Review', osii: 'Oral Surgery II', tmd: 'TMD & Orofacial Pain', pmgmt1: 'Practice Management I', endorev: 'Endodontics Review', lasers: 'Lasers in Dentistry', pmgmt2: 'Practice Management II', surgperio: 'Surgical Principles of Periodontics & Implant Dentistry' };
+const TYPE_ORDER = ['gda', 'dao', 'ethics', 'pcod1', 'cario', 'oralrad', 'pcod2', 'patho', 'perio1', 'fixedpros', 'rempros', 'cd', 'ortho', 'icd', 'coralrad', 'occlusion', 'endo', 'implants', 'oralpath', 'painanx', 'perio2', 'omfs', 'pedo', 'mpm', 'oralmed', 'prosthrev', 'osii', 'tmd', 'pmgmt1', 'endorev', 'lasers', 'pmgmt2', 'surgperio'];
 const SUBTYPES_BY_TYPE = {
   gda: [
     { id: 'midterm', label: 'Midterms' },
@@ -597,6 +597,21 @@ const SUBTYPES_BY_TYPE = {
     { id: 'exam2', label: 'Exam 2' },
     { id: 'final', label: 'Final Exams' },
   ],
+  tmd: [
+    { id: 'midterm', label: 'Midterms' },
+    { id: 'final', label: 'Final Exams' },
+  ],
+  pmgmt1: [
+    { id: 'exam1', label: 'Exam 1' },
+    { id: 'exam2', label: 'Exam 2' },
+    { id: 'midterm', label: 'Midterms' },
+    { id: 'final', label: 'Final Exams' },
+  ],
+  pmgmt2: [
+    { id: 'exam1', label: 'Exam 1' },
+    { id: 'exam2', label: 'Exam 2' },
+    { id: 'final', label: 'Final Exams' },
+  ],
 };
 const SUBTYPE_LABELS = Object.values(SUBTYPES_BY_TYPE).flat().reduce((acc, s) => (acc[s.id] = s.label, acc), {});
 
@@ -608,8 +623,9 @@ const SEMESTER_ORDER = [
   'D2 Summer', 'D2 Fall', 'D2 Spring',
   'D3 Summer', 'D3 Fall', 'D3 Spring',
   'D4 Summer', 'D4 Fall',
+  'Elective',
 ];
-const TYPE_SEMESTER = { gda: 'D1 Summer', dao: 'D1 Summer', ethics: 'D1 Summer', pcod1: 'D1 Fall', cario: 'D1 Fall', oralrad: 'D1 Fall', pcod2: 'D1 Spring', patho: 'D2 Fall', perio1: 'D2 Summer', fixedpros: 'D2 Summer', rempros: 'D2 Summer', cd: 'D2 Summer', ortho: 'D2 Fall', icd: 'D2 Fall', coralrad: 'D2 Fall', occlusion: 'D2 Spring', endo: 'D2 Spring', implants: 'D2 Spring', oralpath: 'D2 Spring', painanx: 'D2 Spring', perio2: 'D2 Spring', omfs: 'D2 Spring', pedo: 'D2 Spring', mpm: 'D3 Summer', oralmed: 'D3 Summer', prosthrev: 'D3 Summer' };
+const TYPE_SEMESTER = { gda: 'D1 Summer', dao: 'D1 Summer', ethics: 'D1 Summer', pcod1: 'D1 Fall', cario: 'D1 Fall', oralrad: 'D1 Fall', pcod2: 'D1 Spring', patho: 'D2 Fall', perio1: 'D2 Summer', fixedpros: 'D2 Summer', rempros: 'D2 Summer', cd: 'D2 Summer', ortho: 'D2 Fall', icd: 'D2 Fall', coralrad: 'D2 Fall', occlusion: 'D2 Spring', endo: 'D2 Spring', implants: 'D2 Spring', oralpath: 'D2 Spring', painanx: 'D2 Spring', perio2: 'D2 Spring', omfs: 'D2 Spring', pedo: 'D2 Spring', mpm: 'D3 Summer', oralmed: 'D3 Summer', prosthrev: 'D3 Summer', osii: 'D3 Fall', tmd: 'D3 Spring', pmgmt1: 'D3 Spring', endorev: 'D4 Summer', lasers: 'D4 Summer', pmgmt2: 'D4 Fall', surgperio: 'Elective' };
 
 function listViewForExam(examId) {
   const e = exams[examId];
