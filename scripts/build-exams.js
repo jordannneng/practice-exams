@@ -64,7 +64,7 @@ function parseCsv(text) {
   return rows.filter(r => r.some(f => f.trim() !== ''));
 }
 
-const KNOWN_TYPES = ['gda', 'dao', 'ethics', 'biochem', 'pcod1', 'cario', 'oralrad', 'pcod2', 'patho', 'perio1', 'fixedpros', 'rempros', 'cd', 'ortho', 'icd', 'coralrad', 'occlusion', 'endo', 'implants', 'oralpath', 'painanx', 'perio2', 'omfs', 'pedo'];
+const KNOWN_TYPES = ['gda', 'dao', 'ethics', 'biochem', 'pcod1', 'cario', 'oralrad', 'pcod2', 'patho', 'perio1', 'fixedpros', 'rempros', 'cd', 'ortho', 'icd', 'coralrad', 'occlusion', 'endo', 'implants', 'oralpath', 'painanx', 'perio2', 'omfs', 'pedo', 'mpm', 'oralmed', 'prosthrev'];
 const KNOWN_SUBTYPES = {
   gda: ['midterm', 'final', 'quiz'],
   dao: ['midterm', 'final', 'quiz'],
