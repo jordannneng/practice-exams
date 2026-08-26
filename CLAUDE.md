@@ -30,6 +30,22 @@ students. No backend, no build tooling beyond one Node script.
   runbook. **Start here** when asked to add new exams or a new
   class/category: `scripts/exam_import/README.md`.
 
+## Known limitations
+
+- **Picture-based answer options aren't supported.** The CSV schema only
+  supports one image per *question*, not per option, so a source question
+  whose answer choices are themselves images (e.g. "which of these
+  forceps," each letter a photo with no text) can't be represented. The
+  import pipeline (`scripts/exam_import/parse_lib.py`, see its README for
+  detail) detects this pattern and silently drops the question rather than
+  writing broken rows — same as a free-response question. First (and so
+  far only) seen in OMFS (Oral & Maxillofacial Surgery), D2 Spring, most
+  likely the Instrument Quiz given the subject matter, but the exact
+  file/question numbers were never recorded — dropped questions leave no
+  trace in `exams-csv/` or `exams.json`. Confirming which questions these
+  were requires going back to the source PDFs in the Google Drive exam
+  bank.
+
 ## Common tasks
 
 - **Add exams to an existing category**: use
