@@ -31033,6 +31033,212 @@
       }
     ]
   },
+  "mpm-final-summer-2022": {
+    "title": "Multidisciplinary Patient Management Final Exam (Summer 2022)",
+    "type": "mpm",
+    "questions": [
+      {
+        "text": "A key consideration in deciding whether to join a Dental PPO or Dental HMO is unused chairside hours.",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "text": "PPO plan fees are generally lower than UCR fees.",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "text": "A deductible is:",
+        "options": ["paid by the patient", "a fee that must be collected", "many times an annual fee", "occurs in many indemnity plans", "All of the above"],
+        "correct": 4
+      },
+      {
+        "text": "Insurance claim forms do not have to reflect discounts given to patients.",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "Falsification of dental insurance claims is considered a criminal offense.",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "text": "A DPO is a",
+        "options": ["Dental policy Organization", "Dept. of public operations", "Dental Provider Organization", "None of these"],
+        "correct": 2
+      },
+      {
+        "text": "The organization responsible for updating the CDT code is",
+        "options": ["DEP", "ADA", "CDC", "OSHA", "None of the above"],
+        "correct": 1
+      },
+      {
+        "text": "The National Provider Number is used to",
+        "options": ["provide uniform prescription writing", "provide a unique number to identify a provider", "provide compliance to standards", "identify an advanced degree", "none of the above"],
+        "correct": 1
+      },
+      {
+        "text": "What term is used to describe not collecting a deductible or copayment?",
+        "options": ["Deductible", "Copayment", "Waive", "Assignment", "None of the Above"],
+        "correct": 2
+      },
+      {
+        "text": "The Term UCR stands for",
+        "options": ["Usual Consistent Relative", "Usual Customary and Reasonable", "Usual Customary and Reliable", "None of the Above"],
+        "correct": 1
+      },
+      {
+        "text": "Dental Maintenance Organization (DMO) plan requires that the patient choose a dentist that participates with the plan.",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "text": "A person may be guilty of insurance fraud if one knowingly makes a false, fraudulent, or misleading statement or omits a material fact from a record, bill, or claim form when submitting for reimbursement from an insurance carrier.",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "text": "Preferred Provider Organization (PPO) plan is an Indemnity Plan.",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "text": "An employer decides to provide its own self-funded dental plan; the plan is regulated by the Department of Insurance.",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "Self-insured dental plans do not require a dentist to submit claim forms.",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "text": "A Capitation Plan is a form of an Indemnity Plan",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "Dental Maintenance Organization (DMO) plans generally have which of the following:",
+        "options": ["Annual maximum", "Annual deductible", "Pre-set co-payment schedules", "a & b", "b & c"],
+        "correct": 2
+      },
+      {
+        "text": "Preferred Provider Organization (PPO) plans fees are generally lower than UCR Fees.",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "text": "CDT is:",
+        "options": ["criteria for identifying caries", "codes for identifying dental procedures", "uniform criteria for premedication", "All of the above", "None of the Above"],
+        "correct": 1
+      },
+      {
+        "text": "Capitation benefit plans pay the dentist a per-person or per-family dollar amount per month as a form of compensation for dental care.",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "text": "Dental Maintenance Organization (DMO) plans require that claim forms be submitted as services are rendered.",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "Payment for dental services rendered occurs in all of the following except:",
+        "options": ["PPO Plans", "Indemnity", "HMO plans", "a and b"],
+        "correct": 3
+      },
+      {
+        "text": "National repository of adverse actions taken against a Dentist.",
+        "options": ["NPIB.", "OSHA", "HIPAA", "National Data Bank", "None of these"],
+        "correct": 3
+      },
+      {
+        "text": "What is the best method for receiving detailed information regarding a patients’ benefits?",
+        "options": ["Reviewing previous claims experience", "the personnel office of the employer", "from the patient", "by requesting a pre-determination of benefits", "examining information printed on the insurance card."],
+        "correct": 3
+      },
+      {
+        "text": "Insurance claim forms should contain the following information except:",
+        "options": ["Insurance group number", "Social security number", "Date of birth of patient", "Patients’ marital status"],
+        "correct": 3
+      },
+      {
+        "text": "When submitting an insurance form after offering a discounted fee to a patient",
+        "options": ["the regular fee for services are submitted for payment", "the PPO fee is submitted for payment", "the discounted fee is submitted for payment", "the UCR fee is submitted for payment", "none of these"],
+        "correct": 2
+      },
+      {
+        "text": "The “Birthday Rule”:",
+        "options": ["Is used to identify the oldest parent", "Is used to identify which parent is primary", "The primary is the insurance that pays the most", "A & C are correct", "None of the above are correct"],
+        "correct": 1
+      },
+      {
+        "text": "If a crown is prepped in December and inserted in January",
+        "options": ["the claim may be sent in as being performed in December.", "the date of service is the date the preparation of the tooth.", "the insertion date of the crown in January must be used.", "Any treatment date may be used", "none of these"],
+        "correct": 2
+      },
+      {
+        "text": "What staff members may be prosecuted for submitting a false claim form?",
+        "options": ["office manager", "dental assistant", "receptionist", "insurance clerk", "none of the above"],
+        "correct": 4
+      },
+      {
+        "text": "Indemnity Insurance Plans are used to represent a Capitation Plan",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "Dental Maintenance Organization (DMO) plans generally have which of the following:",
+        "options": ["Annual maximum", "Annual deductible", "Pre-set co-payment schedules", "a & b", "b & c", "None of the above"],
+        "correct": 2
+      },
+      {
+        "text": "For patients who are covered by more than one insurance carrier the dentist should",
+        "options": ["submit the claim to only one insurance carrier since it is illegal to have two or more insurance benefit plans", "submit claims to both insurance carriers without telling either of the two about each other", "coordinate the benefits of the primary carrier with the secondary carrier", "none of the above"],
+        "correct": 2
+      },
+      {
+        "text": "Capitation benefit plans pay the dentist",
+        "options": ["after the Dentist submits a claim form", "based on a sliding scale", "a per-person or per-family dollar amount", "per Dentist encounter", "When the patient sees the Dentist"],
+        "correct": 2
+      },
+      {
+        "text": "When submitting insurance claims for a minor child less than 18 years of age where both parents have dental benefit coverage, the dentist must:",
+        "options": ["Let the parents decide which insurance will pay first", "Send the claim to either of the insurance companies", "Determine which parent is primary and which is secondary", "Submit the claim for the parent who brought the form in first", "None of the above"],
+        "correct": 2
+      },
+      {
+        "text": "A deductible is",
+        "options": ["paid by the patient", "a fee that must be collected", "many times an annual fee", "occurs in many indemnity plans", "all of the above"],
+        "correct": 4
+      },
+      {
+        "text": "Falsification of dental insurance claims is considered a criminal offense",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "text": "Payment for dental services rendered occurs in all of the following except:",
+        "options": ["Indemnity", "HMO plans", "Direct Reimbursement Plans", "a and b", "none of these"],
+        "correct": 1
+      },
+      {
+        "text": "Insurance claim forms should contain the following information except:",
+        "options": ["Insurance group number", "Social security number", "Date of birth of patient", "Patients’ blood type"],
+        "correct": 3
+      },
+      {
+        "text": "Self-insured dental plans do not require a dentist to submit claim forms",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "Dental Maintenance Organization (DMO) plans require that claim forms be submitted as services are rendered.",
+        "options": ["True", "False"],
+        "correct": 1
+      }
+    ]
+  },
   "occlusion-quiz-spring-2018": {
     "title": "Concepts of Occlusion Quiz 1 (Spring 2018)",
     "type": "occlusion",
@@ -34211,6 +34417,409 @@
         "options": ["Image A", "Image B", "Image C", "Image D"],
         "correct": 0,
         "image": "images/omfs-quiz-spring-2020/fig10.jpeg"
+      }
+    ]
+  },
+  "oralmed-final-summer-2020": {
+    "title": "Oral Diagnosis & Oral Medicine Final Exam (Summer 2020)",
+    "type": "oralmed",
+    "questions": [
+      {
+        "text": "When administering an inferior alveolar nerve block, which local anesthetic should you avoid?",
+        "options": ["4% articaine", "2% lidocaine", "0.5% bupivicaine", "3% mepivacaine"],
+        "correct": 0
+      },
+      {
+        "text": "Which of the following categories of tooth wear is INCORRECTLY matched with the etiology for each patient?",
+        "options": ["Abrasion: A fisherman who holds her hook between her teeth presents with a circular defect between centrals", "Attrition: An aggressive tooth-brusher presents with worn away incisal edges due to excessive occlusal brushing", "Erosion: A patient recovering from an eating disorder in which they purge by vomiting presents with “cupped out” cusp tips caused by excessive acid in their mouth", "Abfraction: A patient who has worn through 5 occlusal night guards presents with a cervical wedgeshaped defect"],
+        "correct": 1
+      },
+      {
+        "text": "Which of the following is the definition of dependence?",
+        "options": ["When the body accommodates to the influences of a drug, and on sudden discontinuation, the patient experiences withdrawal syndrome that includes reactions opposite those produced by a particular drug", "Greater doses are required to produce the same intensity of effect formerly provided by a smaller dose", "A compulsive behavior centered on seeking a drug and its effects for nonmedical reasons, generally pleasure"],
+        "correct": 0
+      },
+      {
+        "text": "Burning mouth syndrome (BMS) patients are frequently seen by various clinicians and many tests are performed in the hope of finding an underlying physical cause for the burning.",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "text": "If a patient were otherwise healthy at what blood pressure reading should you defer elective dental care?",
+        "options": ["180/110", "160/100", "140/90", "170/105"],
+        "correct": 0
+      },
+      {
+        "text": "Statement 1: Dental anomalies are fun observations for dentists and do not need to be recorded in the patient’s chart as they have no clinical significance. Statement 2: It is possible that a patient presents with more than one dental anomaly as some anomalies are associated with others.",
+        "options": ["Statement 1 is true, statement 2 is true", "Statement 1 is true, statement 2 is false", "Statement 1 is false, statement 2 is true", "Statement 1 is false, statement 2 is false"],
+        "correct": 2
+      },
+      {
+        "text": "It has been shown that the risk for occurrence of a serious preoperative cardiovascular event is increased in patients who are unable to a meet a:",
+        "options": ["4-MET demand during daily activity", "5-MET demand during daily activity", "6-MET demand during daily activity", "7-MET demand during daily activity", "8-MET demand during daily activity"],
+        "correct": 0
+      },
+      {
+        "text": "Which of the following are signs of increased serum concentrations of lidocaine?",
+        "options": ["Paresthesia", "Drowsiness", "Muscle twitching", "Convulsions", "Coma", "Cardiovascular/respiratory collapse", "All of the answer choices"],
+        "correct": 6
+      },
+      {
+        "text": "Primary burning mouth syndrome is known to be caused by:",
+        "options": ["Bacteria", "Virus", "Fungus", "None of the answer choice"],
+        "correct": 3
+      },
+      {
+        "text": "A patient is taking warfarin and needs an extraction.  You will need to order an INR prior to proceeding with the extraction. Which number represents the level below which it is considered safe to perform the procedure?",
+        "options": ["Less than 2.5", "Less than 3.5", "Less than 4.5", "Less than 5.5"],
+        "correct": 1
+      },
+      {
+        "text": "Pseudoallergic reactions are always mediated by T cells and or B cells.",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "A diagnosis of primary burning mouth syndrome often predicts the development of squamous cell carcinoma or other cancers.",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "The incidence of allergic reactions to local anesthetics in general dental practice is high.",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "Which of the following is true of microdontia?",
+        "options": ["Associated with hyperdontia", "True generalized microdontia occurs when the teeth are within normal limits but the jaw is small, making the teeth appear smaller", "“Peg laterals” are never bilateral", "Lateral incisors and third molars are the most commonly involved teeth"],
+        "correct": 3
+      },
+      {
+        "text": "What is the Food and Drug Administration’s maximum daily dose of acetaminophen?",
+        "options": ["1g", "2 g", "3 g", "4 g"],
+        "correct": 2
+      },
+      {
+        "text": "Which of the following can be used as an alternative medication to achieve local anesthesia for those patients who have an allergy to the local anesthetics typically used in dental practice?",
+        "options": ["Diphenhydramine (Benadryl)", "Acetylsalicylic acid (Aspirin)", "Ibuprofen (Advil)", "Acetaminophen (Tylenol)"],
+        "correct": 0
+      },
+      {
+        "text": "Identification of clubbing of the digits is most likely to be directly associated with:",
+        "options": ["Cardiopulmonary insufficiency", "Cirrhosis", "Presence of malignancy", "Infective endocarditis", "Ameloblastoma"],
+        "correct": 0
+      },
+      {
+        "text": "Which of the following is true regarding an enamel pearl/enameloma",
+        "options": ["Presents no periodontal challenges", "Occurs near furcation of maxillary or mandibular molars", "Never contain a pulp horn", "Never detected on radiographic exam"],
+        "correct": 1
+      },
+      {
+        "text": "Primary burning mouth syndrome may include:",
+        "options": ["Burning sensation", "Taste changes", "Feeling of dry mouth", "All the answer choices"],
+        "correct": 3
+      },
+      {
+        "text": "Major anaphylactoid reactions to medications should be managed with:",
+        "options": ["Diphenhydramine (Benadryl)", "Lidocaine", "Epinephrine"],
+        "correct": 2
+      },
+      {
+        "text": "You have administered prilocaine to your 16 y.o. patient for her extractions with nitrous oxide.  You have given several injections as you were having difficulty obtaining adequate anesthesia.  She now appears cyanotic, what are you considering?",
+        "options": ["Respiratory depression from delivery of nitrous oxide", "Methemoglobinemia"],
+        "correct": 1
+      },
+      {
+        "text": "Which of the following is/are used to treat angina pectoris?",
+        "options": ["Nitroglycerin", "Beta-adrenergic blocking agents", "Calcium channel blockers", "Nitroglycerin and Beta-adrenergic blocking agents", "Nitroglycerin and Calcium channel blockers", "All the answer choices"],
+        "correct": 5
+      },
+      {
+        "text": "Which of the following is true of dentinogenesis imperfecta?",
+        "options": ["There are multiple genes involved in this process", "There is only one radiographic presentation", "Affected teeth are less prone to wear", "The condition can be inherited"],
+        "correct": 3
+      },
+      {
+        "text": "Primary burning mouth syndrome is more common in men compared to women.",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "Type A reactions include true allergic reactions to medications.",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "What is the name of the condition depicted in the clinical image below:",
+        "options": ["Burning Mouth Syndrome", "Kaposi Sarcoma", "Geographic Tongue", "Transient lingual papillitis", "Recurrent intraoral herpes simplex"],
+        "correct": 2
+      },
+      {
+        "text": "True or false, the condition picture in question #26 is a malignant lesion",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "Which answer best describes the picture below:",
+        "options": ["Pigemented macule", "Exophytic papule", "Fluctuant nodule", "Erythematous plaque", "Herpetiform ulcer"],
+        "correct": 0
+      },
+      {
+        "text": "The abnormality in the clinical image below most likely represents a:",
+        "options": ["Squamous cell carcinoma", "Mucocele", "Herpes labialis", "Pleomorphic adenoma", "Aphthous ulcer"],
+        "correct": 4
+      },
+      {
+        "text": "What treatment recommendations can you make for the patient picture in question #29",
+        "options": ["Chemotherapy", "Excision", "Enucleation", "Corticosteroids", "Antifungal treatment"],
+        "correct": 3
+      }
+    ]
+  },
+  "oralmed-final-summer-2021": {
+    "title": "Oral Diagnosis & Oral Medicine Final Exam (Summer 2021)",
+    "type": "oralmed",
+    "questions": [
+      {
+        "text": "According to the assigned reading from the course, patients with unstable or progressive angina:",
+        "options": ["Are not candidates for elective dental care.", "Are good candidates for all comprehensive care.", "Are good candidates for all comprehensive care as long as vasoconstrictors are not utilized.", "Are good candidates for elective scaling and root planing only."],
+        "correct": 0
+      },
+      {
+        "text": "According to the assigned reading, each of the following places the patient at risk for osteonecrosis of the jaw, EXCEPT one.  Which one is the EXCEPTION?",
+        "options": ["Chemotherapy.", "Bisphosphonate therapy.", "Radiation treatment to the head, neck, or jaw."],
+        "correct": 0
+      },
+      {
+        "text": "Which of the following local anesthetic formulations would be most appropriate at Touro Dental Health for patients taking digitalis?",
+        "options": ["1% diphenhydramine", "2% lidocaine with 1:100k epinephrine", "2% lidocaine with 1:50k epinephrine", "3% carbocaine"],
+        "correct": 3
+      },
+      {
+        "text": "Type I hypersensitivities are mediated by:",
+        "options": ["IgE", "IgM", "IgG", "IgA"],
+        "correct": 0
+      },
+      {
+        "text": "Predictable reactions based on known pharmacological toxic properties of a drug are considered:",
+        "options": ["Type A drug reactions", "Type B drug reactions", "Type C drug reactions", "Type D drug reactions"],
+        "correct": 0
+      },
+      {
+        "text": "How is methemoglobinemia managed?",
+        "options": ["Methylene blue", "Toludene blue", "Acetaminophen blue", "None of the provided answers"],
+        "correct": 0
+      },
+      {
+        "text": "Which local anesthetic should you recommend an allergist test on a patient for which you are concerned about a possible true allergy to local anesthetic?",
+        "options": ["3% mepivocaine, plain", "4% septocaine with 1:100,000 epinephrine", "2% lidocaine with 1:100,000 epinephrine", "3% mepivocaine with 1:100,000 epinephrine"],
+        "correct": 0
+      },
+      {
+        "text": "True or False: Burning mouth syndrome only affects peri- and post-menopausal women",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "Which of the following represents the etiology of burning mouth syndrome?",
+        "options": ["None of the options", "Vitamin deficiency", "History of trauma to the tongue", "Candidal overgrowth", "Allergic reaction"],
+        "correct": 0
+      },
+      {
+        "text": "Which is true of the following statements: Statement 1: Nociceptive pain is related to a noxious insult. Statement 2: Neuropathic pain is generated and maintained by the nervous system",
+        "options": ["Both statements are true", "Both statements are false", "Statement 1 is true and statement 2 is false", "Statement 1 is false and statement 2 is true"],
+        "correct": 0
+      },
+      {
+        "text": "The inflammatory infiltrate in lichen planus is primarily composed of:",
+        "options": ["Lymphocytes", "Eosinophils", "Neutrophils", "Plasma cells"],
+        "correct": 0
+      },
+      {
+        "text": "True or False: according to the assigned reading, DOACs (rivaroxaban, apixaban, dabigatran, edoxaban) are now the preferred agents in those with nonvalvular atrial fibrillation",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "text": "Which local anesthetic has the greatest cardiac risk?",
+        "options": ["Lidocaine", "Mepivicaine", "Articaine", "Bupivacaine"],
+        "correct": 3
+      },
+      {
+        "text": "Which of the following is a possible symptom of opiod withdrawal?",
+        "options": ["Lethargy", "Respiratory depression", "Diarrhea", "Sedation"],
+        "correct": 2
+      },
+      {
+        "text": "Which of the following conditions could be treated by a medication that causes medication-related hyperpigmentation?",
+        "options": ["Gout", "Yeast infection", "Leukemia", "Hypertension", "Hyperlipidemia"],
+        "correct": 2
+      },
+      {
+        "text": "Which is true of the following statements: Statement 1: Mucosal melanoma has a better prognosis than melanoma of the skin. Statement 2: Mucosal melanoma most often occurs on the palatal mucosa and maxillary gingiva",
+        "options": ["Both statements are true", "Both statements are false", "Statement 1 is true and statement 2 is false", "Statement 1 is false and statement 2 is true"],
+        "correct": 3
+      },
+      {
+        "text": "Which of the following is considered a “benign fibro-osseous lesion”",
+        "options": ["Peripheral giant cell granuloma", "Fibrous dysplasia", "Osteoma", "Osseous choristoma", "Osteosarcoma"],
+        "correct": 1
+      }
+    ]
+  },
+  "oralmed-final-summer-2022": {
+    "title": "Oral Diagnosis & Oral Medicine Final Exam (Summer 2022)",
+    "type": "oralmed",
+    "questions": [
+      {
+        "text": "True or False: Per your reading, the authors suggested that a preoperative BP reading less than 180 mm Hg without angina pectoris or acute congestive heart failure signs and symptoms does not warrant cancelling a dental procedure.",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "text": "True or False: Vital, asymptomatic teeth with periapical radiolucencies must be treating endodontically",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "Leukoplakias (other than linea alba and alveolar ridge keratoses) should be biopsied",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "text": "True or False: soft tissue papules and nodules in children should be biopsied",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "text": "True or False: Burning Mouth Syndrome requires a biopsy for diagnosis",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "Burning Mouth Syndrome is most likely:",
+        "options": ["A peripheral neuropathy", "A vitamin deficiency", "A hormone imbalance", "An inflammatory condition"],
+        "correct": 0
+      },
+      {
+        "text": "Which is true of mucosal melanoma:",
+        "options": ["Occur most commonly on the tongue", "The second most common intraoral malignancy", "All melanomas have a BRAF gene mutation", "Mucosal melanomas are more aggressive than their cutaneous counterpart"],
+        "correct": 3
+      },
+      {
+        "text": "Why does a blue nevus appear blue?",
+        "options": ["The Tyndall effect", "The Yancoskie effect", "The Roth effect", "Blue nevi don't appear blue"],
+        "correct": 0
+      },
+      {
+        "text": "What is the most common pigmented lesion of the oral cavity?",
+        "options": ["Melanotic macule", "Melanocytic nevus", "Blue nevus", "Melanoma"],
+        "correct": 0
+      },
+      {
+        "text": "True or False: Most patients with Behcet syndrome will have gingival ulcerations along with aphthous ulcerations.",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "text": "True or False: An aphthous ulcer will exhibit a white halo surrounding the fibropurulent membrane",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "A patient presents with a white plaque at the height of the posterior mandibular alveolar ridge where the patient is edentulous. According to the lecture, what is your treatment of choice?",
+        "options": ["Monitor, biopsying with changes in symptoms or appearance", "Biopsy immediately", "Radiation therapy", "Extract the remaining teeth"],
+        "correct": 0
+      },
+      {
+        "text": "What is a leukoplakia?",
+        "options": ["A white plaque", "A synonym for lichen planus", "A dysplastic lesion", "An inflammatory lesion"],
+        "correct": 0
+      },
+      {
+        "text": "When is emesis most common in pregnancy?",
+        "options": ["Weeks 0-4", "Weeks 4-8", "The second trimester", "The third trimester"],
+        "correct": 1
+      },
+      {
+        "text": "Which of the following medications may cause palatal discoloration?",
+        "options": ["Minocycline", "Acetaminophen", "Lidocaine", "Trazadone", "Gabapentin"],
+        "correct": 0
+      },
+      {
+        "text": "True or false: Patients with Burning Mouth Syndrome should be prescribed 1000 mg of gabapentin",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "Which of the following oral sensations can be affected in Burning Mouth Syndrome?",
+        "options": ["Taste", "Texture", "Pain", "All of the options can be altered"],
+        "correct": 3
+      },
+      {
+        "text": "True or False: All expecting mothers should have a prophylaxis (cleaning) during pregnancy",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "text": "Which of the following decreases during pregnancy?",
+        "options": ["Blood volume", "Hematocrit", "RBC volume", "Cardiac output"],
+        "correct": 1
+      },
+      {
+        "text": "Which of the following inflammatory mediators did your reading directly attribute to allergic/pseudoallergic reactions to NSAIDS?",
+        "options": ["Leukotrienes", "Cyclooxegenase", "Arachadonic acid", "Prostaglandins"],
+        "correct": 0
+      },
+      {
+        "text": "Which antibiotic has the highest odds ratio risk for C. difficile infection?",
+        "options": ["Clindamycin", "Cephalosporin", "Penicillin"],
+        "correct": 0
+      },
+      {
+        "text": "How is methemoglobinemia managed?",
+        "options": ["Methylene blue", "Toludene blue", "Acetaminophen blue", "Rhapsody in blue"],
+        "correct": 0
+      },
+      {
+        "text": "Which of the following options should be performed if a patient has a grand mal seizure in the chair:",
+        "options": ["Remove instruments from the mouth", "Clear the area arund the patient", "Place patient on their side", "All of the options should be performed during a grand mal seizure"],
+        "correct": 3
+      },
+      {
+        "text": "Which of the following is a characteristic of a simple partial seizure?",
+        "options": ["Altered consciousness", "Memory loss", "Responsive", "None of the options are characteristic of simple partial seizures"],
+        "correct": 2
+      },
+      {
+        "text": "What percentage of strokes is preventable, according to the CDC?",
+        "options": ["0%", "25%", "50%", "80%", "100%"],
+        "correct": 3
+      },
+      {
+        "text": "Which of the following is a characteristic of Bell's Palsy",
+        "options": ["Upper face usually not affected", "Limb weakness", "Aphasia", "Onset within seconds", "Difficulty closing the eye on the affected side."],
+        "correct": 4
+      },
+      {
+        "text": "True or false: Hemorrhagic strokes are the most common types of stroke?",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "Which of the following is a risk factor for a cerebrovascular accident?",
+        "options": ["All of the options are risk factors", "Obesity", "Diabetes mellitus", "High cholesterol", "Uncontrolled hypertension"],
+        "correct": 0
+      },
+      {
+        "text": "According to the assigned reading, in which of the following scenarios should a patient receive prophylactic antibiotics to prevent infective endocarditis?",
+        "options": ["If they have mitral valve prolapse (MVP) with regurgitation, a prosthetic heart valve and will be undergoing an invasive dental procedure.", "If they have mitral valve prolapse (MVP) with regurgitation and will be having a regional head and neck exam including bitewing radiographs, but not periodontal probing.", "If they have mitral valve prolapse (MVP) with regurgitation and will be undergoing any invasive dental procedure.", "If they have mitral valve prolapse (MVP) without regurgitation and will be having a regional head and neck exam including bitewing radiographs, but not periodontal probing."],
+        "correct": 0
+      },
+      {
+        "text": "Which of the following local anesthetic formulations would be most appropriate at Touro Dental Health for patients taking digitalis?",
+        "options": ["3% carbocaine", "2% lidocaine with 1:50k epinephrine", "2% lidocaine with 1:100k epinephrine", "1% diphenhydramine"],
+        "correct": 0
       }
     ]
   },
@@ -73941,6 +74550,1112 @@
       {
         "text": "Biologic Width is defined as the physiologic dimension of:",
         "options": ["Junctional Epithelium and gingival sulcus", "Junctional Epithelium and connective tissue attachment", "Connective tissue attachment and gingival sulcus", "Attachment loss and recession"],
+        "correct": 1
+      }
+    ]
+  },
+  "prosthrev-final-summer-2019": {
+    "title": "Prosthodontic Review Final Exam (Summer 2019)",
+    "type": "prosthrev",
+    "questions": [
+      {
+        "text": "30, 33, and 40 degree denture teeth are all an example of which type of denture tooth:",
+        "options": ["Anatomic", "Semi-anatomic", "Non-anatomic", "Monoplane"],
+        "correct": 0
+      },
+      {
+        "text": "A cast circumferential clasp of a cast RPD affects a natural tooth by:",
+        "options": ["trapping plaque", "increasing the risk for caries", "abrading the tooth", "all of the above"],
+        "correct": 3
+      },
+      {
+        "text": "A cingulum rest seat preparation should have a mesiodistal length of:",
+        "options": ["2.0 to 3.0 mm", "2.5- 3.0 mm", "1.5 to 2.0 mm", "none of the above"],
+        "correct": 1
+      },
+      {
+        "text": "A maxillary cast RPD must be at least how many millimeters away from the gingival margin:",
+        "options": ["8 mm", "6 mm", "16 mm", "12 mm"],
+        "correct": 1
+      },
+      {
+        "text": "A patient presents for their maxillary and mandibular complete removable denture post-insertion visit stating they have a sore throat ever since they started wearing the denture you inserted. What areas of the dentures are most likely the cause of the complaint:",
+        "options": ["the maxillary denture posterior limit and the mandibular denture disto-lingual extension", "the maxillary denture posterior limit and the mandibular denture mesio-lingual extension", "the maxillary denture buccal flange and the mandibular denture disto-lingual extension", "the maxillary denture buccal flange and the mandibular denture mesio-lingual extension"],
+        "correct": 0
+      },
+      {
+        "text": "A resilient extra-coronal precision attachment such as an ERA has how much movement?",
+        "options": ["0.3 mm", "0.4 mm", "0.5 mm", "no movement"],
+        "correct": 1
+      },
+      {
+        "text": "A restorative space under 5 mm requires a screw-retained implant restoration as opposed to a cement retained. Which of the following describes why?",
+        "options": ["limited access to the screw access channel in the screw retained restoration", "limited retention and resistance of the abutment due to its decreased height in the cement-retained restoration", "limited interocclusal space for the restorative materials in the cement- retained restoration", "limited strength of the restorative materials in the cement-retained restoration"],
+        "correct": 1
+      },
+      {
+        "text": "A simple holding instrument capable of accepting a single static registration is classified as:",
+        "options": ["Class I articulator", "Class II articulator", "Class III articulator", "Class IV articulator"],
+        "correct": 0
+      },
+      {
+        "text": "All are true regarding post length except:",
+        "options": ["it should be 1/3 the length of the root", "it should be at least the length of the crown", "the apex of the post should be past the alveolar bone", "short posts are more likely to result in root fracture"],
+        "correct": 0
+      },
+      {
+        "text": "All of the following are aids in determining the occlusal plane except:",
+        "options": ["phonetics", "oral commisures", "smile line", "vertical dimension of rest"],
+        "correct": 3
+      },
+      {
+        "text": "All of the following are signs of a decreased vertical dimension of occlusion except:",
+        "options": ["angular chelitis", "excessive freeway space", "striking or clicking of the occlusal surfaces while speaking", "loss of biting force"],
+        "correct": 2
+      },
+      {
+        "text": "All of the following are rigid components of a cast RPD framework that contact the abutment teeth except:",
+        "options": ["the guide plate", "the bracing arm", "the retentive arm", "major connector"],
+        "correct": 3
+      },
+      {
+        "text": "All of the following are true of RPD major connectors except:",
+        "options": ["they are rigid", "they provide cross arch stabilization", "rotates during function", "is free of movable tissues"],
+        "correct": 2
+      },
+      {
+        "text": "All of the following are disadvantages of cement retained implant crowns except:",
+        "options": ["cement in sulcus", "retrievability", "adequate interocclusal space is needed", "esthetics"],
+        "correct": 3
+      },
+      {
+        "text": "At its deepest point the carved posterior palatal seal of the master cast is?",
+        "options": ["0.5 mm", "1.5 mm", "1.0 mm", "2.0 mm"],
+        "correct": 2
+      },
+      {
+        "text": "Combination syndrome is characterized by all of the following except:",
+        "options": ["supereruption of the maxillary tuberosities", "premaxillary bone resorption", "supereruption of the mandibular anterior dentition", "epulis fissuratum in the maxilla"],
+        "correct": 3
+      },
+      {
+        "text": "Features of a successful post and core design include:",
+        "options": ["adequate apical seal", "Adequate post length", "minimal canal enlargement", "extension of the final restoration on sound tooth structure", "all of the above"],
+        "correct": 4
+      },
+      {
+        "text": "Hanau's Quint is characterized by 5 factors. Which of the following is not a factor?",
+        "options": ["compensating curve", "condylar inclination", "cuspal inclination", "residual resorption"],
+        "correct": 3
+      },
+      {
+        "text": "Indirect retainers should be:",
+        "options": ["positioned 180 degrees to the primary fulcrum line", "as far from the fulcrum line as possible", "a lingual plate", "a inclined plane"],
+        "correct": 1
+      },
+      {
+        "text": "Lingualized occlusion is indicated for patients with the following:",
+        "options": ["esthetic demands eliminate potential use of monoplane teeth", "severe resorption of ridges", "difficulty finding the centric relation position", "all of the above"],
+        "correct": 3
+      },
+      {
+        "text": "Tetragonal zirconia is classified as which type of dental porcelain?",
+        "options": ["Class 1", "Class 2", "Class 3", "Class 4", "Class 5"],
+        "correct": 4
+      },
+      {
+        "text": "The ala-tragus line is also known as:",
+        "options": ["Frankfurts' horizontal plane", "Camper's Plane", "Curve of Spee", "Curve of Wilson"],
+        "correct": 1
+      },
+      {
+        "text": "The All-On-4 treatment involves:",
+        "options": ["two axially positioned implants anteriorly and two distally angled implants posteriorly", "two axially positioned implants anteriorly and two mesially angled implants posteriorly", "two mesially angled implants in the anterior and two axially positioned implants posteriorly", "two distally angled implants in the anterior and two axially positioned implants posteriorly"],
+        "correct": 0
+      },
+      {
+        "text": "The cast circumferential clasp assembly consists of:",
+        "options": ["the retentive arm", "the reciprocal arm", "the rest seat", "all of the above"],
+        "correct": 3
+      },
+      {
+        "text": "The first choice material for the fabrication of a cast post and core is:",
+        "options": ["Type III gold alloy", "zirconia", "Type IV gold alloy", "high strength non-precious alloy"],
+        "correct": 2
+      },
+      {
+        "text": "The following are types of major connectors except:",
+        "options": ["horseshoe", "palatal strap", "anteroposterior strap", "guide plate"],
+        "correct": 3
+      },
+      {
+        "text": "The force to rotate an object around an axis, fulcrum or pivot is called:",
+        "options": ["bending moment", "torque", "axial force", "lever arm"],
+        "correct": 1
+      },
+      {
+        "text": "The hanau articulator that is used at TCDM is what type of articulator:",
+        "options": ["Type I", "Type II", "Type III", "Type IV"],
+        "correct": 2
+      },
+      {
+        "text": "The laboratory process to replace the entire denture base on an existing prosthesis is called:",
+        "options": ["rebase", "reline", "remake", "recast"],
+        "correct": 0
+      },
+      {
+        "text": "The maximum angle to which the posterior implants of an All-On-4 can be placed is:",
+        "options": ["30 degrees", "35 degrees", "40 degrees", "45 degrees"],
+        "correct": 3
+      },
+      {
+        "text": "The minimal occlusal reduction for adequate preparation for zirconia crowns is:",
+        "options": ["1.5 mm", "2.00 mm", "1.00 mm", "1.75 mm"],
+        "correct": 0
+      },
+      {
+        "text": "The minimum distance between adjacent implants is:",
+        "options": ["1.5 mm", "3 mm", "5 mm", "none of the above"],
+        "correct": 1
+      },
+      {
+        "text": "The occluso-gingival height of the abutment is not significant when choosing a rigid precision attachment.",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "The part of the denture base that extends from the cervical end of the denture teeth to the denture border is called:",
+        "options": ["the denture base", "the denture flange", "the intaglio surface", "the cameo surface"],
+        "correct": 1
+      },
+      {
+        "text": "The posterior limit of the maxillary occlusal rim wax should be angled to what degree?",
+        "options": ["30 degrees", "45 degrees", "15 degrees", "0 degrees"],
+        "correct": 1
+      },
+      {
+        "text": "The resistance in the movement of a denture away from the tissue foundation especially to lateral (horizontal) forces as opposed to vertical displacement is called?",
+        "options": ["denture retention", "denture stability", "denture suction", "denture adhesion"],
+        "correct": 1
+      },
+      {
+        "text": "The terminal 1/3 of the retentive arm of a RPD cast circumferential clasp should be:",
+        "options": ["above the height of contour", "at the height of contour", "below the height of contour", "none of the above"],
+        "correct": 2
+      },
+      {
+        "text": "The third patient visit in the fabrication of dentures includes all of the following except:",
+        "options": ["transferring of the facebow record", "establishing the occlusal plane", "establishing the vertical dimension of occlusion", "fabrication of the record base and occlusal rim"],
+        "correct": 3
+      },
+      {
+        "text": "What is the minimal amount of gutta percha to maintain an apical seal when placing a post:",
+        "options": ["3 mm", "2 mm", "5 mm", "7 mm"],
+        "correct": 0
+      },
+      {
+        "text": "When designing a full arch implant prosthesis such as an All-On-4 it is critical for esthetics that:",
+        "options": ["the transition line is above the smile line", "the transition line is below the smile line", "the transition line does not affect the esthetics"],
+        "correct": 0
+      },
+      {
+        "text": "When treatment planning for multiple units of implants which of the following is not true:",
+        "options": ["the canine and the molar sites are key abutment locations", "there should be no three adjacent pontics in the design", "cantilevers must be minimized", "its best to unevenly distribute the implants"],
+        "correct": 3
+      },
+      {
+        "text": "When using a resilient attachment, the black housing attachment is used only for picking up the connection.",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "text": "Which of the following methods are used in the removal of gutta percha during post preparation:",
+        "options": ["chemical", "mechanical", "thermal", "all of the above"],
+        "correct": 3
+      },
+      {
+        "text": "Which of the following is true when selecting denture teeth:",
+        "options": ["the more resorbed the ridge the lower the cusp height", "the more resorbed the ridge the higher the cusp height", "the less resorbed the ridge the lower the cusp height", "ridge resorption plays no role in cusp height selection"],
+        "correct": 0
+      },
+      {
+        "text": "Your denture patient presents for a post-insertion visit complaining of cheek biting on both the right and left sides ever since the new dentures were inserted. What is the probable cause of the cheek biting?",
+        "options": ["the denture teeth are positioned too lingual", "the denture teeth are positioned too buccal", "the denture teeth are too big", "the denture teeth are too small"],
+        "correct": 1
+      }
+    ]
+  },
+  "prosthrev-final-summer-2020": {
+    "title": "Prosthodontic Review Final Exam (Summer 2020)",
+    "type": "prosthrev",
+    "questions": [
+      {
+        "text": "Tooth structure loss limited to the mandibular molars in seen in which of the following types of erosion?",
+        "options": ["soda swishing", "fruit mulling", "GERD", "sucking on fruit"],
+        "correct": 0
+      },
+      {
+        "text": "Erosion of the facial surfaces of the maxillary anterior teeth is characteristic of ?",
+        "options": ["fruit mulling", "GERD", "sucking on citrus fruit", "soda swishing"],
+        "correct": 2
+      },
+      {
+        "text": "A dental lesion described as wedge or V shaped with sharp internal and external line angles is called?",
+        "options": ["abfraction", "toothbrush abrasion", "erosion", "none of the answer choices"],
+        "correct": 0
+      },
+      {
+        "text": "Mesial drift of the dentition seen in advanced tooth structure loss is caused by?",
+        "options": ["loss of interproximal tooth structure", "periodontal disease", "orthodontic relapse", "none of the answer choices"],
+        "correct": 0
+      },
+      {
+        "text": "Which of the following is not an advantage of an implant overdenture?",
+        "options": ["increased retention", "increased stability", "decreased occlusal efficiency", "improved speech"],
+        "correct": 2
+      },
+      {
+        "text": "Which of the following denture criteria are required when using an existing denture during the implant healing phase?",
+        "options": ["proper VDO", "acceptable esthetics", "adequate stability", "all of the answer choices"],
+        "correct": 3
+      },
+      {
+        "text": "When measuring for the proper locator abutment height the proper dimension is assessed by?",
+        "options": ["measuring the height of the existing healing abutment", "measuring the height of the gingiva from the top of the implant to the top of the gingiva", "measuring the height of the gingiva from the top of the implant to the top of the gingiva plus 1.5 mm", "none of the answer choices"],
+        "correct": 1
+      },
+      {
+        "text": "An overdenture can be supported by?",
+        "options": ["teeth", "roots", "implants", "all of the answer choices"],
+        "correct": 3
+      },
+      {
+        "text": "During the wax try-in of the maxillary and mandibular complete denture tooth setup, you notice wrinkling at the corners of the mouth indicating the vertical dimension of occlusion is incorrect. How can you correct the deficiency?",
+        "options": ["increase VDO", "decrease VDO"],
+        "correct": 0
+      },
+      {
+        "text": "During the wax try in visit, it was determined that the centric occlusion of the denture is incorrect. What is the best method of correcting for the error.",
+        "options": ["make intraoral adjustments", "make a new facebow record", "make a new centric relation record", "None of the answer choices"],
+        "correct": 2
+      },
+      {
+        "text": "The posterior palatal seal compensates for which process during the fabrication of the maxillary complete denture.",
+        "options": ["Poor impressions", "Tissue displacement", "Polymerization and cooling shrinkage of the acrylic", "Expansion of the dental stone"],
+        "correct": 2
+      },
+      {
+        "text": "The purpose of the preliminary impression includes all of the following except:",
+        "options": ["creates a preliminary cast", "allows for the fabrication of a custom tray", "provides a master cast", "allows for overextended impression"],
+        "correct": 2
+      },
+      {
+        "text": "What occlusal scheme is indicated in complete dentures?",
+        "options": ["group function", "bilateral balanced occlusion", "anterior guidance", "mutually protected occlusion"],
+        "correct": 1
+      },
+      {
+        "text": "The facial border of the maxillary anterior teeth is how many mm from the posterior border of the incisive papilla?",
+        "options": ["1-2 mm", "4-5 mm", "8-10 mm", "12-14 mm"],
+        "correct": 2
+      },
+      {
+        "text": "All of the following classify denture teeth based on cusp angle except?",
+        "options": ["monoplane", "semi-anatomic", "anatomic", "morphologic"],
+        "correct": 3
+      },
+      {
+        "text": "A shallow condylar guide angle and incisal angle requires a lower cusp angle tooth.",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "text": "Centric occlusion may or may not coincide with the maximum intercuspal position ?",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "text": "The anterior point of reference for the Hanau springbow facebow is the :",
+        "options": ["orbitale", "nasion", "glabella", "modiolis"],
+        "correct": 0
+      },
+      {
+        "text": "Centric relation is dependent on tooth contact.",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "The spherical theory of occlusion was described by:",
+        "options": ["Monson", "Bonwill", "Balkwill", "Evans"],
+        "correct": 0
+      },
+      {
+        "text": "A triple tray should never be used for a distal abutment.",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "text": "Cementation of emax crowns is completed with ?",
+        "options": ["resin modified glass ionomer cement", "resin cement", "polycarboxylate cement (duralon)", "zinc oxide eugenol"],
+        "correct": 1
+      },
+      {
+        "text": "All the following are examples of chemical reaction (irreversible) impression materials except:",
+        "options": ["agar", "irreversible hydrocolloid", "PVS", "putty"],
+        "correct": 0
+      },
+      {
+        "text": "Which of the following hemostatic agents is known for discoloration?",
+        "options": ["ferric sulfate", "aluminum chloride", "epinephrine", "none of the answer choices"],
+        "correct": 0
+      },
+      {
+        "text": "What is the minimum amount of gutta percha required to create an apical seal when preparing a post space?",
+        "options": ["3 mm", "4 mm", "5 mm", "6 mm"],
+        "correct": 2
+      },
+      {
+        "text": "What is the minimum root wall thickness required when preparing a post space?",
+        "options": ["1 mm", "2 mm", "3 mm", "4 mm"],
+        "correct": 0
+      },
+      {
+        "text": "Parapost drills can be used to gain length for the post space.",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "A cast post and core is indicated when there is less than what percentage of coronal tooth structure remaining?",
+        "options": ["10 %", "25%", "50%", "70%"],
+        "correct": 1
+      },
+      {
+        "text": "Mastication induces what kind of occlusal forces on dental implant restorations?",
+        "options": ["transverse", "apical", "sagital", "none of the answer choices"],
+        "correct": 0
+      },
+      {
+        "text": "Torque = Force x Distance",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "text": "Implant crowns should have steep cuspal inclinations?",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "The minimum interocclusal space required for a cement-retained implant crown is:",
+        "options": ["4 mm", "5 mm", "6 mm", "8 mm"],
+        "correct": 2
+      },
+      {
+        "text": "Which of the following increase implant load?",
+        "options": ["cantilevers", "excessive restoration height", "cantilevers and excessive restoration height", "none of the answer choices"],
+        "correct": 2
+      },
+      {
+        "text": "What class of levers is an implant FPD involving posterior cantilevers ?",
+        "options": ["Class 1", "Class 2", "Class 3", "Class 4"],
+        "correct": 0
+      },
+      {
+        "text": "All of the following are advantages of splinting implant restorations except?",
+        "options": ["Increase AP spread", "Decrease cement retention", "Distribution of forces over a greater area", "Decrease of screw fracture"],
+        "correct": 1
+      },
+      {
+        "text": "The “All-on-4” concept is recommended for patients with the following?",
+        "options": ["pneumatized maxillary sinuses", "significant tooth loss and caries", "patient who cannot have conventionally (vertical) placed implants", "all of the answer choices"],
+        "correct": 3
+      },
+      {
+        "text": "Combination syndrome is characterized by maxillary anterior flabby ridge. This is likely due to which of the following?",
+        "options": ["U shaped ridge", "V shaped ridge", "Mandibular anterior teeth", "Patient not removing dentures at night", "Class II occlusion"],
+        "correct": 2
+      },
+      {
+        "text": "Clicking of the denture together is an indication of which of the following:",
+        "options": ["increased vertical dimension of occlusion", "decreased vertical dimension of occlusion"],
+        "correct": 0
+      },
+      {
+        "text": "Angular Cheilitis is seen in patients with",
+        "options": ["increased VDO", "decreased VDO"],
+        "correct": 1
+      },
+      {
+        "text": "The material of choice for post surgical denture relining is:",
+        "options": ["soft tissue reline (Coe Soft)", "tissue conditioner (Coe Comfort)", "hard reline (Coe-rect)", "all of the answer choices"],
+        "correct": 1
+      }
+    ]
+  },
+  "prosthrev-final-summer-2021": {
+    "title": "Prosthodontic Review Final Exam (Summer 2021)",
+    "type": "prosthrev",
+    "questions": [
+      {
+        "text": "Clicking of dentures together is an indication of which of the following:",
+        "options": ["increased vertical dimension of occlusion", "decreased vertical dimension of occlusion"],
+        "correct": 0
+      },
+      {
+        "text": "Angular Cheilitis is seen in patients with",
+        "options": ["increased VDO", "decreased VDO"],
+        "correct": 1
+      },
+      {
+        "text": "Resistance to denture movement from its foundation especially to lateral forces as opposed to vertical forces is called?",
+        "options": ["denture retention", "denture stability"],
+        "correct": 1
+      },
+      {
+        "text": "The material of choice for post surgical denture relining is:",
+        "options": ["soft tissue reline (Coe Soft)", "tissue conditioner (Coe Comfort)", "hard reline (Coe-rect)", "all of the above"],
+        "correct": 1
+      },
+      {
+        "text": "An edentulous patient with loss of vertical dimension of occlusion will present with which of the following:",
+        "options": ["anterior rotation of the mandible", "retro-gnathism", "loss of upper face height", "none of the above"],
+        "correct": 0
+      },
+      {
+        "text": "During the tooth set-up wax try in visit (visit 4) , it was determined that the centric occlusion of the denture is incorrect. What is the best method of correcting for the error.",
+        "options": ["make intraoral adjustments", "make a new facebow record", "make a new centric relation record", "None of the above"],
+        "correct": 2
+      },
+      {
+        "text": "The primary stress bearing area of the mandibular denture is?",
+        "options": ["the retromylohyoid space", "the genial tubercle", "the buccal shelf", "residual ridge"],
+        "correct": 2
+      },
+      {
+        "text": "The anterior occlusal rim for both the maxilla and mandible should protrude at which angle?",
+        "options": ["10 degrees", "15 degrees", "20 degrees", "25 degrees"],
+        "correct": 1
+      },
+      {
+        "text": "The ala-tragus line is also known as :",
+        "options": ["Frankfurt horizontal plane", "Curve of speed", "Compensating curve", "Camper’s plane"],
+        "correct": 3
+      },
+      {
+        "text": "The base of a cast should be parallel to the mean foundation plane.",
+        "options": ["True b False"],
+        "correct": 0
+      },
+      {
+        "text": "What occlusal scheme is indicated in complete dentures?",
+        "options": ["group function", "bilateral balanced occlusion", "anterior guidance", "mutually protected occlusion"],
+        "correct": 1
+      },
+      {
+        "text": "Which of the following is an example of an anatomic denture tooth?",
+        "options": ["0 degree", "10 degree", "20 degree", "30 degree"],
+        "correct": 3
+      },
+      {
+        "text": "The facial border of the maxillary anterior teeth is how many mm from the posterior border of the incisive papilla?",
+        "options": ["1-2 mm", "4-5 mm", "8-10 mm", "12-14 mm"],
+        "correct": 2
+      },
+      {
+        "text": "When setting anterior denture teeth the horizontal overlap should be within which range?",
+        "options": ["0-1 mm", "1-2 mm", "2-3 mm", "2-4 mm"],
+        "correct": 1
+      },
+      {
+        "text": "A lingualized denture occlusion is characterized by:",
+        "options": ["lingual cusp of mandibular tooth contacts maxillary occlusal surface", "lingual cusp of maxillary tooth contacts mandibular occlusal surface", "anterior guidance occlusal scheme", "none of the above"],
+        "correct": 1
+      },
+      {
+        "text": "Centric occlusion may or may not coincide with the maximum intercuspal position ?",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "text": "The anterior point of reference for the Hanau springbow facebow is the :",
+        "options": ["orbitale", "nasion", "glabella", "modiolis"],
+        "correct": 0
+      },
+      {
+        "text": "Centric relation is dependent on tooth contact.",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "The spherical theory of occlusion was described by:",
+        "options": ["Monson", "Bonwill", "Balkwill", "Evans"],
+        "correct": 0
+      },
+      {
+        "text": "The purpose of the facebow transfer includes all of the following except:",
+        "options": ["to orient the maxillary cast to the center of the articulator", "articulate the maxillary cast in relation to condylar hinge axis", "to evaluate patients esthetics plane relative to horizontal plan", "capture a centric relation record"],
+        "correct": 3
+      },
+      {
+        "text": "Which of the following are principles of the Ferrule Effect?",
+        "options": ["adds some retention", "requires 2 mm in height", "prevents root fracture during function", "all of the above"],
+        "correct": 3
+      },
+      {
+        "text": "Which of the following are critical features of a post canal preparation?",
+        "options": ["minimal canal enlargement", "adequate post length", "final restoration ends on sound tooth structure", "no undercuts in the canal", "all of the above"],
+        "correct": 4
+      },
+      {
+        "text": "The apex of a post should be above the crest of the bone.",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "What is the minimum crown to root ratio?",
+        "options": ["1 to 1", "1 to 1.5", "1 to 2", "none of the above"],
+        "correct": 0
+      },
+      {
+        "text": "What is the minimum root wall thickness required when preparing a post space?",
+        "options": ["1 mm", "2 mm", "3 mm", "4 mm"],
+        "correct": 0
+      },
+      {
+        "text": "Parapost drills can be used to gain length for the post space.",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "A post in a molar should not extend more than 7 mm past the opening of the root canal at the base of the chamber.",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "text": "The direct technique of fabricating a cast post and core involves:",
+        "options": ["an impression post", "duralay pattern", "cementation of a prefabricated post", "a fiber post"],
+        "correct": 1
+      },
+      {
+        "text": "A cast post and core is indicated when there is less than what percentage of coronal tooth structure remaining?",
+        "options": ["10 %", "25%", "50%", "70%"],
+        "correct": 1
+      },
+      {
+        "text": "All anterior and posterior endodontically treated teeth require a full coverage restoration.",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "Mastication induces what kind of occlusal forces on dental implant restorations?",
+        "options": ["transverse", "apical", "sagital", "none of the above"],
+        "correct": 0
+      },
+      {
+        "text": "Torque = Force x Distance",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "text": "Implant crowns should have steep cuspal inclinations?",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "The minimum interocclusal space required for a cement-retained implant crown is:",
+        "options": ["4 mm", "5 mm", "6 mm", "8 mm"],
+        "correct": 2
+      },
+      {
+        "text": "Which of the following increase implant load?",
+        "options": ["cantilevers", "excessive restoration height", "both a and b", "none of the above"],
+        "correct": 2
+      },
+      {
+        "text": "What class of levers is an implant FPD involving posterior cantilevers ?",
+        "options": ["Class 1", "Class 2", "Class 3", "Class 4"],
+        "correct": 0
+      },
+      {
+        "text": "All of the following are advantages of splinting implant restorations except?",
+        "options": ["Increase AP spread", "Decrease cement retention", "Distribution of forces over a greater area", "Decrease of screw fracture"],
+        "correct": 1
+      },
+      {
+        "text": "A modified occlusal anatomy for an implant restoration is characterized by:",
+        "options": ["centered contacts", "steep cusps", "increased occlusal table", "0.5 mm horizontal fossa"],
+        "correct": 0
+      },
+      {
+        "text": "In a platform switch implant design:",
+        "options": ["the abutment diameter is narrower than the implant connection", "the abutment diameter is wider than the implant connection", "the abutment diameter and the implant connection are the same size", "the abutment and implant are one piece"],
+        "correct": 0
+      },
+      {
+        "text": "Open and closed tray implant impression techniques differ in that?",
+        "options": ["a verification radiograph is not needed for closed tray", "the open tray coping screw is loosened prior to impression retrieval", "the closed tray coping screw is loosened prior to impression retrieval", "either can be used for a digital protocol"],
+        "correct": 1
+      },
+      {
+        "text": "Which of the following are indications for a cast removable partial denture?",
+        "options": ["long span edentulous areas", "distal extension areas", "excessive loss of residual bone", "all of the above", "none of the above"],
+        "correct": 3
+      },
+      {
+        "text": "When fabricating a cast removable partial denture mouth preparations are completed after the final impression.",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "In the removable partial denture treatment sequence, which of the following comes first?",
+        "options": ["final impression", "surveying", "mouth preparations", "try-in metal framework"],
+        "correct": 1
+      },
+      {
+        "text": "A tooth supported cast removable partial denture receives it’s support from which of the following components?",
+        "options": ["clasps", "rests", "major connectors", "minor connectors"],
+        "correct": 1
+      },
+      {
+        "text": "What is the most important factor in the selection of a clasp in a cast removable partial denture?",
+        "options": ["the location of the undercut", "the location of the height of contour", "the location of the line angles", "none of the above"],
+        "correct": 0
+      },
+      {
+        "text": "All of the following major connectors can be used for a Kennedy Class I bilateral distal extension RPD except?",
+        "options": ["full palatal plate", "antero-posterior strap", "single palatal strap", "lingual bar"],
+        "correct": 2
+      },
+      {
+        "text": "A combination clasp consists of :",
+        "options": ["a wrought wire retentive arm and cast reciprocal arm", "a cast retentive arm and a wrought wire reciprocal arm", "a cast retentive arm and cast reciprocal arm", "a wrought wire retentive arm and wrought wire reciprocal arm"],
+        "correct": 0
+      },
+      {
+        "text": "Which of the following determines the placement of the indirect retainers?",
+        "options": ["the major connector design", "the location of the undercut", "the fulcrum line", "the Kennedy class"],
+        "correct": 2
+      },
+      {
+        "text": "An RPI clasp assembly consists of which of the following:",
+        "options": ["mesio-occlusal rest seat, proximal plate, I bar", "mesio-occlusal rest seat , reciprocal arm, I bar", "disto-occlusal rest seat, proximal plate, I bar", "disto-occlusal rest seat, reciprocal arm, I bar"],
+        "correct": 0
+      },
+      {
+        "text": "Embrasure clasps are indicated in which situations?",
+        "options": ["unmodified Kennedy Class II", "unmodified Kennedy Class III", "all of the above", "none of the above"],
+        "correct": 2
+      }
+    ]
+  },
+  "prosthrev-final-summer-2022": {
+    "title": "Prosthodontic Review Final Exam (Summer 2022)",
+    "type": "prosthrev",
+    "questions": [
+      {
+        "text": "The purpose of placing gingival retraction is to displace the tissue:",
+        "options": ["Apically", "Coronally", "Laterally", "None of the above"],
+        "correct": 2
+      },
+      {
+        "text": "During a crown try-in visit which of the following should be evaluated first before evaluating the others?",
+        "options": ["Marginal fit", "Occlusion", "Radiograph", "Interproximal contacts"],
+        "correct": 3
+      },
+      {
+        "text": "All of the following are examples of gingival displacement types except:",
+        "options": ["Mechanical", "Chemical", "Surgical", "Adhesive"],
+        "correct": 3
+      },
+      {
+        "text": "Gingival retraction cord should be placed in a wet field.",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "Which of the following is the most esthetic ceramic material?",
+        "options": ["Lithium disilicate", "Zirconia", "Feldspathic porcelain", "Leucite"],
+        "correct": 2
+      },
+      {
+        "text": "Which of the following is the weakest ceramic material?",
+        "options": ["Feldspathic porcelain", "Leucite", "Lithium disilicate", "Aluminum"],
+        "correct": 0
+      },
+      {
+        "text": "Lithium disilicate has the following indications except:",
+        "options": ["Short span FPD's", "Veneers", "anterior crowns", "Long span FPDs", "Posterior crowns"],
+        "correct": 3
+      },
+      {
+        "text": "Which of the following is not suited for a monolithic full coverage restoration?",
+        "options": ["Zirconia", "Lithium disilicate", "Feldspathic porcelain", "Leucite"],
+        "correct": 2
+      },
+      {
+        "text": "Which of the following cements is recommended for ceramic veneers?",
+        "options": ["Resin modified glass ionomer", "Self-cure resin", "Dual cure resin", "Light cure resin"],
+        "correct": 3
+      },
+      {
+        "text": "A total etch adhesive system is a:",
+        "options": ["1 step system", "2 step system", "3 step system", "4 step system"],
+        "correct": 2
+      },
+      {
+        "text": "Which of the following must be etched with hydrofluoric acid prior to cementation?",
+        "options": ["Lithium disilicate crowns", "Metal ceramic crowns", "Zirconia crowns", "None of the above"],
+        "correct": 0
+      },
+      {
+        "text": "A luting agent is a viscous cement-like material that fills a gap between two surfaces to prevent dislodgement.",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "text": "A high noble metal consists of",
+        "options": ["At least 40% Au (Gold) and >60% noble metal", "At least 20% Au (Gold) and >60% noble metal", "At least 60% Au (Gold) and >40% noble metal", "At least 20% Au (Gold) and >40% noble metal"],
+        "correct": 0
+      },
+      {
+        "text": "Which of the following is a disadvantage of predominantly base metals?",
+        "options": ["Cost", "Stiffness", "Lighter", "Harder"],
+        "correct": 3
+      },
+      {
+        "text": "The amount of tooth structure that is removed to establish the desired clearance is:",
+        "options": ["The reduction", "The clearance", "The preparation", "All of the above"],
+        "correct": 0
+      },
+      {
+        "text": "Which type of porcelain is used to fabricate a metal ceramic crown?",
+        "options": ["Lithium disilicate", "Leucite", "Feldspathic porcelain", "Alumina porcelain"],
+        "correct": 2
+      },
+      {
+        "text": "A type of tooth structure loss of chemical etiology is?",
+        "options": ["Abfraction", "Erosion", "Attrition", "Abrasion"],
+        "correct": 1
+      },
+      {
+        "text": "Early stages of erosion of the occlusal surfaces of posterior teeth is characterized by?",
+        "options": ["Concavities", "Smooth", "Cupping and cratering", "None of the above"],
+        "correct": 0
+      },
+      {
+        "text": "Mesial drifting of teeth is seen in advanced stages of?",
+        "options": ["Erosion", "Abrasion", "Attrition", "All of the above", "None of the above"],
+        "correct": 2
+      },
+      {
+        "text": "An inadequate or unstable posterior occlusion may result in anterior wear which is greater than the posterior wear.",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "text": "An arcon articulator has condylar elements on the upper member with the condylar pathways on the opposite member.",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "Which of the following accepts a facebow transfer?",
+        "options": ["Non adjustable articulator", "Semi-adjustable articualtor", "Fully adjustable articulator", "A and c", "B and c"],
+        "correct": 4
+      },
+      {
+        "text": "The angle formed between the sagittal plane and the average path of the advancing condyle as viewed in the horizontal plane during lateral mandibular movements.",
+        "options": ["Bennet angle", "Lateriotrusion", "Bennet movement", "None of the above", "All of the above"],
+        "correct": 0
+      },
+      {
+        "text": "The Denar Mark 310 and Hanau Wide Vue articulators are examples of a:",
+        "options": ["Fully adjustable articulator", "Simple articulator", "Semi-adjustable articulator", "Non-adjustable articulator"],
+        "correct": 2
+      },
+      {
+        "text": "What are some ways to minimize the overload on a dental implant?",
+        "options": ["Minimize the lever arm", "Axially Load the implant", "Spread the load MD and BL", "All of the above", "None of the above"],
+        "correct": 3
+      },
+      {
+        "text": "The difference between a closed and open tray impression technique is that the open tray technique involves:",
+        "options": ["Taking a radiograph", "Making sure the impression coping is fully seating", "Unscrewing the impression coping prior to removing the impression tray", "Syringing impression material around the coping prior to seating the tray"],
+        "correct": 2
+      },
+      {
+        "text": "For every 10° increase in cusp inclination, an average increase in torque production is seen by?",
+        "options": ["10 %", "20 %", "30 %", "40 %"],
+        "correct": 2
+      },
+      {
+        "text": "A root canal treated anterior tooth with an intact clinical crown and favorable occlusal forces should be restored with:",
+        "options": ["A cast post and core and then crown", "A prefabricated post and core and then crown", "A core build up and then crown", "A composite restoration in the access hole"],
+        "correct": 3
+      },
+      {
+        "text": "A complete coverage restoration is recommended on posterior endodontically treated teeth.",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "text": "An effective ferrule requires coronal tooth structure of at least:",
+        "options": ["1 mm", "2 mm", "3 mm", "4 mm"],
+        "correct": 1
+      },
+      {
+        "text": "When preparing a post space for an endodontically treated tooth, what is the minimum of amount of gutta percha that is required to maintain an apical seal?",
+        "options": ["3 mm", "4 mm", "5 mm", "6 mm"],
+        "correct": 2
+      },
+      {
+        "text": "Short posts are less likely to result in root fractures.",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "Length of the endodontically treated root canal should be achieved with a:",
+        "options": ["Parapost drill", "Slow speed carbide bur", "Gates glidden bur", "All of the above", "None of the above"],
+        "correct": 2
+      },
+      {
+        "text": "Tapered posts have been shown to have a higher failure rate than parallel posts.",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "text": "A cast post and core is indicated when the amount of tooth structure remaining is?",
+        "options": ["Less that 25%", "Less than 50%", "Less than 60%", "Less than 75%"],
+        "correct": 0
+      },
+      {
+        "text": "All of the following are advantages of cement retained implant crowns except:",
+        "options": ["No discrepancies in fit of the casting by action of cement", "More esthetic", "More fractural strength (no screw holes)", "Retrievability"],
+        "correct": 3
+      },
+      {
+        "text": "Cement retained implant crowns require a minimum height of:",
+        "options": ["4 mm", "5 mm", "6 mm", "7 mm"],
+        "correct": 2
+      },
+      {
+        "text": "The photo below demonstrates which type of implant?",
+        "options": ["Internal hex", "External hex", "Soft tissue platform", "None of the above"],
+        "correct": 1,
+        "image": "images/prosthrev-final-summer-2022/fig38.jpeg"
+      },
+      {
+        "text": "Force = torque x distance",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "Platform switching is when the abutment is wider than the implant fixture connection.",
+        "options": ["True", "False"],
+        "correct": 1
+      }
+    ]
+  },
+  "prosthrev-final-summer-2023": {
+    "title": "Prosthodontic Review Final Exam (Summer 2023)",
+    "type": "prosthrev",
+    "questions": [
+      {
+        "text": "The difference between a closed and open tray impression technique is that the open tray technique involves:",
+        "options": ["Taking a radiograph", "Making sure the impression coping is fully seating", "Unscrewing the impression coping prior to removing the impression tray", "Syringing impression material around the coping prior to seating the tray"],
+        "correct": 2
+      },
+      {
+        "text": "All MIS implant abutments are torqued to 30 Ncm.",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "A cement retained implant crowns requires a minimum height of:",
+        "options": ["4 mm", "5 mm", "6 mm", "7 mm"],
+        "correct": 2
+      },
+      {
+        "text": "Disadvantages of a screw retained implant crown are:",
+        "options": ["Screw loosening", "Less fractural strength due to the screw access", "Porcelain or component fracture", "Poor esthetics if screw access opens on the facial", "All of the above"],
+        "correct": 4
+      },
+      {
+        "text": "The minimum circumferential dentin thickness needed for post placement is:",
+        "options": ["0.05 mm", "1.0 mm", "1.5 mm", "2.00 mm"],
+        "correct": 1
+      },
+      {
+        "text": "The direct cast post and core technique involves:",
+        "options": ["A Duralay pattern of the post and core", "Die fabrication of the post and core", "Impression post", "None of the above"],
+        "correct": 0
+      },
+      {
+        "text": "A cast post and core is indicated when the amount of tooth structure remaining is?",
+        "options": ["Less that 25%", "Less than 50%", "Less than 60%", "Less than 75%"],
+        "correct": 0
+      },
+      {
+        "text": "When placing a post in an endodontically treated mandibular molar which of the following is true.",
+        "options": ["The distal root should be selected", "The post should not extend more than 7 mm from the base of the pulp chamber", "The mesial root should be selected", "A and B", "B and C"],
+        "correct": 3
+      },
+      {
+        "text": "The purpose of a post to retain the core.",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "text": "The twist drill is used in the preparation of the endodontically treated tooth to:",
+        "options": ["Lengthen the post space", "Parallel the walls of the canal", "Remove gutta percha", "None of the above", "All of the above"],
+        "correct": 1
+      },
+      {
+        "text": "A root canal treated anterior tooth with an intact clinical crown and favorable occlusal forces should be restored with:",
+        "options": ["A cast post and core and then a crown", "A prefabricated post and core and then a crown", "A core build up and then a crown", "A composite restoration in the access hole"],
+        "correct": 3
+      },
+      {
+        "text": "Tapered posts have shown a higher failure rate than parallel posts.",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "text": "The Minimum requirement for a screw retained restoration is?",
+        "options": ["3 mm", "4 mm", "5 mm", "6 mm"],
+        "correct": 1
+      },
+      {
+        "text": "Platform switching is when the abutment is wider than the implant fixture connection.",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "Implants designed for placement with the collar at or near the soft tissue margin are called?",
+        "options": ["Bone level implants", "Tissue level implants", "Crest level implants", "None of the above"],
+        "correct": 1
+      },
+      {
+        "text": "The first step to lessen implant loading is to reduce cusp inclination.",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "text": "The angle formed between the sagittal plane and the average path of the advancing condyle as viewed in the horizontal plane during lateral mandibular movements is:",
+        "options": ["Bennet angle", "Laterotrusion", "Bennet movement", "None of the above", "All of the above"],
+        "correct": 0
+      },
+      {
+        "text": "The Denar Mark 310 and Hanau Wide Vue articulators are examples of a:",
+        "options": ["Fully adjustable articulator", "Simple articulator", "Semi-adjustable articulator", "Non-adjustable articulator"],
+        "correct": 2
+      },
+      {
+        "text": "The arcon articlulator has the condylar elements on the lower member.",
+        "options": ["True", "False"],
+        "correct": 0
+      },
+      {
+        "text": "An arcon articulator allows for the following to be preserved when the articulator is opened and closed?",
+        "options": ["Occlusal plane", "Facebow transfer", "Relationshop between casts", "All of the above"],
+        "correct": 3
+      },
+      {
+        "text": "Additional intraoral findings associated with bruxism include:",
+        "options": ["Cheek biting", "Tongue thrusting", "Anterior open bite", "Cross bite"],
+        "correct": 0
+      },
+      {
+        "text": "Of the types of tooth structure loss listed below which has a mechanical etiology?",
+        "options": ["Attrition", "Abrasion", "Abraction", "All of the above"],
+        "correct": 3
+      },
+      {
+        "text": "Flouride application can be used for the prevention of which of the following?",
+        "options": ["Attrition", "Abfraction", "Abrasion", "Erosion"],
+        "correct": 3
+      },
+      {
+        "text": "The type of tooth structure loss characterized by “unaffected amalgam islands” is?",
+        "options": ["Erosion", "Attrition", "Abfraction", "Abrasion"],
+        "correct": 0
+      },
+      {
+        "text": "Contraindications for a metal ceramic crown include:",
+        "options": ["Active caries", "Untreated Periodontal disease", "Large pulp chambers", "All of the above"],
+        "correct": 3
+      },
+      {
+        "text": "The preparation for a metal ceramic crown is more conservative than a full cast crown.",
+        "options": ["True", "False"],
+        "correct": 1
+      },
+      {
+        "text": "Which of the following blocks out the color of the metal substructure of a metal ceramic crown?",
+        "options": ["The body porcelain", "The stain porcelain", "The incisal porcelain", "The opaque porcelain"],
+        "correct": 3
+      },
+      {
+        "text": "Feldspathic porcelain is the:",
+        "options": ["Weakest of ceramics", "Most esthetic", "Oldest of porcelains", "All of the above"],
+        "correct": 3
+      },
+      {
+        "text": "Which of the following cements may interfere with resin polymerization?",
+        "options": ["Zinc oxide", "Zinc oxide eugenol", "Zinc polycarboxylate", "Zinc phosphate"],
+        "correct": 1
+      },
+      {
+        "text": "Of the following cements, which functions via mechanical retention?",
+        "options": ["Resin cements", "Zinc polycarboxylate", "Zinc oxide", "Zinc phosphate"],
+        "correct": 3
+      },
+      {
+        "text": "The following are examples of definitive permanent cements except:",
+        "options": ["Zinc oxide eugenol", "Resin cement", "Polycarboxylate cement", "Zinc phosphate"],
+        "correct": 0
+      },
+      {
+        "text": "The first luting agent in dentistry was:",
+        "options": ["Resin modified glass ionomer", "Zinc phosphate", "Zinc polycarboxylate cement", "Resin cement"],
+        "correct": 1
+      },
+      {
+        "text": "Which of the following which is the oldest ceramic used in dentistry?",
+        "options": ["Leucite", "Zirconia", "Feldspathic porcelain", "Lithium disilicate"],
+        "correct": 2
+      },
+      {
+        "text": "Of the following which is the strongest ceramic material:",
+        "options": ["Lithium disilicate", "Feldspathic porcelain", "Leucite glass", "Alumina porcelain"],
+        "correct": 0
+      },
+      {
+        "text": "Which of the following are examples of NON- glass ceramic materials:",
+        "options": ["Zirconia", "Alumina", "Feldspathic porcelain", "Lithium disilicate", "A and b"],
+        "correct": 4
+      },
+      {
+        "text": "Of the following which is the strongest restorative material?",
+        "options": ["Y-TZP 2", "Y-TZP 3", "Y-TZP 4", "Y-TZP 5"],
+        "correct": 1
+      },
+      {
+        "text": "Impression tray adhesive should be applied:",
+        "options": ["In a thin layer", "Immediately before the impression making", "In a thick layer", "Only to the internal of the tray"],
+        "correct": 0
+      },
+      {
+        "text": "Prefabricated impression trays must provide which of the following:",
+        "options": ["Rigidity", "Retention", "Control for material thickness", "None of the above", "All of the above"],
+        "correct": 4
+      },
+      {
+        "text": "In the two-cord gingival retraction technique the first cord:",
+        "options": ["Left in the sulcus during the impression", "Placed at the crown margin", "Laterally displaces the soft tissue", "Is thicker than the second cord"],
+        "correct": 0
+      },
+      {
+        "text": "Gingival retraction cord should be removed when it is dry.",
+        "options": ["True", "False"],
         "correct": 1
       }
     ]
