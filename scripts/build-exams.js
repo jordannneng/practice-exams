@@ -64,7 +64,7 @@ function parseCsv(text) {
   return rows.filter(r => r.some(f => f.trim() !== ''));
 }
 
-const KNOWN_TYPES = ['gda', 'dao', 'ethics', 'biochem', 'pcod1', 'cario', 'oralrad', 'pcod2', 'patho', 'perio1', 'fixedpros', 'rempros', 'cd', 'ortho', 'icd', 'coralrad'];
+const KNOWN_TYPES = ['gda', 'dao', 'ethics', 'biochem', 'pcod1', 'cario', 'oralrad', 'pcod2', 'patho', 'perio1', 'fixedpros', 'rempros', 'cd', 'ortho', 'icd', 'coralrad', 'occlusion', 'endo', 'implants', 'oralpath', 'painanx', 'perio2', 'omfs', 'pedo'];
 const KNOWN_SUBTYPES = {
   gda: ['midterm', 'final', 'quiz'],
   dao: ['midterm', 'final', 'quiz'],
@@ -80,6 +80,13 @@ const KNOWN_SUBTYPES = {
   ortho: ['midterm', 'final'],
   icd: ['exam1', 'exam2', 'exam3', 'midterm', 'final'],
   coralrad: ['exam1', 'exam2'],
+  endo: ['midterm', 'final', 'quiz'],
+  implants: ['exam1', 'exam2'],
+  oralpath: ['exam1', 'exam2', 'exam3', 'exam4', 'exam5', 'final'],
+  painanx: ['quiz', 'exam1', 'exam2', 'exam3', 'exam4', 'exam23', 'midterm', 'final'],
+  perio2: ['midterm', 'final', 'quiz'],
+  omfs: ['midterm', 'final', 'quiz'],
+  pedo: ['exam1', 'exam2', 'final'],
 };
 
 const LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';

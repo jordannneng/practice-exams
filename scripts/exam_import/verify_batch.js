@@ -139,7 +139,7 @@ async function verifyExam(page, examJson, id, outDir, failedImageUrls) {
   const questions = (examJson[id] && examJson[id].questions) || [];
   failedImageUrls.length = 0;
   await page.evaluate((examId) => {
-    quizState = { examId, current: 0, answers: {}, flags: {}, crossed: {} };
+    quizState = { examId, current: 0, answers: {}, flags: {}, crossed: {}, optionOrder: buildOptionOrder(exams[examId]) };
     view = { screen: 'quiz' };
     render();
   }, id);

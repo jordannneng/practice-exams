@@ -68,7 +68,7 @@ def join_wrapped_lines(lines):
     return result
 
 
-OPT_RE = re.compile(r'^(✓?)\s*([A-Za-z])[.)]\s*(.*)$')
+OPT_RE = re.compile(r'^([✓*]?)\s*([A-Za-z])[.)]\s*(.*)$')
 IMG_EXT_RE = re.compile(r'\.(png|jpg|jpeg)$', re.I)
 
 def find_best_option_run(lines):
@@ -101,12 +101,68 @@ def find_best_option_run(lines):
         runs.append(current)
     if not runs:
         return {}
-    chosen = next((run for run in runs if any(c == '✓' for _, c, _ in run)), runs[-1])
+    chosen = next((run for run in runs if any(c in ('✓', '*') for _, c, _ in run)), runs[-1])
     return {idx: (check, val) for idx, check, val in chosen}
 
+ANS_LINE_RE = re.compile(r'^(\d+)[.)]\s*(.+)$')
+
+def find_fill_blanks(lines):
+    """Detect the source's own fill-in-the-blank export format: a question
+    with no lettered options (checked by the caller) instead ends in lines
+    like '1. HAIRY TONGUE' or '2. KAPOSI SARCOMA|ANGIOSARCOMA|' -- one line
+    per blank, numbered from 1, holding that blank's acceptable answer(s)
+    already pipe-separated (matching the app's own FILL convention, see
+    README.md). First seen in Oral Pathology (D2 Spring), where most
+    "diagnosis" questions are authored this way rather than as
+    multiple-choice. Returns (blanks, line_idxs) -- blanks is a list of
+    alt-lists, one per blank, in order; line_idxs is the set of line indices
+    consumed so the caller can exclude them from the question text -- or
+    None if these lines don't form a clean 1..N sequence (don't guess)."""
+    found = {}
+    for idx, l in enumerate(lines):
+        m = ANS_LINE_RE.match(l)
+        if not m:
+            continue
+        found[int(m.group(1))] = (idx, m.group(2))
+    if not found:
+        return None
+    nums = sorted(found.keys())
+    if nums != list(range(1, len(nums) + 1)):
+        return None
+    blanks = []
+    idxs = set()
+    for num in nums:
+        idx, text = found[num]
+        idxs.add(idx)
+        alts = [a.strip() for a in text.split('|')]
+        alts = [a for a in alts if a]
+        if not alts:
+            return None
+        blanks.append(alts)
+    # The source also renders each blank's position in the stem as a bare
+    # placeholder digit, usually alone on its own line (e.g. a lone "1"
+    # line right before the stem wraps) -- drop those too, not just the
+    # "N. answer" lines themselves, so a stray number doesn't leak into the
+    # question text. A placeholder embedded mid-line alongside real stem
+    # text (rarer) isn't caught here; see the flanking-whitespace cleanup
+    # in parse_option_block for that case.
+    for idx, l in enumerate(lines):
+        if idx in idxs:
+            continue
+        m = re.fullmatch(r'(\d+)', l)
+        if m and int(m.group(1)) in found:
+            idxs.add(idx)
+    return blanks, idxs
+
 def parse_option_block(lines):
-    """Parse a single question's lines into (question_text, options, correct_letter, attachment)."""
+    """Parse a single question's lines into (question_text, options,
+    correct_letter, attachment, blanks). blanks is None for an ordinary
+    multiple-choice question, or a list of per-blank alt-lists (see
+    find_fill_blanks) for a FILL-shaped question -- in which case options
+    is [] and correct_letter is None."""
     option_idxs = find_best_option_run(lines)
+    fill = None if option_idxs else find_fill_blanks(lines)
+    fill_idxs = fill[1] if fill else set()
     question_lines = []
     options = []
     correct_letter = None
@@ -124,9 +180,12 @@ def parse_option_block(lines):
                 optxt = join_wrapped_lines([optxt, lines[j]])
                 j += 1
             options.append((letter, optxt.strip()))
-            if check == '✓':
+            if check in ('✓', '*'):
                 correct_letter = letter
             i2 = j
+            continue
+        if i2 in fill_idxs:
+            i2 += 1
             continue
         if l == 'Attachment:':
             j = i2 + 1
@@ -141,7 +200,30 @@ def parse_option_block(lines):
             question_lines.append(l)
         i2 += 1
     qtext = join_wrapped_lines(question_lines).strip()
-    return qtext, options, correct_letter, attachment
+    if fill:
+        # Best-effort cleanup of any blank-placeholder digit the source
+        # rendered on the same physical line as real stem text (e.g.
+        # "(upper case)    1    .  What is..."), rather than on its own
+        # line (already dropped above). Flanked by 2+ spaces on both sides,
+        # unlike a real number in prose ("52-year-old", "20 years", single-
+        # spaced), so this doesn't touch genuine content.
+        qtext = re.sub(r'\s{2,}\d+(?=\s{2,}|$)', ' ', qtext)
+        qtext = re.sub(r'^\d+\s{2,}', '', qtext)
+        qtext = re.sub(r'\s+', ' ', qtext).strip()
+        return qtext, [], None, attachment, fill[0]
+    if options and not any(re.search(r'[A-Za-z0-9]', t) for _, t in options):
+        # Every option came back with no real text -- the answer choices
+        # are themselves images (e.g. "which of these forceps"/"which
+        # display of paired teeth", A-E each a picture), which the CSV
+        # schema has no way to represent (one image per question, not per
+        # option). A blank option sometimes isn't literally empty -- one
+        # PDF left a run of decorative dots ("....") where a picture was --
+        # so check for actual alphanumeric content, not just non-blank.
+        # Not multiple-choice in any form this pipeline can carry, so drop
+        # it like a free-response question rather than writing garbage
+        # options.
+        return qtext, [], None, attachment, None
+    return qtext, options, correct_letter, attachment, None
 
 def parse_questions(text):
     # The question number after "Question #:" is occasionally blank in the
@@ -162,8 +244,8 @@ def parse_questions(text):
         block = parts[i+1]
         lines = [l.strip() for l in block.split('\n')]
         lines = [l for l in lines if l != '' and not re.fullmatch(r'_{15,}', l)]
-        qtext, options, correct_letter, attachment = parse_option_block(lines)
-        questions[num] = {'text': qtext, 'options': options, 'correct': correct_letter, 'attachment': attachment}
+        qtext, options, correct_letter, attachment, blanks = parse_option_block(lines)
+        questions[num] = {'text': qtext, 'options': options, 'correct': correct_letter, 'attachment': attachment, 'blanks': blanks}
     return questions
 
 def parse_questions_numbered(text):
@@ -186,8 +268,8 @@ def parse_questions_numbered(text):
     for si, (line_idx, num, first_line_rest) in enumerate(starts):
         end_idx = starts[si + 1][0] if si + 1 < len(starts) else len(lines)
         block_lines = ([first_line_rest] if first_line_rest else []) + lines[line_idx + 1:end_idx]
-        qtext, options, correct_letter, attachment = parse_option_block(block_lines)
-        questions[num] = {'text': qtext, 'options': options, 'correct': correct_letter, 'attachment': attachment}
+        qtext, options, correct_letter, attachment, blanks = parse_option_block(block_lines)
+        questions[num] = {'text': qtext, 'options': options, 'correct': correct_letter, 'attachment': attachment, 'blanks': blanks}
     return questions
 
 def map_images_to_questions(pdf_path, out_dir):
@@ -389,19 +471,24 @@ def resolve_case_clusters(image_map, clusters, map_dir, external_images=None):
     return written
 
 def write_exam_csv(questions, image_map, out_csv_path, title, exam_type, image_url_prefix, subtype=''):
-    """questions: {num: {text, options:[(letter,text)], correct, ...}}
+    """questions: {num: {text, options:[(letter,text)], correct, blanks, ...}}
     image_map: {num: [{'file':..., ...}]} (question num as int)
     Writes CSV and returns list of (question_num, source_image_file, dest_name) to copy.
     Options are placed POSITIONALLY (ignoring source letter labels, which are
     occasionally duplicated by authoring typos) and "correct" is re-derived
     from the position of the checked option, not trusted as a letter lookup.
-    This does not handle fill-in-the-blank (FILL) rows -- those questions
-    are typically flagged by the caller (no options/correct parsed) and
-    either omitted with an issues note, or hand-authored into the CSV
-    afterward using the FILL convention (see README.md)."""
+    A question with v['blanks'] set (see find_fill_blanks in this module) is
+    written as a FILL row instead -- one option_* cell per blank, each
+    holding that blank's '|'-separated acceptable answers, with "correct"
+    set to the literal FILL. Any other free-response question (no options
+    parsed and no blanks detected) is the caller's responsibility to drop
+    or hand-author, per README.md."""
     import csv
     to_copy = []
-    max_opts = max((len(v['options']) for v in questions.values()), default=4)
+    max_opts = max(
+        (len(v['blanks']) if v.get('blanks') else len(v['options']) for v in questions.values()),
+        default=4,
+    )
     max_opts = max(max_opts, 4)
     letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'[:max_opts]
     with open(out_csv_path, 'w', newline='') as f:
@@ -410,14 +497,6 @@ def write_exam_csv(questions, image_map, out_csv_path, title, exam_type, image_u
         w.writerow(['question'] + [f'option_{l.lower()}' for l in letters] + ['correct', 'image'])
         for n in sorted(questions.keys()):
             v = questions[n]
-            opt_letters = [l for l, t in v['options']]
-            opt_texts = [t for l, t in v['options']]
-            if len(set(opt_letters)) != len(opt_letters):
-                print(f'  WARNING: question {n} has duplicate option letters in source: {opt_letters}')
-            if v['correct'] not in opt_letters:
-                raise ValueError(f'question {n}: correct letter {v["correct"]!r} not found among option letters {opt_letters}')
-            correct_idx = opt_letters.index(v['correct'])
-            row_opts = opt_texts + [''] * (len(letters) - len(opt_texts))
             image_field = ''
             imgs = image_map.get(n) or image_map.get(str(n))
             if imgs:
@@ -426,5 +505,17 @@ def write_exam_csv(questions, image_map, out_csv_path, title, exam_type, image_u
                 dest_name = f'fig{n}.{ext}'
                 image_field = f'{image_url_prefix}{dest_name}'
                 to_copy.append((n, src, dest_name))
+            if v.get('blanks'):
+                row_opts = ['|'.join(alts) for alts in v['blanks']] + [''] * (len(letters) - len(v['blanks']))
+                w.writerow([v['text']] + row_opts + ['FILL', image_field])
+                continue
+            opt_letters = [l for l, t in v['options']]
+            opt_texts = [t for l, t in v['options']]
+            if len(set(opt_letters)) != len(opt_letters):
+                print(f'  WARNING: question {n} has duplicate option letters in source: {opt_letters}')
+            if v['correct'] not in opt_letters:
+                raise ValueError(f'question {n}: correct letter {v["correct"]!r} not found among option letters {opt_letters}')
+            correct_idx = opt_letters.index(v['correct'])
+            row_opts = opt_texts + [''] * (len(letters) - len(opt_texts))
             w.writerow([v['text']] + row_opts + [letters[correct_idx], image_field])
     return to_copy

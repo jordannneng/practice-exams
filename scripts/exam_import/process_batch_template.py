@@ -67,7 +67,7 @@ for folder, json_path, title, exam_id, exam_type, subtype in jobs:
     skipped = []
     for n in nums:
         q = questions[n]
-        if not q['options'] or q['correct'] is None:
+        if not q.get('blanks') and (not q['options'] or q['correct'] is None):
             print(f'  SKIP q{n} (not multiple-choice in source): {q["text"][:100]!r}')
             skipped.append(n)
     for n in skipped:
