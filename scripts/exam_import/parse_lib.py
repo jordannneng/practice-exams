@@ -264,11 +264,68 @@ def parse_questions_numbered(text):
             starts.append((i, expected, m.group(2)))
             expected += 1
 
+    if not starts:
+        # Third source format: no numbering markers of any kind (not even
+        # plain "N."), just a stem followed directly by lettered options.
+        # First seen in Lasers in Dentistry, Summer 2023.
+        return parse_questions_unmarked(lines)
+
     questions = {}
     for si, (line_idx, num, first_line_rest) in enumerate(starts):
         end_idx = starts[si + 1][0] if si + 1 < len(starts) else len(lines)
         block_lines = ([first_line_rest] if first_line_rest else []) + lines[line_idx + 1:end_idx]
         qtext, options, correct_letter, attachment, blanks = parse_option_block(block_lines)
+        questions[num] = {'text': qtext, 'options': options, 'correct': correct_letter, 'attachment': attachment, 'blanks': blanks}
+    return questions
+
+def parse_questions_unmarked(lines):
+    """Format: no question-numbering markers at all (no "Question #:", no
+    plain "N."/"N)") -- each question is just stem text immediately followed
+    by lettered options starting at 'a'/'A', one option per line (no
+    line-wrapped option text in this format). Question boundaries are
+    inferred purely from where a fresh 'a'/'A'-lettered option run begins.
+    First seen in Lasers in Dentistry, Summer 2023 -- a "no questions parsed
+    at all" result on an exam with visible lettered options (unlike the
+    picture-based-options gotcha, where options are present but blank) is
+    the symptom that this format has shown up again."""
+    # Every one of these source exports opens with a banner line like
+    # "Laser in Dentistry Final Exam - Confidential" before the first
+    # question; with no numbering marker to split on the way the other two
+    # formats have, that banner would otherwise get glued onto question 1's
+    # stem as if it were part of the question text.
+    i = 0
+    while i < len(lines) and lines[i].rstrip().lower().endswith('confidential'):
+        i += 1
+    lines = lines[i:]
+
+    questions = {}
+    i = 0
+    num = 0
+    n = len(lines)
+    while i < n:
+        stem = []
+        while i < n:
+            m = OPT_RE.match(lines[i])
+            if m and m.group(2).upper() == 'A':
+                break
+            stem.append(lines[i])
+            i += 1
+        if i >= n:
+            break
+        opt_lines = []
+        prev_val = None
+        while i < n:
+            m = OPT_RE.match(lines[i])
+            if not m:
+                break
+            val = m.group(2).upper()
+            if prev_val is not None and val <= prev_val:
+                break
+            opt_lines.append(lines[i])
+            prev_val = val
+            i += 1
+        num += 1
+        qtext, options, correct_letter, attachment, blanks = parse_option_block(stem + opt_lines)
         questions[num] = {'text': qtext, 'options': options, 'correct': correct_letter, 'attachment': attachment, 'blanks': blanks}
     return questions
 
