@@ -104,6 +104,30 @@ def find_best_option_run(lines):
     chosen = next((run for run in runs if any(c in ('✓', '*') for _, c, _ in run)), runs[-1])
     return {idx: (check, val) for idx, check, val in chosen}
 
+def _checkmarked_option_run_count(lines):
+    """Same run-grouping as find_best_option_run, but returns how many
+    distinct runs carry a checked/starred answer instead of picking one.
+    Used by parse_questions_numbered to tell "this span is exactly one
+    real answered question" (count == 1) apart from a span that
+    accidentally spans zero or multiple real questions."""
+    runs = []
+    current = []
+    prev_val = None
+    for l in lines:
+        m = OPT_RE.match(l)
+        if not m:
+            continue
+        check, letter, _ = m.groups()
+        val = letter.upper()
+        if prev_val is not None and val <= prev_val:
+            runs.append(current)
+            current = []
+        current.append(check)
+        prev_val = val
+    if current:
+        runs.append(current)
+    return sum(1 for run in runs if any(c in ('✓', '*') for c in run))
+
 ANS_LINE_RE = re.compile(r'^(\d+)[.)]\s*(.+)$')
 
 def find_fill_blanks(lines):
@@ -248,6 +272,73 @@ def parse_questions(text):
         questions[num] = {'text': qtext, 'options': options, 'correct': correct_letter, 'attachment': attachment, 'blanks': blanks}
     return questions
 
+# A named-tag heading, e.g. "CASE AB", "Case #1" -- captures a short token
+# usable as a back-reference key for each question's own "(CASE AB)" /
+# "(Case #1 attached)" tag (see CASE_TAG_RE below).
+CASE_TAG_HEADING_RE = re.compile(r'^(?:CASE|Case)\s*#?\s*([A-Za-z0-9]+)\b')
+# The much wider net of phrasings actually seen introducing a case, none of
+# which necessarily carry a clean short tag to key off of: a bare "CASE" on
+# its own line before a bulleted patient summary (Pathomedicine, Exam 2
+# Fall 2020); "CONSIDER THE CASE SCENARIO DESCRIBED BELOW WHEN ANSWERING
+# QUESTIONS 43-50..." (Oral & Maxillofacial Surgery, Final Spring 2020);
+# "The following scenario applies to questions 50-53:" (same course, Final
+# Spring 2021). Exams using one of these don't tag each question with a
+# back-reference either -- they just expect the reader to remember the
+# case for the next few questions -- so there's nothing here to match
+# CASE_TAG_RE against; the vignette only needs to reach the question
+# immediately following it (see parse_questions_numbered's
+# `pending_vignette` handling), not every question in the block.
+CASE_INTRO_TRIGGER_RE = re.compile(
+    r'^(?:CASE|Case)\s*#?\s*[A-Za-z0-9]*\s*$'
+    r'|^(?:CASE|Case)\s*#?\s*[A-Za-z0-9]+\b'
+    r'|\bcase\s+scenario\b'
+    r'|\bscenario\s+applies\s+to\b'
+    r'|\bfollowing\s+scenario\b'
+    r'|\banswering\s+questions?\s+\d+\s*[-–—]\s*\d+'
+    r'|\bpertain(?:s|ing)?\s+to\s+(?:case|Case)\b'
+    r'|\brefer(?:s)?\s+to\s+CASE\b',
+    re.I,
+)
+CASE_TAG_RE = re.compile(r'^\(([^)]+)\)')
+
+def find_case_intro_split(block_lines):
+    """A question's raw block sometimes has a *different* case's intro
+    tacked onto its tail -- e.g. "...d. Multidisciplinary management...
+    CASE CD- questions 11-16 are pertinent to Case CD\nA 55 year old
+    female..." -- because nothing marks where the previous question's
+    answer ends and the next case's vignette begins except prose, and
+    that prose would otherwise get silently absorbed into the previous
+    question's last option by parse_option_block's continuation-line
+    logic. Returns the index in block_lines where a case-intro heading
+    starts (see CASE_INTRO_TRIGGER_RE for the range of phrasings this
+    covers), but only when real lettered options (with a checked answer)
+    were already found earlier in the block -- i.e. this heading is
+    trailing garbage, not part of the question's own stem. Returns None if
+    no such split point exists."""
+    for i, l in enumerate(block_lines):
+        if CASE_INTRO_TRIGGER_RE.search(l):
+            option_idxs = find_best_option_run(block_lines[:i])
+            if option_idxs and any(c in ('✓', '*') for c, _ in option_idxs.values()):
+                return i
+    return None
+
+def extract_case_vignette(block_lines, fallback_tag):
+    """block_lines[0] is a case-intro heading line (per
+    find_case_intro_split, or the text preceding question 1). Returns
+    (tag, vignette_text). When the heading is a short "CASE X" / "Case #N"
+    tag, that becomes the vignette's key (upper-cased, for matching
+    against each question's own "(CASE X)" back-reference) and is dropped
+    from the vignette text itself, since the bare tag adds nothing to show
+    the student; otherwise (a longer, one-off phrasing with no clean tag
+    to extract) `fallback_tag` is used as the key -- it won't match any
+    real question's "(...)" back-reference, which is fine, since exams
+    that phrase the intro this way don't tag their questions either and
+    the vignette only needs to reach the question right after it."""
+    m = CASE_TAG_HEADING_RE.match(block_lines[0])
+    if m and m.group(1):
+        return m.group(1).upper(), join_wrapped_lines(block_lines[1:]).strip()
+    return fallback_tag, join_wrapped_lines(block_lines).strip()
+
 def parse_questions_numbered(text):
     """Format: "N. question text" or "N) question text" ... "A. opt" / "✓B. opt"
     (no "Question #:" markers)."""
@@ -255,26 +346,108 @@ def parse_questions_numbered(text):
     lines = [l for l in lines if l != '' and not re.fullmatch(r'_{15,}', l)]
     q_start_re = re.compile(r'^(\d+)[.)]\s*(.*)$')
 
-    # find candidate question-start lines, keeping only sequentially-increasing numbers
-    starts = []  # (line_index, num, rest_of_line)
-    expected = 1
-    for i, l in enumerate(lines):
-        m = q_start_re.match(l)
-        if m and int(m.group(1)) == expected:
-            starts.append((i, expected, m.group(2)))
-            expected += 1
+    all_candidates = [(i, int(m.group(1)), m.group(2))
+                       for i, l in enumerate(lines)
+                       for m in [q_start_re.match(l)] if m]
 
-    if not starts:
+    if not all_candidates:
         # Third source format: no numbering markers of any kind (not even
         # plain "N."), just a stem followed directly by lettered options.
         # First seen in Lasers in Dentistry, Summer 2023.
         return parse_questions_unmarked(lines)
 
+    # Some exams pose a question as "Which of the following are true? 1.
+    # ... 2. ... 3. ..." -- a numbered *sub-list* of statements embedded in
+    # the stem, before the question's real lettered options. If that
+    # sub-list's own numbering happens to coincide with the real question
+    # numbers coming up next (it restarts at 1, so this is only a matter of
+    # timing), naively taking the first line matching each expected number
+    # treats sub-list items as question boundaries: it truncates the
+    # still-open question before its real options, and once a later
+    # coincidental item finally closes it, the accumulated sub-list *and*
+    # the real options end up glued onto the wrong question's last option.
+    # First seen in TMD & Orofacial Pain, Spring 2020. Fixed by not blindly
+    # taking the first line matching `expected`: when more than one line
+    # matches, prefer whichever occurrence -- when used to close the
+    # currently-open question -- leaves that question with exactly one
+    # real, checked, lettered option run (not zero -- a genuine
+    # free-response question, which by construction never has one, so it
+    # still falls back to the first/only occurrence and splits off the same
+    # as before, for "Questions that aren't multiple choice" to drop it;
+    # and not *more* than one either -- an unbounded search for "some
+    # checkmarked run exists somewhere" will eventually find one by
+    # accident once the span is large enough to swallow several real
+    # questions, e.g. when the currently-open question is itself a
+    # legitimate non-MC matching/labeling exercise with no options of its
+    # own, first seen swallowing questions 5-31 whole in Oral Surgery II,
+    # Fall 2022 while chasing a coincidental "5." inside an answer key
+    # ("1. G 2. A 3. F...") on question 31).
+    starts = []  # (line_index, num, rest_of_line)
+    expected = 1
+    prev_end = 0
+    search_from = 0
+    while True:
+        occurrences = [c for c in all_candidates if c[1] == expected and c[0] >= search_from]
+        if not occurrences:
+            break
+        chosen = occurrences[0]
+        if starts:  # question 1 has no prior open question to validate against
+            for occ in occurrences:
+                if _checkmarked_option_run_count(lines[prev_end:occ[0]]) == 1:
+                    chosen = occ
+                    break
+        starts.append((chosen[0], expected, chosen[2]))
+        prev_end = chosen[0] + 1
+        search_from = chosen[0] + 1
+        expected += 1
+
+    if not starts:
+        return parse_questions_unmarked(lines)
+
+    # Text-only case clusters: a clinical vignette stated once (e.g. "CASE
+    # AB" or "Case #1 (Questions 1-10 pertain to case #1)") before a run of
+    # questions that each carry only a short "(CASE AB)" back-reference, no
+    # image. Text before question 1 would otherwise be silently dropped;
+    # a vignette introduced mid-exam would otherwise get absorbed into the
+    # *previous* question's last option (see find_case_intro_split). See
+    # README "Text-only case clusters".
+    case_vignettes = {}
+    pending_vignette = None
+    preamble = lines[:starts[0][0]]
+    for i, l in enumerate(preamble):
+        if CASE_INTRO_TRIGGER_RE.search(l):
+            tag, vignette = extract_case_vignette(preamble[i:], fallback_tag=f'_preamble@{i}')
+            case_vignettes[tag] = vignette
+            pending_vignette = vignette
+            break
+
     questions = {}
     for si, (line_idx, num, first_line_rest) in enumerate(starts):
         end_idx = starts[si + 1][0] if si + 1 < len(starts) else len(lines)
         block_lines = ([first_line_rest] if first_line_rest else []) + lines[line_idx + 1:end_idx]
+
+        split = find_case_intro_split(block_lines)
+        next_pending = None
+        if split is not None:
+            tag, vignette = extract_case_vignette(block_lines[split:], fallback_tag=f'_q{num}@{split}')
+            block_lines = block_lines[:split]
+            case_vignettes[tag] = vignette
+            next_pending = vignette
+
         qtext, options, correct_letter, attachment, blanks = parse_option_block(block_lines)
+
+        lead_vignette = pending_vignette
+        pending_vignette = next_pending
+        tag_match = CASE_TAG_RE.match(qtext)
+        if tag_match:
+            for token in re.split(r'\s*[&,/]\s*', tag_match.group(1)):
+                token = re.sub(r'^(?:CASE|Case)\s*#?\s*', '', token).strip().upper()
+                vignette = case_vignettes.get(token)
+                if vignette and vignette not in (lead_vignette or ''):
+                    lead_vignette = (lead_vignette + '\n\n' + vignette) if lead_vignette else vignette
+        if lead_vignette:
+            qtext = lead_vignette + '\n\n' + qtext
+
         questions[num] = {'text': qtext, 'options': options, 'correct': correct_letter, 'attachment': attachment, 'blanks': blanks}
     return questions
 

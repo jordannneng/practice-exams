@@ -223,6 +223,35 @@ each one was added because a specific real exam broke without it:
   all` result on an exam that clearly has lettered options in the raw text
   (unlike the picture-based-options gotcha, where the options are present
   but blank) is the symptom of this format.
+- **Embedded numbered sub-lists colliding with real question numbers**
+  (first seen in TMD & Orofacial Pain, Spring 2020): a question can pose
+  its own numbered list of statements in the stem before its real lettered
+  options ("Which of the following are true? 1. ... 2. ... 3. ..."). In
+  the plain `N.` format, `parse_questions_numbered` finds question
+  boundaries by scanning for the next expected integer, so if that
+  sub-list happens to restart at values equal to the *real* upcoming
+  question numbers (it restarts at 1, so this is purely a matter of
+  timing), naively taking the first matching line truncates the
+  still-open question before its real options and, once some later
+  coincidental item finally closes it, dumps both the sub-list and the
+  real options onto the wrong question's last option. Fixed by not
+  blindly accepting the first line matching the expected number: when
+  more than one line matches, `parse_questions_numbered` prefers whichever
+  occurrence — when used to close the currently-open question — leaves it
+  with *exactly one* real, checked, lettered option run (`_checkmarked_option_run_count`
+  in `parse_lib.py`), falling back to the first occurrence when none do.
+  Checking for "exactly one," not just "at least one," matters: a naive
+  "does *some* checkmarked run exist somewhere in this ever-growing span"
+  check will eventually find one by accident once the span is large
+  enough — this swallowed questions 5 through 31 whole in Oral Surgery II,
+  Fall 2022 while chasing a coincidental "5." inside an unrelated
+  matching-question answer key ("1. G 2. A 3. F...") on question 31, since
+  the currently-open question (a labeling/matching exercise, not real MC)
+  never has options of its own to close on. A drop in total parsed
+  question count versus the exam's visible page/question range, or a
+  wildly implausible option count on one question, are the symptoms.
+- **Text-only case clusters** (a shared clinical vignette given as prose,
+  not an image): see the dedicated section below.
 
 If a new PDF breaks the parser in a way not covered above, fix
 `parse_lib.py` itself (it's shared, reusable infrastructure) and add a
@@ -281,6 +310,72 @@ the exam, drop the affected questions, or ship with an `issues` note — this
 happened for two Spring 2022 exams and cost real rework to notice after the
 fact instead of before parsing.
 
+### Text-only case clusters (a shared vignette given as prose, not an image)
+
+Some exams (only seen so far in the plain `N.`-numbered format, in TMD &
+Orofacial Pain and Oral & Maxillofacial Surgery) introduce a case with
+prose instead of an image: a clinical vignette stated once, then a run of
+questions that reference it — sometimes with an explicit tag like `(CASE
+AB)` or `(Case #1 attached)` on every question in the block, sometimes
+with no tag at all (the exam just expects the reader to remember the case
+for the next few questions). Nothing marks the boundary between "the
+previous question's answer" and "the next case's vignette" except prose,
+so naively this either gets **dropped** (a vignette before question 1 has
+no earlier question to attach to) or **glued onto the wrong question's
+last option** (a vignette introduced mid-exam falls between two option
+letters, which `parse_option_block`'s continuation-line logic silently
+absorbs into whichever option came right before it). The corrupted
+option is usually hundreds to thousands of characters long and reads as
+two unrelated things concatenated — that's the symptom, and it does *not*
+throw a parse error or fail `verify_batch.js`'s structural check (the
+option count is unchanged, just one option's text is wrong), so it can
+ship without anyone noticing at import time. Use
+`scan_corrupted_options.py` (below) to catch it.
+
+Fixed in `parse_questions_numbered` (`find_case_intro_split`,
+`extract_case_vignette`, `CASE_INTRO_TRIGGER_RE`): after a question's real
+option run is found, any trailing lines matching a case-intro phrasing are
+split off instead of absorbed, and reattached to the *next* question
+instead (or the very first question, for a vignette preceding question 1
+in the document). The phrasing varies a lot between exams — a short tag
+("CASE AB"), a bare "CASE" heading before a bulleted patient summary, or a
+full sentence ("The following scenario applies to questions 50 – 53:",
+"CONSIDER THE CASE SCENARIO DESCRIBED BELOW WHEN ANSWERING QUESTIONS
+43-50...") — so `CASE_INTRO_TRIGGER_RE` matches broadly rather than one
+exact format; when a clean short tag can be extracted, the vignette is
+also indexed by it and reattached to *every* question in the exam whose
+own text opens with that same `(TAG)` back-reference (splitting compound
+tags like `(CASE ANP & CD)` on `&`/`,`/`/`), not just the question right
+after the vignette. If a new exam introduces a case with phrasing this
+doesn't catch, add it to `CASE_INTRO_TRIGGER_RE` rather than writing a
+one-off fix.
+
+### Scanning for corrupted options after the fact
+
+`scan_corrupted_options.py` sweeps `exams-csv/*.csv` for the fingerprint
+either of the two gotchas above leave behind: an option/image cell that's
+abnormally long and/or contains case-intro-like phrasing. It's a static
+content scan — no PDF or source text needed, so it works even on exams
+imported in a session that no longer has anything cached — and a triage
+tool, not an auto-fixer: both signals have false positives (a
+legitimately long answer choice; the ordinary English word "case"), so
+its "high-confidence" bucket (long *and* phrase-matching, or extremely
+long regardless of phrasing) is a near-certain hit worth fixing, and its
+"lower-confidence" bucket needs a human read before acting on it. Run it
+
+```
+python3 scripts/exam_import/scan_corrupted_options.py
+```
+
+as a standing check — not just after touching the parser, since a
+confirmed hit doesn't require re-running today's batch, only the affected
+exam's own source PDF (re-fetch from Drive if it's not already cached in
+this session) through the same pipeline described above. This is how the
+`omfs-final-spring-2020`/`omfs-final-spring-2021`/`patho-exam2-fall-2020`
+corruption was found and fixed — all three were imported in earlier
+sessions, well before the parser fix that caused them was even known
+about.
+
 ## 4. Wiring a new category into the app
 
 If the batch is for a **class/category that doesn't exist yet** in the app
@@ -330,6 +425,20 @@ errors as proof the content is right.
 Requires the `playwright` package + Chromium (both pre-installed in this
 environment — see the module docstring in `verify_batch.js` if
 `require('playwright')` fails).
+
+Also run the corrupted-option scan (see "Scanning for corrupted options
+after the fact" above) on the exams you just imported — it catches a
+different failure mode than `verify_batch.js`: content silently glued
+onto the wrong question, which doesn't change any count `verify_batch.js`
+checks:
+
+```
+python3 scripts/exam_import/scan_corrupted_options.py
+```
+
+A non-zero exit / any "high-confidence" hit involving an exam-id from
+this batch means go fix it (see the parser gotchas above) before
+shipping, the same as a `verify_batch.js` failure would.
 
 If `verify_batch.js` throws `Cannot read properties of undefined (reading
 '0')` from `renderQuiz` for *every* exam (not just newly-imported ones),
